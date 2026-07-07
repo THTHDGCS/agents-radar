@@ -32,7 +32,7 @@ const DEVTO_PER_PAGE = 30;
 const API_URL = "https://dev.to/api/articles";
 
 /** Tags to query — run in parallel, dedup by id. */
-const TAGS = ["ai", "llm", "machinelearning", "openai", "langchain"];
+const TAGS = ["robotics", "ai", "machinelearning", "automation", "python"];
 
 // ---------------------------------------------------------------------------
 // Response type

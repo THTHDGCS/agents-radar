@@ -29,7 +29,7 @@ export interface HnData {
 const HN_TOP_STORIES = 30;
 
 /** Queries run in parallel; results are deduped by story ID. */
-const QUERIES = ["AI", "LLM", "Claude", "OpenAI", "Anthropic", "machine learning"];
+const QUERIES = ["embodied AI", "VLA", "robotics", "humanoid", "manipulation", "robot learning"];
 
 // ---------------------------------------------------------------------------
 // Algolia API types

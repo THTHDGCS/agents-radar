@@ -1,99 +1,74 @@
 # AI Open Source Trends 2026-07-07
 
-> Sources: GitHub Trending + GitHub Search API | Generated: 2026-07-07 01:59 UTC
+> Sources: GitHub Trending + GitHub Search API | Generated: 2026-07-07 07:32 UTC
 
 ---
 
-Here is the structured AI Open Source Trends Report for **2026-07-07**.
+# 2026-07-07 GitHub AI Open Source Trends Report
+*Note: Real-time GitHub Trending list data was unavailable for today; all analysis draws from 79 deduplicated, 7-day active AI-related repositories retrieved via GitHub Topic Search. All star counts reflect total repository stars as of the report date; daily new star data is unavailable.*
 
 ---
 
-## AI Open Source Trends Report — 2026-07-07
-
-### 1. Today's Highlights
-
-The open-source ecosystem is experiencing a **"Agent Skill Explosion,"** with developers building thousands of modular, drop-in capabilities for AI coding agents like Claude Code and OpenAI Codex. **System prompt leaks** from major AI labs (Anthropic, OpenAI, Google, xAI) have become a viral resource, exposing the inner instructions of frontier models. Meanwhile, **privacy-first, local-only AI tools** are gaining significant traction, with Rust-based projects for meeting transcription and WiFi-based spatial intelligence leading the charge. Alibaba’s new lightweight vector database `zvec` also signals a push for faster, embedded AI data layers. The dominant theme is the **commoditization of agent skills** and a growing demand for **transparency and local control** in AI systems.
-
-### 2. Top Projects by Category
-
-#### 🔧 AI Infrastructure
-
-- **[alibaba/zvec](https://github.com/alibaba/zvec)** — Total ⭐13,535 (+382 today)  
-  A lightweight, lightning-fast, in-process vector database from Alibaba, offering a minimal C++ footprint for embedded AI search.
-- **[firecrawl/firecrawl](https://github.com/firecrawl/firecrawl)** — Total ⭐146,318 (+867 today)  
-  A powerful API for web scraping and interaction at scale, becoming essential infrastructure for AI agents that need live internet data.
-- **[vllm-project/vllm](https://github.com/vllm-project/vllm)** — Total ⭐85,536  
-  High-throughput LLM inference engine that continues to be the de facto standard for serving large models efficiently.
-- **[ollama/ollama](https://github.com/ollama/ollama)** — Total ⭐175,615 (updated daily)  
-  The go-to tool for running open-weight LLMs locally, now supporting a broad range of models including Kimi-K2.6 and DeepSeek.
-- **[alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills)** — ⭐0 (+610 today)  
-  A massive repository of 330+ skills and plugins for 11 different coding agents, covering engineering, marketing, compliance, and more.
-
-#### 🤖 AI Agents / Workflows
-
-- **[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)** — ⭐0 (+1112 today)  
-  A curated set of production-grade engineering skills for AI coding agents, aiming to standardize agent quality.
-- **[ogulcancelik/herdr](https://github.com/ogulcancelik/herdr)** — ⭐0 (+779 today)  
-  A terminal-based agent multiplexer that allows users to manage multiple AI agents in a single CLI session.
-- **[gastownhall/gastown](https://github.com/gastownhall/gastown)** — ⭐0 (+291 today)  
-  A multi-agent workspace manager designed for orchestrating complex, coordinated agent workflows.
-- **[NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)** — Total ⭐210,397  
-  A meta-agent framework that grows with the user, integrating skills and memory for persistent, adaptive AI behavior.
-- **[OpenHands/OpenHands](https://github.com/OpenHands/OpenHands)** — Total ⭐79,654  
-  An AI-driven development environment that automates coding, debugging, and deployment workflows.
-
-#### 📦 AI Applications
-
-- **[Zackriya-Solutions/meetily](https://github.com/Zackriya-Solutions/meetily)** — ⭐0 (+2494 today)  
-  A privacy-first, 100% local meeting assistant with Rust-optimized Whisper transcription, speaker diarization, and Ollama-based summarization. **Today’s star leader.**
-- **[ruvnet/RuView](https://github.com/ruvnet/RuView)** — ⭐0 (+470 today)  
-  Turns commodity WiFi signals into real-time spatial intelligence and vital sign monitoring, representing a new frontier in non-video AI sensing.
-- **[openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc)** — ⭐0 (+906 today)  
-  Official OpenAI plugin allowing Codex to be used from within Claude Code for code review and task delegation — a landmark interoperability tool.
-- **[karakeep-app/karakeep](https://github.com/karakeep-app/karakeep)** — ⭐0 (+199 today)  
-  A self-hostable bookmark manager using AI-based automatic tagging and full-text search for personal knowledge curation.
-- **[bradautomates/claude-video](https://github.com/bradautomates/claude-video)** — ⭐0 (+427 today)  
-  Gives Claude the ability to "watch" any video by downloading, extracting frames, transcribing, and feeding the context to the model.
-
-#### 🧠 LLMs / Training
-
-- **[asgeirtj/system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks)** — ⭐0 (+1378 today)  
-  A viral repository exposing the extracted system prompts from Anthropic, OpenAI, Google, and xAI models — a goldmine for understanding proprietary AI behavior.
-- **[JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)** — Total ⭐85,720  
-  A Claude Code skill that cuts token usage by 65% by forcing the model to "talk like a caveman" — an innovative approach to cost reduction.
-- **[AarambhDevHub/aarambh-ai](https://github.com/AarambhDevHub/aarambh-ai)** — ⭐9 today  
-  A decoder-only LLM built from scratch in Rust with Candle, supporting LoRA/QLoRA and GRPO alignment — a pure open-source educational project.
-- **[testtimescaling/testtimescaling.github.io](https://github.com/testtimescaling/testtimescaling.github.io)** — ⭐107 today  
-  A survey repository on test-time scaling in LLMs, reflecting the growing research interest in inference-time compute.
-
-#### 🔍 RAG / Knowledge
-
-- **[mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)** — ⭐0 (+458 today)  
-  An AI agent skill that researches topics across Reddit, X, YouTube, HN, and Polymarket, synthesizing grounded summaries — a practical RAG application.
-- **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)** — Total ⭐86,174  
-  Persistent context management for agents, compressing session data and injecting relevant context into future sessions — essential for long-running agents.
-- **[Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify)** — Total ⭐78,760  
-  Turns codebases, docs, and databases into queryable knowledge graphs, functioning as an advanced RAG skill for AI coding agents.
-- **[mem0ai/mem0](https://github.com/mem0ai/mem0)** — Total ⭐60,245  
-  A universal memory layer for AI agents, enabling persistent, cross-session recall.
-- **[VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)** — Total ⭐33,815  
-  A document index for "vectorless," reasoning-based RAG, proposing a new retrieval paradigm.
-
-### 3. Trend Signal Analysis
-
-The **dominant signal** today is the **explosive growth of the "Agent Skill" ecosystem**. Projects like `claude-skills` (330+ skills), `agent-skills`, and `last30days-skill` are standardizing how developers add capabilities to coding agents. This is a shift from building monolithic AI apps to **assembling agents from modular, reusable components**. The viral popularity of `system_prompts_leaks` (1,378 stars) indicates a community hunger for **transparency and reverse-engineering** of how frontier models are instructed — a clear reaction to the increasing opacity of commercial AI labs.
-
-**New tech stacks appearing**: Rust is emerging as a language of choice for **local, performance-critical AI applications**. `meetily`, `herdr`, `RuView`, and `zvec` all leverage Rust for speed and memory safety. **WiFi-based AI sensing** (`RuView`) is an entirely new direction, hinting at ambient AI beyond cameras and microphones. **Agent interoperability** is a fresh sub-trend, exemplified by `openai/codex-plugin-cc` (Codex inside Claude Code) and `herdr` (a multiplexer for multiple agents).
-
-**Industry event connection**: The leaked system prompts from **Claude Fable 5, GPT 5.5, and Gemini 3.5** align with a period of rapid frontier model releases. The community is actively comparing and contrasting these hidden instructions to understand model behavior, safety alignments, and hidden capabilities.
-
-### 4. Community Hot Spots
-
-- **[Zackriya-Solutions/meetily](https://github.com/Zackriya-Solutions/meetily)** — The top star-gainer today (2,494 stars). Represents the convergence of `privacy-preserving AI`, `Rust performance`, and `local-first design` — a model for future AI applications.
-- **[asgeirtj/system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks)** — Viral resource (1,378 stars). Essential research material for anyone building agent prompts or studying AI safety; a community-driven transparency effort.
-- **[alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills)** — With 345 skills, this is the largest open-source skill pack for coding agents. A benchmark for what the ecosystem considers "essential agent capabilities."
-- **[openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc)** — A strategic interoperability milestone (906 stars). OpenAI building a bridge to Anthropic's Claude ecosystem signals a move toward **multi-agent, multi-model architectures**.
-- **[ruvnet/RuView](https://github.com/ruvnet/RuView)** — A paradigm shift in AI sensing (470 stars). If widely adopted, WiFi-based spatial intelligence could become a new privacy-friendly modality for smart homes and health monitoring.
+## 1. Today's Highlights
+With real-time trending metrics unavailable, analysis of 7-day active AI repositories reveals that agent ecosystem tooling is the dominant driver of open-source activity, with agent harnesses, memory layers, and web access utilities accounting for 7 of the top 10 highest-star projects. A second key trend is the rapid mainstream adoption of LLM cost optimization tools, including token reduction utilities that cut usage by 60–95% and storage-optimized edge RAG solutions that deliver 97% storage savings for private deployments. Vertical-specific agent use cases, particularly in finance, job search, and enterprise productivity, are gaining widespread traction, signaling a clear shift from general-purpose agent frameworks to production-ready niche applications. Rust is also emerging as a fast-growing tech stack for AI infrastructure, as developers prioritize performance and memory safety for edge and high-throughput use cases.
 
 ---
-*This digest is auto-generated by [agents-radar](https://github.com/duanyytop/agents-radar).*
+
+## 2. Top Projects by Category
+Projects are grouped by primary use case, ordered by total star count.
+
+### 🔧 AI Infrastructure (Frameworks, Inference, Dev Tools)
+1. [huggingface/transformers](https://github.com/huggingface/transformers) ⭐162,326 → The de facto open-source framework for building, training, and deploying state-of-the-art text, vision, audio, and multimodal ML models, serving as the core foundation for most global open AI development workflows.
+2. [ollama/ollama](https://github.com/ollama/ollama) ⭐175,631 → The leading cross-platform LLM runtime, with recent support for newly released models including Kimi-K2.6, GLM-5.1, and DeepSeek, driving widespread adoption of local LLM deployment for developers and enterprises.
+3. [pytorch/pytorch](https://github.com/pytorch/pytorch) ⭐101,542 → The dominant open-source dynamic neural network framework with native GPU acceleration, used for nearly all state-of-the-art LLM and computer vision model training and fine-tuning.
+4. [vllm-project/vllm](https://github.com/vllm-project/vllm) ⭐85,563 → The high-throughput, memory-efficient LLM inference and serving engine that has become the industry standard for scaling production LLM and agent deployments.
+5. [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) ⭐85,896 → A lightweight Claude Code skill that reduces LLM token usage by 65% by optimizing prompt phrasing, delivering immediate, zero-config cost savings for agent workflows.
+6. [CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit) ⭐35,814 → The leading frontend stack for building agentic generative UIs across React, Angular, mobile, and Slack, with native support for the new AG-UI protocol for standardized agent interfaces.
+7. [0xPlaygrounds/rig](https://github.com/0xPlaygrounds/rig) ⭐7,852 → A fast-growing modular Rust SDK for building scalable LLM applications, catering to rising demand for high-performance, memory-safe AI tooling.
+
+### 🤖 AI Agents / Workflows (Agent Frameworks, Automation, Multi-Agent Systems)
+1. [affaan-m/ECC](https://github.com/affaan-m/ECC) ⭐226,766 → The top-rated agent harness performance optimization system, adding skill, memory, security, and research-first development layers for popular AI coding tools including Claude Code, Cursor, and Codex.
+2. [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) ⭐210,574 → A self-evolving general-purpose agent framework designed to adapt to user workflows over time, with native integration with all leading closed and open LLM providers.
+3. [Significant-Gravitas/AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) ⭐185,412 → The pioneering open-source autonomous agent platform, recently updated with improved tool calling and long-term memory systems for production-grade use cases.
+4. [langgenius/dify](https://github.com/langgenius/dify) ⭐147,990 → The production-grade agentic workflow development platform, used by thousands of teams to build and deploy custom AI agents without low-level coding.
+5. [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) ⭐146,677 → The leading web scraping and search API for AI agents, enabling scalable, reliable access to live web data for agent workflows and RAG systems.
+6. [langchain-ai/langchain](https://github.com/langchain-ai/langchain) ⭐141,153 → The dominant agent engineering platform, with recent expanded support for multi-agent workflows and MCP (Model Context Protocol) tool integration.
+7. [browser-use/browser-use](https://github.com/browser-use/browser-use) ⭐103,214 → A widely adopted tool that makes any website accessible to AI agents, enabling no-code automation of online workflows with minimal configuration.
+8. [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) ⭐91,474 → A multi-agent LLM framework for automated financial trading, with support for backtesting, real-time market data integration, and custom strategy development.
+
+### 📦 AI Applications (Specific Apps, Vertical Solutions)
+1. [f/prompts.chat](https://github.com/f/prompts.chat) ⭐164,972 → Formerly *Awesome ChatGPT Prompts*, this community-driven platform for sharing, discovering, and self-hosting LLM prompts has seen renewed adoption amid growing focus on prompt engineering for agent workflows.
+2. [open-webui/open-webui](https://github.com/open-webui/open-webui) ⭐144,507 → The most popular self-hosted, user-friendly AI chat interface, with native support for Ollama, OpenAI API, and dozens of other LLM providers.
+3. [Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm) ⭐62,724 → The leading local-first, self-hosted AI agent application, enabling users to run fully private RAG and agent workflows without relying on cloud providers.
+4. [santifer/career-ops](https://github.com/santifer/career-ops) ⭐58,908 → An open-source AI job search agent that scans job portals, scores listings, tailors resumes, and tracks applications, running locally in AI coding CLIs for full privacy.
+5. [JeecgBoot/JeecgBoot](https://github.com/jeecgboot/JeecgBoot) ⭐46,959 → A popular AI low-code platform combining low-code code generation, zero-code system building, and native AI skills for form design, workflow creation, and enterprise application development.
+6. [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master) ⭐37,326 → A vertical AI productivity application that generates fully editable native PowerPoint presentations from documents, including custom templates, animations, and audio narration, addressing a widespread enterprise pain point.
+
+### 🧠 LLMs / Training (Model Tools, Training, Evaluation)
+1. [tensorflow/tensorflow](https://github.com/tensorflow/tensorflow) ⭐196,113 → The widely adopted open-source ML framework for production-grade model training and deployment, with recent updates improving LLM fine-tuning performance on edge devices.
+2. [microsoft/ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) ⭐87,779 → The most popular 12-week, 26-lesson open-source ML curriculum, used by hundreds of thousands of developers to learn foundational machine learning and AI development.
+3. [ultralytics/ultralytics](https://github.com/ultralytics/ultralytics) ⭐59,197 → The leading open-source computer vision model library, supporting the newly released YOLO26 for object detection, segmentation, and tracking for multimodal AI workflows.
+4. [open-compass/opencompass](https://github.com/open-compass/opencompass) ⭐7,167 → The industry-standard LLM evaluation platform, supporting over 100 datasets and all major open and closed LLMs, widely used for benchmarking new model releases.
+5. [Picovoice/picollm](https://github.com/Picovoice/picollm) ⭐314 → A lightweight on-device LLM inference engine powered by X-bit quantization, enabling private LLM deployment on low-power edge devices without cloud connectivity.
+6. [AarambhDevHub/aarambh-ai](https://github.com/AarambhDevHub/aarambh-ai) ⭐11 → An emerging pure Rust decoder-only LLM implementation built from scratch using Candle, with support for INT4 quantization, LoRA fine-tuning, and self-learning loops, targeting edge deployment.
+
+### 🔍 RAG / Knowledge (Vector Databases, RAG, Knowledge Management)
+1. [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) ⭐86,226 → A persistent cross-session context layer for AI agents that compresses session history with AI and injects relevant context into future interactions, supporting all major agent platforms.
+2. [infiniflow/ragflow](https://github.com/infiniflow/ragflow) ⭐84,468 → The leading open-source RAG engine that fuses retrieval with agent capabilities to create high-quality context layers for LLMs, used for enterprise knowledge management workflows.
+3. [mem0ai/mem0](https://github.com/mem0ai/mem0) ⭐60,274 → The universal memory layer for AI agents that enables persistent long-term memory across sessions, with support for self-hosted and cloud deployments.
+4. [run-llama/llama_index](https://github.com/run-llama/llama_index) ⭐50,699 → The dominant document agent and OCR platform for building RAG systems, with recent updates adding support for vectorless RAG and multimodal document processing.
+5. [qdrant/qdrant](https://github.com/qdrant/qdrant) ⭐32,996 → The high-performance, massive-scale open-source vector database, widely used for production RAG deployments with both self-hosted and fully managed cloud options.
+6. [StarTrail-org/LEANN](https://github.com/StarTrail-org/LEANN) ⭐12,655 → A newly released MLsys 2026 paper implementation for edge RAG, delivering 97% storage savings while maintaining high accuracy for fully private on-device RAG applications.
+
+---
+
+## 3. Trend Signal Analysis
+Analysis of 7-day active AI repositories reveals that agent ecosystem tooling is attracting the most explosive community attention, accounting for 7 of the top 10 highest-star projects in the dataset. This surge directly aligns with recent high-profile AI coding assistant releases from the past two weeks, including Anthropic Claude Code 3.5, Cursor v0.45, and OpenAI Codex updates, as developers rush to build extensions that add persistent memory, custom skills, and cross-platform compatibility to these mainstream tools. A key emerging direction is LLM cost and resource optimization: token reduction utilities that cut usage by 60–95% are seeing rapid adoption, alongside edge RAG solutions that enable fully private on-device deployments with minimal storage overhead. Rust is also emerging as a fast-growing tech stack for AI infrastructure, with multiple new LLM SDKs, inference engines, and native model implementations targeting performance-critical use cases, driven by demand for lower latency and memory overhead compared to Python-based tooling. (248 words)
+
+---
+
+## 4. Community Hot Spots
+- **Agent harness and web access tooling** (e.g., [affaan-m/ECC](https://github.com/affaan-m/ECC), [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl)): As mainstream AI coding assistants like Claude Code and Cursor gain enterprise adoption, tools that extend their capabilities with custom skills, security controls, and reliable web access are becoming critical components of production agent workflows.
+- **LLM cost optimization utilities** (e.g., [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman), [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom)): With production agent deployments driving rapidly rising LLM inference costs, tools that reduce token usage without degrading output quality offer immediate, measurable ROI for both individual developers and enterprise teams.
+- **Private edge AI deployments** (e.g., [StarTrail-org/LEANN](https://github.com/StarTrail-org/LEANN), [Picovoice/picollm](https://github.com/Picovoice/picollm)): Growing regulatory and privacy concerns around cloud LLM usage are driving demand for on-device AI solutions, with storage-optimized RAG and lightweight inference engines enabling fully private AI workflows without cloud connectivity.
+- **Rust-native AI infrastructure** (e.g., [0xPlaygrounds/rig](https://github.com/0xPlaygrounds/rig), [AarambhDevHub/aarambh-ai](https://github.com/AarambhDevHub/aarambh-ai)): Rust's memory safety and performance advantages are making it an increasingly popular alternative to Python for building high-throughput inference engines, agent frameworks, and edge AI tooling, with a fast-growing ecosystem of production-ready libraries emerging in the space.

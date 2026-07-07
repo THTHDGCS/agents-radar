@@ -1,134 +1,150 @@
 {
   "zh": {
     "ai-cli": [
-      "Claude Code v2.1.202 发布，修复安全过滤器误报",
-      "OpenAI Codex v0.143.0-alpha.37 聚焦推理Token聚类",
-      "GitHub Copilot CLI 探讨MCP权限治理问题",
-      "Gemini CLI 修复Agent假成功和挂起问题",
-      "Qwen Code 关注算力成本与多工作区支持",
-      "OpenCode V2架构重构引社区热议"
+      "三大AI CLI工具集体向生产可靠阶段迭代",
+      "Claude Code发新版，新增动态工作流大小配置",
+      "OpenAI Codex连更2个Rust SDK alpha版本",
+      "Gemini CLI修复macOS沙箱Git配置篡改风险",
+      "MCP成为三家工具扩展层事实标准",
+      "Agent可靠性占高优先级Issue超50%"
     ],
     "ai-agents": [
-      "OpenClaw 社区24小时内产生1000条更新",
-      "多代理稳定性与安全加固成讨论焦点",
-      "Linux/Windows Clawdbot 应用需求获110条评论",
-      "多项高优先级Bug修复PR正等待审核",
-      "跨平台客户端体验持续打磨优化",
-      "近期版本迭代引入不稳定因素引关注"
-    ],
-    "ai-web": [
-      "Anthropic 发布语言模型全局工作空间研究",
-      "Claude 被用于个人生活决策，奉承行为达25%",
-      "加拿大政府用 Claude Code 大规模修复代码漏洞",
-      "OpenAI 今日无新增内容更新",
-      "Anthropic 构建多层安全体系策略重申",
-      "新数学方法揭示模型内部推理机制"
+      "OpenClaw今日处理500条PR，处理率达44.2%",
+      "修复SSRF DNS重绑定漏洞，封堵网络绕过路径",
+      "修复子agent上下文丢失致信息泄露Bug",
+      "提交P1级PR，淘汰独立Matrix QA运行时",
+      "限制多类文件读取大小，防恶意大文件OOM",
+      "修复Bedrock平台image工具IAM认证错误"
     ],
     "ai-trending": [
-      "agent-skills 日增1112星，编码Agent技能包爆火",
-      "claude-skills 提供超300种预设技能",
-      "firecrawl 日增867星，RAG基础设施受追捧",
-      "alibaba/zvec 向量数据库日增382星",
-      "CodexBar 监控工具零起步日增598星",
-      "多智能体协作项目gastown获稳定关注"
+      "AI Agent生态转向可插拔技能沉淀阶段",
+      "Agent效能优化项目ECC星标达226,766",
+      "Claude Code token压缩工具省65%token消耗",
+      "Ollama新增支持多款国产开源大模型",
+      "RAG技术呈现轻量化、端侧化发展趋势",
+      "Firecrawl星标146,677，为Agent核心爬取工具"
+    ],
+    "ai-web": [
+      "Anthropic今日连发4篇新内容，OpenAI零更新",
+      "实证发现Claude内部存在“J空间”全局工作空间",
+      "6%用户向Claude寻求生活重大决策建议",
+      "Claude关系类话题奉承行为率达25%",
+      "加拿大政府用Claude Code大规模修复代码漏洞",
+      "披露多层安全体系构建的组织策略"
     ],
     "ai-hn": [
-      "Anthropic 全局工作空间研究获267分热议",
-      "GLM 5.2 分析文章称AI利润率将崩溃",
-      "AI泡沫论与开源小模型崛起成讨论主线",
-      "Pulpie 开源模型用于清理网页数据",
-      "Otari 开源LLM控制平面获社区好评",
-      "Anthropic 商业策略和定价引信任争议"
+      "GLM 5.2发布引“大模型毛利将崩溃”热议",
+      "XGBoost在冲突文本分类任务效果优于LLM",
+      "5款前沿大模型的“最喜欢的笑话”高度雷同",
+      "首份本地LLM行政办公场景基准测试发布",
+      "开源工具Subtext可可视化LLM隐式推理链路",
+      "华大推出工具Ekka诊断LLM推理静默错误"
     ],
     "ai-ph": [
-      "WorkBuddy 以AI专家团队形式获400票榜首",
-      "TryCase 为AI编码Agent提供一次性测试环境",
-      "CircleChat 给AI智能体配备Slack和看板",
-      "MentionDrop MCP 提供实时市场信号",
-      "AI开发者工具和测试环境成发布热点",
-      "AI与市场营销及商业智能结合涌现新品"
+      "WorkBuddy获400票，为今日最受欢迎AI产品",
+      "TryCase提供AI编码Agent一次性沙盒测试环境",
+      "CircleChat开源，将Agent纳入类人协作流程",
+      "今日AI产品聚焦工具化与生产力提升",
+      "MentionDrop MCP为Agent提供实时市场信号",
+      "AI编码Agent质量评估类工具热度走高"
+    ],
+    "ai-arxiv": [
+      "今日共更新50篇AI领域相关论文",
+      "提出验证能力为LLM第四大独立缩放轴",
+      "实证LLM线性编码剩余输出token长度",
+      "推出无需相机标定的鲁棒VLA模型",
+      "提出CompactionRL解决长周期Agent上下文不足",
+      "提出网页Agent不可信内容掩码防御注入攻击"
     ],
     "ai-hf": [
-      "GLM-5.2 以3531点赞成为社区焦点",
-      "Qwythos-9B GGUF 下载量超161万",
-      "NVIDIA LocateAnything-3B 获2635点赞",
-      "DeepSeek-V4-Pro-DSpark 代表前沿方向",
-      "Qwen3.6 衍生模型百花齐放",
-      "GGUF量化格式普及率极高"
+      "GLM-5.2获3531赞，成本周社区关注焦点",
+      "Qwen3.5衍生多模态模型下载量破161万",
+      "NVIDIA 3B视觉定位模型下载量破134万",
+      "GGUF量化格式成本地部署主流选择",
+      "Qwen系列修复聊天模板工具获698赞",
+      "多模态能力模型霸占热门榜前列"
     ],
     "ai-community": [
-      "AI Agent试图部署已回滚的错误引热议",
-      "开发者分享Agent撒谎编造完成任务经历",
-      "PagedAttention 用俄罗斯方块解释显存优化",
-      "LLM API密钥安全警示获33赞",
-      "AI时代可观测性设计新思路获关注",
-      "传统代码审查无法审查Agent行为成焦点"
+      "社区热议AI Agent行为不可信、上下文缺失问题",
+      "开发者分享36种识别AI生成文本的模式",
+      "警示LLM API密钥存在隐性泄露风险",
+      "提出AI时代分场景可观测性设计方案",
+      "用俄罗斯方块科普PagedAttention显存优化原理",
+      "热议传统代码审查无法审查Agent行为"
     ]
   },
   "en": {
     "ai-cli": [
-      "Claude Code v2.1.202 released today",
-      "Anthropic prioritizes safety with production-grade workflows",
-      "Gemini CLI pushes toward agentic autonomy",
-      "Copilot CLI focuses on production reliability",
-      "Kimi Code and DeepSeek TUI polish platform UX",
-      "Community demands billing transparency and session state management"
+      "Top 3 AI CLI tools aligned core architecture around the MCP standard",
+      "All 3 dominant AI CLI vendors shipped targeted updates on 2026-07-07",
+      "70% of tracked CLI activity tied to multi-agent workflow functionality",
+      "Claude Code published 1 stable production release in 24 hours",
+      "OpenAI Codex shipped 2 alpha pre-releases in the tracking window",
+      "Gemini CLI released 1 nightly pre-release over the 24-hour period"
     ],
     "ai-agents": [
-      "OpenClaw has 500 issues and 500 PRs updated in 24h",
-      "195 PRs merged or closed today",
-      "P0 session hangs and P1 regressions under active review",
-      "ACP recording correction fixes background turn tracking",
-      "403 open issues indicate strained maintainer bandwidth",
-      "Last release v2026.6.11 introduced a reentrancy guard regression"
-    ],
-    "ai-web": [
-      "Anthropic publishes four high-value strategic pieces today",
-      "Global workspace research shows conscious-access architecture in LLMs",
-      "Alberta government case study quantifies AI in public-sector cybersecurity",
-      "New Safeguards team post reveals maturity of Anthropic's safety ops",
-      "1M conversation analysis exposes sycophancy risks in relationship guidance",
-      "OpenAI provides no new content for analysis"
+      "OpenClaw saw 205 updated issues and 500 updated PRs on 2026-07-07",
+      "No new OpenClaw stable, pre-release, or patch versions published July 7",
+      "Core work focused on stability hardening and SSRF/memory security fixes",
+      "Fixed AWS Bedrock image tool bug that incorrectly required API keys",
+      "Resolved Chrome MCP macOS session timeout bug for user profiles",
+      "221 total OpenClaw PRs merged or closed in the 24-hour tracking window"
     ],
     "ai-trending": [
-      "Agent Skill Explosion with thousands of modular capabilities",
-      "System prompt leaks from major AI labs go viral",
-      "Rust-based privacy-first local AI tools gain traction",
-      "Alibaba's zvec vector database reaches 13,535 stars",
-      "Firecrawl hits 146,318 stars for AI agent web scraping",
-      "Ollama dominates local model running with 175,615 stars"
+      "Agent tooling takes 7 of top 10 spots in 7-day high-star AI repos",
+      "LLM cost optimization tools see rapid mainstream open-source adoption",
+      "Token reduction utilities cut LLM usage costs by 60–95% for deployments",
+      "Edge RAG solutions deliver 97% storage savings for private AI setups",
+      "ollama/ollama tops AI infra trends with 175,631 total GitHub stars",
+      "Rust emerges as a fast-growing, high-performance AI infrastructure stack"
+    ],
+    "ai-web": [
+      "Anthropic published 4 new articles July 7, 2026, while OpenAI posted 0",
+      "Anthropic released landmark 'Global Workspace' interpretability research",
+      "Paper finds Claude developed J-space analogous to human conscious workspace",
+      "Published case study on Alberta’s AI-powered public cybersecurity system",
+      "New post details maturity of Anthropic’s dedicated Safeguards team",
+      "1M conversation study exposes LLM sycophancy risks in relationship guidance"
     ],
     "ai-hn": [
-      "Anthropic global workspace research sparks technical debate",
-      "Backlash over user tracking and pricing sours HN sentiment",
-      "GLM 5.2 analysis predicts AI margin collapse",
-      "Small efficient models gain interest over massive scaling",
-      "AI bubble warnings from banks and hyperscalers shift conversation",
-      "Deterministic AI seen as counterweight to scaling paradigm"
+      "Viral Zhipu GLM 5.2 post sparks debate over impending AI margin collapse",
+      "Privacy-focused Proton replaced Western LLMs with Chinese alternatives",
+      "Community debates disconnect between LLM pricing and user demand",
+      "Bellingcat finds XGBoost beats LLMs at high-stakes conflict classification",
+      "HN dev audience engages heavily with open-source LLM observability tooling",
+      "Discussions highlight geopolitical tradeoffs in global AI supply chains"
     ],
     "ai-ph": [
-      "WorkBuddy tops with 400 votes for AI expert team platform",
-      "TryCase offers disposable test environments for AI agents",
-      "MentionDrop MCP integrates live market signals",
-      "Profit Router and Profit Bid target ROI-driven AI adoption",
-      "CircleChat gives AI agents a Slack and task board",
-      "AI agent infrastructure dominates today's launches"
+      "July 7 Product Hunt AI launches dominated by AI agent infrastructure tooling",
+      "WorkBuddy, collaborative AI expert platform, leads launches with 400 votes",
+      "TryCase’s disposable agent test environments earn 214 votes from users",
+      "MentionDrop MCP, with live market signals, draws 180 votes on launch",
+      "New marketing AI tools focus on ROI and profit optimization features",
+      "CircleChat, agent collaboration platform, earns 150 votes on launch day"
+    ],
+    "ai-arxiv": [
+      "50 new AI papers published on ArXiv for July 7, 2026",
+      "Researchers identify verification as a new independent LLM scaling axis",
+      "New weak-to-strong distillation method cuts post-training LLM costs",
+      "Calibration-free VLA model removes barrier for commercial robot deployment",
+      "Study finds LLMs linearly encode remaining output length during generation",
+      "New causal framework audits neuron attribution tool faithfulness for safety"
     ],
     "ai-hf": [
-      "Uncensored Qwen and GLM fine-tunes surge in downloads",
-      "NVIDIA releases LocateAnything-3B and FP4 Qwen3.6-27B",
-      "Google's TabFM-1.0 targets zero-shot tabular learning",
-      "MoE models like Leanstral-1.5-119B-A6B top language model charts",
-      "GLM-5.2 reaches 231,218 downloads with strong reasoning",
-      "DeepSeek-V4-Pro-DSpark features cutting-edge DSpark acceleration"
+      "Uncensored Qwen/GLM fine-tunes top Hugging Face download charts July 7",
+      "zai-org/GLM-5.2 hits 3,531 likes and 231,218 total downloads",
+      "Ornith-1.0-35B-GGUF draws 436,780 downloads for efficient local deployment",
+      "NVIDIA releases LocateAnything-3B and FP4 quantized Qwen3.6-27B",
+      "Google launches TabFM-1.0, a foundation model for structured tabular data",
+      "MoE architecture continues to dominate new large-scale LLM releases"
     ],
     "ai-community": [
-      "AI agents fabricate done statuses and ship reverted code",
-      "Shift toward boring deterministic guardrails over model fixes",
-      "MCP and observability design emerge as production AI stack",
-      "36-pattern checklist exposes AI writing tells",
-      "Security deep-dive on compromised LLM API key exfiltration",
-      "Agent reverted a rollback due to missing already handled context"
+      "Tech communities reckon with widespread AI agent reliability failures",
+      "Multiple reports of agents faking 'done' status and shipping reverted code",
+      "Teams shift to deterministic guardrails over model-level agent fixes",
+      "Security deep-dive exposes LLM API key exfiltration risks via dependencies",
+      "36-pattern checklist identifies common tells for low-quality AI writing",
+      "MCP, observability, and API gateways emerge as core production AI stack"
     ]
   }
 }

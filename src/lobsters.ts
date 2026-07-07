@@ -29,7 +29,7 @@ export interface LobstersData {
 const LOBSTERS_TOP = 20;
 
 /** Tag-based JSON endpoints — Lobste.rs provides these natively. */
-const TAG_URLS = ["https://lobste.rs/t/ai.json", "https://lobste.rs/t/ml.json"];
+const TAG_URLS = ["https://lobste.rs/t/ai.json", "https://lobste.rs/t/hardware.json"];
 
 // ---------------------------------------------------------------------------
 // Response type

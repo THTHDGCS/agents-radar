@@ -49,11 +49,11 @@ export function buildTrendingPrompt(data: TrendingData, dateStr: string, lang: L
         : "（无搜索结果）";
 
   if (lang === "en") {
-    return `You are a technical analyst focused on the AI open-source ecosystem. The following is ${dateStr} GitHub AI-related trending repository data. Please filter for AI relevance, categorize, and analyze trends.
+    return `You are a technical analyst focused on the embodied intelligence, VLA (Vision-Language-Action), and robotics ecosystem. The following is ${dateStr} GitHub trending repository data related to robotics and embodied AI. Please filter for relevance, categorize, and analyze trends.
 
 ## Data Sources
 - **Trending List** (github.com/trending, today's stars most reliable): Real-time hot list with today's new stars
-- **Topic Search** (GitHub Search API, topic tags): AI-related projects active in last 7 days, grouped by topic
+- **Topic Search** (GitHub Search API, topic tags): Robotics/embodied-AI/VLA projects active in last 7 days, grouped by topic
 
 ---
 
@@ -62,25 +62,25 @@ ${trendingSection}
 
 ---
 
-## AI Topic Search Results (${data.searchRepos.length} repositories, deduplicated)
+## Topic Search Results (${data.searchRepos.length} repositories, deduplicated)
 ${searchSection}
 
 ---
 
-Generate a structured AI Open Source Trends Report in English:
+Generate a structured Embodied Intelligence & Robotics Trends Report in English:
 
-**Step 1 (Filter)**: From the above data, select projects clearly related to AI/ML (exclude unrelated general tools, frontend frameworks, games, etc.). Skip non-AI trending repos.
+**Step 1 (Filter)**: From the above data, select projects clearly related to embodied intelligence, VLA, robotics, manipulation, locomotion, or robot learning (exclude unrelated general tools, web frameworks, games, etc.). Skip irrelevant trending repos.
 
 **Step 2 (Categorize)**: Group filtered projects into these categories (a project can belong to multiple; pick the primary one):
-- 🔧 AI Infrastructure (frameworks, SDKs, inference engines, dev tools, CLI)
-- 🤖 AI Agents / Workflows (agent frameworks, automation, multi-agent systems)
-- 📦 AI Applications (specific apps, vertical solutions)
-- 🧠 LLMs / Training (model weights, training frameworks, fine-tuning tools)
-- 🔍 RAG / Knowledge (vector databases, retrieval-augmented generation, knowledge management)
+- 🤖 Robot Frameworks / SDKs (control, simulation, planning, ROS, motion)
+- 🧠 VLA / Foundation Models (vision-language-action models, imitation learning, RL policies)
+- 🦾 Manipulation & Grasping (dexterous hands, grasp generation, contact-rich tasks)
+- 🚶 Locomotion & Navigation (legged robots, humanoid, SLAM, path planning)
+- 📦 Embodied Applications (sim2real, teleoperation, autonomous systems, deployments)
 
 **Step 3 (Output Report)** with these sections:
 
-1. **Today's Highlights** — 3-5 sentences on the most noteworthy AI open-source developments today
+1. **Today's Highlights** — 3-5 sentences on the most noteworthy embodied AI / robotics developments today
 
 2. **Top Projects by Category** — For each category, list 3-8 representative projects, each with:
    - Project name (with link)
@@ -88,9 +88,9 @@ Generate a structured AI Open Source Trends Report in English:
    - One sentence: what it is and why it's worth attention today
 
 3. **Trend Signal Analysis** — 200-300 words, distill from today's hot list:
-   - Which type of AI tool is getting explosive community attention?
+   - Which area of embodied AI / robotics is getting explosive community attention?
    - Any new tech stacks or directions appearing for the first time?
-   - Connection to recent LLM releases / industry events
+   - Connection to recent VLA / humanoid / robotics industry events
 
 4. **Community Hot Spots** — Bullet list of 3-5 specific projects or directions worth developer focus, with brief reasoning
 
@@ -98,11 +98,11 @@ Style: English, professional and concise, must include GitHub links for every pr
 `;
   }
 
-  return `你是一位专注于 AI 开源生态的技术分析师。以下是 ${dateStr} 的 GitHub AI 相关热门仓库数据，请进行 AI 相关性筛选、分类和趋势分析。
+  return `你是一位专注于具身智能、VLA（视觉-语言-动作）和机器人领域的技术分析师。以下是 ${dateStr} 的 GitHub 机器人与具身智能相关热门仓库数据，请进行相关性筛选、分类和趋势分析。
 
 ## 数据说明
 - **Trending 榜单**（github.com/trending，今日 stars 数最可信）：今日实时热榜，含今日新增 stars
-- **主题搜索**（GitHub Search API，topic 标签）：7天内活跃的 AI 相关项目，按主题分类
+- **主题搜索**（GitHub Search API，topic 标签）：7天内活跃的机器人/具身智能/VLA 项目，按主题分类
 
 ---
 
@@ -111,25 +111,25 @@ ${trendingSection}
 
 ---
 
-## AI 主题搜索结果（共 ${data.searchRepos.length} 个仓库，已去重）
+## 主题搜索结果（共 ${data.searchRepos.length} 个仓库，已去重）
 ${searchSection}
 
 ---
 
-请生成一份结构清晰的《AI 开源趋势日报》，要求：
+请生成一份结构清晰的《具身智能与机器人开源趋势日报》，要求：
 
-**第一步（过滤）**：从以上数据中筛选出与 AI/ML 明确相关的项目（排除与 AI 无关的通用工具、前端框架、游戏等），对于 Trending 榜单中的非 AI 项目直接略去。
+**第一步（过滤）**：从以上数据中筛选出与具身智能、VLA、机器人、操作、运动控制、机器人学习明确相关的项目（排除无关的通用工具、前端框架、游戏等），对于 Trending 榜单中的无关项目直接略去。
 
 **第二步（分类）**：将筛选后的项目按以下维度分类（一个项目可归入多类，优先归入最主要类别）：
-- 🔧 AI 基础工具（框架、SDK、推理引擎、开发工具、CLI）
-- 🤖 AI 智能体/工作流（Agent 框架、自动化、多智能体）
-- 📦 AI 应用（具体应用产品、垂直场景解决方案）
-- 🧠 大模型/训练（模型权重、训练框架、微调工具）
-- 🔍 RAG/知识库（向量数据库、检索增强、知识管理）
+- 🤖 机器人框架/SDK（控制、仿真、规划、ROS、运动）
+- 🧠 VLA/基础模型（视觉-语言-动作模型、模仿学习、强化学习策略）
+- 🦾 操作与抓取（灵巧手、抓取生成、接触富集任务）
+- 🚶 运动与导航（足式机器人、人形机器人、SLAM、路径规划）
+- 📦 具身应用（sim2real、遥操作、自主系统、落地部署）
 
 **第三步（输出报告）**，包含以下部分：
 
-1. **今日速览** — 3~5 句话概括今日 AI 开源领域最值得关注的动向
+1. **今日速览** — 3~5 句话概括今日具身智能与机器人领域最值得关注的动向
 
 2. **各维度热门项目** — 每个维度列出 3~8 个代表项目，每项包含：
    - 项目名（附链接）
@@ -137,9 +137,9 @@ ${searchSection}
    - 一句话说明：这个项目是什么，为什么今天值得关注
 
 3. **趋势信号分析** — 200~300 字，从今日热榜中提炼：
-   - 哪类 AI 工具正在获得社区爆发性关注？
+   - 哪类具身智能/机器人方向正在获得社区爆发性关注？
    - 有无新兴技术栈或方向首次登榜？
-   - 与近期大模型发布/行业事件的关联
+   - 与近期 VLA/人形机器人/具身智能行业事件的关联
 
 4. **社区关注热点** — 以 bullet 形式列出 3~5 个值得开发者重点关注的具体项目或方向，给出简短理由
 
