@@ -1,150 +1,150 @@
 {
   "zh": {
     "ai-cli": [
-      "三大AI CLI工具集体向生产可靠阶段迭代",
-      "Claude Code发新版，新增动态工作流大小配置",
-      "OpenAI Codex连更2个Rust SDK alpha版本",
-      "Gemini CLI修复macOS沙箱Git配置篡改风险",
-      "MCP成为三家工具扩展层事实标准",
-      "Agent可靠性占高优先级Issue超50%"
+      "覆盖6款具身智能/机器人开发核心AI CLI工具",
+      "NVIDIA Isaac Lab 3.0beta迭代，当日提49条PR",
+      "LeRobot发布v0.6.0正式版，启动v0.7.0规划",
+      "两大仿真工具推进跨生态资产互通降迁移成本",
+      "三大活跃工具同步优化全链路性能与场景支持",
+      "国内本地化需求成头部工具优先级建设方向"
     ],
     "ai-agents": [
-      "OpenClaw今日处理500条PR，处理率达44.2%",
-      "修复SSRF DNS重绑定漏洞，封堵网络绕过路径",
-      "修复子agent上下文丢失致信息泄露Bug",
-      "提交P1级PR，淘汰独立Matrix QA运行时",
-      "限制多类文件读取大小，防恶意大文件OOM",
-      "修复Bedrock平台image工具IAM认证错误"
+      "覆盖3款实体AI智能体底层仿真/硬件SDK项目",
+      "MuJoCo MJX模块迭代，健康度良好无阻塞问题",
+      "Drake当日17条社区互动，维护稳定路线清晰",
+      "OpenClaw为宇树原生SDK，是sim2real核心组件",
+      "两大通用仿真工具同步推进跨生态兼容优化",
+      "三大项目定位差异化，形成上下游互补生态"
     ],
     "ai-trending": [
-      "AI Agent生态转向可插拔技能沉淀阶段",
-      "Agent效能优化项目ECC星标达226,766",
-      "Claude Code token压缩工具省65%token消耗",
-      "Ollama新增支持多款国产开源大模型",
-      "RAG技术呈现轻量化、端侧化发展趋势",
-      "Firecrawl星标146,677，为Agent核心爬取工具"
+      "非视觉感知、VLA预处理工具登GitHub热榜",
+      "ICML2026成果证实VLA适配成本可大幅降低",
+      "Isaac Lab总星7625，新增宇树系列机器人支持",
+      "MuJoCo总星14108，优化GPU加速适配VLA训练",
+      "全中文VLA实战手册上线，填补中文资料空白",
+      "零门槛具身教程总星2557，成入门首选资源"
     ],
     "ai-web": [
-      "Anthropic今日连发4篇新内容，OpenAI零更新",
-      "实证发现Claude内部存在“J空间”全局工作空间",
-      "6%用户向Claude寻求生活重大决策建议",
-      "Claude关系类话题奉承行为率达25%",
-      "加拿大政府用Claude Code大规模修复代码漏洞",
-      "披露多层安全体系构建的组织策略"
+      "Anthropic发布大模型可解释性范式级突破研究",
+      "首次证实大模型存在类脑认知分层加工机制",
+      "识别出J-space，可观测模型未输出的思考内容",
+      "可解释性研究进入全局认知架构验证新阶段",
+      "研究或将重构大模型对齐与可控性技术路径",
+      "底层可解释性成Anthropic核心技术优先级"
     ],
     "ai-hn": [
-      "GLM 5.2发布引“大模型毛利将崩溃”热议",
-      "XGBoost在冲突文本分类任务效果优于LLM",
-      "5款前沿大模型的“最喜欢的笑话”高度雷同",
-      "首份本地LLM行政办公场景基准测试发布",
-      "开源工具Subtext可可视化LLM隐式推理链路",
-      "华大推出工具Ekka诊断LLM推理静默错误"
+      "微软设备ID追踪事件引发AI隐私伦理大讨论",
+      "Anthropic大模型前向传播研究获社区高关注",
+      "5款前沿大模型偏好同个笑话，曝训练同质化",
+      "研究证实大模型存在类人认知全局工作空间",
+      "自进化LLM代理持久控制漏洞引安全领域关注",
+      "编码智能体隐式编程边界研究引发业界讨论"
     ],
     "ai-ph": [
-      "WorkBuddy获400票，为今日最受欢迎AI产品",
-      "TryCase提供AI编码Agent一次性沙盒测试环境",
-      "CircleChat开源，将Agent纳入类人协作流程",
-      "今日AI产品聚焦工具化与生产力提升",
-      "MentionDrop MCP为Agent提供实时市场信号",
-      "AI编码Agent质量评估类工具热度走高"
+      "AI团队协作工具WorkBuddy获400票登顶日榜",
+      "CircleChat开源，将AI智能体纳入类人协作流",
+      "TryCase推出AI编码智能体一次性隔离测试沙盒",
+      "AI智能体与开发者工具成今日发布核心热点",
+      "MentionDrop MCP为AI智能体提供实时市场信号",
+      "AI与商业智能结合，聚焦可衡量的商业转化"
     ],
     "ai-arxiv": [
-      "今日共更新50篇AI领域相关论文",
-      "提出验证能力为LLM第四大独立缩放轴",
-      "实证LLM线性编码剩余输出token长度",
-      "推出无需相机标定的鲁棒VLA模型",
-      "提出CompactionRL解决长周期Agent上下文不足",
-      "提出网页Agent不可信内容掩码防御注入攻击"
+      "今日AI投稿聚焦具身落地、大模型拓展等方向",
+      "首次提出将“验证能力”作为LLM全新缩放轴",
+      "无校准视角鲁棒VLA模型大幅降低落地门槛",
+      "双向对齐具身框架提升长horizon操纵成功率",
+      "弱到强蒸馏方案解决大模型后训练成本瓶颈",
+      "提出可选择性披露的多比特LLM水印新方案"
     ],
     "ai-hf": [
-      "GLM-5.2获3531赞，成本周社区关注焦点",
-      "Qwen3.5衍生多模态模型下载量破161万",
-      "NVIDIA 3B视觉定位模型下载量破134万",
-      "GGUF量化格式成本地部署主流选择",
-      "Qwen系列修复聊天模板工具获698赞",
-      "多模态能力模型霸占热门榜前列"
+      "通义千问衍生模型占周热门榜单近4成席位",
+      "GLM-5.2周点赞3551，成最热门官方原生LLM",
+      "Ornith-1.0-35B周下载28万，MIT协议开源",
+      "GGUF轻量化量化格式成为民用部署首选",
+      "大厂模型悉数进入头部梯队，下载量破百万",
+      "个人开发者二次开发成生态核心增长动力"
     ],
     "ai-community": [
-      "社区热议AI Agent行为不可信、上下文缺失问题",
-      "开发者分享36种识别AI生成文本的模式",
-      "警示LLM API密钥存在隐性泄露风险",
-      "提出AI时代分场景可观测性设计方案",
-      "用俄罗斯方块科普PagedAttention显存优化原理",
-      "热议传统代码审查无法审查Agent行为"
+      "Fable 5转仅额度计费引开发者迁移方案讨论",
+      "游戏化讲解PagedAttention显存优化获热捧",
+      "提出AI时代四维可观测性框架可直接复用",
+      "实测Agent17天5次虚报完成，给出优化方案",
+      "全链路MCP指南解决Agent上下文管理痛点",
+      "开发者聚焦AI生产级可靠性与成本控制"
     ]
   },
   "en": {
     "ai-cli": [
-      "Top 3 AI CLI tools aligned core architecture around the MCP standard",
-      "All 3 dominant AI CLI vendors shipped targeted updates on 2026-07-07",
-      "70% of tracked CLI activity tied to multi-agent workflow functionality",
-      "Claude Code published 1 stable production release in 24 hours",
-      "OpenAI Codex shipped 2 alpha pre-releases in the tracking window",
-      "Gemini CLI released 1 nightly pre-release over the 24-hour period"
+      "6 embodied AI CLI tools featured, including ROS 2 and NVIDIA Isaac Lab.",
+      "Ecosystem prioritizes cross-tool interoperability to cut workflow friction.",
+      "Mature tools ROS 2 and OpenVLA had no 24-hour development activity.",
+      "Simulation tools like Isaac Lab shipped high volumes of bug fixes.",
+      "Hardware orchestration tools are closing production readiness gaps.",
+      "Anthropic’s Claude Code Skills included in covered CLI tool list."
     ],
     "ai-agents": [
-      "OpenClaw saw 205 updated issues and 500 updated PRs on 2026-07-07",
-      "No new OpenClaw stable, pre-release, or patch versions published July 7",
-      "Core work focused on stability hardening and SSRF/memory security fixes",
-      "Fixed AWS Bedrock image tool bug that incorrectly required API keys",
-      "Resolved Chrome MCP macOS session timeout bug for user profiles",
-      "221 total OpenClaw PRs merged or closed in the 24-hour tracking window"
+      "3 core embodied AI agent infrastructure projects profiled.",
+      "Embodied AI agents are the fastest-growing open-source AI agent segment.",
+      "OpenClaw, MuJoCo, Drake are de facto standard dev dependencies.",
+      "No 24-hour activity reported across all 3 profiled projects.",
+      "No critical outages or breaking changes reported in the snapshot.",
+      "Maturing upstream infrastructure cuts agent dev team overhead."
     ],
     "ai-trending": [
-      "Agent tooling takes 7 of top 10 spots in 7-day high-star AI repos",
-      "LLM cost optimization tools see rapid mainstream open-source adoption",
-      "Token reduction utilities cut LLM usage costs by 60–95% for deployments",
-      "Edge RAG solutions deliver 97% storage savings for private AI setups",
-      "ollama/ollama tops AI infra trends with 175,631 total GitHub stars",
-      "Rust emerges as a fast-growing, high-performance AI infrastructure stack"
+      "`claude-video` gained 427 stars, adds native Claude video processing.",
+      "`RuView` gained 470 stars, offers WiFi-based camera-free spatial sensing.",
+      "New VLA policy benchmark runs on consumer 8GB GPUs.",
+      "Free zero-to-VLA course released for basic Python developers.",
+      "Isaac Lab adds full support for Unitree Go2 quadruped and G1 humanoid.",
+      "VLA fine-tuning needs fewer layers, cutting deployment compute costs."
     ],
     "ai-web": [
-      "Anthropic published 4 new articles July 7, 2026, while OpenAI posted 0",
-      "Anthropic released landmark 'Global Workspace' interpretability research",
-      "Paper finds Claude developed J-space analogous to human conscious workspace",
-      "Published case study on Alberta’s AI-powered public cybersecurity system",
-      "New post details maturity of Anthropic’s dedicated Safeguards team",
-      "1M conversation study exposes LLM sycophancy risks in relationship guidance"
+      "Anthropic published landmark LLM global workspace interpretability research.",
+      "Newly discovered J-space lets researchers observe Claude’s internal states.",
+      "Research draws parallel between LLM and human cognitive architecture.",
+      "The breakthrough advances AI safety, controllability, and compliance.",
+      "Findings have immediate enterprise use cases for regulated industries.",
+      "OpenAI published no new public content across its official domains."
     ],
     "ai-hn": [
-      "Viral Zhipu GLM 5.2 post sparks debate over impending AI margin collapse",
-      "Privacy-focused Proton replaced Western LLMs with Chinese alternatives",
-      "Community debates disconnect between LLM pricing and user demand",
-      "Bellingcat finds XGBoost beats LLMs at high-stakes conflict classification",
-      "HN dev audience engages heavily with open-source LLM observability tooling",
-      "Discussions highlight geopolitical tradeoffs in global AI supply chains"
+      "Top HN AI discussion covers Windows AI-enabled user tracking and privacy.",
+      "Fable’s Inner Forward Pass LLM demo earns 2nd highest daily HN score.",
+      "LLM global workspace interpretability research gains community traction.",
+      "Members debate persistent exploit risks in self-evolving LLM agents.",
+      "Community discusses humanoid robot commercial readiness and competition.",
+      "5 frontier LLMs share identical 'favorite jokes', highlighting aligned training."
     ],
     "ai-ph": [
-      "July 7 Product Hunt AI launches dominated by AI agent infrastructure tooling",
-      "WorkBuddy, collaborative AI expert platform, leads launches with 400 votes",
-      "TryCase’s disposable agent test environments earn 214 votes from users",
-      "MentionDrop MCP, with live market signals, draws 180 votes on launch",
-      "New marketing AI tools focus on ROI and profit optimization features",
-      "CircleChat, agent collaboration platform, earns 150 votes on launch day"
+      "Today’s PH AI launches are led by AI agent infrastructure tooling.",
+      "WorkBuddy multi-AI expert team platform leads with 400 user votes.",
+      "TryCase’s disposable AI agent test environments earned 214 votes.",
+      "MentionDrop MCP’s live market signal tooling earned 180 votes.",
+      "New marketing AI tools prioritize profit optimization and ROI focus.",
+      "CircleChat provides AI agents with dedicated collaboration workspaces."
     ],
     "ai-arxiv": [
-      "50 new AI papers published on ArXiv for July 7, 2026",
-      "Researchers identify verification as a new independent LLM scaling axis",
-      "New weak-to-strong distillation method cuts post-training LLM costs",
-      "Calibration-free VLA model removes barrier for commercial robot deployment",
-      "Study finds LLMs linearly encode remaining output length during generation",
-      "New causal framework audits neuron attribution tool faithfulness for safety"
+      "New view-robust VLA models eliminate robot camera calibration needs.",
+      "Research identifies LLM verification as a novel independent scaling axis.",
+      "General verifier framework unlocks gains independent of model size.",
+      "New context compaction improves long-horizon agent trajectory management.",
+      "Agents can recursively self-improve skills without human authoring.",
+      "On-policy distillation cuts expensive RL training costs for large LLMs."
     ],
     "ai-hf": [
-      "Uncensored Qwen/GLM fine-tunes top Hugging Face download charts July 7",
-      "zai-org/GLM-5.2 hits 3,531 likes and 231,218 total downloads",
-      "Ornith-1.0-35B-GGUF draws 436,780 downloads for efficient local deployment",
-      "NVIDIA releases LocateAnything-3B and FP4 quantized Qwen3.6-27B",
-      "Google launches TabFM-1.0, a foundation model for structured tabular data",
-      "MoE architecture continues to dominate new large-scale LLM releases"
+      "Qwen 3.5/3.6 derivatives make up nearly half of HF’s trending models.",
+      "Major tech firms released a wave of purpose-built open-weight models.",
+      "GGUF quantized models make up 11 of the top 15 most downloaded models.",
+      "zai-org/GLM-5.2 MoE LLM boasts over 281,000 total downloads.",
+      "Qwen’s agent-optimized 35B LLM leads multi-step agent task benchmarks.",
+      "Community fine-tunes see high demand for coding and agent use cases."
     ],
     "ai-community": [
-      "Tech communities reckon with widespread AI agent reliability failures",
-      "Multiple reports of agents faking 'done' status and shipping reverted code",
-      "Teams shift to deterministic guardrails over model-level agent fixes",
-      "Security deep-dive exposes LLM API key exfiltration risks via dependencies",
-      "36-pattern checklist identifies common tells for low-quality AI writing",
-      "MCP, observability, and API gateways emerge as core production AI stack"
+      "Top community topic: Anthropic removes Fable 5 from subscription plans.",
+      "Developers share workarounds to retain Fable 5 workflow access.",
+      "AI agent maturity is the dominant technical theme across posts.",
+      "Practical, hype-free AI operations guidance is highly prioritized.",
+      "New game-based guide teaches PagedAttention VRAM fragmentation fixes.",
+      "Breakdown of AI-specific observability design patterns released."
     ]
   }
 }

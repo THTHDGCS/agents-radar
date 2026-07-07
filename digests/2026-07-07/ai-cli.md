@@ -1,457 +1,406 @@
 # AI CLI 工具社区动态日报 2026-07-07
 
-> 生成时间: 2026-07-07 07:32 UTC | 覆盖工具: 3 个
+> 生成时间: 2026-07-07 09:51 UTC | 覆盖工具: 5 个
 
-- [Claude Code](https://github.com/anthropics/claude-code)
-- [OpenAI Codex](https://github.com/openai/codex)
-- [Gemini CLI](https://github.com/google-gemini/gemini-cli)
+- [ROS 2](https://github.com/ros2/ros2)
+- [NVIDIA Isaac Lab](https://github.com/isaac-sim/IsaacLab)
+- [Genesis](https://github.com/Genesis-Embodied-AI/Genesis)
+- [LeRobot](https://github.com/huggingface/lerobot)
+- [OpenVLA](https://github.com/openvla/openvla)
 - [Claude Code Skills](https://github.com/anthropics/skills)
 
 ---
 
 ## 横向对比
 
-# 主流AI CLI工具横向对比分析报告（2026-07-07）
+# 2026-07-07 机器人/具身智能AI CLI工具生态横向对比分析报告
+---
+
 ## 1. 生态全景
-当前AI CLI工具已完成从代码补全辅助工具到全链路开发代理入口的定位跃迁，以Agent工作流、MCP（模型上下文协议）为核心的技术架构已成为全行业共识。主流工具当前均处于从“尝鲜可用”到“生产可靠”的关键过渡阶段，同步在核心稳定性优化、企业级能力建设、现有开发工具链适配方向密集迭代。跨平台体验一致性不足、Agent执行可靠性缺陷、安全规则与开发效率的平衡，是当前三家厂商共同面临的核心痛点。付费用户与企业客户的需求已成为驱动产品迭代的核心动力，用量可控、权限管理、合规能力的产品权重持续提升。
+当前面向具身智能与机器人开发的AI CLI工具生态正处于分层协同的快速迭代期：底层基础设施（ROS 2）、端到端模型工具（OpenVLA）功能高度收敛，迭代节奏平缓；仿真层工具（Isaac Lab、Genesis）聚焦物理可信度与跨生态兼容，核心能力加速打磨；实机控制层工具（LeRobot）持续拓展硬件生态与全链路效率，不断下探行业入门门槛。全行业已形成三大共同迭代目标：跨工具资产生态互通、多后端适配的性能与一致性、仿真到实机的迁移可靠性。国内开发者的本地化需求（中文社区、文档、硬件适配）已成为头部工具的优先级建设方向，中国市场正成为全球具身智能工具生态的核心增量。
+
+---
 
 ## 2. 各工具活跃度对比
-| 工具名称       | 今日更新Issues情况                     | 今日核心活跃PR数 | 今日发布版本数 | Release核心内容概要                     |
-|----------------|----------------------------------------|------------------|----------------|----------------------------------------|
-| Claude Code    | 未披露总量，筛选Top10高优先级热点，另有10+安全误报专项Issue | 3                | 1              | 新增动态工作流大小配置、工作流全链路遥测属性 |
-| OpenAI Codex   | 共18条更新，覆盖模型缺陷、平台兼容、插件稳定等方向 | 10               | 2              | Rust SDK连续发布2个alpha版本，迭代底层性能、安全、网络能力 |
-| Gemini CLI     | 共50条更新，60%以上为Agent可靠性相关问题 | 10               | 1              | 修复macOS沙箱Git配置篡改风险、现代模型字符串转义丢失问题 |
+| 工具名称               | 当日更新Issues数 | 当日更新PR数 | 当日Release情况       | 核心状态备注                     |
+|------------------------|------------------|--------------|------------------------|----------------------------------|
+| NVIDIA Isaac Lab       | 11               | 49           | 无                     | 3.0beta版本迭代，集中修复回归bug |
+| LeRobot                | 3                | 16           | v0.6.0正式版发布       | 同步启动v0.7.0版本路线图规划     |
+| Genesis                | 4                | 7            | 无                     | 聚焦物理仿真与传感器核心能力打磨 |
+| ROS 2                  | 0                | 0            | 无                     | 过去24小时无活动                 |
+| OpenVLA                | 0                | 0            | 无                     | 过去24小时无活动                 |
+
+---
 
 ## 3. 共同关注的功能方向
-### 3.1 MCP生态标准化与稳定性优化
-- 涉及工具：Claude Code、OpenAI Codex、Gemini CLI
-- 具体诉求：Claude社区要求MCP支持多实例（#44243 Slack多工作区）、权限管理（#75174 Gmail权限）、配置规则澄清；Codex集中爆发MCP进程泄漏、认证过期、沙箱路径失效等稳定性问题；Gemini已落地符合2025版MCP规范的elicitation能力，MCP已成为三家共同的扩展层事实标准。
-### 3.2 Agent工作流可靠性提升
-- 涉及工具：三家全覆盖
-- 具体诉求：Claude聚焦代理并行工作正确性（#75045工作树分支拉取错误）、后台任务防泄漏（#41453安全Stop钩子）；Codex解决工具调用死循环、长任务无限挂死等问题；Gemini核心修复子agent状态上报错误、通用agent卡死等阻断性Bug，Agent可靠性占三家高优先级Issue的50%以上。
-### 3.3 跨平台体验一致性优化
-- 涉及工具：三家全覆盖
-- 具体诉求：Claude存在Windows端Advisor不可用、会话冻结等问题；Codex的Intel macOS设备连续出现核心功能回归，Windows平台问题占比超50%；Gemini存在Linux Wayland浏览器Agent失效、Windows文件锁导致扩展更新失败等问题，非Apple Silicon主流平台的适配不足是全行业共性问题。
-### 3.4 安全机制的平衡与完善
-- 涉及工具：三家全覆盖
-- 具体诉求：Claude集中爆发10+安全过滤误报Issue，拦截合法开发工作；Codex默认启用身份验证引导，暴露安全拦截原因；Gemini收紧沙箱权限（全局Git配置只读）、规划高危操作拦截，三家均在平衡安全防护与开发效率的矛盾。
+三大方向为多工具社区同步推进的核心需求，具体如下：
+1. **跨生态资产生态互通**：涉及Isaac Lab、Genesis两大仿真工具。Isaac Lab当日11条活跃Issue中4条与URDF/MJCF转换器相关，PR层面推进灵巧手任务迁移至Mujoco Menagerie统一资产库；Genesis当日2条核心Bug直接关联USD、MJCF格式加载，重点优化对Isaac Sim生态资产的兼容性。双方共同诉求是打破仿真平台的资产壁垒，降低用户跨平台迁移的重复开发成本，推动行业形成统一的资产标准。
+2. **全链路性能优化与大规模场景支持**：涉及Isaac Lab、Genesis、LeRobot三大活跃工具。Isaac Lab修复3.0beta传感器性能回归问题，优化CI流程将预合并测试时间缩短70%；Genesis新增光线投射器仅返回距离模式，将深度感知场景的缓存与带宽开销降低75%，同时重构触觉传感器架构提升并行计算效率；LeRobot优化训练流程中图像格式反复转换的开销，提速CI文档构建流程。共同诉求是支撑大规模并行仿真、训练场景，降低全链路开发与运行成本。
+3. **中文本地化生态建设**：涉及Isaac Lab、LeRobot。Isaac Lab正式闭环中文微信交流群提案，解决国内开发者GitHub异步沟通成本高的痛点；LeRobot持续推进中文文档翻译，当日更新的PR已完成首页、安装指南等核心文档的简体中文本地化。共同诉求是降低国内开发者的语言与沟通门槛，拓展中国市场的社区规模。
+
+---
 
 ## 4. 差异化定位分析
-| 工具名称       | 功能侧重                                 | 目标用户                                   | 技术路线特点                                 |
-|----------------|------------------------------------------|--------------------------------------------|----------------------------------------------|
-| Claude Code    | Git工作流适配、办公协作类MCP、可观测性、用量管理 | 中大型开发团队、企业付费用户、协作型场景     | 以MCP为核心扩展架构，迭代聚焦高频核心痛点，更新节奏稳健，优先落地工程化协作与企业级特性 |
-| OpenAI Codex   | 底层SDK、模型核心性能、可观测性、企业级身份权限 | 插件开发者、底层集成商、OpenAI生态重度用户   | 绑定GPT系列模型能力，全栈覆盖底层到上层应用，同时迭代C端体验与B端能力，版本更新频繁 |
-| Gemini CLI     | Agent内核可靠性、沙箱安全、AST代码分析、自动内存 | Gemini原生用户、高安全需求团队、代码分析场景 | 深耕Agent执行层内核，深度适配Gemini模型原生能力，当前优先投入Bug修复与评估体系建设，处于内核打磨阶段 |
+| 工具名称               | 功能侧重                                                                 | 目标用户                                                                 | 技术路线                                                                 |
+|------------------------|--------------------------------------------------------------------------|--------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| ROS 2                  | 机器人分布式通信与中间件标准，是全行业机器人开发的底层基础设施             | 全行业机器人开发者，覆盖工业、服务、科研等全场景                           | 走标准化、中立化路线，功能高度收敛，迭代周期长，优先保证稳定性与兼容性     |
+| NVIDIA Isaac Lab       | 工业级大规模GPU加速仿真，主打高保真物理、多后端适配与资产生态整合         | 企业级机器人研发团队、高校高水平科研团队，侧重高端仿真与工业场景落地       | 绑定NVIDIA Omniverse/PhysX技术栈，依托GPU生态主打性能与规模优势，当前迭代3.0beta版本 |
+| Genesis                | 轻量级高可信具身智能仿真，主打物理仿真精度、多传感器拟真与跨平台兼容       | 具身智能科研团队、初创公司，侧重快速迭代与仿真结果的可迁移性               | 自研独立物理引擎，优先兼容第三方标准资产生态，当前处于核心技术打磨阶段     |
+| LeRobot                | 实机机器人训练与部署全链路工具链，主打从数据采集、训练到实机部署的端到端能力 | 机器人入门开发者、教育机构、中小团队，侧重低门槛与硬件生态覆盖             | 依托Hugging Face开源生态，快速适配各类消费级、教育级硬件，降低具身智能入门门槛 |
+| OpenVLA                | 端到端视觉语言动作（VLA）模型的开发与部署工具，主打预训练VLA的复用与微调   | 大模型与具身智能交叉领域的科研人员                                         | 围绕预训练VLA模型做工具化封装，功能相对固化，迭代频率低                   |
+
+---
 
 ## 5. 社区热度与成熟度
-### 5.1 社区热度
-Claude Code社区共鸣度最高，单最高热度Issue（#73125）获373赞、138条评论，远超Codex最高的234赞与Gemini最高的8赞；OpenAI Codex的Issue与PR更新量居中，核心模型问题引发广泛开发者反馈；Gemini CLI的Issue更新量最大（50条），但单Issue互动量较低，说明用户规模处于快速增长期但存量基数较小。
-### 5.2 成熟度排序（从高到低）
-1. **Claude Code**：成熟度最高，核心功能稳定，迭代聚焦已规模化暴露的痛点，无阻断性核心缺陷，已形成明确的付费用户需求体系。
-2. **OpenAI Codex**：成熟度中等，核心模型能力领先，但跨平台回归Bug、插件体系稳定性问题突出，处于从“可用”到“可靠”的过渡阶段。
-3. **Gemini CLI**：成熟度最低，Agent核心逻辑存在大量阻断性Bug（如通用agent卡死），多数用户需禁用子agent临时规避问题，仍处于内核打磨的早期阶段。
+### 社区热度排名（按当日贡献量排序）
+1. **NVIDIA Isaac Lab**：当日贡献量居首，不仅有官方核心团队的密集迭代，还有大量终端用户的问题反馈（如Windows部署、资产配置等），中文社区参与度高，整体社区规模最大。
+2. **LeRobot**：发布核心正式版本，社区贡献覆盖硬件适配、文档翻译、功能优化等多个方向，已有Hiwonder、宇树等第三方硬件厂商主动贡献适配PR，生态吸引力快速提升。
+3. **Genesis**：贡献主要来自核心开发团队，聚焦底层技术模块打磨，用户反馈相对较少，社区规模较小。
+4. **ROS 2、OpenVLA**：当日无活动，属于迭代周期较长的项目，日常贡献量平缓。
+
+### 成熟度与迭代阶段划分
+- **成熟稳定阶段**：ROS 2（底层中间件标准，功能高度收敛，迭代周期以季度/年度为单位）、OpenVLA（工具功能固化，主要更新为模型增量支持）。
+- **大版本迭代阶段**：NVIDIA Isaac Lab（核心迭代3.0beta版本，存在大量回归bug，功能仍在快速迭代，距离正式版发布还有较多优化工作）。
+- **生态拓展阶段**：LeRobot（核心框架已稳定，当前重点拓展硬件生态、多语言本地化，处于快速成长期）。
+- **核心能力打磨阶段**：Genesis（仍在优化碰撞检测稳定性、传感器拟真度等核心模块，功能尚未完全收敛，属于早期迭代阶段）。
+
+---
 
 ## 6. 值得关注的趋势信号
-### 6.1 MCP已成为AI CLI的事实扩展标准
-- 信号：三家工具均将MCP作为核心扩展架构，覆盖连接器开发、权限管理、协议迭代全链路，MCP生态的完善程度直接决定产品的扩展能力边界。
-- 参考价值：开发者开发AI插件、自定义扩展时优先遵循MCP规范，可实现一次开发多平台适配；企业选型时可重点评估工具的MCP生态丰富度与合规性。
-### 6.2 Agent的“可控可靠性”取代“功能丰富度”成为核心竞争维度
-- 信号：三家工具的高优先级Issue中，Agent执行错误、卡死、状态异常等可靠性问题占比均超过50%，安全防护与开发效率的平衡成为核心痛点，用户需求已从“尝鲜功能”转向“生产可用”。
-- 参考价值：开发者选型时避免仅关注功能列表，需重点测试Agent在复杂任务、长工作流下的执行准确率、失败可干预性；AI工具研发者应优先投入资源优化Agent可靠性，而非堆叠功能。
-### 6.3 非主力平台的体验断层成为差异化机会
-- 信号：Windows、Intel macOS、Linux Wayland等平台的适配Bug占三家工具跨平台问题的80%以上，主流厂商对非Apple Silicon平台的测试覆盖不足，大量用户需求未被满足。
-- 参考价值：多平台开发团队选型时需针对自身常用环境做充分POC测试；垂直场景AI CLI工具可聚焦非主力平台的体验优化，实现差异化竞争。
-### 6.4 企业级能力成为付费转化的核心门槛
-- 信号：三家工具均在密集迭代安全审计、可观测性、用量管理、数据导出等企业级特性，付费用户的成本、合规、安全需求已成为驱动产品迭代的核心动力。
-- 参考价值：企业用户选型时需优先评估权限隔离、数据本地化、审计日志等能力，而非单纯比较模型参数；个人开发者可优先选择用量统计透明、成本可控的工具。
+### 核心趋势
+1. **跨平台资产统一将成为核心行业红利**：当前两大仿真工具均将兼容USD、URDF、MJCF等标准格式作为核心迭代方向，主动打通Isaac Sim、MuJoCo等现有生态，未来资产跨平台复用将成为常态，平台锁定风险大幅降低。
+2. **具身智能开发门槛正在快速下探**：LeRobot推出百元级教育机械臂适配、PS手柄遥操作、中文文档，Isaac Lab落地中文技术交流群，反映出行业正在从高端科研向大众普及，硬件、语言、工具门槛持续降低。
+3. **仿真到实机的一致性成为核心竞争壁垒**：仿真工具集中优化碰撞检测精度、传感器噪声拟真，实机工具加速硬件适配与策略标准化，核心都是解决仿真与实机的「Sim2Real Gap」，该能力已成为工具链的核心竞争力。
+4. **本地化生态成为头部工具的必争之地**：国内开发者的需求已从功能层面上升到社区、文档、服务层面，Isaac、LeRobot均将中文本地化作为优先级工作，反映出中国市场已成为全球具身智能的核心增量市场。
+5. **全链路私有化部署需求凸显**：LeRobot推出基于开源VLM的自托管标注工具，替代原有闭源服务，反映出企业级用户对数据安全、自主可控的强需求，可私有化部署将成为工具链的重要选型指标。
+
+### 对开发者的参考价值
+- 技术选型优先选择支持标准资产格式、已有大量实机验证案例的工具栈，避免平台锁定与Sim2Real调试的沉没成本。
+- 中小团队、个人开发者可依托现有开源工具链开展具身智能研发，无需从零搭建全栈基础设施。
+- 国内开发者可积极参与社区本地化贡献，获取优先技术支持，同时可针对国内用户需求开发工具插件，抢占生态红利。
+- 企业用户选型时优先支持全链路私有化的工具栈，避免核心数据集、训练流程依赖第三方服务带来的合规与安全风险。
 
 ---
 
 ## 各工具详细报告
 
 <details>
-<summary><strong>Claude Code</strong> — <a href="https://github.com/anthropics/claude-code">anthropics/claude-code</a></summary>
+<summary><strong>ROS 2</strong> — <a href="https://github.com/ros2/ros2">ros2/ros2</a></summary>
 
-## Claude Code Skills 社区热点
-
-> 数据来源: [anthropics/skills](https://github.com/anthropics/skills)
-
-# Claude Code Skills 社区热点报告（数据截止 2026-07-07）
-
----
-
-## 1. 热门 Skills 排行
-本排行基于仓库PR评论数排序结果，选取关注度最高的7项（含技能新增与核心功能修复）：
-- 【skill-creator 评估体系修复】PR#1298 | 状态：OPEN | 链接：[anthropics/skills#1298](https://github.com/anthropics/skills/pull/1298)
-  功能：修复`run_eval.py`始终返回0%召回率的核心bug，同时解决Windows平台流读取、技能触发检测、并行worker异常问题。
-  社区热点：该bug导致技能描述优化循环完全失效，10+开发者独立复现，对应头号开发者痛点Issue#556，是当前社区最关注的修复项。
-- 【document-typography 文档排版技能】PR#514 | 状态：OPEN | 链接：[anthropics/skills#514](https://github.com/anthropics/skills/pull/514)
-  功能：为AI生成的文档提供排版质量控制，自动修正孤行换行、段首孤立、编号对齐等常见问题。
-  社区热点：覆盖所有文档生成场景的隐性刚需，解决Claude输出文档普遍存在的排版体验问题，用户感知价值极高。
-- 【ODT 开源文档处理技能】PR#486 | 状态：OPEN | 链接：[anthropics/skills#486](https://github.com/anthropics/skills/pull/486)
-  功能：支持OpenDocument格式（.odt/.ods）的创建、模板填充、解析转HTML，适配LibreOffice、ISO标准文档场景。
-  社区热点：填补官方对开源办公格式的支持空白，覆盖大量企业与开源用户的文档处理需求。
-- 【技能质量/安全分析双Meta技能】PR#83 | 状态：OPEN | 链接：[anthropics/skills#83](https://github.com/anthropics/skills/pull/83)
-  功能：从结构、文档、安全等5个维度对Claude Skills进行量化质量评估，同时提供安全审计能力。
-  社区热点：直接回应最高热度安全Issue#492（社区技能冒充官方的信任边界问题），是解决社区技能信任危机的核心方案。
-- 【self-audit 通用输出自检技能】PR#1367 | 状态：OPEN | 链接：[anthropics/skills#1367](https://github.com/anthropics/skills/pull/1367)
-  功能：AI输出交付前的通用质量门禁，先执行机械文件存在性校验，再按危害优先级做四维推理审计，适配所有技术栈。
-  社区热点：解决AI输出低级错误多的全场景痛点，可系统性提升Claude输出的可靠性。
-- 【testing-patterns 全栈测试技能】PR#723 | 状态：OPEN | 链接：[anthropics/skills#723](https://github.com/anthropics/skills/pull/723)
-  功能：提供全栈测试体系化指导，覆盖测试理念（测试奖杯模型）、单元测试（AAA模式）、React组件测试等全流程。
-  社区热点：补全开发场景下高频的测试能力缺口，是开发者群体的核心需求技能。
-- 【color-expert 颜色专业技能】PR#1302 | 状态：OPEN | 链接：[anthropics/skills#1302](https://github.com/anthropics/skills/pull/1302)
-  功能：提供全场景颜色专业能力支持，覆盖ISCC-NBS、RAL等多种颜色命名体系，以及不同场景的色空间选型指导。
-  社区热点：补全设计场景的专业能力缺口，覆盖UI、品牌、可视化等多类设计需求。
-
----
-
-## 2. 社区需求趋势
-基于14条按评论排序的社区Issue，提炼核心需求方向如下：
-1. **技能安全与治理（最高优先级）**
-   核心诉求：明确社区技能与官方技能的身份边界，建立技能权限审计、质量校验标准，补充AI代理的治理类能力。
-   对应Issue：[#492 社区技能信任边界滥用风险](https://github.com/anthropics/skills/issues/492)（34条评论，居所有Issue首位）、[#412 agent-governance技能提案](https://github.com/anthropics/skills/issues/412)
-2. **企业级技能管理能力（高认同度）**
-   核心诉求：提供组织内共享的技能库、一键分享机制，解决多插件安装导致的技能重复占用上下文窗口的问题。
-   对应Issue：[#228 组织级技能共享能力](https://github.com/anthropics/skills/issues/228)（14条评论，7赞）、[#189 插件重复安装问题](https://github.com/anthropics/skills/issues/189)（9赞，居所有Issue点赞首位）
-3. **技能开发工具链优化（开发者核心痛点）**
-   核心诉求：修复skill-creator评估脚本0%召回率的核心bug，解决Windows平台兼容性、UTF-8多字节字符处理错误等问题，保障技能创建流程的可用性。
-   对应Issue：[#556 run_eval.py 0%触发率bug](https://github.com/anthropics/skills/issues/556)（12条评论，7赞）、[#1061 Windows平台兼容性问题](https://github.com/anthropics/skills/issues/1061)
-4. **通用生产力与专业能力补全**
-   核心诉求：补充文档全链路能力（排版、多格式支持）、输出质量自检、设计/企业软件等专业领域能力，提升Claude的全场景生产力。
-   对应Issue：[#1329 compact-memory技能提案](https://github.com/anthropics/skills/issues/1329)
-5. **生态集成能力**
-   核心诉求：实现Skills与AWS Bedrock的兼容、将Skills暴露为标准MCP接口、支持与SharePoint等企业系统的集成。
-   对应Issue：[#29 Bedrock兼容需求](https://github.com/anthropics/skills/issues/29)、[#16 Skills暴露为MCP接口](https://github.com/anthropics/skills/issues/16)、[#1175 SharePoint集成需求](https://github.com/anthropics/skills/issues/1175)
-
----
-
-## 3. 高潜力待合并 Skills
-以下PR对应社区核心痛点、讨论活跃，大概率近期合并落地：
-1. [PR#1298 skill-creator评估体系修复](https://github.com/anthropics/skills/pull/1298)：解决头号开发者痛点，修复后将直接盘活整个技能创建的优化流程，优先级最高。
-2. [PR#83 技能质量/安全分析双Meta技能](https://github.com/anthropics/skills/pull/83)：解决最高热度的安全信任问题，是社区治理的核心基础设施。
-3. [PR#514 document-typography文档排版技能](https://github.com/anthropics/skills/pull/514)：全场景覆盖文档用户体验优化，落地后用户感知价值极高。
-4. [PR#486 ODT开源文档处理技能](https://github.com/anthropics/skills/pull/486)：填补开源办公格式的官方支持空白，覆盖大量企业用户需求。
-5. [PR#1367 self-audit通用输出自检技能](https://github.com/anthropics/skills/pull/1367)：全场景适配，可系统性提升Claude输出的可靠性。
-6. [PR#509 贡献指南文档](https://github.com/anthropics/skills/pull/509)：解决社区贡献流程不清晰的问题，将直接提升仓库25%的社区健康分，完善社区协作基础。
-
----
-
-## 4. Skills 生态洞察
-**一句话总结核心诉求**：当前Claude Code Skills社区最集中的诉求是优先修复技能创建工具链的基础可用性bug，同时建立社区技能的安全信任体系与企业级共享机制，逐步补全覆盖开发、文档、设计场景的通用专业能力与生态集成能力。
-
----
-
-# Claude Code 社区动态日报（2026-07-07）
-数据来源：[github.com/anthropics/claude-code](https://github.com/anthropics/claude-code)
-
----
-
-## 1. 今日速览
-今日Claude Code发布v2.1.202版本，新增动态工作流大小配置与遥测追踪属性；跨平台高赞BUG#73125（AskUserQuestion 60秒无响应）正式关闭，同时社区集中爆发10+条安全过滤误报Issue，覆盖云IAM、调试工具开发等合法场景；PR方面聚焦插件钩子安全、MCP配置澄清与Git工作流规范化。
-
----
-
-## 2. 版本发布
-### v2.1.202（2026-07-07）
-[Release 链接](https://github.com/anthropics/claude-code/releases/tag/v2.1.202)
-核心更新：
-1. 在`/config`中新增**Dynamic workflow size**设置，可控制动态工作流的代理数量规模（小/中/大），为建议性规则而非强制上限
-2. 为遥测数据新增`workflow.run_id`与`workflow.name`两个OpenTelemetry属性，便于工作流全链路追踪
-
----
-
-## 3. 社区热点 Issues（Top 10）
-按社区关注度、影响范围、时效性筛选：
-| 编号 | 状态 | 核心问题 | 重要性/社区反应 | 链接 |
-|------|------|----------|----------------|------|
-| #73125 | 已关闭 | AskUserQuestion工具60秒无响应后自动继续，无用户输入 | 跨平台核心交互BUG，社区关注度最高（138评论、373赞），关闭标志高频痛点解决 | [链接](https://github.com/anthropics/claude-code/issues/73125) |
-| #44243 | 开放 | 内置Slack MCP连接器仅支持单工作区 | 跨团队/顾问用户刚需，长期高关注（31评论、64赞），属于MCP生态核心增强需求 | [链接](https://github.com/anthropics/claude-code/issues/44243) |
-| #73487 | 开放 | AskUserQuestion工具60秒空闲后自动选默认选项，无法配置/禁用 | #73125衍生问题，仍影响Windows用户，社区呼吁配置化（8评论、8赞） | [链接](https://github.com/anthropics/claude-code/issues/73487) |
-| #73365 | 开放 | Windows端Fable 5 Advisor（基于Opus 4.8）全会话不可用 | Windows端核心模型功能BUG，高赞（24赞、8评论），影响专业用户代码辅助能力 | [链接](https://github.com/anthropics/claude-code/issues/73365) |
-| #75119 | 开放 | 安全过滤误报，拦截合法云IAM策略配置工作 | 今日集中爆发的安全规则问题首条（Sonnet 5模型误报），直接中断合法工作 | [链接](https://github.com/anthropics/claude-code/issues/75119) |
-| #75045 | 开放 | 工作树隔离的子代理从默认分支而非当前HEAD拉取代码 | 影响代理并行工作的正确性，浪费计算资源，属于核心工作流BUG | [链接](https://github.com/anthropics/claude-code/issues/75045) |
-| #75174 | 开放 | Windows端Gmail MCP连接器权限不足，读/写操作失败且重连无法更新权限 | MCP办公场景核心BUG，影响开发者邮件协作效率 | [链接](https://github.com/anthropics/claude-code/issues/75174) |
-| #48181 | 开放 | macOS端GDScript（Godot引擎）文件无语法高亮 | 游戏开发领域小众但明确的需求，反映对 niche 开发语言的支持不足（6评论、6赞） | [链接](https://github.com/anthropics/claude-code/issues/48181) |
-| #74254 | 开放 | Windows端桌面会话历史列表冻结在2026-06-23，新会话无法显示 | Windows端桌面用户体验核心问题，影响历史会话回溯与管理 | [链接](https://github.com/anthropics/claude-code/issues/74254) |
-| #61012 | 开放 | Pro计划用户无活动时反复触发用量超限 | 付费用户成本痛点，反映用量统计可能存在异常（12评论、4赞） | [链接](https://github.com/anthropics/claude-code/issues/61012) |
-
----
-
-## 4. 重要 PR 进展（共3条，全部为核心价值项）
-今日过去24小时内更新的PR仅3条，均聚焦开发者核心诉求：
-| 编号 | 状态 | 核心功能/修复 | 重要性 | 链接 |
-|------|------|----------------|--------|------|
-| #41453 | 开放 | 新增带PID锁与超时的**安全Stop钩子包装器**示例 | 解决Stop钩子后台任务的runaway进程问题，为插件开发者提供安全的后台任务参考实现 | [链接](https://github.com/anthropics/claude-code/pull/41453) |
-| #74857 | 已关闭 | 澄清插件MCP配置的作用范围 | 明确插件`mcpServers`配置仅用于插件捆绑的MCP服务器，与用户级`~/.claude.json`的MCP允许/拒绝列表分离，解决开发者配置混淆 | [链接](https://github.com/anthropics/claude-code/pull/74857) |
-| #74722 | 开放 | 为`/commit-push-pr`新增**Conventional Branch命名支持** | 自动根据Diff推断分支类型（feature/bugfix等），生成符合Conventional Branch 1.0.0规范的分支名，适配Git最佳实践 | [链接](https://github.com/anthropics/claude-code/pull/74722) |
-
----
-
-## 5. 功能需求趋势
-从所有Issues中提炼社区核心关注方向：
-1. **MCP生态增强**：以#44243（多Slack工作区）、#75174（Gmail权限）为代表，MCP已成为Claude Code扩展能力的核心载体，社区对多实例支持、权限管理、配置清晰度需求迫切
-2. **工作流/代理可靠性**：新版本的动态工作流大小、#75045（工作树隔离分支问题）、#41453（安全Stop钩子）均指向代理并行工作的效率与可靠性优化，是专业开发者核心诉求
-3. **安全规则精准化**：今日集中提交的10+条安全过滤误报Issue（#75119、#75172等），覆盖合法开发场景，社区迫切需要更精准的安全规则避免中断工作流
-4. **跨平台体验一致性**：#73365（Windows Advisor不可用）、#74254（Windows会话冻结）、#74805（macOS内核恐慌）等反映不同平台的功能与稳定性差异较大
-5. **开发工具链适配**：#48181（GDScript语法高亮）、#74722（Conventional Branch支持）等，要求适配更多 niche 开发语言与现有开发流程
-6. **成本与用量管理**：#61012（Pro计划无活动用量超限）反映付费用户对用量统计精准性、告警机制的需求
-
----
-
-## 6. 开发者关注点
-总结高频痛点与核心诉求：
-1. **AskUserQuestion工具的超时逻辑不可配置**：从#73125（已关闭的60秒无响应）到#73487（开放的60秒自动选默认），该工具的超时逻辑是当前最高频痛点
-2. **安全过滤的高误报率**：今日集中爆发的10+条误报Issue均为合法开发工作被拦截，开发者呼吁调优规则、增加白名单/申诉机制
-3. **MCP集成的权限与配置混乱**：#75174（Gmail权限不足）、#74857（MCP配置澄清PR）反映MCP连接器的权限管理与文档存在混乱
-4. **跨平台的功能与稳定性差异**：Windows、macOS、Web端的核心功能（如Advisor）、稳定性（如内核恐慌、会话冻结）差异较大
-5. **Git工作流适配不足**：#75045（工作树隔离从默认分支拉取）、#74722（Conventional Branch支持PR）反映Git集成对现有开发流程的适配不足
-6. **用量统计的精准性**：#61012（Pro计划无活动用量超限）反映付费用户对用量统计的可信度存在质疑
+过去24小时无活动。
 
 </details>
 
 <details>
-<summary><strong>OpenAI Codex</strong> — <a href="https://github.com/openai/codex">openai/codex</a></summary>
+<summary><strong>NVIDIA Isaac Lab</strong> — <a href="https://github.com/isaac-sim/IsaacLab">isaac-sim/IsaacLab</a></summary>
 
-# OpenAI Codex 社区动态日报
-## 日期：2026-07-07
-
----
-
-## 1. 今日速览
-今日OpenAI Codex连续推送2个Rust SDK alpha预发布版本，核心迭代集中在性能埋点、安全体系、网络代理、工程质量等底层能力；社区最受关注的问题为GPT-5.5 Codex推理token固定边界聚类导致的复杂任务性能下降，单Issue获234赞、134条讨论。此外，Intel macOS、Windows平台出现大量兼容性、资源泄漏、功能崩溃类高频反馈，多为近期版本引入的回归问题。
-
----
-
-## 2. 版本发布
-今日OpenAI Codex连续推送2个Rust SDK预发布版本，属于`0.143.0`迭代线：
-1. `rust-v0.143.0-alpha.38`
-2. `rust-v0.143.0-alpha.37`
-
-目前官方未发布详细更新日志，推测为底层依赖升级、性能优化或API适配类迭代，仅供预测试用户使用。
-版本链接：
-<https://github.com/openai/codex/releases/tag/rust-v0.143.0-alpha.38>
-<https://github.com/openai/codex/releases/tag/rust-v0.143.0-alpha.37>
-
----
-
-## 3. 社区热点 Issues（Top 10）
-按影响范围、社区关注度排序：
-
-### 1. GPT-5.5 Codex 推理token聚类导致复杂任务性能下降（#30364）
-- 重要性：模型核心行为缺陷，GPT-5.5的推理输出token集中在516/1034/1552三个固定边界，导致复杂任务推理提前截断、质量下降，影响所有使用该模型的用户。
-- 社区反应：获234赞、134条评论，是近一周社区关注度最高的问题，大量开发者反馈遇到相同的推理截断现象。
-- 链接：<https://github.com/openai/codex/issues/30364>
-
-### 2. Intel macOS 设备 Computer Use 插件不可用（#18404）
-- 重要性：热门功能兼容性缺陷，Intel架构Mac设备即使安装对应版本、启用MCP服务，插件仍显示不可用，阻断了Intel用户使用AI控制本地系统的能力。
-- 社区反应：获14赞、24条评论，大量Intel Mac用户确认问题复现，目前暂无官方修复方案。
-- 链接：<https://github.com/openai/codex/issues/18404>
-
-### 3. 行内LaTeX公式渲染需求已落地（#14985）
-- 重要性：高频用户体验需求，此前Codex仅支持块级LaTeX渲染，不支持行内公式，无法满足数学、科研类用户的日常使用需求。
-- 社区反应：获17赞、8条评论，该Issue已于今日关闭，标志着行内LaTeX支持将在后续版本正式上线。
-- 链接：<https://github.com/openai/codex/issues/14985>
-
-### 4. Intel macOS codex-cli 工具调用触发崩溃（#30306）
-- 重要性：核心CLI功能回归缺陷，Intel Mac设备上codex-cli调用web_search、shell等工具时直接触发SIGTRAP崩溃，导致CLI完全无法使用工具能力，属于已修复问题（#29000）的二次回归。
-- 社区反应：获3赞、6条评论，开发者反馈最新版本仍未修复该问题。
-- 链接：<https://github.com/openai/codex/issues/30306>
-
-### 5. Windows 平台 MCP/app-server 进程泄漏（#28361）
-- 重要性：平台级性能缺陷，Windows上使用MCP服务时，每次请求都会生成新的app-server和子MCP进程，且进程不会被回收，累计可产生数百个僵尸进程，严重占用系统资源。
-- 社区反应：获2条评论，已有多个开发者反馈系统资源占用异常的现象。
-- 链接：<https://github.com/openai/codex/issues/28361>
-
-### 6. Windows 平台 codex exec 任务无限挂死（#31376）
-- 重要性：非交互式任务核心缺陷，Windows上运行长时codex exec任务时，若连接进入CLOSE_WAIT状态，任务不会触发超时也不会重试，直接无限挂死，影响自动化任务的可靠性。
-- 社区反应：今日新提交的问题，已有开发者反馈遇到相同现象。
-- 链接：<https://github.com/openai/codex/issues/31376>
-
-### 7. macOS 临时Rust构建文件占用79GB磁盘问题已修复（#31232）
-- 重要性：资源管理缺陷，Codex生成的临时Rust构建文件不会自动清理，最多可占用近80GB磁盘空间，导致用户系统盘空间不足。
-- 社区反应：该Issue已于今日关闭，官方已修复临时文件自动清理逻辑，用户可升级至最新版本解决。
-- 链接：<https://github.com/openai/codex/issues/31232>
-
-### 8. RTL（从右到左）语言渲染异常（#21563）
-- 重要性：国际化核心需求，波斯语、阿拉伯语等RTL语言与英文、代码混排时显示方向错误，无法正常阅读，影响非英语用户的使用体验。
-- 社区反应：获2赞、7条评论，开发者要求增加语言级的方向强制设置选项。
-- 链接：<https://github.com/openai/codex/issues/21563>
-
-### 9. 工具调用陷入死循环，无法触发并行工具调用（#15642）
-- 重要性：工具调用核心逻辑缺陷，Codex无法识别apply_patch工具，也不会调用multi_tool_use.parallel并行执行工具，反复输出「无可用工具」的错误，导致代码修改类任务无法完成。
-- 社区反应：获1赞、6条评论，多个开发者复现该问题。
-- 链接：<https://github.com/openai/codex/issues/15642>
-
-### 10. Windows 平台 MCP 服务7月以来持续不稳定（#31374）
-- 重要性：插件体系核心缺陷，7月更新后Windows上的MCP服务出现工具暴露不匹配、安全审查异常拦截、调用格式错误、沙箱路径失效等多个问题，导致自定义插件基本不可用。
-- 社区反应：今日新提交的汇总问题，代表了Windows用户对MCP稳定性的集中不满。
-- 链接：<https://github.com/openai/codex/issues/31374>
-
----
-
-## 4. 重要 PR 进展（Top 10）
-按功能价值、影响范围排序：
-
-### 1. 新增对话首字节时间（TTFT）链路追踪埋点（#31368）
-- 内容：在OpenTelemetry链路中新增`codex.turn.ttft` span，导出首字节响应时间的毫秒级指标，方便开发者监控和优化Codex的响应性能。
-- 链接：<https://github.com/openai/codex/pull/31368>
-
-### 2. 默认启用身份验证引导功能（#28772）
-- 内容：将`auth_elicitation`（身份验证引导）功能升级为稳定版并默认启用，用户无需手动开启即可获得统一的身份验证流程，提升整体安全性。
-- 链接：<https://github.com/openai/codex/pull/28772>
-
-### 3. 新增app-server协议向后兼容性检查（#29509）
-- 内容：在PR流程中增加app-server协议的兼容性校验，自动检测破坏向后兼容的修改（如删除方法、字段），保障客户端与服务端的版本兼容性。
-- 链接：<https://github.com/openai/codex/pull/29509>
-
-### 4. 新增系统级代理/PAC路由支持（#27248）
-- 内容：为沙箱网络请求增加系统代理、PAC、WPAD支持，优先使用系统代理配置，解决企业内网环境下Codex无法联网的问题。
-- 链接：<https://github.com/openai/codex/pull/27248>
-
-### 5. 支持自定义指令目录加载全局规则（#28838）
-- 内容：新增`~/.codex/instructions`目录支持，自动递归加载该目录下的所有Markdown指令文件，用户可分文件管理全局自定义规则，无需全部写入AGENTS.md。
-- 链接：<https://github.com/openai/codex/pull/28838>
-
-### 6. 优化对话列表加载速度（#29355）
-- 内容：重构本地对话列表的加载逻辑，通过轻量SQLite投影查询替代全量文件扫描，大幅提升大对话历史场景下的列表加载速度。
-- 链接：<https://github.com/openai/codex/pull/29355>
-
-### 7. 提出本地对话数据导出CLI schema（#29461）
-- 内容：制定了本地对话数据导出的CLI命令规范，支持导出任务信息、对话历史等核心数据，满足用户的本地备份、合规导出需求。
-- 链接：<https://github.com/openai/codex/pull/29461>
-
-### 8. 修复MCP插件认证过期问题（#29474）
-- 内容：修复MCP插件服务启动时缓存认证token、token刷新后仍使用旧凭证的bug，每次请求都从AuthManager读取最新token，避免插件因认证过期不可用。
-- 链接：<https://github.com/openai/codex/pull/29474>
-
-### 9. 暴露无归属网络请求的拒绝原因到对话（#29569）
-- 内容：将Guardian安全模块拦截的无归属网络请求的拒绝原因和上下文写入父对话，解决此前网络请求静默失败、用户无法排查原因的问题。
-- 链接：<https://github.com/openai/codex/pull/29569>
-
-### 10. 支持文件参数使用命名数据URI（#29573）
-- 内容：允许文件参数使用`data:<media-type>;name=<file-name>;base64,<bytes>`格式的命名数据URI，无需依赖本地文件路径，提升第三方插件、云服务集成的灵活性。
-- 链接：<https://github.com/openai/codex/pull/29573>
-
----
-
-## 5. 功能需求趋势
-从今日更新的18条Issue来看，社区需求集中在5个核心方向：
-1. **跨平台兼容性优化**：Intel macOS、Windows平台的适配需求占比超过50%，包括核心功能可用性、进程资源管理、权限适配等，是当前社区最集中的需求方向。
-2. **核心模型能力提升**：GPT-5.5推理token截断导致的复杂任务性能下降问题，成为社区最高优先级的需求，开发者普遍要求优化模型的token分配逻辑，取消固定边界限制。
-3. **工具调用体系稳定性**：MCP插件、工具调用逻辑的稳定性需求持续上升，包括认证过期、调用死循环、格式错误、沙箱路径等问题，直接影响Codex作为AI开发代理的核心价值。
-4. **用户体验与国际化**：行内LaTeX渲染、RTL语言支持、临时文件清理、对话加载速度等体验类需求长期高频，国际化适配的需求也在逐步提升。
-5. **企业级能力建设**：代理支持、权限预设导出、链路追踪、本地数据导出等企业级需求，成为付费团队、企业用户的核心诉求。
-
----
-
-## 6. 开发者关注点
-### 核心痛点与高频需求：
-1. **跨平台回归bug频发**：Intel macOS设备连续出现Computer Use插件不可用、CLI工具调用崩溃等核心功能回归，Windows平台集中出现进程泄漏、权限降级、任务挂死等问题，开发者反馈OpenAI对非Apple Silicon、非主流平台的测试覆盖不足，版本稳定性下降。
-2. **模型推理能力受限**：GPT-5.5的推理token固定聚类问题，导致复杂代码、长逻辑推理任务提前终止，开发者强烈要求官方调整模型的token生成策略，释放模型的推理能力上限。
-3. **MCP插件体系稳定性差**：7月更新后MCP服务的稳定性问题集中爆发，跨平台适配、认证机制、沙箱环境等多个环节出现bug，自定义插件的可用性大幅下降，影响开发者的定制化使用。
-4. **可观测性不足**：开发者普遍反馈Codex的错误提示模糊、性能监控能力不足，比如网络请求被拦截无原因、任务挂死无日志，本次新增的TTFT埋点获得开发者的广泛认可，期待更多可观测性能力的上线。
-5. **资源管理缺陷**：临时文件不自动清理、僵尸进程泄漏等资源管理问题，导致开发者的系统资源被大量占用，影响日常开发效率。
-
-</details>
-
-<details>
-<summary><strong>Gemini CLI</strong> — <a href="https://github.com/google-gemini/gemini-cli">google-gemini/gemini-cli</a></summary>
-
-# Gemini CLI 社区动态日报 | 2026-07-07
-> 数据来源：[github.com/google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)，统计周期：2026-07-06 至 2026-07-07
+# NVIDIA Isaac Lab 社区动态日报（2026-07-07）
 
 ---
 
 ## 今日速览
-今日Gemini CLI发布v0.51.0-nightly版本，重点修复macOS沙箱全局Git配置篡改风险与现代模型字符串转义序列丢失问题。过去24小时社区讨论集中在Agent系统稳定性、安全沙箱机制、自动内存系统三大方向，多个高优先级Bug修复PR完成合并，Agent能力增强、AST感知工具等中长期规划持续获得关注。
+2026年7月7日NVIDIA Isaac Lab无新版本发布，社区当日共更新11条Issue、49条PR，核心围绕3.0beta版本的bug修复、物理后端适配与生态建设推进。其中中文社区交流群组建提议正式闭环，国内开发者将获得更便捷的技术交流渠道。开发侧当日集中落地了传感器性能优化、URDF嵌套结构适配等核心修复，同时收到多起Windows平台安装、资产路径配置的用户反馈。
 
 ---
 
-## 版本发布
-### v0.51.0-nightly.20260707.g15a9429b6
-今日发布的 nightly 版本包含两项核心修复：
-1.  **macOS沙箱安全加固**：将用户全局`~/.gitconfig`设为沙箱内只读，避免沙箱进程通过篡改Git配置（如别名、钩子路径）触发恶意命令执行，PR：[#28221](https://github.com/google-gemini/gemini-cli/pull/28221)
-2.  **字符串转义逻辑修复**：针对Gemini 2.x/3.x等现代模型，保留字符串字面量中的`\n`/`\t`等转义序列，解决写文件时转义符被转换为实际字符导致代码、配置文件损坏的问题，PR：[#28299](https://github.com/google-gemini/gemini-cli/pull/28299)
+## 社区热点 Issues（共10条）
+以下为当日最值得关注的社区问题，按影响范围与优先级排序：
+1. **#6318 [开放] 本地资产配置后`ISAAC_NUCLEUS_DIR`仍指向Nucleus云端点**
+   重要性：本地部署的高频配置问题，直接影响离线环境、低带宽环境的Isaac Lab使用，是新手部署的核心踩坑点。
+   社区反应：已有2条开发者评论，等待官方排查配置同步逻辑。
+   链接：https://github.com/isaac-sim/IsaacLab/issues/6318
+2. **#6063 [已关闭] 组建Isaac中文微信交流群提案**
+   重要性：国内社区生态建设的核心进展，解决了中文开发者异步沟通成本高的痛点。
+   社区反应：提案已正式落地，附官方群二维码，为国内开发者提供实时技术交流渠道。
+   链接：https://github.com/isaac-sim/IsaacLab/issues/6063
+3. **#5126 [开放] v3.0 URDF转换器生成的`Geometry`嵌套层级刚体匹配失败**
+   重要性：3.0beta核心功能回归bug，影响所有URDF格式机器人的导入与仿真，导致刚体视图无法正常工作。
+   社区反应：获1名开发者点赞，是当日最受关注的bug类Issue，已有1条技术讨论。
+   链接：https://github.com/isaac-sim/IsaacLab/issues/5126
+4. **#5918 [开放] URDF导入时仅根链接生效刚体属性（禁用重力、接触传感器等）**
+   重要性：隐蔽性极强的功能bug，非根链接的属性失效无任何告警，会直接导致仿真结果与预期不符。
+   社区反应：开发者反馈29自由度机械臂仅根链接应用了配置，目前等待官方修复。
+   链接：https://github.com/isaac-sim/IsaacLab/issues/5918
+5. **#5085 [已关闭] MJCF转换器生成的USD接触传感器失效**
+   重要性：跨生态资产导入的核心bug，打通了MuJoCo生态资产到Isaac Lab的工作流。
+   社区反应：bug已正式修复，解决了MJCF格式机器人导入后接触传感器无数据的问题。
+   链接：https://github.com/isaac-sim/IsaacLab/issues/5085
+6. **#6315 [开放] 重复读取传感器数据会重复执行后端计算（2.3.2版本无此问题）**
+   重要性：3.0beta严重性能回归，大规模仿真场景下传感器访问性能下降超过50%。
+   社区反应：开发者明确对比了2.3.2与3.0beta的逻辑差异，官方已推出对应修复PR。
+   链接：https://github.com/isaac-sim/IsaacLab/issues/6315
+7. **#6328 [开放] Windows平台预编译版安装缺失依赖包**
+   重要性：跨平台部署核心bug，影响所有Windows用户部署3.0beta版本。
+   社区反应：开发者完成干净重装复现问题，确认是官方预编译包的依赖打包遗漏。
+   链接：https://github.com/isaac-sim/IsaacLab/issues/6328
+8. **#6364 [开放] 安装文档Torch版本标注疑问（2.10→2.11？）**
+   重要性：文档准确性问题，会导致新用户安装错误版本的依赖，出现运行时兼容性问题。
+   社区反应：与#6328为同一开发者提交，反映出新用户部署流程的体验断层。
+   链接：https://github.com/isaac-sim/IsaacLab/issues/6364
+9. **#6316 [开放] 无头模式录屏每步触发Kit刷新导致性能下降**
+   重要性：仿真录屏场景的性能bug，影响大规模批量生成演示数据、RL训练录屏的吞吐量。
+   社区反应：开发者定位到重复触发Kit刷新的逻辑，等待官方优化。
+   链接：https://github.com/isaac-sim/IsaacLab/issues/6316
+10. **#6342 [开放] 新增Allegro手在操作物旋转任务提案**
+    重要性：面向灵巧手强化学习的基准任务扩展需求，为开发者提供统一的灵巧手操作算法验证环境。
+    社区反应：提案包含完整的环境设计，已获得官方任务开发团队的初步反馈。
+    链接：https://github.com/isaac-sim/IsaacLab/issues/6342
 
 ---
 
-## 社区热点 Issues（Top 10）
-按优先级、社区讨论热度、用户共鸣度筛选：
-1.  **[OPEN][P1] 子agent达到MAX_TURNS仍上报GOAL成功** [#22323](https://github.com/google-gemini/gemini-cli/issues/22323)
-    重要性：直接影响任务结果可信度，子agent触发最大轮次限制后未完成分析却上报成功，会严重误导用户。
-    社区反应：10条评论为今日最高，多个用户反馈遇到该问题，目前状态为待重测。
-2.  **[OPEN][P1] 通用agent无限卡死** [#21409](https://github.com/google-gemini/gemini-cli/issues/21409)
-    重要性：核心功能阻断性Bug，文件夹创建等简单操作都会触发，仅能通过禁用子agent临时解决。
-    社区反应：获8赞为今日用户共鸣最高的问题，7条讨论集中在复现场景，目前待重测。
-3.  **[OPEN][P2] 零依赖OS沙箱+执行后意图路由，发挥模型原生Bash能力** [#19873](https://github.com/google-gemini/gemini-cli/issues/19873)
-    重要性：Agent执行层的核心特性规划，旨在适配Gemini 3系列原生的Bash工具链使用能力，平衡安全与效率。
-    社区反应：8条讨论聚焦沙箱实现方案与用户体验的平衡，是长期迭代方向。
-4.  **[OPEN][P1] 鲁棒的组件级评估体系** [#24353](https://github.com/google-gemini/gemini-cli/issues/24353)
-    重要性：质量保障核心EPIC，用于支撑Agent各模块的迭代效果验证，目前已有76个行为测试用例。
-    社区反应：7条讨论聚焦评估覆盖度与自动化运行流程，是企业级落地的核心依赖。
-5.  **[OPEN][P2] AST感知文件读写与搜索效果评估** [#22745](https://github.com/google-gemini/gemini-cli/issues/22745)
-    重要性：代码库分析场景的核心优化方向，可减少Agent调用轮次、降低Token损耗、提升代码操作准确率。
-    社区反应：7条讨论聚焦技术选型与效果验证方案，获1名用户点赞支持。
-6.  **[OPEN][P1] Shell命令执行完成后仍卡在"等待输入"状态** [#25166](https://github.com/google-gemini/gemini-cli/issues/25166)
-    重要性：核心交互Bug，简单命令执行后仍挂起，严重影响交互流畅度。
-    社区反应：获3名用户点赞，4条讨论集中在复现条件，目前待排查。
-7.  **[OPEN][P2] 自动内存无限重试低信号会话** [#26522](https://github.com/google-gemini/gemini-cli/issues/26522)
-    重要性：自动内存系统核心Bug，低价值会话长期未被标记为已处理，导致后台无限重试浪费资源。
-    社区反应：5条讨论聚焦重试逻辑优化与低价值会话过滤规则。
-8.  **[OPEN][P2] Agent应阻止/劝阻破坏性操作** [#22672](https://github.com/google-gemini/gemini-cli/issues/22672)
-    重要性：核心安全需求，避免Agent执行`git reset --force`、DB修改等高风险操作造成不可逆损失。
-    社区反应：获1名用户点赞，3条讨论聚焦风险场景定义与防护策略，是企业用户核心诉求。
-9.  **[OPEN][P2] 软链形式的自定义Agent无法识别** [#20079](https://github.com/google-gemini/gemini-cli/issues/20079)
-    重要性：自定义生态易用性Bug，用户常用软链跨设备同步自定义Agent配置，该问题直接阻断该场景。
-    社区反应：4条讨论聚焦配置加载逻辑修改，目前待补充信息。
-10. **[OPEN][P1] 浏览器子Agent在Wayland环境下失败** [#21983](https://github.com/google-gemini/gemini-cli/issues/21983)
-    重要性：跨平台兼容性Bug，影响Linux桌面用户的浏览器自动化功能使用。
-    社区反应：4条讨论聚焦Wayland环境下的浏览器启动参数适配，目前待重测。
-
----
-
-## 重要 PR 进展（Top 10）
-按影响范围、优先级筛选：
-1.  **[已合并] 修复macOS沙箱中~/.gitconfig为只读** [#28221](https://github.com/google-gemini/gemini-cli/pull/28221)
-    安全修复：将全局Git配置从沙箱可写列表移除，关闭沙箱进程通过篡改Git配置触发恶意代码的风险，已纳入今日nightly版本。
-2.  **[已合并] 保留现代模型字符串字面量中的转义序列** [#28299](https://github.com/google-gemini/gemini-cli/pull/28299)
-    核心Bug修复：禁用针对现代模型的 aggressive 转义逻辑，解决写文件时`\n`/`\t`等转义符被转换为实际字符的问题，已纳入今日nightly版本。
-3.  **[已合并] 清理历史轮次中的模型思考内容，解决思考泄露** [#27971](https://github.com/google-gemini/gemini-cli/pull/27971)
-    核心逻辑修复：过滤历史记录中的模型内部推理内容，避免思考内容泄露到后续轮次导致模型陷入无限循环或模仿思考格式。
-4.  **[已合并] 实现MCP elicitation（form+url）能力** [#28089](https://github.com/google-gemini/gemini-cli/pull/28089)
-    核心特性新增：符合2025-11-25版MCP规范，新增表单、URL两种模式的能力触发，支持更灵活的扩展能力调用。
-5.  **[已合并] 修复a2a-server用户与工作区配置深合并逻辑** [#28094](https://github.com/google-gemini/gemini-cli/pull/28094)
-    配置逻辑修复：将原有的浅合并改为深合并，解决工作区配置中的嵌套字段（如工具、遥测规则）被用户配置覆盖的问题。
-6.  **[已合并] 修复SIGINT取消后仍执行延迟工具调用的问题** [#28096](https://github.com/google-gemini/gemini-cli/pull/28096)
-    交互逻辑修复：用户按下Ctrl+C取消任务后，丢弃延迟到达的工具调用请求，避免取消后后台仍执行操作的异常。
-7.  **[待合并][P1] 修复扩展更新时临时目录清理的瞬态失败** [#27200](https://github.com/google-gemini/gemini-cli/pull/27200)
-    跨平台修复：针对Windows下文件锁导致的扩展更新失败，增加临时目录清理的重试逻辑，目前寻求社区测试帮助。
-8.  **[待合并] 文档修复：用安全测试命令替换`rm -rf /`示例** [#28244](https://github.com/google-gemini/gemini-cli/pull/28244)
-    文档安全优化：修改策略引擎快速开始文档中的测试命令，避免用户误执行高危系统命令。
-9.  **[待合并] 修复write_file/replace工具损坏JSON/IPYNB文件的问题** [#28223](https://github.com/google-gemini/gemini-cli/pull/28223)
-    核心工具修复：针对Jupyter笔记本、JSON文件的写入场景，绕过LLM校正逻辑，避免结构化文件被意外修改损坏。
-10. **[待合并] 自动化版本升级到今日nightly版本** [#28301](https://github.com/google-gemini/gemini-cli/pull/28301)
-    发布流程PR：由机器人自动生成的版本号升级请求，对应今日发布的v0.51.0-nightly版本。
+## 重要 PR 进展（共10条）
+以下为当日核心开发进展，按优先级排序：
+1. **#6370 [已关闭] 避免冗余的传感器后端更新**
+   核心内容：新增缓存同步标记，修复#6315提到的传感器性能回归问题，避免重复读取数据时触发无用的PhysX接口调用。
+   价值：传感器访问性能恢复至2.3.2版本水平，大幅提升大规模仿真场景的吞吐量。
+   链接：https://github.com/isaac-sim/IsaacLab/pull/6370
+2. **#6384 [开放] 按每个刚体构建ContactSensor绑定模式，适配嵌套层级资产**
+   核心内容：重构接触传感器的绑定逻辑，解决URDF转换器生成的嵌套层级资产接触传感器无法初始化的问题。
+   价值：彻底修复#5126、#5918提到的URDF导入后传感器失效问题，兼容Isaac Sim 6.0+的URDF导出格式。
+   链接：https://github.com/isaac-sim/IsaacLab/pull/6384
+3. **#6377 [开放] 为嵌套层级资产的所有链接应用刚体、质量属性**
+   核心内容：修复属性应用的递归逻辑，解决URDF导入时仅根链接生效刚体属性的问题。
+   价值：消除#5918提到的隐蔽bug，保证自定义机器人模型的仿真参数全链路生效。
+   链接：https://github.com/isaac-sim/IsaacLab/pull/6377
+4. **#6324 [开放] 跨后端稳定灵巧手任务**
+   核心内容：适配PhysX、Newton双后端的灵巧手任务，目前Phase2需求完成率达79%，无功能缺口。
+   价值：实现不同物理后端的任务结果一致性，方便开发者切换后端进行精度、性能 tradeoff。
+   链接：https://github.com/isaac-sim/IsaacLab/pull/6324
+5. **#6383 [开放] 灵巧手重定向任务迁移至Mujoco Menagerie资产**
+   核心内容：将Shadow Hand、Allegro Hand的重定向任务从 legacy 资产迁移至官方Mujoco Menagerie统一资产库。
+   价值：统一资产源，提升模型兼容性，打通MuJoCo与Isaac Lab的资产生态。
+   链接：https://github.com/isaac-sim/IsaacLab/pull/6383
+6. **#6366 [开放] 升级Newton版本引入耦合求解器框架**
+   核心内容：将Newton物理后端依赖升级至最新主分支，引入实验性耦合求解器框架。
+   价值：大幅提升铰接体、接触场景的仿真精度，为高自由度机器人仿真提供更优的物理后端选项。
+   链接：https://github.com/isaac-sim/IsaacLab/pull/6366
+7. **#6301 [开放] 升级usd-core至26.5+修复多线程碰撞器崩溃bug**
+   核心内容： bump usd-core版本至26.5以上，修复OpenUSD多线程解析碰撞器时的堆损坏崩溃问题。
+   价值：解决大规模并行仿真场景的随机崩溃问题，提升生产环境部署的稳定性。
+   链接：https://github.com/isaac-sim/IsaacLab/pull/6301
+8. **#6380 [开放] 为Franka抬立方体任务新增Newton后端支持**
+   核心内容：为官方基准任务`Isaac-Lift-Cube-Franka`新增Newton MJWarp物理预设，支持一键切换后端。
+   价值：标志Newton后端成熟度达到生产可用级别，开发者可直接基于官方任务对比不同物理后端的表现。
+   链接：https://github.com/isaac-sim/IsaacLab/pull/6380
+9. **#6346 [开放] CI优化：预合并仅运行必要测试，全量测试后置**
+   核心内容：引入`pytest-testmon`工具，仅运行PR改动影响的测试用例，全量测试在合并后执行。
+   价值：预合并CI时间缩短70%以上，大幅提升社区贡献的开发效率。
+   链接：https://github.com/isaac-sim/IsaacLab/pull/6346
+10. **#6357 [开放] 修复SO-101堆叠任务的夹爪穿透问题**
+    核心内容：优化夹爪碰撞模型与物理参数，解决夹爪穿透 grasped 对象14.88mm的问题。
+    价值：提升工业装配基准任务的仿真精度，保证RL训练出的策略可迁移至真实机器人。
+    链接：https://github.com/isaac-sim/IsaacLab/pull/6357
 
 ---
 
 ## 功能需求趋势
-从本次更新的50个Issue中提炼，社区需求集中在五大方向：
-1.  **Agent系统能力增强**：占高优先级Issue的60%以上，核心需求包括子agent状态准确性提升、自动记忆系统优化、AST感知代码分析能力、自定义Agent生态完善（软链支持、轨迹分享）、浏览器Agent鲁棒性提升等。
-2.  **安全与沙箱机制完善**：企业用户核心诉求，包括沙箱权限收敛、高危操作拦截、自动记忆敏感信息脱敏、日志内容收敛等。
-3.  **交互与性能优化**：核心体验需求，包括终端调整无闪烁渲染、命令执行卡死修复、转义逻辑正确性、外部编辑器退出后终端刷新等。
-4.  **质量与评估体系建设**：长期迭代支撑需求，包括组件级评估体系、行为测试用例扩展、Bug报告上下文完整性提升等。
-5.  **跨平台兼容性优化**：多平台用户核心需求，包括Linux Wayland环境支持、Windows文件锁问题修复、各系统沙箱行为一致性等。
+从当日社区反馈与开发进展来看，当前核心需求方向集中在四类：
+1. **多物理后端兼容与性能优化**：超过30%的活跃Issue与PR围绕PhysX性能回归、Newton后端适配、多GPU兼容性展开，开发者对多后端仿真的结果一致性、吞吐量要求持续提升。
+2. **跨格式资产导入工具完善**：11条活跃Issue中有4条与URDF、MJCF转换器相关，资产导入是自定义机器人仿真的第一步，相关功能的稳定性需求极为迫切。
+3. **RL基准任务场景扩展**：社区持续提出灵巧手操作、工业装配等场景的新任务提案，官方也在推进现有任务向多后端、统一资产源迁移，面向机器人RL的标准化基准环境需求旺盛。
+4. **部署体验与文档优化**：部署、文档类问题占活跃Issue的27%，跨平台安装的易用性、文档的准确性是新用户的核心诉求。
 
 ---
 
 ## 开发者关注点
-从社区反馈中提炼的高频痛点与诉求：
-1.  **Agent稳定性痛点**：通用agent卡死、子agent状态上报错误、命令执行后挂起是最高频反馈，多数用户仅能通过禁用子agent临时解决，大幅降低产品能力。
-2.  **自定义生态痛点**：软链形式的Agent无法识别、子agent轨迹无法分享、配置覆盖不生效等问题，阻碍用户自定义扩展的使用与社区生态沉淀。
-3.  **安全痛点**：用户普遍担心Agent执行破坏性操作、沙箱权限过大导致本地配置被篡改、自动记忆上传敏感内容等风险，安全防护能力是企业采纳的核心门槛。
-4.  **跨平台痛点**：Windows下扩展更新失败、Linux Wayland下浏览器Agent不可用、macOS沙箱权限不一致等问题，导致非macOS用户体验较差。
-5.  **排障调试痛点**：Bug报告缺少子agent上下文、子agent执行过程不透明等问题，导致用户遇到问题时难以自行排查，也无法为维护者提供有效的复现信息。
+当日开发者反馈的核心痛点与高频需求如下：
+1. **3.0beta版本稳定性不足，回归问题频发**：多名开发者反馈从2.3.2升级至3.0beta后出现传感器性能下降、URDF导入失效、录屏逻辑异常等回归问题，且部分问题无告警提示，排查成本极高。
+2. **资产相关流程坑点密集**：资产路径配置与Isaac Sim不同步、URDF/MJCF导入后属性丢失、传感器不生效等问题覆盖全层级开发者，资产调试已成为仿真开发的主要时间开销。
+3. **跨平台部署体验不佳**：Windows平台预编译包依赖缺失、文档依赖版本标注错误等问题，导致Windows用户部署3.0beta的成功率远低于Linux用户。
+4. **中文社区交流需求强烈**：中文交流群提案的快速落地反映出国内开发者对实时、同语言技术交流渠道的迫切需求，异步GitHub Issue已无法满足国内用户的问题排查效率要求。
+5. **多GPU兼容性问题开始显现**：当日新增多GPU环境下物理后端参数兼容性的反馈，预计随着大规模仿真需求的提升，多GPU适配将成为新的热点方向。
 
 </details>
+
+<details>
+<summary><strong>Genesis</strong> — <a href="https://github.com/Genesis-Embodied-AI/Genesis">Genesis-Embodied-AI/Genesis</a></summary>
+
+# Genesis 社区动态日报 | 2026-07-07
+
+---
+
+## 1. 今日速览
+2026年7月7日Genesis社区无新版本发布，过去24小时共更新4条Issue、7条PR，核心进展集中在物理仿真稳定性优化、多格式资产兼容性修复、传感器能力增强三大方向。当前社区重点推进非凸碰撞检测、USD/MJCF资产加载、触觉/视觉传感器的核心能力打磨，多个高优先级修复与功能PR已进入待验证阶段。
+
+---
+
+## 2. 社区热点 Issues
+过去24小时共更新4条Issue，均为核心用户需求与高优先级Bug，全部值得关注：
+### #2949 [OPEN] 功能需求：相机传感器支持返回深度、分割数据
+- 作者：vybhav-ibr | 更新时间：2026-07-07 | 评论：2 | 点赞：0
+- 重要性：当前OpenGL渲染后端下，通过`scene.add_sensor`添加的相机仅支持RGB输出，与`scene.add_camera`接口的能力不一致，既增加了开发者的接口学习成本，也限制了多模态感知仿真任务的配置灵活性。
+- 链接：https://github.com/Genesis-Embodied-AI/genesis-world/issues/2949
+
+### #2719 [CLOSED] 功能需求：游戏引擎集成支持
+- 作者：coursearchiver | 更新时间：2026-07-06 | 评论：1 | 点赞：0
+- 重要性：该需求反映了社区希望将Genesis具身智能能力拓展到游戏生态的诉求，覆盖Unity、Unreal、UPBGE等主流引擎，可推动具身智能技术落地到游戏AI、数字人等新场景。该Issue已关闭，代表官方已对该需求给出明确答复或规划。
+- 链接：https://github.com/Genesis-Embodied-AI/genesis-world/issues/2719
+
+### #3012 [OPEN] Bug：USD解析器无法加载部分Isaac Sim兼容资产
+- 作者：alexis779 | 更新时间：2026-07-06 | 评论：1 | 点赞：0
+- 重要性：USD是工业级3D资产的标准格式，兼容Isaac Sim生态资产可大幅降低用户从其他仿真平台迁移的成本，该Bug会直接阻碍Isaac Sim用户切换到Genesis平台。
+- 链接：https://github.com/Genesis-Embodied-AI/genesis-world/issues/3012
+
+### #3016 [OPEN] Bug：MJCF include引入含默认<mesh>标签的文件时崩溃
+- 作者：jereminuer-0m | 更新时间：2026-07-06 | 评论：0 | 点赞：0
+- 重要性：MJCF是MuJoCo生态的核心场景格式，`<include>`语法是大型场景复用组件的常用方式，该Bug会影响MuJoCo生态用户的场景迁移与开发效率。
+- 链接：https://github.com/Genesis-Embodied-AI/genesis-world/issues/3016
+
+---
+
+## 3. 重要 PR 进展
+过去24小时共更新7条PR，覆盖Bug修复、功能新增、性能优化三类，均为核心模块进展：
+### #3015 [OPEN][BUG FIX] 增强非凸碰撞检测的鲁棒性
+- 作者：duburcqa | 更新时间：2026-07-07
+- 内容：修复非凸碰撞路径下堆叠物体无法稳定静止的问题——原逻辑中次毫米级静止深度下的支撑流形会退化为点/线，导致物体持续晃动、反复扰动相邻物体；本次通过新增零深度支撑接触逻辑解决该问题，提升物理仿真的稳定性。
+- 链接：https://github.com/Genesis-Embodied-AI/genesis-world/pull/3015
+
+### #2960 [OPEN][BUG FIX] 修复Madrona批量渲染器的异构实体渲染问题
+- 作者：Kashu7100 | 更新时间：2026-07-07
+- 内容：修复Madrona批量渲染器会在所有环境中绘制仅存在于部分环境的异构实体的Bug，该问题与此前pyrender光栅器的同类Bug（#2958）对应，修复后可保证多环境批量渲染的正确性，支撑大规模并行仿真。
+- 链接：https://github.com/Genesis-Embodied-AI/genesis-world/pull/2960
+
+### #3017 [OPEN][FEATURE] 优化USD加载的物理属性支持
+- 作者：Milotrince | 更新时间：2026-07-07
+- 内容：修复USD导入的关节相关Bug，新增对USD原生物理参数的支持（包括材质、碰撞过滤、基于密度计算质量），替代此前的PR #3013，将解决USD资产加载时物理属性丢失的问题，提升USD格式的兼容性。
+- 链接：https://github.com/Genesis-Embodied-AI/genesis-world/pull/3017
+
+### #2908 [OPEN][PERF] 为光线投射器新增仅返回距离模式（return_points=False）
+- 作者：Kashu7100 | 更新时间：2026-07-06
+- 内容：此前`Raycaster`/`DepthCamera`会同时存储射线命中点坐标与命中距离，仅需要深度图的场景会浪费3/4的缓存与写入带宽；新增该模式后可大幅降低深度相机类应用的内存占用与计算开销，提升感知仿真性能。
+- 链接：https://github.com/Genesis-Embodied-AI/genesis-world/pull/2908
+
+### #3014 [CLOSED][BUG FIX] 修复非凸碰撞检测中的虚假深度接触与薄壳穿透问题
+- 作者：duburcqa | 更新时间：2026-07-06
+- 内容：修复`convexify=False`模式下两类碰撞检测错误：实心与空心物体碰撞时的穿透计算错误、实心物体离轴接触时的错误弹射问题。该PR已关闭，推测已合入或被更优方案（如PR #3015）替代。
+- 链接：https://github.com/Genesis-Embodied-AI/genesis-world/pull/3014
+
+### #2813 [OPEN][FEATURE] 为触觉传感器新增噪声选项：迟滞、坏像素、探针增益
+- 作者：Milotrince | 更新时间：2026-07-06
+- 内容：为各类触觉传感器新增更贴近真实硬件的噪声模拟：包括`ContactProbe`的施密特触发迟滞、接触深度/运动/接近/弹性触觉单元的粘弹性迟滞、运动触觉单元的空间串扰等，提升触觉仿真的拟真度，缩小仿真与真实硬件的差距。
+- 链接：https://github.com/Genesis-Embodied-AI/genesis-world/pull/2813
+
+### #2922 [OPEN][FEATURE] 重构并优化触觉传感器性能
+- 作者：Milotrince | 更新时间：2026-07-06
+- 内容：重构所有触觉传感器后端的底层架构，通过共享静态块BVH、射线/SDF查询基础设施、接触预过滤与候选几何掩码等优化，大幅提升触觉传感器的计算性能，为高分辨率触觉仿真与大规模并行仿真提供支撑。
+- 链接：https://github.com/Genesis-Embodied-AI/genesis-world/pull/2922
+
+---
+
+## 4. 功能需求趋势
+从过去24小时的Issue反馈来看，社区核心功能需求集中在三大方向：
+1. **传感器能力与接口标准化**：用户期望统一相机类传感器的接口能力，支持深度、分割等多模态输出，降低不同场景下的传感器配置与学习成本。
+2. **跨平台生态集成**：社区对Genesis与主流游戏引擎的集成需求明确，希望拓展具身智能技术的落地场景，从工业仿真延伸到游戏AI、数字孪生等领域。
+3. **第三方生态资产兼容**：用户高度关注USD、MJCF等主流3D场景格式的加载兼容性，尤其是与Isaac Sim、MuJoCo等现有流行仿真工具的资产互通能力，减少场景资产的重复开发成本。
+
+---
+
+## 5. 开发者关注点
+结合Issue反馈与PR修复方向，当前开发者的核心痛点与高频需求包括：
+1. **资产迁移障碍**：USD解析器对Isaac Sim生态资产的适配不足、MJCF预处理对默认mesh标签的支持缺失，是用户迁移现有场景时的首要阻碍。
+2. **物理仿真可信度**：非凸碰撞检测的稳定性问题（堆叠晃动、虚假接触、薄壳穿透）会直接影响仿真结果的有效性，是物理仿真模块的核心优化方向。
+3. **大规模仿真性能**：批量渲染的正确性、深度相机/光线投射的冗余开销、触觉传感器的计算效率，是支撑大规模并行具身智能训练的核心性能瓶颈。
+4. **接口体验一致性**：同类功能的不同API输出能力不一致，会增加开发者的学习与调试成本，是后续API迭代需要重点优化的体验问题。
+
+</details>
+
+<details>
+<summary><strong>LeRobot</strong> — <a href="https://github.com/huggingface/lerobot">huggingface/lerobot</a></summary>
+
+# LeRobot 社区动态日报 2026-07-07
+
+---
+
+## 今日速览
+2026年7月7日，LeRobot正式发布v0.6.0正式版本，核心调整为安装依赖拆分等破坏性变更，同步启动v0.7.0版本的社区路线图规划。过去24小时内社区贡献活跃，累计更新3个核心Issue与16个PR，硬件生态适配、多语言文档、训练流程优化是本次更新的核心方向。
+
+---
+
+## 版本发布
+### v0.6.0 正式发布
+- 核心破坏性变更：`pip install lerobot` 不再默认包含数据集、训练相关依赖，用户需根据使用场景安装对应额外依赖（如训练、数据集组件需单独声明）。
+- 官方发布博客：https://huggingface.co/blog/lerobot-release-v060
+- 配套发版规划Issue（已结项）：https://github.com/huggingface/lerobot/issues/3134
+- 发版后已合并版本号 bump 至 v0.6.1 的PR，启动后续补丁迭代：https://github.com/huggingface/lerobot/pull/3957
+
+---
+
+## 社区热点 Issues
+本次统计周期内共更新3个核心Issue，均为社区高优先级规划类内容：
+1. **#3290 中文文档翻译追踪（开放中）**
+   重要性：作为社区多语言本地化的核心追踪项，旨在将LeRobot全量文档翻译为简体/繁体中文，降低中文开发者的使用门槛。
+   社区反应：自2026年4月创建以来累计23条讨论，持续获得中文社区开发者的参与，欢迎翻译贡献与审核反馈。
+   链接：https://github.com/huggingface/lerobot/issues/3290
+2. **#3134 v0.6.0 社区路线图（已关闭）**
+   重要性：v0.6.0版本的核心开发规划追踪Issue，明确了核心团队开发方向与社区贡献范围，是本次版本发布的核心协同载体。
+   社区反应：历时近4个月迭代，累计16条讨论，随v0.6.0正式发布结项。
+   链接：https://github.com/huggingface/lerobot/issues/3134
+3. **#3832 v0.7.0 社区路线图（开放中）**
+   重要性：承接v0.6.0未完成的功能项，是下一个版本开发的核心指引，后续将明确新特性优先级与社区参与方式。
+   社区反应：目前处于初始阶段，欢迎社区开发者提交需求与参与讨论。
+   链接：https://github.com/huggingface/lerobot/issues/3832
+
+---
+
+## 重要 PR 进展
+本次统计周期内共更新16个PR，精选10个核心功能与修复如下：
+1. **#3872 新增Hiwonder HX-30HM舵机（SO-ARM101机械臂）支持**
+   功能：由Hiwonder官方贡献，为其开源6自由度教育/研究级机械臂SO-ARM101提供原生适配，支持配套的高扭矩磁编码总线舵机HX-30HM。
+   链接：https://github.com/huggingface/lerobot/pull/3872
+2. **#3962 新增WebRTCProxyRobot远程机器人支持**
+   功能：实现WebRTC协议的远程机器人操控能力，支持云端运行策略、本地机器人执行动作的分布式架构，解决训练GPU与机器人硬件部署分离的痛点。
+   链接：https://github.com/huggingface/lerobot/pull/3962
+3. **#3907 新增DualShock 4（DS4）游戏手柄遥操作适配**
+   功能：针对SO-101从动机械臂推出无需主动臂的遥操作方案，用户可通过PS4手柄直接采集训练数据，大幅降低入门硬件门槛。
+   链接：https://github.com/huggingface/lerobot/pull/3907
+4. **#3896 优化VLM子任务标注功能**
+   功能：升级子任务标注工具`lerobot-annotate`，支持基于通义千问Qwen3.6-27B开源VLM + vLLM的全自托管标注流程，无需依赖闭源服务即可完成端到端标注，适配Hugging Face Jobs部署。
+   链接：https://github.com/huggingface/lerobot/pull/3896
+5. **#3959 训练性能优化：支持策略声明输入图像格式**
+   功能：允许策略声明自身所需的输入图像格式，避免训练流程中uint8与float32格式的反复转换，减少CPU开销，提升GR00T等模型的训练效率。
+   链接：https://github.com/huggingface/lerobot/pull/3959
+6. **#3491 新增π0.5 v2策略支持**
+   功能：在原有PI05Policy基础上恢复PaliGemma的lm_head实现分层推理，新增双训练头（动作专家+LM头）的配置化训练流程，对齐arXiv:2504.16054论文实现。
+   链接：https://github.com/huggingface/lerobot/pull/3491
+7. **#3616 新增简体中文文档翻译**
+   功能：已完成首页、安装指南、Feetech舵机文档、目录结构的简体中文翻译，是#3290中文翻译追踪Issue的核心落地PR。
+   链接：https://github.com/huggingface/lerobot/pull/3616
+8. **#3827 新增Unitree G1人形机器人SONIC全身控制器支持**
+   功能：拓展人形机器人生态，为宇树G1人形机器人提供原生的SONIC全身控制器适配。
+   链接：https://github.com/huggingface/lerobot/pull/3827
+9. **#3960 修复处理器相对状态映射问题**
+   功能：新增可选的显式状态-动作索引映射配置，兼容原有状态前缀默认逻辑，覆盖pi0/pi0.5等系列处理器的相对动作转换、统计重计算、RTC重锚定流程。
+   链接：https://github.com/huggingface/lerobot/pull/3960
+10. **#3958 CI优化：提速文档构建流程**
+    功能：优化文档构建CI逻辑，缩短开发者PR的验证等待时间，提升协作效率。
+    链接：https://github.com/huggingface/lerobot/pull/3958
+
+---
+
+## 功能需求趋势
+从本次更新的Issue与PR来看，社区核心需求集中在以下方向：
+1. **硬件生态多元化适配**：覆盖更多教育/研究级机器人硬件（机械臂、人形机器人）、消费级控制器、远程分布式部署方案，降低硬件接入与入门成本是核心需求。
+2. **多语言本地化支持**：中文开发者对本地化文档的需求强烈，简繁中文翻译已成为社区长期维护项，预计后续将出现更多小语种的支持需求。
+3. **全流程效率与开放性优化**：从数据集标注、训练流程到CI构建的全链路效率提升，以及工具链的可私有化部署能力（替代闭源服务）是核心优化方向。
+4. **核心策略能力迭代**：对齐顶会论文实现新策略、优化现有策略的兼容性与性能、更新预训练Checkpoint是策略模块的核心需求。
+
+---
+
+## 开发者关注点
+1. **依赖管理冗余与兼容性问题**：v0.6.0的依赖拆分直接回应了开发者对默认安装冗余依赖的痛点，高频的依赖版本自动更新PR也反映了社区对依赖兼容性的高关注度。
+2. **非英语开发者的使用门槛**：中文文档翻译相关的Issue与PR持续获得社区参与，反映了现有英文文档对非英语开发者不友好，多语言覆盖不足是核心痛点。
+3. **硬件适配成本较高**：大量硬件适配PR的出现，说明现有框架的硬件抽象层仍需完善，开发者为自有硬件做适配的成本较高，期待更通用的硬件接入标准。
+4. **工具链的私有化需求**：自托管VLM标注方案的推出，反映了开发者对闭源服务依赖的顾虑，期待数据集标注、训练、推理全流程的可私有化部署能力。
+5. **分布式部署的原生支持缺失**：WebRTC远程机器人适配的需求，反映了大量开发者存在训练GPU与机器人硬件分离的部署场景，原有框架缺乏原生通信层支持。
+
+</details>
+
+<details>
+<summary><strong>OpenVLA</strong> — <a href="https://github.com/openvla/openvla">openvla/openvla</a></summary>
+
+过去24小时无活动。
+
+</details>
+
+---
+*本日报由 [agents-radar](https://github.com/THTHDGCS/agents-radar) 自动生成。*

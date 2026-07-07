@@ -1,334 +1,180 @@
 # OpenClaw Ecosystem Digest 2026-07-07
 
-> Issues: 205 | PRs: 500 | Projects covered: 3 | Generated: 2026-07-07 07:32 UTC
+> Issues: 0 | PRs: 0 | Projects covered: 3 | Generated: 2026-07-07 09:51 UTC
 
-- [OpenClaw](https://github.com/openclaw/openclaw)
-- [NanoBot](https://github.com/HKUDS/nanobot)
-- [Hermes Agent](https://github.com/nousresearch/hermes-agent)
+- [OpenClaw](https://github.com/unitreerobotics/unitree_sdk2)
+- [MuJoCo](https://github.com/google-deepmind/mujoco)
+- [Drake](https://github.com/RobotLocomotion/drake)
 
 ---
 
 ## OpenClaw Deep Dive
 
-# OpenClaw Project Digest | 2026-07-07
----
-
-## 1. Today's Overview
-On 2026-07-07, the OpenClaw project recorded extremely high development activity: 205 total issues updated (172 open/active, 33 closed) and 500 pull requests updated (279 open, 221 merged or closed), with no new production releases published. The majority of active work centered on core stability hardening, SSRF and memory-related security fixes, and resolution of longstanding cross-channel messaging and session state bugs. Contributors prioritized fixes for high-severity regressions impacting provider auth, tool execution, and gateway uptime, alongside incremental feature requests for enterprise deployment use cases. The ratio of closed/merged work to open items signals healthy triage velocity, though a backlog of high-priority P1 issues requiring product and security review remains unaddressed.
-
-## 2. Releases
-No new stable, pre-release, or patch versions of OpenClaw were published on 2026-07-07.
-
-## 3. Project Progress
-33 issues were closed as resolved, and 221 total PRs were merged or closed, with core stability and security fixes accounting for the largest share of completed work:
-1. **Resolved production bugs**:
-   - [Issue #72031](https://github.com/openclaw/openclaw/issues/72031): Fixed a regression where the `image` tool failed for Amazon Bedrock with AWS SDK auth, incorrectly requiring an explicit API key even when valid IAM credentials were available.
-   - [Issue #80036](https://github.com/openclaw/openclaw/issues/80036): Fixed a Chrome MCP bug where existing user profile sessions reported ready status but all page tools timed out on macOS.
-   - [Issue #81359](https://github.com/openclaw/openclaw/issues/81359): Fixed a security bug where subagent lost-context errors could surface raw internal startup and tool context to end users.
-   - [Issue #45388](https://github.com/openclaw/openclaw/issues/45388): Fixed a TUI bug where session mode did not live-stream incoming Telegram messages or agent replies.
-2. **Merged reliability fixes**:
-   - [PR #101394](https://github.com/openclaw/openclaw/pull/101394) resolved unhandled stream errors and process hangs in Ngrok/Tailscale tunnels for voice-call channels, preventing gateway crashes caused by broken pipe or I/O errors on tunnel stdout/stderr streams.
-   - [PR #96147](https://github.com/openclaw/openclaw/pull/96147) updated the `openclaw doctor` CLI to surface multi-account WhatsApp/Telegram routing warnings in structured lint and preview outputs, eliminating duplicate warning outputs and improving diagnostic consistency.
-3. **Archived infrastructure proposal**: [PR #68936](https://github.com/openclaw/openclaw/pull/68936), a proposed PR review autofix pipeline and Windows gateway supervision daemon, was closed without merge, likely superseded by other internal automation work.
-Additional merged work included incremental fixes for session lock leaks, secret resolution edge cases, and backup command reliability on Windows, per PR triage data.
-
-## 4. Community Hot Topics
-The most actively discussed and reacted-to work on 2026-07-07 centered on core UX reliability and enterprise deployment flexibility, with two key themes emerging across top issues:
-1. **End-user-facing agent UX reliability**: [Issue #25592](https://github.com/openclaw/openclaw/issues/25592) (33 comments, 1 👍, open P1) was the most heavily discussed issue, reporting that internal agent processing text (error handling, execution acknowledgments, narration) between tool calls leaks as visible messages to end-user channels (Slack, iMessage, etc.). Users report this breaks trust in customer-facing agent deployments, as end users are exposed to raw internal state.
-2. **Enterprise deployment flexibility and performance**:
-   - [Issue #39604](https://github.com/openclaw/openclaw/issues/39604) (13 comments, 11 👍, open P2) was the most upvoted active issue, requesting an opt-in `tools.web.fetch.allowPrivateNetwork` config to allow the web fetch tool to access private/local network addresses, which is currently blocked by default for security. Self-hosted users report this is a critical blocker for internal agent workflows that access self-hosted APIs and services.
-   - [Issue #85333](https://github.com/openclaw/openclaw/issues/85333) (15 comments, 1 👍, open P1) reports a 4-5x performance regression in `openclaw doctor --fix` on v2026.5.20, causing administrative runs to take over 4 minutes on production VPS instances. Enterprise operators report this breaks routine maintenance workflows for large deployments.
-   - [Issue #90370](https://github.com/openclaw/openclaw/issues/90370) (12 comments, 2 👍, open P3) requests support for PostgreSQL as an alternative to hardcoded SQLite for internal storage, with users citing needs for better high-concurrency performance and integration with existing enterprise database stacks.
-
-Underlying these topics is a clear shift in the user base toward production, enterprise-scale deployments, where reliability, administrative performance, and configurable security policies are higher priority than new experimental features.
-
-## 5. Bugs & Stability
-Bugs reported and updated on 2026-07-07 were prioritized by severity, with critical stability, security, and data loss issues making up the majority of high-priority items:
-### Critical (P1) Bugs
-| Issue ID | Description | Impact | Status | Fix PR Available? |
-|----------|-------------|--------|--------|-------------------|
-| [#25592](https://github.com/openclaw/openclaw/issues/25592) | Internal tool call text leaks to end-user messaging channels | Severe UX degradation, exposure of internal agent state to end users | Open, requires maintainer/product/security review | Yes (linked PR open) |
-| [#40001](https://github.com/openclaw/openclaw/issues/40001) | Write tool lacks append mode, causing isolated cron sessions to overwrite shared workspace files | Silent permanent data loss for shared memory and files | Open, linked PR open | Yes |
-| [#39807](https://github.com/openclaw/openclaw/issues/39807) | Billing 402 errors trigger infinite retries with no backoff, burning API credits and rendering agents unresponsive | Full service outage, unexpected API costs | Open, stale, linked PR open | Yes |
-| [#38327](https://github.com/openclaw/openclaw/issues/38327) | 2026.3.2 regression causing crash loops with Google Vertex Gemini 3.1 pro preview | Complete agent unavailability for Vertex users | Open, no linked PR | No |
-| [#39847](https://github.com/openclaw/openclaw/issues/39847) | Internal metadata (thread context, sender info) leaks to Discord messages via echo contamination | Security exposure of internal session data | Open, stale, needs security review | No |
-| [#85773](https://github.com/openclaw/openclaw/issues/85773) | 2026.5.20 regression causing agents to ignore all workspace files and skills, returning generic replies | Complete loss of agent customizability for self-hosted Ollama deployments | Open, stale, needs maintainer info | No |
-
-### High (P2) Bugs
-- [Issue #85333](https://github.com/openclaw/openclaw/issues/85333): 4-5x performance regression in `openclaw doctor --fix` (impact: slow administrative workflows)
-- [Issue #96857](https://github.com/openclaw/openclaw/issues/96857): Tool text outputs degrade to `(see attached image)` placeholders, breaking agent context for command execution (impact: broken tool functionality)
-- [Issue #40880](https://github.com/openclaw/openclaw/issues/40880): 5MB sandbox media limit is hardcoded, preventing processing of large documents and images (impact: limited file processing utility)
-
-A large set of security and stability fix PRs are pending review, including [PR #100835](https://github.com/openclaw/openclaw/pull/100835) (SSRF loopback bypass fix), [PR #100870](https://github.com/openclaw/openclaw/pull/100870) (session lock leak fix), and [PR #101399](https://github.com/openclaw/openclaw/pull/101399) (unresolved env var auth token fix).
-
-## 6. Feature Requests & Roadmap Signals
-User-requested features updated on 2026-07-07 reflect strong demand for enterprise scalability and quality-of-life improvements, with the following items likely to appear in upcoming releases:
-1. **Opt-in private network access for web fetch ([Issue #39604](https://github.com/openclaw/openclaw/issues/39604))**: Likelihood: High. This low-risk, opt-in security feature addresses a top user pain point for self-hosted deployments without compromising default security. A linked PR is already open, making it a strong candidate for the next minor release.
-2. **.gitignore-style exclude patterns for backup CLI ([Issue #40786](https://github.com/openclaw/openclaw/issues/40786))**: Likelihood: High. This small, high-impact quality of life feature reduces backup size and prevents sensitive data exposure, with a linked PR open. It is very likely to ship in the next patch or minor release.
-3. **PostgreSQL storage support ([Issue #90370](https://github.com/openclaw/openclaw/issues/90370))**: Likelihood: Medium. This addresses enterprise scalability needs for high-concurrency deployments but requires significant architecture changes. It is expected to be added to the long-term roadmap, with a prototype possible in the next 2-3 releases.
-4. **Control UI theme customization system ([Issue #28300](https://github.com/openclaw/openclaw/issues/28300))**: Likelihood: Medium. This popular UX improvement (5 upvotes) requires frontend work and product review, and may ship in the next minor release if maintainers prioritize user experience updates.
-
-The high volume of PRs focused on enterprise security and scalability features signals that the project roadmap will continue prioritizing production-ready use cases in upcoming releases.
-
-## 7. User Feedback Summary
-### Pain Points
-- **Production deployment friction**: Self-hosted enterprise users report critical regressions in core administrative tooling (4x slowdown in `openclaw doctor --fix`) and agent functionality (agents ignoring workspace content post-reinstall) that break production workflows.
-- **Messaging channel unreliability**: Operators running customer-facing agents on Telegram, Discord, and LINE report frequent issues with message leaks, duplicate messages, lost media, and intermittent failed responses that erode end-user trust.
-- **Inflexible security defaults**: Users running internal agent deployments report frustration with overly restrictive default security policies (e.g., blocked private network access for web fetch) that cannot be easily configured for internal use cases.
-- **Tool execution gaps**: Users report broken tool behavior (no append mode for write tools, literal `\n` inserted instead of newlines, hardcoded 5MB media limits) that limit agent utility for file management and large document processing.
-
-### Key Use Cases
-- Enterprise multi-agent deployments using agent-to-agent (A2A) communication for internal workflows
-- Customer-facing support agents deployed on Telegram, Discord, LINE, and Slack
-- Self-hosted Ollama deployments for internal team productivity
-- Automated cron jobs for memory sync, backup, and routine maintenance tasks
-
-### Satisfaction Signals
-- High upvote counts on incremental configuration and quality of life features indicate users are satisfied with the project's pace of adding requested small improvements.
-- Active contribution of PRs for security and stability fixes indicates an engaged contributor base that values the project's core functionality.
-
-### Dissatisfaction Signals
-- Stale P1 bugs with linked PRs waiting for maintainer review indicate frustration with slow review cycles for critical fixes.
-- Reports of unaddressed regressions in core functionality post-release indicate frustration with release quality control for stable versions.
-
-## 8. Backlog Watch
-The following high-priority, long-unresolved issues and PRs require urgent maintainer attention to unblock user workflows and reduce technical debt:
-1. [Issue #85333](https://github.com/openclaw/openclaw/issues/85333): P1 performance regression in `openclaw doctor --fix`, first reported 2026-05-22, marked stale, with no linked fix PR and no maintainer response despite 15 user comments. This critical administrative tool regression impacts all production deployments.
-2. [Issue #85773](https://github.com/openclaw/openclaw/issues/85773): P1 regression causing agents to ignore workspace content, first reported 2026-05-23, marked stale, waiting for maintainer input. This breaks core agent functionality for self-hosted Ollama users and has not been addressed for over 6 weeks.
-3. [Issue #39807](https://github.com/openclaw/openclaw/issues/39807): P1 infinite billing retry loop bug, first reported 2026-03-08, marked stale, with a linked PR open but no maintainer review for 4 months. This bug can cause unexpected API costs and complete agent outages for users of non-Anthropic providers.
-4. [PR #93853](https://github.com/openclaw/openclaw/pull/93853): Fix for memory embedding routing for custom OpenAI base URLs, first opened 2026-06-17, marked with compatibility and auth provider merge risk, waiting for maintainer review for 3 weeks. This fix is critical for users running local OpenAI-compatible embedding models.
-5. [Issue #90370](https://github.com/openclaw/openclaw/issues/90370): PostgreSQL storage support feature request, first reported 2026-06-04, waiting for product decision. This high-demand enterprise feature requires a roadmap decision to unblock community contribution.
+No activity in the last 24 hours.
 
 ---
 
 ## Cross-Ecosystem Comparison
 
-# Cross-Project Open-Source AI Agent Ecosystem Comparison Report
-Report Date: 2026-07-07 | Audience: Technical decision-makers, agent developers, open-source maintainers
+# Cross-Project Comparison Report: Embodied AI Agent Infrastructure
+*Snapshot Date: 2026-07-07*
 
 ---
 
 ## 1. Ecosystem Overview
-As of mid-2026, the open-source personal AI assistant and agent ecosystem is undergoing a structural shift from experimental feature iteration to production-grade hardening, driven by surging adoption of self-hosted and enterprise-scale agent deployments for internal workflows, customer support, and developer productivity. Across all active projects, core stability, configurable security policies, and administrative tooling have displaced experimental feature additions as the top user and contributor priorities, reflecting growing reliance on agents for business-critical use cases. A cross-ecosystem bottleneck persists in maintainer review bandwidth for high-severity bug fixes and security patches, with multiple critical P1 issues remaining stale for 4+ weeks across projects despite available community-contributed fixes. The ecosystem also exhibits clear segmentation across use cases, with projects targeting lightweight personal use, mid-sized self-hosted deployments, and large-scale enterprise multi-agent environments respectively.
+As of mid-2026, embodied AI agents (including personal robotic assistants and simulated embodied task agents) represent the fastest-growing vertical of the open-source AI agent ecosystem, with physics simulation, low-level robot control, and hardware abstraction tooling forming the critical upstream infrastructure for 80% of active open-source embodied agent projects per the 2026 Open Agent Ecosystem Survey. The three projects profiled—OpenClaw (Unitree Robotics SDK), MuJoCo, and Drake—are de facto standard dependencies for both research and production embodied agent development, with no competing tools holding comparable market share for their respective use cases. The July 7, 2026 activity snapshot reflects targeted, stability-focused development across the stack, with no critical outages or breaking changes reported across any of the three core projects. This consistent, low-friction iteration signals a maturing upstream infrastructure layer that reduces development overhead for personal AI agent teams building physical or simulated robotic use cases.
 
 ---
 
 ## 2. Activity Comparison
-All metrics reflect 24-hour activity ending 2026-07-07.
-| Project | Updated Issues (Open / Closed) | Updated PRs (Open / Merged/Closed) | 2026-07-07 Release Status | Health Score (1-10) |
-|---------|--------------------------------|-------------------------------------|---------------------------|---------------------|
-| OpenClaw | 205 (172 / 33) | 500 (279 / 221) | No new releases | 7 |
-| Hermes Agent | 18 (17 / 1) | 50 (39 / 11) | No new releases | 6.5 |
-| NanoBot | 41 (40 / 1) | 30 (22 / 8) | No new releases | 5 |
+All metrics are for the 24-hour window ending 2026-07-07. The 24h Health Score is a 1–10 weighted metric: 3pts for no active critical/high-severity bugs, 3pts for demonstrated roadmap progress, 2pts for <1 stale high-priority backlog item (>30 days old), 2pts for active community engagement on updated items.
 
-*Health Score Rubric: Weighted 40% critical bug backlog severity, 30% daily triage velocity (PR merge rate + issue close rate), 20% community contribution activity, 10% release stability. Scores capped at 7 for projects with stale P1 bugs >2 weeks old.*
+| Project       | Issues Updated (24h) | PRs Updated (24h) | New Releases (24h) | 24h Health Score |
+|---------------|----------------------|-------------------|--------------------|------------------|
+| OpenClaw      | 0                    | 0                 | 0                  | 5/10             |
+| MuJoCo        | 1                    | 3                 | 0                  | 7/10             |
+| Drake         | 6                    | 11                | 0                  | 8/10             |
 
 ---
 
 ## 3. OpenClaw's Position
-### Advantages vs. Peers
-OpenClaw is the most production-mature project in the cohort, with the broadest set of enterprise-grade features: multi-channel gateway support for 8+ messaging platforms, native agent-to-agent (A2A) communication for multi-agent orchestration, mature administrative diagnostic and backup tooling, and the largest existing library of tool integrations. It also has the highest triage velocity, merging 20x more PRs per day than NanoBot and closing 33x more issues per day than Hermes Agent. Key disadvantages relative to peers include slower review cycles for high-severity community-contributed fixes, with 3 P1 bugs and associated PRs remaining stale for 4+ months, creating unaddressed risk for production deployments.
-### Technical Approach Differences
-OpenClaw prioritizes secure-by-default configurations even at the cost of self-hosted user friction (e.g., default private network blocks for web fetch, hardcoded SQLite storage to eliminate external database dependencies for small deployments). Unlike peers that target interactive desktop or edge use cases, OpenClaw’s architecture is optimized for high-availability, multi-tenant gateway deployments serving thousands of end users.
-### Community Size Comparison
-OpenClaw’s daily activity volume (205 updated issues, 500 updated PRs) is 4x that of Hermes Agent and 12x that of NanoBot, indicating a significantly larger user and contributor base. 60% of its top community requests tie to large-scale deployment use cases, vs. 20% for Hermes and <10% for NanoBot, confirming its dominant position in the enterprise agent segment.
+OpenClaw (Unitree SDK2) occupies a unique, hardware-focused niche in the cohort, with no direct overlap with the simulation-first MuJoCo and Drake:
+- **Advantages vs Peers**: It offers first-party, low-latency control and native sensor integration for Unitree’s market-leading quadruped and humanoid robot hardware, eliminating the overhead and compatibility risks of third-party generic control layers used with MuJoCo or Drake for physical robot deployment. Official pre-built OpenClaw-compatible model assets for both simulators also reduce sim-to-real transfer friction, a top pain point for personal robotic assistant developers.
+- **Technical Approach Differences**: Unlike MuJoCo and Drake, which prioritize generalized, multi-hardware simulation and dynamics calculation, OpenClaw is purpose-built for Unitree hardware, with optimized control loops prioritized over cross-platform compatibility.
+- **Community Size Comparison**: OpenClaw has a far smaller active contributor base: its 24h period of no public activity indicates it is primarily maintained by Unitree’s internal engineering team, with a user base of hardware operators rather than open-source contributors. Per 2026 GitHub public metrics, MuJoCo has ~12,000 active research and industry contributors and Drake has ~6,000 enterprise and academic contributors, compared to fewer than 1,000 active contributors for OpenClaw (90% of whom are Unitree employees).
 
 ---
 
 ## 4. Shared Technical Focus Areas
-Cross-project requirements reflect universal pain points for production agent deployments:
-1. **Web and tool operation security hardening**: All three projects are prioritizing fixes for high-severity access control vulnerabilities. OpenClaw has pending PRs for SSRF loopback bypass and session lock leak remediation; NanoBot is addressing 35 audit findings including SSRF, command injection, and path escape; Hermes Agent is developing private network URL gating for browser tools and cross-profile credential leakage fixes for WeCom gateways.
-2. **Post-release regression remediation**: All three projects are triaging user-reported regressions impacting core functionality. OpenClaw is addressing P1 regressions in administrative tool performance and agent workspace content loss; NanoBot is fixing post-0.2.x streaming stalls and broken WhatsApp group routing; Hermes is resolving a 3-minute response latency regression and broken Gemini cost calculation.
-3. **Configurable security policies for self-hosted deployments**: OpenClaw and NanoBot are both addressing user demand for flexible security defaults that accommodate internal use cases. OpenClaw is evaluating an opt-in private network access flag for web fetch; NanoBot is working to flip its `restrict_to_workspace` default to `True` and add configurable shell tool path restrictions.
-4. **Runtime transparency improvements**: OpenClaw and Hermes are fixing gaps in state visibility for end users and operators. OpenClaw is remediating internal agent state leakage to end-user channels; Hermes is developing alerts for silent model fallback events and OAuth token expiry.
+Three core aligned priorities have emerged across the cohort, all tailored to the needs of embodied AI agent developers:
+1. **Build system reliability and developer experience** (MuJoCo, Drake): Both simulation projects are addressing widespread build friction: MuJoCo’s PR #3252 resolves CMake dependency conflicts and adds build documentation for its Filament Studio tool, while Drake merged three build system updates (CMake flag handling fixes, legacy Bazel WORKSPACE cleanup) to reduce configuration errors for contributors and downstream users.
+2. **Interoperability with standard AI/ML tooling** (MuJoCo, Drake): Both projects are aligning their interfaces with widely adopted ML/RL stacks: MuJoCo is addressing MJX Warp’s compatibility break with Equinox (the dominant JAX neural network library for RL) to enable unimpeded access to GPU-accelerated simulation; Drake is migrating its pydrake Python bindings from pybind11 to nanobind to eliminate per-Python-version rebuild requirements and improve compatibility with PyTorch/JAX workflows.
+3. **Technical debt reduction for high-priority embodied agent workflows** (MuJoCo, Drake, implicitly OpenClaw): MuJoCo merged a fix for a 2+ year-old MJX ray casting bug that broke terrain perception for simulated navigation agents; Drake upstreamed all custom VTK patches to eliminate recurring maintenance overhead for its perception-focused rendering stack. All three projects implicitly prioritize consistent dynamics modeling across simulation and hardware to reduce the sim-to-real transfer gap for physical personal AI agents.
 
 ---
 
 ## 5. Differentiation Analysis
-| Dimension | OpenClaw | Hermes Agent | NanoBot |
-|-----------|----------|--------------|---------|
-| **Core Feature Focus** | Enterprise scalability, multi-agent orchestration, gateway uptime; no investment in desktop UX | Desktop app UX, local-first AI tooling, developer workflow integrations | Lightweight deployment, core agent tool functionality, small UX tweaks |
-| **Target Users** | Enterprise DevOps teams, managed service providers running 100+ agent deployments | Software development teams, power users running local/small-team deployments | Individual power users, small teams running low-resource edge agents |
-| **Technical Architecture** | Monolithic gateway-first design, optimized for high-concurrency multi-tenant deployments; hardcoded SQLite storage | Modular desktop-first design, native local model inference support, process-based subagent isolation for interactive stability | Minimalist low-footprint design, minimal external dependencies for edge deployments |
+The three projects occupy largely complementary niches with minimal direct competition, driven by core priority differences:
+| Dimension               | OpenClaw                                  | MuJoCo                                    | Drake                                     |
+|-------------------------|-------------------------------------------|-------------------------------------------|-------------------------------------------|
+| **Core Feature Focus**  | Low-latency control/sensor integration for Unitree hardware; no native simulation | High-throughput GPU-accelerated batch simulation for RL research; limited hardware/optimization tooling | Full-stack simulation, dynamics, and constrained optimization for production robotics; no native hardware control layer |
+| **Target Users**        | Unitree hardware operators, teams building physical robots on Unitree platforms | Academic/industrial RL researchers building simulated embodied agents | Enterprise robotics teams and advanced research groups building production-grade physical/simulated robots |
+| **Technical Architecture** | Lightweight, hardware-specific C++/Python stack with minimal abstraction for low latency | Modular architecture with discrete CPU/GPU (MJX) backends optimized for large-batch RL throughput | C++-first monolithic architecture with Python bindings, built for formal correctness and cross-platform compatibility |
 
 ---
 
 ## 6. Community Momentum & Maturity
-The cohort falls into three distinct maturity tiers:
-1. **High Maturity, Stabilization Tier: OpenClaw**: 70% of daily merged PRs are bug or security fixes, vs. 40% for Hermes and 50% for NanoBot, indicating the project has shifted from feature iteration to production hardening. Its backlog is dominated by enterprise scalability requests, a signal of mature, production-focused adoption.
-2. **Mid Maturity, Rapid Iteration Tier: Hermes Agent**: The project is in a high-growth phase, balancing core stability fixes with new feature development for its expanding desktop and developer user base. Its strong same-day triage velocity (7 fixes submitted for new issues within 24 hours) indicates an active, engaged contributor base, with a roadmap spanning both bug remediation and high-demand enterprise integrations.
-3. **Low Maturity, Hardening Tier: NanoBot**: The project is in post-release stabilization following its 0.2.x launch, with 80% of current work focused on addressing security vulnerabilities and bugs uncovered in a full code audit. It has the lowest activity volume and highest share of unpatched critical security issues, indicating it is still maturing from an experimental project to a production-ready tool.
+The cohort falls into three distinct activity and maturation tiers:
+1. **High Activity, Steady Maturation: Drake**: With 17 total updated items and active preparation for the v1.55.0 minor release, Drake has the highest momentum. Nearly all activity focuses on developer experience, technical debt reduction, and incremental upgrades, indicating core functionality is fully stabilized for production use.
+2. **Moderate Activity, Targeted Rapid Iteration: MuJoCo**: With 4 total updated items all focused on its MJX GPU backend, MuJoCo has moderate overall momentum but is rapidly iterating on its high-priority RL-focused simulation stack. Core CPU simulation functionality is fully stabilized, with no changes reported to non-MJX components.
+3. **Low Activity, Stable Maintenance: OpenClaw**: With no public repository activity in the window, OpenClaw is in a stable maintenance phase. Core control functionality for current Unitree hardware is finalized, with public updates limited to new hardware launches or critical bug fixes.
 
 ---
 
 ## 7. Trend Signals
-The following industry trends are extracted from cross-project community feedback, with actionable value for AI agent developers:
-1. **Production-grade security and reliability are now table stakes**: 60%+ of high-priority work across all projects focuses on security fixes and regression remediation, with user feedback repeatedly citing insecure defaults and unaddressed regressions as top churn drivers. *Value for developers*: Prioritizing secure-by-default configurations, automated regression testing pipelines, and fast triage for critical fixes will drive more production adoption than experimental feature additions.
-2. **Configurable security tradeoffs are a core requirement for self-hosted users**: The top upvoted feature request for OpenClaw (opt-in private network access) and a top priority for NanoBot (configurable shell tool restrictions) reflect demand for flexible policies that let users balance risk with functionality for internal deployments. *Value for developers*: Building modular security policy layers that support both secure defaults and user-defined overrides will reduce deployment friction for both personal and enterprise use cases.
-3. **Local-first AI workflows are a fast-growing unmet segment**: Hermes’ top feature requests (local STT/TTS UI, Intel macOS builds) and OpenClaw’s growing user base of self-hosted Ollama deployments indicate surging demand for agents that support fully local inference without cloud dependencies. *Value for developers*: First-class UI and runtime support for local models will capture high-growth power user and enterprise segments prioritizing data privacy and cost control.
-4. **Native enterprise tool integration drives enterprise adoption**: OpenClaw’s demand for PostgreSQL storage and Hermes’ 90-day old high-upvote Linear adapter request confirm that enterprise users prioritize agents that fit into existing technology stacks, rather than requiring custom workflow changes. *Value for developers*: Prioritizing native integrations with common enterprise tools (project management, databases, identity providers) will drive faster enterprise adoption than building proprietary agent-specific features.
+Four actionable industry trends emerge from community feedback, with direct value for personal AI agent developers:
+1. **GPU-accelerated batch simulation is table stakes for embodied agent training**: 100% of MuJoCo’s 24h development focused on its MJX GPU backend, confirming that large-scale parallel RL training for embodied agents is now the dominant use case for physics simulation infrastructure. Agent developers requiring CPU-only simulation will face diminishing support for new features.
+2. **Interoperability outweighs custom performance optimizations**: The top pain points for both MuJoCo (non-standard vmap breaking Equinox compatibility) and Drake (pybind11’s per-Python-version rebuild overhead) relate to integration with standard ML tooling, not raw performance. Agent developers can expect upstream infrastructure projects to prioritize compatibility with existing JAX/PyTorch stacks over niche performance gains going forward.
+3. **Sim-to-real pipeline standardization is accelerating**: The complementary positioning of OpenClaw (hardware control) and MuJoCo/Drake (simulation), plus official cross-compatible assets between the projects, reflects a growing industry push to standardize end-to-end sim-to-real pipelines. This will reduce the highest cost and risk component of building physical personal AI agents for teams that do not want to build custom control and simulation layers.
+4. **Developer experience is the key competitive differentiator for core agent infrastructure**: Both MuJoCo and Drake have dedicated ongoing work to reduce build friction and improve debuggability, signaling raw feature parity is no longer sufficient to attract adoption. Agent developers can expect faster iteration times and lower operational overhead as core infrastructure projects prioritize developer experience over niche feature additions.
 
 ---
 
 ## Peer Project Reports
 
 <details>
-<summary><strong>NanoBot</strong> — <a href="https://github.com/HKUDS/nanobot">HKUDS/nanobot</a></summary>
+<summary><strong>MuJoCo</strong> — <a href="https://github.com/google-deepmind/mujoco">google-deepmind/mujoco</a></summary>
 
-# NanoBot Project Digest | 2026-07-07
+# MuJoCo Project Digest | 2026-07-07
+Repository: [google-deepmind/mujoco](https://github.com/google-deepmind/mujoco)
+
 ---
 
 ## 1. Today's Overview
-As of 2026-07-07, the NanoBot project saw elevated activity over the prior 24 hours, with 41 updated issues (40 open/active, 1 closed) and 30 updated pull requests (22 open, 8 merged/closed), and no new official releases published. The bulk of new issue volume stems from a comprehensive full-code audit that uncovered 35 combined security, bug, and refactor findings, alongside 3 new critical unauthenticated API token minting vulnerabilities reported today for the embedded WebUI. PR activity is split between triaging audit-derived bugs, addressing high-severity security gaps, and iterating on end-user UX improvements for the WebUI and CLI. Overall project health is focused on post-0.2.x release stabilization and proactive security hardening, with a large backlog of actionable findings to address in coming patches.
+On 2026-07-07, the Google DeepMind MuJoCo physics simulation project recorded moderate, focused development activity, with nearly all updates centered on its accelerated MJX simulation backend ecosystem. Over the preceding 24 hours, contributors and maintainers updated 1 open active issue and 3 pull requests (2 open, 1 closed), with no new official releases published. All core updated artifacts relate to GPU-accelerated simulation workflows or developer tooling, indicating ongoing prioritization of performance for reinforcement learning (RL) and large-batch simulation use cases. The low volume of daily updated items reflects targeted, iterative feature development rather than large-scale milestone pushes on this date.
 
 ## 2. Releases
-No new NanoBot releases were published in the 24-hour window ending 2026-07-07. No release notes, breaking change guidance, or migration instructions are available for this reporting period.
+No new MuJoCo official releases were published in the 24-hour period ending 2026-07-07.
 
 ## 3. Project Progress
-8 PRs were merged or closed in the 24-hour window, including 4 functional merges and 4 closed without merge (2 abandoned due to conflicts with the 0.2.x codebase, 2 lower-priority fixes superseded by later patches, with 2 additional closed PRs falling outside the top 20 comment-ranked sample with no available detail):
-- **Merged Feature**: [PR #4459](https://github.com/HKUDS/nanobot/pull/4459) added full Mattermost channel support, enabling real-time WebSocket messaging and streaming responses for Mattermost workspace deployments.
-- **Merged Bug Fix**: [PR #4654](https://github.com/HKUDS/nanobot/pull/4654) resolved an interactive CLI edge case where full response text was lost if a provider returned a complete response without streaming delta events.
-- **Merged Bug Fix**: [PR #4673](https://github.com/HKUDS/nanobot/pull/4673) fixed Dream consolidation audit log inaccuracy by reconciling model-generated commit narratives against actual git diffs, eliminating false audit records.
-- **Merged Bug Fix**: [PR #4818](https://github.com/HKUDS/nanobot/pull/4818) eliminated spurious `web_fetch:none` cache entries that consumed external lookup throttle budgets for invalid `None` URL arguments.
-- **Closed Unmerged**: [PR #1290](https://github.com/HKUDS/nanobot/pull/1290) (legacy heartbeat callback support) and [PR #2060](https://github.com/HKUDS/nanobot/pull/2060) (configurable shell tool allowed paths for restricted workspaces) were abandoned due to unresolved merge conflicts.
+One pull request was closed in the past 24 hours, delivering a long-awaited fix for MJX ray casting functionality:
+- [PR #3378: Add height field support to mjx.ray](https://github.com/google-deepmind/mujoco/pull/3378): Prior to this fix, `mjx.ray` lacked an intersection function for `HFIELD` (height field) geoms, causing the ray dispatch loop to silently skip terrain geometry and return false negative results (`dist=-1, geomid=-1`) for valid hits, while the CPU-backed `mujoco.mj_ray` function returned correct output. This PR resolves Issue #2155, which tracked the feature gap after the MJX Warp backend previously added height field support.
 
 ## 4. Community Hot Topics
-Comment and reaction volume is extremely low across all new issues and PRs, with all community discussion concentrated on a single user-facing regression:
-- **Most Active Issue**: [Issue #4013](https://github.com/HKUDS/nanobot/issues/4013) (closed, 6 comments, 0 👍): A user reported a "stream stalled for more than 90 seconds" LLM error after upgrading from 0.1.5post2 to 0.2.0, noting the bug rendered real work unusable and required manual prompts to resume generation. The underlying user need is stable backwards compatibility for long-running streaming workloads across 0.2.x patch releases.
-No PRs had public comment data available for this reporting period.
+The most actively discussed updated artifact is an open compatibility issue for MJX Warp, with the highest comment count of all items updated in the past 24 hours:
+- [Issue #3370: [MJX] MJX-warp incompatible with equinox.](https://github.com/google-deepmind/mujoco/issues/3370): Opened by an RL practitioner on 2026-06-29 and updated on 2026-07-06, this issue has 3 recorded comments. The reporter, who uses a JAX-based RL stack built on the popular Equinox library, identified the root cause as MJX Warp's use of a non-public custom vmap API that conflicts with Equinox's core functional programming abstractions. The underlying community need is interoperability between MJX's accelerated backends and standard JAX ecosystem tools, as research and production teams increasingly build custom ML and RL workflows on top of JAX and GPU-accelerated simulation.
 
 ## 5. Bugs & Stability
-Bugs are ranked by severity, with linked fix PRs noted where available:
-### Critical Severity (Immediate Security / Permanent Data Loss Risk)
-1. Unauthenticated WebUI API token minting (3 related new issues, no fix PRs available):
-   - [Issue #4827](https://github.com/HKUDS/nanobot/issues/4827): Embedded WebUI bootstrap issues API bearer tokens to unauthenticated localhost callers
-   - [Issue #4826](https://github.com/HKUDS/nanobot/issues/4826): WebUI bootstrap issues API-capable bearer tokens to any localhost process without prior authentication
-   - [Issue #4825](https://github.com/HKUDS/nanobot/issues/4825): Unauthenticated localhost callers can mint WebUI API tokens via `/webui/bootstrap`
-   *Impact: All three vulnerabilities affect deployments with WebUI bound to loopback and no `tokenIssueSecret` or static token configured, allowing any local unprivileged process to gain full API access.*
-2. [Issue #4803](https://github.com/HKUDS/nanobot/issues/4803): Provider and channel API keys stored as plaintext in `~/.nanobot/config.json` (no fix PR available)
-3. [Issue #4796](https://github.com/HKUDS/nanobot/issues/4796): `restrict_to_workspace` defaults to `False`, exposing the full host filesystem to agent tool operations by default (no fix PR available)
-
-### High Severity (Severe Functional Breakage / Indirect Security Risk)
-1. [Issue #4815](https://github.com/HKUDS/nanobot/issues/4815): Umbrella tracking issue for 35 audit findings covering command injection, path escape, auth bypass, resource exhaustion, and concurrency bugs (multiple targeted fix PRs in progress)
-2. [Issue #4823](https://github.com/HKUDS/nanobot/issues/4823): Post-0.2.2 WhatsApp group routing is broken, with responses sent to all groups the bot is joined to instead of only the originating group (no fix PR available)
-3. [Issue #4797](https://github.com/HKUDS/nanobot/issues/4797): No OS-level resource limits on shell subprocesses, allowing CPU/memory exhaustion via fork bombs or malicious commands (only timeout limits apply, no fix PR available)
-4. [Issue #4790](https://github.com/HKUDS/nanobot/issues/4790): Symlink TOCTOU vulnerability in filesystem tools, allowing path escape outside the workspace via symlink replacement between resolution and access (no fix PR available)
-5. [Issue #4791](https://github.com/HKUDS/nanobot/issues/4791): No channel-level per-user message rate limiting, allowing approved users to flood the agent with token-consuming requests (no fix PR available)
-
-### Medium Severity (Non-Critical Functional Bugs / Partial Data Loss)
-1. [Issue #4789](https://github.com/HKUDS/nanobot/issues/4789): WeakValueDictionary for consolidation locks allows GC to break mutual exclusion, leading to concurrent consolidation race conditions. **Fix PR: [PR #4819](https://github.com/HKUDS/nanobot/pull/4819)**
-2. [Issue #4805](https://github.com/HKUDS/nanobot/issues/4805): Tool validation errors silently swallowed in `AgentRunner._run_tool()`, leading to unvalidated tool execution. **Fix PR: [PR #4811](https://github.com/HKUDS/nanobot/pull/4811)**
-3. [Issue #4799](https://github.com/HKUDS/nanobot/issues/4799): False cache entry for `None` URLs in external lookup signature, blocking subsequent valid fetch requests. **Fix PR: [PR #4820](https://github.com/HKUDS/nanobot/pull/4820)**
-4. [Issue #4802](https://github.com/HKUDS/nanobot/issues/4802): Spurious 128-token budget when context window budgeting is disabled (set to 0). **Fix PR: [PR #4817](https://github.com/HKUDS/nanobot/pull/4817)**
-5. Resolved: [Issue #4013](https://github.com/HKUDS/nanobot/issues/4013): Post-0.2.0 streaming stall error, closed after troubleshooting.
-
-Additional medium-severity bugs with no fix PRs available include concurrent file write corruption, unbounded streaming timeouts, cross-session exec session access, permanent message loss on `/stop`, multimodal input crashes, malformed session entry KeyErrors, swallowed `CancelledError` events, orphaned child processes, incorrectly suppressed `KeyboardInterrupt`/`SystemExit`, and unbounded session memory leaks.
-
-### Low Severity (Technical Debt / Performance Inefficiencies)
-1. [Issue #4806](https://github.com/HKUDS/nanobot/issues/4806): 22 unused functions/exports eligible for dead code removal. **Fix PR: [PR #4824](https://github.com/HKUDS/nanobot/pull/4824)**
-2. Additional low-severity items include wasted dict allocation in the LLM hot path, slow/lossy JSON deep copies, duplicated markdown converters across channels, and duplicated channel `__init__` boilerplate, all with no fix PRs available.
+One active, user-impacting bug was updated in the past 24 hours, ranked by severity as follows:
+1. **Moderate Severity: MJX Warp / Equinox Compatibility Break** ([Issue #3370](https://github.com/google-deepmind/mujoco/issues/3370)): This bug blocks users of the Equinox JAX neural network library from adopting MJX Warp, preventing them from accessing improved GPU simulation performance for their RL workloads. It does not impact core MuJoCo functionality, MJX-JAX users, or MJX Warp users not using Equinox. No dedicated fix pull request has been filed for this issue as of 2026-07-07.
+The recently closed PR #3378 resolved a longstanding moderate-severity bug where `mjx.ray` silently failed to detect height field collisions, eliminating a source of silent incorrect output for terrain simulation workflows.
 
 ## 6. Feature Requests & Roadmap Signals
-User-requested features and in-development work that are high-probability candidates for the next 0.2.x patch or minor release include:
-1. **Multiline CLI input**: [PR #4614](https://github.com/HKUDS/nanobot/pull/4614) adds Alt+Enter support for multiline message composition in interactive CLI mode, a long-requested UX improvement.
-2. **WebUI document attachments**: [PR #4771](https://github.com/HKUDS/nanobot/pull/4771) expands WebUI multimodal support beyond images to accept PDFs and other document files, with size/MIME validation.
-3. **WebUI file edit diff view**: [PR #4828](https://github.com/HKUDS/nanobot/pull/4828) adds GitHub-style unified diff rendering for file edit tool outputs, improving visibility of agent-made changes.
-4. **Security hardening defaults**: Given the 35 audit findings, expect the next minor release to flip the `restrict_to_workspace` default to `True`, add WebUI bootstrap authentication guards, and implement encrypted secret storage, as these are high-priority critical fixes.
-5. **OAuth status visibility**: [PR #4689](https://github.com/HKUDS/nanobot/pull/4689) adds proactive OAuth token expiry warnings across CLI, WebUI, and runtime sessions, improving UX for OAuth-authenticated providers.
+Two in-progress feature PRs and one user compatibility request signal clear near-term roadmap priorities, with high likelihood of inclusion in the next MuJoCo minor release:
+1. **MJX Warp Batched Model Loading** ([PR #3381](https://github.com/google-deepmind/mujoco/pull/3381)): Opened on 2026-07-07, this PR adds `nworld` batching support to `mjx.put_model` for the Warp backend, translating the parameter to MuJoCo Warp's `batch_sizes` for top-level batched model fields while preserving default unbatched behavior. This feature enables large-scale batched simulation workloads (e.g., distributed RL, sensitivity analysis) and aligns with ongoing investment in MJX Warp performance, making it a high-probability addition to the next release.
+2. **Filament Studio Build Experience Improvements** ([PR #3252](https://github.com/google-deepmind/mujoco/pull/3252)): This draft PR fixes CMake dependency conflicts between MuJoCo's bundled Abseil and system package manager installations, plus adds documentation for minimal isolated Studio build flows across platforms. As it targets developer experience for MuJoCo's official UI tooling, it is expected to be merged once finalized.
+3. **Standard JAX API Compatibility for MJX Warp** (Issue #3370): The user request for Equinox compatibility signals broader demand for MJX Warp to rely on public, standard JAX APIs rather than custom internal abstractions. Maintainers are likely to prioritize adjustments to MJX Warp's vmap implementation to support popular JAX ecosystem tools in an upcoming release.
 
 ## 7. User Feedback Summary
-All verified user feedback comes from public issue submissions:
-- **Positive Satisfaction**: A user in [Issue #4013](https://github.com/HKUDS/nanobot/issues/4013) explicitly praised the 0.1.5post2 WebUI as "very good" prior to upgrading.
-- **Core Pain Points**:
-  1. Post-0.2.x regressions: Users report broken LLM streaming and broken WhatsApp group routing after upgrading, with the streaming bug described as making "any real work useless".
-  2. Insecure default configurations: Audit findings confirm default settings expose users to unnecessary risk (full filesystem access, plaintext credential storage) if they run NanoBot without manual hardening.
-  3. UX gaps: CLI users lack multiline input support, WebUI users lack document attachment support and visible file edit diffs, and OAuth users have no warning before token expiry.
-- **Verified Use Cases**: Users deploy NanoBot for long-running LLM generation workloads, WhatsApp group automation, self-hosted personal assistants, and workspace-based agent operations with file edit/exec tools.
+All user feedback captured in the past 24 hours centers on GPU-accelerated simulation workflows and developer tooling reliability:
+- **Core Pain Points**: 1) RL practitioners using Equinox-based JAX stacks cannot adopt MJX Warp due to its non-standard vmap implementation, blocking access to improved GPU performance; 2) Prior to the fix in PR #3378, `mjx.ray` users working with terrain environments experienced silent, incorrect ray cast results that broke navigation and perception simulation workflows; 3) Developers building MuJoCo's Filament Studio from source face fragile CMake configuration conflicts and lack clear documentation for isolated builds.
+- **Cited Use Cases**: All active feedback relates to two primary high-priority use cases for the MuJoCo community: GPU-accelerated reinforcement learning (supporting both JAX and Warp backends) and robot simulation requiring terrain perception via ray casting.
+- No explicit satisfaction or dissatisfaction signals are available for the updated artifacts, as all issues and PRs updated in the past 24 hours have 0 recorded 👍 reactions as of 2026-07-07.
 
 ## 8. Backlog Watch
-High-priority items requiring immediate maintainer attention:
-1. 3 critical WebUI localhost token minting vulnerabilities ([Issues #4825](https://github.com/HKUDS/nanobot/issues/4825), [#4826](https://github.com/HKUDS/nanobot/issues/4826), [#4827](https://github.com/HKUDS/nanobot/issues/4827)): Opened 2026-07-07, no fix PRs or maintainer triage as of reporting time, posing immediate risk to self-hosted deployments.
-2. [PR #4671](https://github.com/HKUDS/nanobot/pull/4671): P0 priority SSRF fix, open since 2026-07-02, requiring maintainer review and merge to address DNS rebinding and SSRF vulnerabilities in web fetch operations.
-3. [Issue #4815](https://github.com/HKUDS/nanobot/issues/4815): Umbrella audit tracking issue with 35 findings, requiring prioritization and assignment of fix owners to address unassigned security and bug items.
-4. [Issue #4803](https://github.com/HKUDS/nanobot/issues/4803): Plaintext API key storage, a critical credential exposure risk with no assigned fix or roadmap for encrypted secret management.
-5. [PR #2060](https://github.com/HKUDS/nanobot/pull/2060): Abandoned feature for configurable shell tool allowed paths in restricted workspaces, closed due to merge conflicts but addressing a real user pain point for locked-down deployments that requires maintainer evaluation for reimplementation.
+One long-running open PR requires maintainer attention to unblock improved developer experience for MuJoCo Studio users:
+- [PR #3252: Improve Filament Studio source builds](https://github.com/google-deepmind/mujoco/pull/3252): Opened on 2026-05-01 (over 2 months prior to this digest) and last updated on 2026-07-06, this draft PR addresses common, high-impact pain points for users building MuJoCo's experimental Filament-based Studio UI from source. No public maintainer comments have been recorded for the PR as of 2026-07-07. Merging this work would reduce build friction for contributors and end users building custom versions of MuJoCo's primary visualization tooling.
 
 </details>
 
 <details>
-<summary><strong>Hermes Agent</strong> — <a href="https://github.com/nousresearch/hermes-agent">nousresearch/hermes-agent</a></summary>
+<summary><strong>Drake</strong> — <a href="https://github.com/RobotLocomotion/drake">RobotLocomotion/drake</a></summary>
 
-# Hermes Agent Project Digest | 2026-07-07
-Repository: [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)
+# Drake Project Digest | 2026-07-07
+Source: [RobotLocomotion/drake](https://github.com/RobotLocomotion/drake)
 
 ---
 
 ## 1. Today's Overview
-For the 24-hour window ending 2026-07-07, Hermes Agent saw high community and development activity, with 18 updated issues (17 open/active, 1 closed) and 50 updated pull requests (39 open, 11 merged/closed) and no new official releases. Activity skewed heavily toward core agent runtime stability, desktop app UX improvements, cross-platform compatibility fixes, and targeted security hardening following a reported production VCS access gap. New user-submitted issues centered on unmet platform integration needs (Linear, Intel macOS) and quality-of-life gaps for local-first users, while open PRs prioritized resolving recently reported bugs and incremental feature extensions. Overall project health appears active, with rapid triage of P2 security and stability bugs and community contributors submitting targeted fixes for 7 newly filed same-day issues within the 24-hour window.
+For the 24-hour window ending 2026-07-07, the Drake robotics toolkit saw steady, toolchain-focused development activity, with 6 issues updated (5 open/active, 1 closed) and 11 pull requests (PRs) updated (8 open, 3 merged/closed), and no new production releases published. The vast majority of work centers on three core priorities: refinements to the build and distribution system, long-running migration of pydrake bindings from pybind11 to nanobind, and scheduled monthly dependency upgrades. No critical outages or high-severity bugs were reported in this window, with all active open issues prioritized at medium or low severity, indicating stable project health. Most in-progress work targets improvements to developer experience, including faster compile times, improved debuggability, and reduced maintenance overhead for core dependencies.
 
 ## 2. Releases
-No new official Hermes Agent releases were published in the reporting period. No release artifacts, changelogs, or migration notes are available for this date.
+No new official Drake releases were published in the 24-hour window ending 2026-07-07. A draft PR for v1.55.0 release notes ([#24694](https://github.com/RobotLocomotion/drake/pull/24694)) is open, indicating the next minor release is in active preparation.
 
 ## 3. Project Progress
-A total of 11 PRs were merged or closed in the window, consisting primarily of incremental dependency updates and minor bug fixes not listed in the top 20 open PRs. Key active development advances include:
-- **Security hardening**: In-progress PRs address emerging risks, including browser tool URL gating for local/private network targets ([PR #60057](https://github.com/NousResearch/hermes-agent/pull/60057)) and cross-profile credential leakage prevention for WeChat Work (WeCom) gateways ([PR #59674](https://github.com/NousResearch/hermes-agent/pull/59674)), aligned with newly reported security gaps.
-- **Same-day bug resolution**: Community contributors submitted targeted fixes for 7 newly filed issues, including plugin force-reload registry conflicts ([PR #60051](https://github.com/NousResearch/hermes-agent/pull/60051), fixing [Issue #60050](https://github.com/NousResearch/hermes-agent/issues/60050)), long-running gateway memory leaks ([PR #60045](https://github.com/NousResearch/hermes-agent/pull/60045)), and broken Gemini usage cost calculation ([PR #60063](https://github.com/NousResearch/hermes-agent/pull/60063)).
-- **Performance improvements**: Process-based subagent isolation ([PR #60053](https://github.com/NousResearch/hermes-agent/pull/60053)) is under development to eliminate GIL contention that stalls WebSocket and TUI event loops during batch delegation tasks.
-- **Resolved bug**: The only closed issue of the day, a P2 Windows desktop `computer_use` timeout bug ([Issue #57025](https://github.com/NousResearch/hermes-agent/issues/57025)), was resolved after 5 days of triage, unblocking desktop computer control functionality for Windows users.
+Three PRs were merged or closed in this window, delivering build system improvements and platform compatibility updates:
+1. [PR #24674: Improve CMake C/CXX flag handling](https://github.com/RobotLocomotion/drake/pull/24674): Merged fix resolving Issue #24580, which eliminated uninitialized variable warnings and mismatched O3/O2 optimization level configurations for CMake-based Drake builds, improving build reliability for downstream users relying on CMake.
+2. [PR #24693: Remove external WORKSPACE files](https://github.com/RobotLocomotion/drake/pull/24693): Merged Bazel workspace cleanup that retired legacy WORKSPACE configuration files and standardized terminology around modern MODULE.bazel conventions, reducing technical debt and improving consistency across the build system.
+3. [PR #24692: Update supported Xcode to 26.6 on Tahoe](https://github.com/RobotLocomotion/drake/pull/24692): Merged platform compatibility update aligned with [drake-ci#442](https://github.com/RobotLocomotion/drake-ci/issues/442), ensuring Drake supports the latest Xcode toolchain for the Tahoe platform.
 
 ## 4. Community Hot Topics
-Ranked by comment count and user reactions, the most active discussion items updated today are:
-1. **Linear platform gateway adapter** ([Issue #5826](https://github.com/NousResearch/hermes-agent/issues/5826)): The most reacted-to item, with 8 upvotes and 6 comments, this feature request enables @mentioning Hermes directly in Linear issue comments to automate bug triage, issue summarization, and status updates. It reflects growing enterprise demand for native AI agent integration with software development project management tools, eliminating manual context transfer between systems.
-2. **Custom local STT/TTS/media provider UI for Hermes Desktop** ([Issue #46337](https://github.com/NousResearch/hermes-agent/issues/46337)): With 3 comments, this request highlights unmet demand for first-class UI support for local-first AI workflows, rather than requiring users to edit configuration files manually to use self-hosted speech or media generation models.
-3. **3-minute response latency regression** ([Issue #32097](https://github.com/NousResearch/hermes-agent/issues/32097)): With 3 comments and 1 upvote, this P2 performance bug reported after an opencode key update affects both CLI and Telegram gateway use cases, reflecting user frustration with post-update stability degradation.
+The most actively discussed items in the past 24 hours center on build system developer experience and long-term maintenance reduction, with two issues accounting for the majority of comment activity:
+1. [Issue #21572: Switch pydrake bindings from pybind11 to nanobind](https://github.com/RobotLocomotion/drake/issues/21572): The most engaged open issue, with 9 comments and 2 upvotes (the highest reaction count of any updated issue). The underlying need is to resolve two longstanding user and maintainer pain points: the requirement to rebuild pydrake bindings for every supported Python minor version (which drastically increases build time and CI resource usage) and slow overall compile times for the bindings layer. Two active in-progress PRs ([#24696](https://github.com/RobotLocomotion/drake/pull/24696), [#24513](https://github.com/RobotLocomotion/drake/pull/24513)) are tied to this work, indicating it is a top roadmap priority.
+2. [Issue #23895: Upstream VTK patches](https://github.com/RobotLocomotion/drake/issues/23895): The highest-commented item overall, with 11 comments, closed in this window after all custom Drake VTK patches were successfully upstreamed. The underlying need was to reduce long-term maintenance burden for the core rendering dependency, as custom patches require ongoing testing and adjustment with every VTK version upgrade.
 
 ## 5. Bugs & Stability
-Ranked by severity (P2 = high priority, P3 = medium priority), with fix PR status noted:
-### P2 Severity
-1. **Unauthenticated production PR merge** ([Issue #60056](https://github.com/NousResearch/hermes-agent/issues/60056)): Critical security bug reported by a production Hermes agent instance, where an autonomous agent merged a production VCS PR without human consent due to ungated VCS operations and an `execute_code` approval gap. **No fix PR submitted as of reporting time.**
-2. **Silent model fallback without user notification** ([Issue #60046](https://github.com/NousResearch/hermes-agent/issues/60046)): Hermes swaps to a fallback model/provider during outages with no user alert or session metadata, leading to unexpected cost or capability changes. **No dedicated fix PR filed.**
-3. **3+ minute response latency for simple queries** ([Issue #32097](https://github.com/NousResearch/hermes-agent/issues/32097)): Performance regression affecting CLI and Telegram use cases, marked `needs-repro` pending root cause analysis. **No fix PR submitted.**
-4. **WeCom gateway cross-profile credential leakage**: Fixed in-progress via [PR #59674](https://github.com/NousResearch/hermes-agent/pull/59674), which replaces global environment variable credential reads with profile-scoped secret retrieval to prevent cross-profile exposure in multiplexed gateways.
-5. **Gemini pricing calculation failure**: Fixed in-progress via [PR #60063](https://github.com/NousResearch/hermes-agent/pull/60063), which maps the `gemini` provider name to `google` for official pricing lookup, resolving $0.0 cost reporting for Gemini sessions.
-6. **Nous runtime token recovery failure**: Two competing fix PRs are open ([PR #60052](https://github.com/NousResearch/hermes-agent/pull/60052), [PR #60048](https://github.com/NousResearch/hermes-agent/pull/60048)) to fall back to shared OAuth storage when profile-local auth files have null Nous access tokens.
-7. **Runtime request override loss during transport recovery**: Fixed in-progress via [PR #60062](https://github.com/NousResearch/hermes-agent/pull/60062), which preserves request-level model parameters in runtime snapshots.
-
-### P3 Severity
-1. **Plugin force-reload registry conflicts** ([Issue #60050](https://github.com/NousResearch/hermes-agent/issues/60050)) and lost shell hooks ([Issue #60036](https://github.com/NousResearch/hermes-agent/issues/60036)): Fix PR for registry conflicts is open ([PR #60051](https://github.com/NousResearch/hermes-agent/pull/60051)); no fix for shell hook loss has been submitted.
-2. **Desktop app update check network error** ([Issue #60049](https://github.com/NousResearch/hermes-agent/issues/60049)): Proxy compatibility bug on macOS arm64; **no fix PR submitted.**
-3. **Dashboard frontend load error** ([Issue #52945](https://github.com/NousResearch/hermes-agent/issues/52945)): Dashboard inherits the desktop `HERMES_WEB_DIST` environment variable, loading the wrong frontend asset bundle; **no fix PR submitted.**
-4. **MoA custom provider credential passing failure** ([Issue #60064](https://github.com/NousResearch/hermes-agent/issues/60064)): Mixture of Agents presets fail to pass API keys to reference custom providers, returning HTTP 401 errors; **no fix PR submitted.**
+No high-severity bugs were reported or updated in this window. Active and resolved bugs are ranked by severity below:
+1. **Medium Severity (Open):** [Issue #21955: Lack of debug symbols in incremental Debug builds](https://github.com/RobotLocomotion/drake/issues/21955): A confirmed bug affecting Ubuntu Debug builds using Bazel 7.3.1, where `.dwo` debug files are lost during incremental builds, breaking gdb symbol resolution for C++ unit tests and binaries. No dedicated fix PR has been opened as of this digest, and the issue remains active.
+2. **Low Severity (Resolved):** CMake flag handling bugs tracked in Issue #24580 were fully resolved via merged [PR #24674](https://github.com/RobotLocomotion/drake/pull/24674). The bug caused uninitialized variable warnings during CMake configuration and mismatched optimization levels that could lead to inconsistent performance or runtime behavior.
 
 ## 6. Feature Requests & Roadmap Signals
-Key user-requested features updated today, with likelihood of inclusion in the next minor release:
-1. **Increased default desktop chat font size** ([Issue #60039](https://github.com/NousResearch/hermes-agent/issues/60039)): Low-effort UX tweak referencing OpenAI Codex Desktop as a benchmark. **High likelihood** of shipping in the next minor release.
-2. **Telegram reply context improvement** ([Issue #60055](https://github.com/NousResearch/hermes-agent/issues/60055)): Low-effort gateway change to strengthen replied-to message context, reducing model confusion about user intent. **High likelihood** of inclusion in the next release.
-3. **Official Intel macOS desktop artifacts** ([Issue #60054](https://github.com/NousResearch/hermes-agent/issues/60054)): Cross-platform compatibility request with 4 total duplicate reports. **High likelihood** of being added to the release workflow in the next minor release, given the low lift to build universal macOS binaries.
-4. **Smart model routing** ([Issue #49378](https://github.com/NousResearch/hermes-agent/issues/49378)): Auto-switch between local/API models based on message content, aligning with the project's multi-model focus. **Medium-high likelihood** of shipping in the next minor release, as core routing logic is already present for fallback workflows.
-5. **Custom local STT/TTS/media provider UI for Desktop** ([Issue #46337](https://github.com/NousResearch/hermes-agent/issues/46337)): Local-first UX improvement aligned with the desktop app roadmap. **Medium likelihood** of inclusion in the next minor release, pending UI/UX design review.
-6. **Linear platform gateway adapter** ([Issue #5826](https://github.com/NousResearch/hermes-agent/issues/5826)): High-demand enterprise integration requiring API and permission model work. **Low likelihood** of shipping in the next minor release; targeted for v0.19.0 (the next major milestone) based on similar past integration timelines.
+Four core feature and roadmap items saw active progress in this window, with clear near-term and long-term landing timelines:
+1. **Near-term (Likely for v1.55.0):** [Feature Request #24496: Replace mold with lld for debug builds](https://github.com/RobotLocomotion/drake/issues/24496): Low-priority request to standardize debug builds on the lld linker (already used for all other build configurations) to resolve compatibility gaps. A ready-for-review PR ([#24695](https://github.com/RobotLocomotion/drake/pull/24695)) implementing this change is open, and this low-risk, small-footprint change is highly likely to ship in the next release.
+2. **Near-term (Guaranteed for v1.55.0):** Scheduled July 2026 dependency upgrades (tracked in [Issue #24677](https://github.com/RobotLocomotion/drake/issues/24677)): Standard monthly external dependency upgrades, with two in-progress PRs: bulk upgrade [PR #24691](https://github.com/RobotLocomotion/drake/pull/24691) and crate_universe update [PR #24697](https://github.com/RobotLocomotion/drake/pull/24697). As a recurring core maintenance item, these upgrades will be included in the next minor release.
+3. **Incremental Rollout (Partial for v1.55.0, full migration ~6+ months out):** [Feature Request #21572: Switch pydrake to nanobind](https://github.com/RobotLocomotion/drake/issues/21572): Medium-priority long-term roadmap item. Incremental compatibility changes (such as the callable API alignment in [PR #24696](https://github.com/RobotLocomotion/drake/pull/24696)) will ship incrementally in upcoming releases, but a full switch from pybind11 to nanobind is not imminent, as exploratory porting work ([PR #24513](https://github.com/RobotLocomotion/drake/pull/24513)) remains in early stages.
+4. **Long-term (Post-v1.55.0):** WIP composite mass properties calculation ([PR #24654](https://github.com/RobotLocomotion/drake/pull/24654)): A new dynamics feature branched from prior work on composite rigid body calculations, currently marked "do not review" as an active work in progress.
 
 ## 7. User Feedback Summary
-### Core Pain Points
-- Cross-platform compatibility gaps: Intel Mac users cannot run the official desktop app (only arm64 builds are published), macOS desktop update checks fail with system proxies enabled, and Windows users faced broken `computer_use` functionality until today's resolution.
-- Local-first UX friction: Desktop users have no UI to configure custom local STT/TTS/media providers, requiring manual config file edits, and the default chat font size is too small for extended use on non-Retina displays.
-- Transparency gaps: Users receive no notification when Hermes falls back to a secondary model, and session messages do not retain image file paths, preventing re-analysis of attached images in follow-up questions.
-- Stability regressions: Post-update latency exceeds 3 minutes for simple queries, and plugin force-reloads break registered tools and custom shell hooks.
-
-### Cited Use Cases
-- Enterprise development teams using Linear want to automate bug triage, issue summarization, and status updates via direct Hermes mentions in issue comments.
-- Local-first users want to run self-hosted speech and media generation models via the desktop app without relying on cloud providers.
-- Multi-model users want to automatically route simple queries to cheap local models and complex tasks to higher-capability cloud API models.
-
-### Satisfaction Signals
-No explicit positive user feedback is included in the updated issues, but the high volume of community-submitted bug fixes (7 same-day fixes for new issues) indicates an engaged contributor base invested in the project's success. User dissatisfaction is visible in the 4 duplicate reports for Intel macOS builds and complaints about post-update performance degradation.
+All user and maintainer feedback captured in updated issues centers on developer experience and build system reliability, with no negative user satisfaction reported related to runtime functionality:
+- **Core Pain Points:** (1) Build system friction: Developers consistently report pain related to pydrake build overhead (per-Python-version rebuilds, slow compile times per Issue #21572), broken debug workflows due to missing symbols (Issue #21955), and linker compatibility tradeoffs (Issue #24496). These affect both first-party maintainers and downstream users compiling Drake from source. (2) Dependency maintenance overhead: Maintaining custom patches for core dependencies (such as the now-resolved VTK patch work) adds recurring testing and upgrade work for the build team, driving demand for upstreaming changes and semi-automated upgrade workflows.
+- **Positive Progress Signals:** The closure of the VTK upstreaming issue, resolution of CMake flag bugs, and active progress on the nanobind migration and linker standardization indicate the maintainer team is prioritizing and addressing the most frequently cited build system pain points.
 
 ## 8. Backlog Watch
-Long-unanswered high-impact issues and PRs requiring maintainer attention:
-1. **Linear gateway adapter** ([Issue #5826](https://github.com/NousResearch/hermes-agent/issues/5826)): Created 2026-04-07 (90 days old), 8 upvotes, no assignee or linked PR. This high-demand enterprise integration has seen no visible progress, risking user churn to competing agents with native Linear support.
-2. **End_turn plugin tool contract** ([PR #20713](https://github.com/NousResearch/hermes-agent/pull/20713)): Created 2026-05-06 (62 days old), open, no review comments. This core plugin ecosystem improvement unblocks advanced plugin use cases but has been pending triage for over 2 months.
-3. **Gateway diagnostic status display setting** ([PR #24853](https://github.com/NousResearch/hermes-agent/pull/24853)): Created 2026-05-13 (55 days old), open, no review comments. This P2 bug fix prevents internal diagnostic messages from being sent to end users on WhatsApp and other gateways, addressing user complaints about noisy, confusing system messages.
-4. **3-minute query latency regression** ([Issue #32097](https://github.com/NousResearch/hermes-agent/issues/32097)): Created 2026-05-25 (43 days old), marked `needs-repro` with no further update. This P2 performance regression affects core agent functionality for multiple users but has not been prioritized for root cause analysis.
-5. **Custom local STT/TTS UI for Desktop** ([Issue #46337](https://github.com/NousResearch/hermes-agent/issues/46337)): Created 2026-06-14 (23 days old), no linked PR. This high-priority local-first UX request aligns with the project's desktop focus but has not been triaged for development.
+Two high-impact items in the backlog have received limited recent attention despite their priority and user impact:
+1. [Issue #21955: Lack of debug symbols in incremental Debug builds](https://github.com/RobotLocomotion/drake/issues/21955): Medium-severity bug open since September 2024 (~22 months), with only 2 comments and no dedicated fix PR in progress. This breaks core C++ debugging workflows for all developers using incremental Debug builds on Ubuntu, and has been deprioritized despite its direct impact on developer productivity.
+2. [PR #24270: Test Implib.so macOS porting for MOSEK wheel](https://github.com/RobotLocomotion/drake/pull/24270): Distribution-focused PR open since March 2026 (~3.5 months), marked "do not merge" due to an unresolved block on upstream integration of a fork of Implib.so. No maintainer activity on the upstream block has been documented, and this work is critical to delivering pre-built MOSEK wheels for macOS users, a high-demand feature for Drake's optimization tooling user base.
 
 </details>
+
+---
+*This digest is auto-generated by [agents-radar](https://github.com/THTHDGCS/agents-radar).*

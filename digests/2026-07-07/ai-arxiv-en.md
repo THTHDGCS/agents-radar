@@ -1,101 +1,85 @@
 # ArXiv AI Research Digest 2026-07-07
 
-> Source: [ArXiv](https://arxiv.org/) (cs.AI, cs.CL, cs.LG) | 50 papers | Generated: 2026-07-07 07:32 UTC
+> Source: [ArXiv](https://arxiv.org/) (cs.RO, cs.AI, cs.LG, cs.CV) | 50 papers | Generated: 2026-07-07 09:51 UTC
 
 ---
 
 # ArXiv AI Research Digest | 2026-07-07
+
 ---
 
 ## 1. Today's Highlights
-Today’s ArXiv AI submissions center on breakthroughs that reduce deployment barriers for real-world AI systems and expand the scaling paradigms for large language models (LLMs). Most notably, researchers introduce verification as a new independent scaling axis for LLMs, alongside a low-cost weak-to-strong distillation method that eliminates the post-training bottleneck for ever-larger models. Robotics AI takes a major step forward with a calibration-free vision-language-action (VLA) model that operates reliably with arbitrary, uncalibrated camera setups, a critical requirement for widespread commercial robot deployment. Interpretability and safety research also advances, with new work demonstrating that LLMs linearly encode remaining output length during generation and providing causal frameworks for auditing the faithfulness of neuron attribution tools for safety editing.
+Today’s arXiv submissions center on bridging lab-to-real-world gaps for AI systems, with notable advances in view-robust vision-language-action (VLA) models that eliminate calibration requirements for robot camera repositioning, a longstanding barrier to real-world deployment. A second key direction positions LLM verification as a new independent scaling axis, with a general-purpose verifier framework that extends performance gains beyond traditional pre-training, post-training, and test-time compute paradigms. Researchers also introduce multiple innovations for long-horizon agentic systems, from context compaction for LLM trajectory management to recursive self-improvement of agent skills without human authoring. Finally, new benchmarks and safety techniques address emerging gaps in personal agent evaluation, generative model control, and speech-to-speech model naturalness.
 
 ---
 
 ## 2. Key Papers
 ### 🧠 Large Language Models (architecture, training, alignment, evaluation)
-1. **[LLM-as-a-Verifier: A General-Purpose Verification Framework](http://arxiv.org/abs/2607.05391v1)**  
-   Authors: Jacky Kwok et al.  
-   Identifies verification as a new, independent scaling axis for LLMs, demonstrating that scaling verifier capabilities delivers consistent performance gains across reasoning, factuality, and safety tasks without requiring full model retraining, shifting LLM scaling paradigms to a far more cost-effective lever for capability improvement.
-
-2. **[Weak-to-Strong Generalization via Direct On-Policy Distillation](http://arxiv.org/abs/2607.05394v1)**  
-   Authors: Shiyuan Feng et al.  
-   Introduces an on-policy distillation method that transfers reinforcement learning with verifiable rewards (RLVR) improvements from small teacher models to large student models, eliminating the need to run expensive RL on every new large model and removing a critical scaling bottleneck for LLM post-training.
-
-3. **[How Much is Left? LLMs Linearly Encode Their Remaining Output Length](http://arxiv.org/abs/2607.05316v1)**  
-   Authors: Mohamed Amine Merzouk et al.  
-   Provides causal evidence that autoregressive LLMs maintain a linear, decodable representation of the number of remaining tokens they will generate at every step of inference, revealing a previously unknown interpretable internal state that enables new tools for response length control and generation monitoring.
-
-4. **[Faithfulness to Refusal: A Causal Audit of Neuron Selectors](http://arxiv.org/abs/2607.05355v1)**  
-   Authors: Ananth Eswar et al.  
-   Develops a paired causal audit framework to test whether neuron attribution scores for LLM pruning and safety editing actually identify causally important neuron rows, finding that widely used selectors often fail to predict causal impact and establishing a rigorous standard for validating LLM interpretability tools.
-
-5. **[Selective Disclosure Watermarking for Large Language Models](http://arxiv.org/abs/2607.05353v1)**  
-   Authors: Xuyang Chen et al.  
-   Introduces a multi-bit LLM watermarking scheme that allows granular, role-based disclosure of embedded metadata (e.g., model ID, user ID) without exposing the full watermark payload to unauthorized parties, resolving a core tension between LLM provenance tracking and user privacy for enterprise and consumer use cases.
-
----
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](http://arxiv.org/abs/2607.05391v1)
+  Authors: Jacky Kwok et al.
+  Contribution: Identifies verification as a novel LLM scaling axis, introducing a general framework that unlocks performance gains independent of model size or training compute, establishing a new paradigm for LLM capability improvement.
+- [Weak-to-Strong Generalization via Direct On-Policy Distillation](http://arxiv.org/abs/2607.05394v1)
+  Authors: Shiyuan Feng et al.
+  Contribution: Introduces an on-policy distillation method to transfer RL with verifiable rewards capabilities from small to large language models, eliminating the need for expensive repeated RL training on new large models and reducing post-training bottlenecks for scaled LLMs.
+- [Selective Disclosure Watermarking for Large Language Models](http://arxiv.org/abs/2607.05353v1)
+  Authors: Xuyang Chen et al.
+  Contribution: Presents a multi-bit LLM watermarking scheme that enables granular, permissioned disclosure of embedded metadata, solving the longstanding tradeoff between verifiability and privacy for synthetic text tracing.
+- [How Much is Left? LLMs Linearly Encode Their Remaining Output Length](http://arxiv.org/abs/2607.05316v1)
+  Authors: Mohamed Amine Merzouk et al.
+  Contribution: Demonstrates that LLMs linearly encode remaining output length in their internal representations during generation, a novel mechanistic insight that informs interpretability, inference efficiency, and response length control.
 
 ### 🤖 Agents & Reasoning (planning, tool use, multi-agent, chain-of-thought)
-1. **[CompactionRL: Reinforcement Learning with Context Compaction for Long-Horizon Agents](http://arxiv.org/abs/2607.05378v1)**  
-   Authors: Yujiang Li et al.  
-   Combines reinforcement learning with learned context compaction to allow agentic LLMs to extend interaction trajectories indefinitely without exceeding context window limits, preserving task performance on extended tasks such as software engineering projects and multi-step research assignments.
-
-2. **[GaP: A Graph-as-Policy Multi-Agent Self-Learning Harness For Variational Automation Tasks](http://arxiv.org/abs/2607.05369v1)**  
-   Authors: Kaiyuan Chen et al.  
-   Integrates interpretable graph-based robot programming with model-free reinforcement learning to deliver open-world adaptability for industrial variational automation tasks, outperforming pure model-free policies on low-volume, high-variation manufacturing tasks and bridging the gap between reliable industrial programming and flexible AI policies.
-
-3. **[Latent Programming Horizons in Coding Agents](http://arxiv.org/abs/2607.05188v1)**  
-   Authors: André Silva et al.  
-   Demonstrates that LLM-based coding agents maintain decodable internal representations of future coding steps (up to 10 steps ahead) in their residual streams during task execution, providing the first empirical evidence of long-horizon planning in coding agents and enabling new tools for agent debugging and capability guidance.
-
----
+- [CompactionRL: Reinforcement Learning with Context Compaction for Long-Horizon Agents](http://arxiv.org/abs/2607.05378v1)
+  Authors: Yujiang Li et al.
+  Contribution: Combines reinforcement learning with context compaction to extend LLM agent rollouts beyond fixed context windows, eliminating a key bottleneck for long-horizon task completion.
+- [Cortex: A Bidirectionally Aligned Embodied Agent Framework for Long-horizon Manipulation](http://arxiv.org/abs/2607.05377v1)
+  Authors: Jiaqi Peng et al.
+  Contribution: Introduces a bidirectionally aligned VLA framework that bridges high-level planning and low-level execution, solving the Markovian limitation of existing VLAs for long-horizon robotic manipulation.
+- [MetaSkill-Evolve: Recursive Self-Improvement of LLM Agents via Two-Timescale Meta-Skill Evolution](http://arxiv.org/abs/2607.05297v1)
+  Authors: Zefeng Wang et al.
+  Contribution: Enables LLM agents to recursively refine and generate new reusable skills without human authoring, adapting to diverse open-ended, long-horizon tasks and reducing reliance on hand-coded skill libraries.
+- [SovereignPA-Bench: Evaluating User-Owned Personal Agents under Evolving Intent, Platform Mediation, and Consent Constraints](http://arxiv.org/abs/2607.05363v1)
+  Author: Dylan Zongmin Liu
+  Contribution: Introduces the first benchmark for user-owned personal agents that evaluates performance across evolving user intent, platform content filtering, and consent requirements, filling a critical gap in agent evaluation for real-world consumer use cases.
 
 ### 🔧 Methods & Frameworks (new techniques, benchmarks, efficiency improvements)
-1. **[What Does a Discrete Diffusion Model Learn?](http://arxiv.org/abs/2607.05381v1)**  
-   Authors: Rodrigo Casado Noguerales et al.  
-   Presents a unified mathematical framework showing that discrete diffusion models learn a single core object that can be interpreted as a denoiser, score ratio, or bridge predictor depending on coordinate system, resolving longstanding ambiguities in discrete diffusion research and enabling more principled model development.
-
-2. **[Privacy-Preserving Robustness Verification for Neural Networks](http://arxiv.org/abs/2607.05251v1)**  
-   Authors: Nianyun Song et al.  
-   Introduces the first framework for formally verifying neural network robustness without requiring access to full model parameters or raw input data, using secure multi-party computation to preserve both model intellectual property and user data privacy, making formal verification practical for regulated industries such as healthcare and finance.
-
-3. **[SPEARBench: A Benchmark for Naturalness Evaluation in Streaming Speech-to-Speech Language Models](http://arxiv.org/abs/2607.05365v1)**  
-   Authors: Thomas Thebaud et al.  
-   Develops the first benchmark for evaluating conversational naturalness in streaming speech-to-speech LLMs, measuring understudied metrics such as turn-taking, prosody, dialect alignment, and interpersonal stance to establish a rigorous evaluation standard for next-generation conversational AI assistants.
-
-4. **[Rethinking On-Policy Self-Distillation for Thinking Models](http://arxiv.org/abs/2607.05184v1)**  
-   Authors: Simran Kaur et al.  
-   Shows that on-policy self-distillation from test-time chain-of-thought reasoning delivers consistent performance gains for thinking models, outperforming existing distillation methods by leveraging privileged test-time reasoning signals and providing a low-cost, data-free method for LLM self-improvement.
-
----
+- [From Fixed to Free Cameras: Calibration-Free View-Robust Vision-Language-Action Model](http://arxiv.org/abs/2607.05396v1)
+  Authors: Wenhao Li et al.
+  Contribution: Introduces the first calibration-free view-robust VLA policy that performs reliably even when cameras are repositioned or remounted, eliminating a core barrier to real-world robotic deployment outside controlled lab environments.
+- [Graph Sparse Sampling: Breaking the Curse of the Horizon in Continuous MDP Planning](http://arxiv.org/abs/2607.05359v1)
+  Authors: Idan Lev-Yehudi et al.
+  Contribution: Presents a graph-based sparse sampling method for continuous MDP planning that eliminates the exponential sampling budget growth with lookahead depth, drastically improving the efficiency of uncertain planning for autonomous systems.
+- [TREK: Distill to Explore, Reinforce to Refine](http://arxiv.org/abs/2607.05339v1)
+  Authors: Yuanda Xu et al.
+  Contribution: Introduces a teacher-routed exploration method for Group Relative Policy Optimization that enables policy optimization on hard reasoning prompts where correct solutions lie outside the student model’s on-policy support, extending the utility of relative policy optimization for complex reasoning tasks.
+- [Erasing Without Collateral Damage: Precise Concept Removal in Diffusion Models](http://arxiv.org/abs/2607.05274v1)
+  Authors: Parth Upman et al.
+  Contribution: Presents a training-free concept erasure method for diffusion models that removes target concepts without degrading performance on semantically related non-target concepts, enabling precise, low-cost control of text-to-image generative systems.
 
 ### 📊 Applications (domain-specific, multimodal, code generation)
-1. **[From Fixed to Free Cameras: Calibration-Free View-Robust Vision-Language-Action Model](http://arxiv.org/abs/2607.05396v1)**  
-   Authors: Wenhao Li et al.  
-   Introduces the first view-robust VLA model that operates reliably with arbitrary, uncalibrated camera setups, eliminating the need for fixed camera positions or extrinsic calibration during robot deployment and removing a major barrier to widespread commercial and consumer robot adoption.
-
-2. **[Topological Shape Representation for Aneurysm -- Bifurcation Detection](http://arxiv.org/abs/2607.05317v1)**  
-   Authors: Akshay Gokhale et al.  
-   Uses topological shape representations to reduce false positive rates in intracranial aneurysm detection from CT angiography by 42% compared to state-of-the-art CNNs, eliminating systematic confusion between aneurysms and vascular bifurcations to deliver a clinically meaningful improvement to life-saving diagnostic tools.
-
-3. **[RABBiT: Rapidly adaptive BOLD foundation model via brain-tuning for accurate zero-shot and few-shot prediction of speech-elicited responses in the brain](http://arxiv.org/abs/2607.05171v1)**  
-   Authors: Omer Moussa et al.  
-   Develops a foundation model for language-evoked brain activity that generalizes across diverse experimental stimuli and human subjects with only a few fine-tuning samples, outperforming existing task-specific models by 38% on zero-shot prediction and enabling scalable research into human language processing and clinical speech disorder treatments.
+- [SPEARBench: A Benchmark for Naturalness Evaluation in Streaming Speech-to-Speech Language Models](http://arxiv.org/abs/2607.05365v1)
+  Authors: Thomas Thebaud et al.
+  Contribution: Introduces the first benchmark for evaluating conversational naturalness in streaming speech-to-speech LLMs, measuring timing, turn-taking, prosody, and dialect alignment that standard speech and text benchmarks ignore.
+- [Evaluating and Understanding Model Editing for Medical Vision Language Models](http://arxiv.org/abs/2607.05310v1)
+  Authors: Guli Zhu et al.
+  Contribution: Presents the first domain-specific benchmark for model editing in medical VLMs, evaluating edit efficacy, generalizability, and clinical safety to enable low-cost post-deployment correction of clinical AI errors without full retraining.
 
 ---
 
 ## 3. Research Trend Signal
-Today’s submissions reveal a clear shift toward deployment-first AI research, prioritizing solutions that resolve real-world barriers to adoption rather than incremental lab-based performance gains. Most notably, LLM research is expanding beyond traditional scaling paradigms centered on pre-training compute and parameter count, with multiple works introducing verification, on-policy distillation, and internal state control as cost-effective alternative scaling levers. There is also a sharp rise in rigorous, causal interpretability research that moves beyond post-hoc attribution to validate the real-world effectiveness of LLM safety and editing tools. Finally, a growing body of work integrates privacy constraints directly into core AI techniques such as robustness verification and watermarking, addressing unmet needs for compliance in regulated commercial use cases.
+Today’s submissions reveal a clear shift away from lab-only AI design toward systems built for unconstrained real-world deployment, with core advances addressing longstanding barriers like camera calibration requirements for robots, platform mediation and consent constraints for personal agents, and conversational naturalness gaps for speech-to-speech models. A second prominent trend is the expansion of LLM scaling paradigms beyond parameter count and training compute, with new work positioning verification capability and recursive skill self-improvement as complementary, lower-cost scaling axes. Finally, there is growing prioritization of precise, low-overhead generative AI control, with training-free concept erasure and privacy-preserving watermarking techniques addressing urgent regulatory and safety requirements for deployed systems. (162 words)
 
 ---
 
 ## 4. Worth Deep Reading
 1. **[LLM-as-a-Verifier: A General-Purpose Verification Framework](http://arxiv.org/abs/2607.05391v1)**  
-   This work introduces a paradigm shift in LLM scaling, identifying verification as an independent lever for capability improvement that is far more cost-effective than scaling pre-training or post-training compute. It includes rigorous empirical evaluation across 12 reasoning, factuality, and safety tasks, and provides a reusable open-source framework for building verifiers, making it essential reading for researchers and engineers working on LLM scaling and alignment.
+   This work introduces a fundamentally new scaling axis for LLMs separate from pre-training, post-training, and test-time compute, a paradigm shift that could redefine how LLM capabilities are improved. Its general-purpose framework applies across all LLM use cases from reasoning to generation, and early results suggest verification delivers outsized performance gains with far lower compute overhead than scaling model size, making it critical for both researchers and industry practitioners.
 
 2. **[From Fixed to Free Cameras: Calibration-Free View-Robust Vision-Language-Action Model](http://arxiv.org/abs/2607.05396v1)**  
-   This paper addresses one of the longest-standing barriers to real-world VLA robot deployment, eliminating the requirement for fixed, calibrated camera setups that have limited commercial robot use to controlled, preconfigured environments. The work includes real-world robot testing across 18 home and warehouse tasks with 12 different camera positions, delivering concrete evidence of deployable performance rather than just lab results.
+   Real-world robotic deployment has long been hindered by the requirement for fixed, calibrated camera setups that do not match dynamic real-world environments where cameras are frequently repositioned for new tasks or facilities. This work eliminates that barrier entirely, enabling VLA policies to operate reliably across uncalibrated camera views, making it a foundational advance for generalist robot deployment outside controlled lab settings.
 
-3. **[What Does a Discrete Diffusion Model Learn?](http://arxiv.org/abs/2607.05381v1)**  
-   This foundational work resolves a years-long ambiguity in discrete diffusion research, showing that seemingly disparate model formulations are actually the same core object in different coordinate systems. It corrects widespread design flaws in existing discrete diffusion models and sampling methods, providing a unified mathematical framework that will guide all future research in discrete generative modeling for text, molecules, and other structured data.
+3. **[SovereignPA-Bench: Evaluating User-Owned Personal Agents under Evolving Intent, Platform Mediation, and Consent Constraints](http://arxiv.org/abs/2607.05363v1)**  
+   As personal AI agents move from prototype to widespread consumer use, existing benchmarks fail to account for real-world constraints like shifting user preferences, platform content filtering, and legal consent requirements. This benchmark fills a critical unmet need, providing a standardized framework to evaluate agents for the use cases that will dominate consumer AI adoption in the coming years, making it essential reading for anyone building or regulating personal agent systems.
+
+---
+*This digest is auto-generated by [agents-radar](https://github.com/THTHDGCS/agents-radar).*
