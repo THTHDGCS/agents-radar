@@ -9,6 +9,7 @@
  *   PAGES_URL           — GitHub Pages base URL (defaults to the public deployment)
  */
 
+import "dotenv/config";
 import fs from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";

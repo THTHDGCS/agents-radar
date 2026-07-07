@@ -9,6 +9,7 @@
  * Provider-specific env vars — see src/providers/ for full list.
  */
 
+import "dotenv/config";
 import fs from "node:fs";
 import path from "node:path";
 import {
