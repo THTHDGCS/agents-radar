@@ -23,7 +23,7 @@ export abstract class OpenAICompatibleProvider implements LlmProvider {
   async call(prompt: string, maxTokens: number): Promise<string> {
     const response = await this.client.chat.completions.create({
       model: this.model,
-      max_completion_tokens: maxTokens,
+      max_tokens: maxTokens,
       messages: [{ role: "user", content: prompt }],
     });
     const text = response.choices[0]?.message?.content;
