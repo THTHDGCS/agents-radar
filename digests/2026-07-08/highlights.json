@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "覆盖6款具身智能CLI工具，形成全栈分层格局",
+      "Isaac Lab单日更新50个PR，重构渲染架构",
+      "Genesis优化并行仿真，兼容MJCF/USD格式",
+      "LeRobot适配低成本硬件，完善中文文档",
+      "生态向工业/教育落地，国内成核心增量市场",
+      "3工具共推仿真正确性与性能优化"
+    ],
+    "ai-agents": [
+      "具身智能体开源基建向工业级落地攻坚",
+      "MuJoCo单日8个PR，修复JAX追踪器泄漏",
+      "Drake单日18个PR，优化多体模块性能",
+      "OpenClaw连续24h无活动，健康度待观察",
+      "两大仿真工具聚焦可复现构建与并行性能",
+      "OpenClaw为宇树硬件原生SDK，补全生态层"
+    ],
+    "ai-trending": [
+      "RuView单日涨1129星，登具身智能Trending榜首",
+      "claude-video单日涨965星，一键给Claude加视频能力",
+      "CubeSandbox单日涨664星，为AI Agent设安全沙箱",
+      "IsaacLab星级破7629，成工业级机器人学习框架",
+      "国内VLA入门教程every-embodied获2566星",
+      "人形机器人开源栈软硬件协同路径清晰"
+    ],
+    "ai-web": [
+      "Anthropic发布Claude Sonnet 5，智能体能力追平Opus",
+      "Sonnet 5成Free/Pro默认模型，全量覆盖用户计划",
+      "Sonnet 5限制网络攻击能力，优化Agent安全",
+      "Anthropic将高端智能体能力下探至中端产品线",
+      "2026年7月中端智能体模型能力断层补全",
+      "OpenAI今日无新增官方公开内容"
+    ],
+    "ai-hn": [
+      "Claude隐式推理机制J-Space曝光引可解释性讨论",
+      "本福特定律工具成AI合成内容检测新思路",
+      "OpenAI亿级语音AI工程优化路径被拆解",
+      "Claude Code新增模型与推理努力等级自定义",
+      "开源静态文本人化工具基于50篇论文实现",
+      "Anthropic动作成社区高频议题，覆盖多维度"
+    ],
+    "ai-arxiv": [
+      "提出LLM验证新范式，开辟能力提升新路径",
+      "弱到强蒸馏法大幅降低大模型后训练成本",
+      "双向对齐具身智能体框架提升长horizon成功率",
+      "首次定义机器人工具使用功能泛化问题",
+      "揭示世界模型长序列失效核心为动力学缺失",
+      "上下文压缩RL框架解决智能体窗口溢出问题"
+    ],
+    "ai-hf": [
+      "GLM-5.2 MoE获3591赞，成本周最火语言模型",
+      "通义开源35B Agent专用MoE模型，下载破6万",
+      "腾讯混元Hy3开源版刚发布即登热门榜",
+      "Ornith-1.0-35B下载破28万，综合能力突出",
+      "国产大模型社区微调量化版本热度领跑",
+      "端侧GGUF量化模型下载量普遍破百万"
+    ],
+    "ai-community": [
+      "开发者警惕过度依赖AI致底层认知退化",
+      "Google推出Gemma本地微调工具降低定制成本",
+      "Agent循环token浪费最高99%，有优化方案",
+      "AI编码工具使用能力成核心岗位招聘信号",
+      "RAG嵌入泄露可反推原始文本，存安全盲区",
+      "AI行业从能力竞赛转向可靠性验证阶段"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "5 tracked AI robotics CLI tools had no 2026-07-08 production releases.",
+      "NVIDIA Isaac Lab focused on bug fixes and Newton physics backend expansion.",
+      "Genesis optimized for large-batch high-throughput simulation workloads.",
+      "LeRobot lowered hardware onboarding barriers for new robotics developers.",
+      "ROS 2 activity lull matches typical mature infrastructure tool cadences.",
+      "OpenVLA is in a post-major-release stabilization period."
+    ],
+    "ai-agents": [
+      "No critical production regressions across monitored embodied AI projects.",
+      "OpenClaw (Unitree SDK2) reported no 24-hour GitHub activity.",
+      "MuJoCo had 3 updated issues and 8 updated PRs in the reporting window.",
+      "Drake led activity with 5 updated issues and 18 updated PRs.",
+      "Development focused on high-scale simulation workflow features.",
+      "Teams prioritized technical debt reduction to lower deployment friction."
+    ],
+    "ai-trending": [
+      "Rust-based RuView got 1,129 stars for camera-free WiFi spatial intelligence.",
+      "claude-video gained 965 stars for adding video input support to Claude.",
+      "Open-source humanoid manipulator openarm hit 2,700 total stars.",
+      "Beginner VLA resources drive grassroots embodied AI adoption.",
+      "RLinf VLA/RL training infrastructure hit 4,030 total GitHub stars.",
+      "NVIDIA Isaac Lab robot learning framework has 7,629 total stars."
+    ],
+    "ai-web": [
+      "Anthropic launched Claude Sonnet 5, a mid-tier agent-optimized LLM.",
+      "Sonnet 5 matches near-top-tier Opus 4.8 performance across key tasks.",
+      "Sonnet 5 is priced lower than flagships, democratizing agentic AI.",
+      "Sonnet 5 includes targeted guardrails for safer autonomous agent use.",
+      "Sonnet 5 intentionally limits cybersecurity task performance.",
+      "OpenAI published no new official content in the crawl window."
+    ],
+    "ai-hn": [
+      "HN discussed Waymo reporting misbehaving teen riders to local police.",
+      "Anthropic confirmed unlogged 'J-Space' reasoning layer for Claude.",
+      "Claude Fable launch window was extended 5 days to July 12.",
+      "Anthropic sued cybersecurity firm Abnormal over unauthorized model use.",
+      "Research found most sites fail to block answer-generating AI bots.",
+      "Users debated near-term timelines for general-purpose robot deployment."
+    ],
+    "ai-arxiv": [
+      "7 new ArXiv papers address real-world VLA robotics deployment barriers.",
+      "New standardized testbeds launched for agricultural and humanoid robotics.",
+      "On-policy distillation cuts LLM post-training reasoning costs drastically.",
+      "Researchers introduced LLM-as-a-Verifier general scaling framework.",
+      "New papers detail real-world assistive robot deployments for dementia care.",
+      "First structured responsible human-robot personalization framework released."
+    ],
+    "ai-hf": [
+      "Qwen 3.5/3.6 derivatives dominate Hugging Face trending models list.",
+      "GGUF is now the de facto format for consumer/edge AI model distribution.",
+      "Baidu OCR and Nvidia visual grounding models hit 1M weekly downloads.",
+      "zai-org’s GLM-5.2 is the week’s highest-liked general-purpose LLM.",
+      "Tencent released Hy3, a new base LLM from its Hunyuan model series.",
+      "DeepSeek V4 Pro variant posted peer-reviewed performance gains."
+    ],
+    "ai-community": [
+      "AI discourse shifted to real-world reliability, cost, and security risks.",
+      "Developers debated unobserved production failures of deployed AI agents.",
+      "Massive token waste in AI agent loops is a growing industry concern.",
+      "Over-reliance on AI erodes foundational engineering knowledge for devs.",
+      "Researchers flagged AI’s large contribution to Google’s carbon bloat.",
+      "Coding AI tool choice is now emerging as a key hiring signal for devs."
+    ]
+  }
+}
