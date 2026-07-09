@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "本期5款机器人AI CLI工具均无新版本发布",
+      "生态从NVIDIA绑定向多架构兼容方向扩展",
+      "NVIDIA Isaac Lab今日9Issues、50PR活跃度最高",
+      "LeRobot拟适配Unitree G1人形机器人至SmolVLA",
+      "Isaac Lab与Genesis均升级传感器仿真拟真度",
+      "ROS 2、OpenVLA过去24小时无任何社区活动"
+    ],
+    "ai-agents": [
+      "具身AI底层工具链形成三层协同生态，无版本事故",
+      "Drake活跃度优秀，今日6活跃Issues、9关闭",
+      "MuJoCo新增rollout容错参数优化批量仿真鲁棒性",
+      "OpenClaw为宇树官方SDK，是实机部署核心衔接点",
+      "Drake启动CENIC求解器6项优化适配大规模仿真",
+      "MuJoCo新增原生磁力场仿真覆盖前沿科研场景"
+    ],
+    "ai-trending": [
+      "Claude-video单日涨星951，为Claude新增视频理解能力",
+      "CubeSandbox单日涨星564，提供AI代理轻量安全沙箱",
+      "zvec单日涨星395，为端侧具身代理本地记忆底座",
+      "全中文VLA学习手册上线，覆盖入门到研究全链条",
+      "RuView用WiFi实现空间感知，提供低成本感知路径",
+      "8GB消费级显卡可跑的VLA基准获社区高度关注"
+    ],
+    "ai-web": [
+      "Anthropic上线35篇研究，含双用知识关闭开关技术",
+      "Anthropic建成行业首个全栈安全研究体系",
+      "OpenAI疑似预发布GPT Live实时交互产品",
+      "Anthropic提出\"对齐造假\"动摇表层对齐假设",
+      "红队确认前沿大模型未达国家级风险阈值",
+      "OpenAI预发布编码能力评估研究，暂未公开"
+    ],
+    "ai-hn": [
+      "Mistral发布机器人导航模型，单帖分数超400",
+      "三大头部大模型同任务实测评比获高关注",
+      "智能眼镜隐私风险引争议，被贴\"变态眼镜\"标签",
+      "Claude Code网页拦截适配工具Tilion开源",
+      "Hugging Face推出vLLM原生速度Transformers后端",
+      "研究验证大模型存在可理解的全局工作空间"
+    ],
+    "ai-arxiv": [
+      "扩散模型RLHF新机制大幅降低对齐所需反馈量",
+      "双隐态记忆VLA解决长时序机器人操纵痛点",
+      "EmbodiedGen V2可自动生成合规3D仿真环境",
+      "首个触觉基础模型TouchWorld补全具身感知缺口",
+      "端侧VLM多智能体控制架构解决三大落地痛点",
+      "研究提出通用机器人安全新维度——启动安全"
+    ],
+    "ai-hf": [
+      "社区开源GLM-5.2获3667赞，登周点赞榜第一",
+      "英伟达优化Qwen3.6周下载量突破53.8万次",
+      "腾讯混元Hy3新品上线即进入热门榜",
+      "Mistral119B稀疏大模型采用Apache2.0协议",
+      "美团开源LongCat-2.0，主打长文本对话能力",
+      "Qwen衍生模型霸榜，GGUF量化格式成主流"
+    ],
+    "ai-community": [
+      "人机协作Agent开发平台上线，供团队选型参考",
+      "AI对开发者职业自主权影响引发高热度讨论",
+      "大上下文无法提升RAG效果，打破行业误区",
+      "自迭代AI Agent被曝存在来源追溯核心缺陷",
+      "传统prompt工程正被循环工程等新范式替代",
+      "AI PR审核工具评估经验公开，避免无效优化"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "CLI digest covers 6 core embodied AI tools including ROS 2 and LeRobot.",
+      "No official releases across all monitored CLI projects in 24 hours.",
+      "3 tracked robotics CLI tools saw active community engagement July 9.",
+      "Active projects prioritize reducing new user onboarding friction.",
+      "Teams focus on cross-hardware and cross-backend compatibility.",
+      "API regressions and dependency mismatches are top community pain points."
+    ],
+    "ai-agents": [
+      "OpenClaw digest covers 3 core embodied AI agent infrastructure projects.",
+      "No critical regressions across the agent development stack in 24h.",
+      "Drake led activity with 15 updated issues and 10 updated PRs.",
+      "MuJoCo recorded 3 updated PRs, no new issues in the 24h window.",
+      "OpenClaw had no 24h activity, earning a 5/10 ecosystem health score.",
+      "Simulation teams work to close sim-to-real hardware parity gaps."
+    ],
+    "ai-trending": [
+      "WiFi spatial intel tool RuView gained 799 new GitHub stars July 9.",
+      "Claude video processing tool claude-video earned 951 new stars.",
+      "vla-on-a-budget lets devs run VLA benchmarks on 8GB laptop GPUs.",
+      "Open source OpenArm humanoid manipulator crossed 2.7k total stars.",
+      "MuJoCo leads robot frameworks with 14,135 total GitHub stars.",
+      "Rust-based dora middleware emerges as popular ROS alternative for VLA."
+    ],
+    "ai-web": [
+      "Anthropic released 35 new research pieces, one of its largest public batches.",
+      "Anthropic unveiled a novel \"off switch\" for dual-use model knowledge.",
+      "Research confirms all leading LLMs exhibit agentic misalignment risks.",
+      "Anthropic published real-world Claude economic impact and labor research.",
+      "Anthropic outlined formal 2028 global AI leadership scenarios.",
+      "OpenAI posted metadata for upcoming GPT Live and coding eval content."
+    ],
+    "ai-hn": [
+      "Mistral's Robostral Navigate robotics model topped HN with 415 points.",
+      "Independent build-off tested Grok 4.5, GPT-5.5, Claude app-building skill.",
+      "HN users debated AI device privacy risks from smart glasses and Roombas.",
+      "New open-source Claude Code tooling signals rapid developer adoption.",
+      "Robostral Navigate is Mistral's first major foray into physical AI.",
+      "Build-off delivers real-world frontier LLM coding performance data."
+    ],
+    "ai-arxiv": [
+      "July 9 ArXiv AI submissions are led by embodied intelligence advances.",
+      "New works feature memory-augmented VLA and multi-agent robot control.",
+      "A novel paradigm for social robot safety was published July 9.",
+      "Medical AI papers target data scaling and imaging bottlenecks.",
+      "New techniques reduce RLHF feedback needs for diffusion models.",
+      "Research analyzes VLM post-hallucination reasoning to fix errors."
+    ],
+    "ai-hf": [
+      "zai-org/GLM-5.2 leads Hugging Face weekly likes at 3,667.",
+      "Top Qwen3.6 derivative models hit over 2.8M weekly downloads each.",
+      "Krea 2 text-to-image ecosystem gained 3 trending community LoRAs.",
+      "NVIDIA's LocateAnything-3B saw strong computer vision engagement.",
+      "Baidu's Unlimited-OCR drove high interest among Hugging Face users.",
+      "Tencent released early access to its Hy3 Hunyuan base LLM."
+    ],
+    "ai-community": [
+      "AI agent development is the top theme on Dev.to for July 9.",
+      "Devs discuss loop engineering as an upgrade to prompt tuning.",
+      "Developers push back on pervasive industry RAG optimization myths.",
+      "Lobste.rs debated Google AI's exponential climate emission impact.",
+      "Devs warn self-editing agents trust falsified self-generated test logs.",
+      "Teams shared lessons rolling back AI PR reviewers and agent systems."
+    ]
+  }
+}
