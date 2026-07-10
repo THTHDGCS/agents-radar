@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "具身AI CLI工具生态向生产级落地跃迁",
+      "NVIDIA Isaac Lab今日更新50条PR，活跃度高",
+      "LeRobot今日6Issue11PR，活跃度居首",
+      "三大工具推进大规模并行仿真性能优化",
+      "LeRobot将3B模型训练显存压至24GB内",
+      "垂直场景微调工具链成生态核心待补环节"
+    ],
+    "ai-agents": [
+      "具身AI底层生态向大规模训练与落地收敛",
+      "Drake今日更新6Issue、10PR，健康度优秀",
+      "MuJoCo今日更新5条PR，用户问题完全收敛",
+      "OpenClaw为宇树机器人专属SDK，适配全系硬件",
+      "MuJoCo、Drake共推大规模训练仿真性能优化",
+      "通用仿真与硬件部署衔接工具链待补全"
+    ],
+    "ai-trending": [
+      "具身智能热度集中于VLA平民化等三大方向",
+      "IsaacLab登机器人框架榜首，星数达7645",
+      "国内首份中文VLA实战手册星数周涨幅显著",
+      "极简VLA实现可在M1/M2 Mac无GPU运行",
+      "无ROS轻量化sim2real框架新登趋势榜",
+      "VLA技术体系从模型训练向产业落地成熟"
+    ],
+    "ai-web": [
+      "Anthropic联合UST落地高端制造“物理AI”",
+      "前美联储主席伯南克加入Anthropic治理信托",
+      "Anthropic发布双重用途知识管控对齐技术",
+      "Claude可解释性研究定位特定概念神经元",
+      "OpenAI新增5个页面，疑将推新模型与生态",
+      "大模型竞争转向治理落地生态综合较量"
+    ],
+    "ai-hn": [
+      "HN AI类最高评分为9，未出现爆点话题",
+      "Fortress为AI代理提供无限制合规网页访问",
+      "动作优先机器人分割范式超越视觉优先SOTA",
+      "新型AI文本“人性化”工具冲击检测体系",
+      "单消费级GPU可实现双AI模型思想交互",
+      "梵语格律优化TTS系统获社区称里程碑"
+    ],
+    "ai-arxiv": [
+      "今日ArXiv AI投稿50篇，VLA模型迎迭代高峰",
+      "认知结构多模态模型提升长时序任务效率",
+      "结构化稀疏自编码器解决跨模态概念不一致",
+      "提出“视频生成推理”替代文本思维链范式",
+      "冻结VLA无需微调即可转化为操作基元",
+      "无监督技术突破水下3D感知等领域瓶颈"
+    ],
+    "ai-hf": [
+      "通义千问系列成HF社区二次开发核心",
+      "智谱GLM-5.2 MoE版点赞3729，下载超36万",
+      "腾讯混元Hy3开源LLM获社区高关注",
+      "GGUF量化模型下载量大幅领先基础模型",
+      "Krea-2-Turbo文生图模型下载超15.7万",
+      "英伟达布局推理专用与音频理解模型"
+    ],
+    "ai-community": [
+      "Dev.to热议AI与手动创作的价值争议",
+      "AI供应商商战案例给开发者提供避坑建议",
+      "清理AI冗余代码成开发者能力提升新路径",
+      "提出确定性路由替代LLM质量门方案",
+      "观点称拒用AI的资深开发者将能力降级",
+      "提出AI Agent新增事件日志的优化方案"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Embodied AI/robotics tooling leads active AI CLI development focus.",
+      "No new stable releases across 6 tracked CLI tools in 24 hours.",
+      "NVIDIA Isaac Lab has 50 updated PRs, 10 high-impact core changes.",
+      "LeRobot leads tracked tools with 6 updated 24h issues.",
+      "All projects prioritize cross-hardware accessibility and sim2real performance.",
+      "New user onboarding is a unified priority across all dev streams."
+    ],
+    "ai-agents": [
+      "3 core foundational embodied AI agent projects are tracked.",
+      "No critical stability regressions across the full stack in 24h.",
+      "Drake leads activity with 6 updated issues and 10 updated PRs.",
+      "MuJoCo earns top 9.0/10 health score among tracked projects.",
+      "OpenClaw (Unitree SDK2) has no 24h issues or PR activity.",
+      "Active dev prioritizes usability for large-scale agent training."
+    ],
+    "ai-trending": [
+      "bradautomates/claude-video gained 718 stars, enables Claude video input.",
+      "VLA development now accessible to devs with 8GB laptop GPUs.",
+      "Open source robotics hardware cuts physical research costs drastically.",
+      "Post-RSS 2026 paper open-sourcing drives VLA fine-tuning interest.",
+      "IsaacLab hits 7,645 stars, is de facto standard for VLA training.",
+      "dora low-latency middleware has 3,836 stars, eliminates ROS bloat."
+    ],
+    "ai-web": [
+      "Anthropic partners with UST to embed Claude in physical AI workflows.",
+      "Anthropic will train 20,000 UST employees on Claude implementation.",
+      "Ben Bernanke joins Anthropic’s independent governance board.",
+      "Anthropic reveals model-level 'off switch' for dual-use knowledge misuse.",
+      "OpenAI teases upcoming GPT-5.6 release via pre-indexed pages.",
+      "OpenAI hints at new biosecurity bug bounty program launch."
+    ],
+    "ai-hn": [
+      "Motion-first robotic action segmentation beats vision-first SOTA benchmarks.",
+      "Nature-featured AI text humanizer evades all current AI text detectors.",
+      "HN debates AI humanizer risks to academic and content integrity.",
+      "Discussions cover major ongoing leadership churn at OpenAI.",
+      "Users explore frontier model integrations with physical AI systems.",
+      "Sentiment is optimistic on open-source AI research advances."
+    ],
+    "ai-arxiv": [
+      "New ArXiv submissions are dominated by embodied AI and VLA advances.",
+      "Structured sparse autoencoders learn consistent cross-modal concepts.",
+      "New LLM-as-judge framework boosts personality recognition performance.",
+      "Research evaluates disability stereotypes in text-to-image models.",
+      "Breakthroughs enable lightweight zero-shot depth estimation.",
+      "Domain AI advances span surgical reconstruction and wildfire mapping."
+    ],
+    "ai-hf": [
+      "Qwen 3.5/3.6 derivatives dominate Hugging Face trending leaderboard.",
+      "Top Qwen GGUF variants exceed 2.8M weekly downloads.",
+      "Tencent’s open-source Hy3 LLM trends for enterprise use cases.",
+      "GLM-5.2 MoE hits 3,729 likes, 362.3K downloads, tops open benchmarks.",
+      "Krea 2 text-to-image ecosystem sees rapid community LoRA growth.",
+      "All 30 trending models are open-weight, no gated access required."
+    ],
+    "ai-community": [
+      "Dev.to debates handwritten code vs AI output quality and value.",
+      "Guide advises using audit logs, not marketing, to pick AI vendors.",
+      "Lobste.rs users discuss AI’s growing environmental impact.",
+      "Cross-platform priority: better AI guardrails and observability.",
+      "Dev.to shares guides for building secure AI agent workflows.",
+      "Lobste.rs explores low-level tooling for LLM inference and logic."
+    ]
+  }
+}
