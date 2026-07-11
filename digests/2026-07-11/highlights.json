@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI机器人CLI工具LeRobot今日更新26个PR居首",
+      "NVIDIA Isaac Lab/Genesis各更新10个PR",
+      "三大核心工具同步攻坚跨架构适配痛点",
+      "两工具优化仿真真实性缩sim2real差距",
+      "所有活跃工具提升开发工具链稳定性",
+      "今日新增覆盖Claude Code Skills工具"
+    ],
+    "ai-agents": [
+      "MuJoCo今日5Issue8PR，健康度评估为高活跃",
+      "Drake今日1Issue2PR，迭代平稳无高优Bug",
+      "OpenClaw为硬件原生工具补通用仿真部署Gap",
+      "MuJoCo/Drake推进USD标准化打通跨引擎资产",
+      "MuJoCo优化USD插件实现解码器自动注册",
+      "MuJoCo攻坚大规模多体仿真内存开销瓶颈"
+    ],
+    "ai-trending": [
+      "3款Agent技能框架今日新增stars均破千",
+      "OfficeCLI今日新增1224星，数字具身破圈",
+      "Claude技能库skills日增1712星居技能类首",
+      "通用仿真引擎MuJoCo累计stars达14156",
+      "IsaacLab累计7651星，成sim2real主流工具",
+      "无ROS轻量化sim2real框架开源降落地门槛"
+    ],
+    "ai-hn": [
+      "苹果诉OpenAI盗商业机密成HN最热AI新闻",
+      "实测AI代理获取单维基页需6.8万tokens",
+      "无人驾驶落地遇交通执法规则适配难题",
+      "数学可视化拆解AI转型裁员负循环机制",
+      "开发者用Fable打造仅5MB的海盗MMO游戏",
+      "社区热议头部AI公司知识产权竞争边界"
+    ],
+    "ai-arxiv": [
+      "新研究指LLM量化评估存未被捕捉的行为偏差",
+      "无查表二进制编码实现LLM极低位高效压缩",
+      "自适应编辑精炼预训练数据提升LLM性能",
+      "主动记忆代理解决长程任务上下文溢出痛点",
+      "新推理范式Chain-of-Frame通过视频生成推理",
+      "递归多智能体框架实现深广兼备网页搜索"
+    ],
+    "ai-hf": [
+      "智谱GLM-5.2 MoE模型累计下载量近40万",
+      "通义千问衍生模型包揽周榜下载量前三",
+      "百度OCR/英伟达视觉模型下载量破百万",
+      "GGUF量化格式已成开源模型发布标配",
+      "腾讯混元Hy3文本基座进入周度热门榜",
+      "英伟达发布75B量级逻辑推理专用基座"
+    ],
+    "ai-community": [
+      "50个AI Agent并行扫描4.66亿行代码落地",
+      "开源Linter检测AI辅助代码高频安全漏洞",
+      "多AI提供商场景推出统一错误模型方案",
+      "教程讲解网站结构适配AI编码代理识别",
+      "行业探讨AI工具落地的职场权责分配问题",
+      "研究将AI测试拆解为四大细分场景维度"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI digest covers 6 leading robotics and embodied AI tools",
+      "Stabilized ROS 2 and OpenVLA saw no 24-hour development activity",
+      "NVIDIA Isaac Lab updated 50 PRs for runtime stability improvements",
+      "Genesis resolved a bug via merged PR in the 24-hour window",
+      "Active projects prioritize cutting robotics developer friction",
+      "Tool roadmaps focus on closing the simulation-to-real gap"
+    ],
+    "ai-agents": [
+      "OpenClaw ecosystem digest tracks 3 core robotics infrastructure projects",
+      "All 3 tracked projects recorded no 24-hour development activity",
+      "No critical production regressions were reported across projects",
+      "Embodied AI agent infrastructure is a fast-growing open source segment",
+      "Projects align to support end-to-end embodied agent development",
+      "Roadmaps prioritize interoperability and developer workflow improvements"
+    ],
+    "ai-trending": [
+      "No robotics/VLA projects appeared in GitHub's top 19 trending repos",
+      "Open-source humanoid arm OpenArm hit 2.7k total GitHub stars",
+      "Beginner VLA learning resources drive new developer entry to the field",
+      "Community prioritizes ROS-free sim2real pipelines for deployment",
+      "PythonRobotics hits 30k+ stars as top global robotics learning resource",
+      "MuJoCo hits 14k+ stars as de facto multi-joint physics simulator"
+    ],
+    "ai-hn": [
+      "Apple's OpenAI trade secret lawsuit is top HN AI story of the day",
+      "Standard AI agents need 68k tokens to process one Wikipedia page",
+      "5MB Claude-built Pirate MMO earns second-highest AI post score",
+      "Dependency-free AI agent fleet setup draws HN community praise",
+      "HN discusses technical merits of Apple's lawsuit allegations",
+      "Humanoid robots performed first teleoperated surgery on pigs"
+    ],
+    "ai-arxiv": [
+      "Today's ArXiv AI papers focus on low-resource deployment and reliability",
+      "New research proves LLM quantization causes hidden behavioral changes",
+      "Lookup-free extreme LLM compression method introduced for edge use",
+      "Recursive multi-agent orchestration for deep web research unveiled",
+      "Sparse autoencoders learn cross-modal vision-language concepts",
+      "New testbeds launched for dexterous robot manipulation evaluation"
+    ],
+    "ai-hf": [
+      "Qwen 3.x derivatives make up 1/3 of Hugging Face's top 30 models",
+      "Chinese open model families hold 60% of trending HF model share",
+      "Nvidia's LocateAnything-3B hits 1.4M total weekly downloads",
+      "GLM-5.2 conversational MoE has highest weekly likes on HF",
+      "Tencent releases new high-performance bilingual Hy3 base LLM",
+      "Agent-optimized open models see fast-growing community demand"
+    ],
+    "ai-community": [
+      "Developer discussions focus on AI agent integration pain points",
+      "Lobste.rs critiques Google AI bloat's negative climate impact",
+      "AI tool adoption carries hidden interpersonal and career tradeoffs",
+      "Devs build unified error models for multi-provider LLM gateways",
+      "Community prioritizes open source AI over closed enterprise tooling",
+      "Dev.to guides cover cutting AI inference costs and code security flaws"
+    ]
+  }
+}
