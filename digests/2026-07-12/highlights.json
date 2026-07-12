@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Genesis发布v1.2.2正式版，升级非凸碰撞检测性能",
+      "NVIDIA Isaac Lab当日12个PR，适配aarch64全链路兼容",
+      "LeRobot优化依赖锁与日志，降低环境配置调试成本",
+      "三大活跃工具共研核心计算模块性能与正确性双优",
+      "ROS 2、OpenVLA进入稳定迭代周期，当日无更新",
+      "Isaac Lab锁定依赖版本，解决Docker构建失败问题"
+    ],
+    "ai-agents": [
+      "MuJoCo当日3个活跃PR，优化大场景仿真内存占用",
+      "Drake当日2个活跃PR，预研Python绑定性能优化",
+      "OpenClaw处于稳定维护周期，当日无社区活动",
+      "OpenClaw主打宇树系机器人实机低延迟控制适配",
+      "仿真引擎共推API向后兼容，避免破坏用户工作流",
+      "具身AI基础设施生态整体健康度达优秀水平"
+    ],
+    "ai-trending": [
+      "NASA机器人框架F´登GitHub热榜，今日新增22星",
+      "openpilot星数63082，为落地规模最大开源机器人栈",
+      "国内首份全中文VLA实战学习手册获开发者关注",
+      "无ROS轻量sim2real框架发布，降低VLA落地门槛",
+      "Isaac Lab星数7659，为人形机器人首选仿真底座",
+      "人形机器人全栈开源生态快速完善，适配产业节奏"
+    ],
+    "ai-hn": [
+      "AI适配JS运行时Ant发布，获173分76条评论",
+      "开发者吐槽Claude模型能力下滑，近七成转用竞品",
+      "MIT研发跨介质仿生机器人，实现泳飞无缝适配",
+      "AI Agent API选型基准平台OpenBenchmarks上线",
+      "MIT提出深度展开流优化框架，突破算法效率瓶颈",
+      "Claude秘密追踪机制曝光，引发用户隐私信任危机"
+    ],
+    "ai-hf": [
+      "GLM-5.2 MoE周点赞3832，位列HF热门榜榜首",
+      "英伟达LocateAnything-3B周下载量超147万",
+      "百度Unlimited-OCR周下载超138万，实用性获认可",
+      "通义千问衍生模型占HF热门榜近4成席位",
+      "英伟达75B大模型采用自研NVFP4量化降显存",
+      "多款国产大模型登HF热门榜，影响力持续提升"
+    ],
+    "ai-community": [
+      "开发者将Slack改造为可自动提PR的AI协作工具",
+      "实测AI指令衰减规律，给出长效提示词编写方案",
+      "大模型竞赛转向数据竞争，架构创新重要性下降",
+      "Transformer论文8位作者已全部从Google离职",
+      "开源可观测工具实现多步LLM Agent运行追踪",
+      "AI Agent可靠性问题成技术社区核心讨论焦点"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "5 core AI robotics CLI tools covered, including ROS 2 and OpenVLA.",
+      "Genesis released stable v1.2.2 in the 24-hour tracking window.",
+      "NVIDIA Isaac Lab updated 12 PRs, prepping 3.0.0-beta2 release.",
+      "ROS 2 and OpenVLA saw no 24h activity, aligned with low-churn cycles.",
+      "Active tools target sim-to-real friction reduction and arm64 edge support.",
+      "Robotics CLI ecosystem shifts from proof-of-concept to production grade."
+    ],
+    "ai-agents": [
+      "3 core embodied AI agent projects tracked: OpenClaw, MuJoCo, Drake.",
+      "No critical bug filings reported across all three projects in 24 hours.",
+      "MuJoCo updated 1 issue and 3 PRs, earned 9/10 ecosystem health score.",
+      "OpenClaw scored 8/10 health, reported no 24h issue or PR activity.",
+      "Drake saw no 24h issue or PR activity in the tracking window.",
+      "No new user-facing releases published across the embodied agent stack."
+    ],
+    "ai-trending": [
+      "70+ embodied AI/robotics GitHub repos active in the last 7 days.",
+      "Beginner-friendly VLA dev kits and educational resources are proliferating.",
+      "NASA's F´ embedded flight framework gained 22 new GitHub stars daily.",
+      "VLA policy evaluation and benchmarking tools emerge as fast-growing niche.",
+      "MuJoCo hits 14,168 total GitHub stars, top robotics physics simulator.",
+      "PythonRobotics reaches 30,014 total stars, leading robotics learning resource."
+    ],
+    "ai-hn": [
+      "Anthropic Claude faces backlash over poor performance and secret user tracker.",
+      "HN debates law school AI bans, draws parallels to past legal tech shifts.",
+      "Surgeons complete world-first live surgery via teleoperated humanoid robot.",
+      "Terence Tao shares experience building apps with modern coding agents.",
+      "New open benchmark for agent-compatible SaaS APIs earns community attention.",
+      "MIT unveils flapping robot that swims and flies like a diving bird."
+    ],
+    "ai-hf": [
+      "Qwen 3.5/3.6 GGUF quantizations hit ~12M combined weekly downloads.",
+      "Baidu's Unlimited-OCR crosses 1M weekly downloads, ranks top 5.",
+      "Nvidia's LocateAnything-3B hits 1M weekly downloads, top 5 engaged model.",
+      "zai-org's GLM-5.2 MoE tops weekly likes leaderboard with 3,832 likes.",
+      "Tencent releases Hy3, new base LLM in its Hunyuan model series.",
+      "Uncensored, domain-specific open model variants see outsized engagement."
+    ],
+    "ai-community": [
+      "Grok 4.5's $60B dataset-driven gains spark 'clever architecture' debate.",
+      "All 8 original Transformer paper authors have left Google, spurring scrutiny.",
+      "Developers find Claude Code uses hidden steganographic prompt markers.",
+      "AI agent rule adherence and prompt decay are top developer discussion topics.",
+      "Dev.to shares AI team survival strategies amid platform cuts and layoffs.",
+      "AI's environmental and surveillance impacts top Lobste.rs policy talks."
+    ]
+  }
+}
