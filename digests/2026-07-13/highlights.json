@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "具身AI CLI工具进入生产级落地迭代周期",
+      "NVIDIA Isaac Lab当日更新18个PR无新版",
+      "LeRobot训练优化无精度损失最高提速4.9倍",
+      "Genesis大幅降低非凸碰撞检测计算开销",
+      "全生态强化ARM与大规模RL训练适配",
+      "三大活跃工具核心优化方向高度重合"
+    ],
+    "ai-agents": [
+      "具身底层工具链成开源生态核心增长板块",
+      "Drake当日更新4个PR健康度评估良好",
+      "MuJoCo提批量物理元素添加API需求",
+      "Drake推进pydrake绑定迁移至nanobind",
+      "OpenClaw是唯一实体机器人原生控制SDK",
+      "MuJoCo提交渲染器元信息查询API PR"
+    ],
+    "ai-trending": [
+      "dora-rs/dora机器人中间件获3840星登榜",
+      "openpilot支持300+车型辅助驾驶升级",
+      "人形运行时horus首次登榜获388星",
+      "中文VLA实战手册成算法入门热门资源",
+      "无ROS轻量框架适配多款主流机械臂",
+      "具身入门教程every-embodied获2633星"
+    ],
+    "ai-hn": [
+      "Flash-MSA优化百万token长序列训练性能",
+      "Qwen3.6 35B推理引擎支持RTX 5090部署",
+      "Anthropic相关产业动态成社区关注焦点",
+      "AI插件可实时识别政治视频话术操纵",
+      "Agent上下文共享平台引发隐私讨论",
+      "AI自动更新本地知识库工具Almanac亮相"
+    ],
+    "ai-hf": [
+      "英伟达LocateAnything-3B周下载破150万",
+      "腾讯混元Hy3大模型周点赞达721次",
+      "Qwen系列GGUF量化模型下载量居榜首梯队",
+      "美团LongCat-2.0长上下文大模型开源",
+      "MOSS语音模型支持转写与说话人分离",
+      "多家大厂官方模型集中登HF热门榜"
+    ],
+    "ai-community": [
+      "Jetson Nano运行Ollama实测基准发布",
+      "Agent记忆机制缺陷引发社区高讨论度",
+      "MCP扩展Claude Desktop能力实操分享",
+      "RAG文档拆分误区成优化核心方向",
+      "多智能体流水线检查点隐藏bug被披露",
+      "LLM API账单爆增防控经验干货输出"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "No major official releases across all tracked AI CLI tools in 24h.",
+      "ROS 2 and OpenVLA recorded zero repository activity in 24h.",
+      "Active dev concentrated in simulation tools NVIDIA Isaac Lab, Genesis.",
+      "LeRobot logged 14 total PR updates, 10 marked high-impact.",
+      "Active work prioritizes fixing dev pain points over net-new features.",
+      "Industry pushes to stabilize production-grade robotics AI toolchains."
+    ],
+    "ai-agents": [
+      "3 core embodied AI agent infrastructure projects tracked in 24h.",
+      "OpenClaw recorded zero issues, PRs, or new releases in 24h.",
+      "MuJoCo logged 1 enhancement issue and 1 feature PR in 24h.",
+      "Drake updated 1 feature request and 4 PRs (3 migration, 1 API).",
+      "MuJoCo earned the highest ecosystem health score at 9.0/10.",
+      "No critical stability incidents or urgent bug fixes reported."
+    ],
+    "ai-trending": [
+      "home-assistant/core gained 400 stars, only embodied GitHub Trending project.",
+      "VLA educational resources amassed thousands of stars for upskilling.",
+      "New purpose-built VLA safety testing and evaluation tools emerged.",
+      "dora-rs/dora has 3,840 stars, robotic middleware outperforming legacy ROS.",
+      "MuJoCo physics simulator holds 14,177 total stars as industry standard.",
+      "NVIDIA Isaac Lab robot learning framework has 7,661 total stars."
+    ],
+    "ai-hn": [
+      "Flash-MSA sparse attention kernel breakthrough was top HN AI post, score 21.",
+      "Anthropic extends Fable 5 model access for an extra week due to high demand.",
+      "Australia leads global Claude usage, per HN community reports.",
+      "Meta AI glasses backlash sparks privacy and social acceptability debate.",
+      "New Qwen 3.6 35B inference engine for RTX 5090/Blackwell launched.",
+      "Proposal for AI-generated content flags on HN gained traction."
+    ],
+    "ai-hf": [
+      "Qwen 3.5/3.6 quantized GGUF variants drive record Hugging Face downloads.",
+      "NVIDIA launched 4 new open models across CV, reasoning, and speech.",
+      "Baidu's Unlimited-OCR hit over 1.4M weekly downloads for production use.",
+      "NVIDIA's LocateAnything-3B notched over 1.4M weekly downloads.",
+      "zai-org/GLM-5.2 MoE LLM is highest-liked base model with 3,857 likes.",
+      "Tencent released Hy3, a Hunyuan base LLM optimized for chat."
+    ],
+    "ai-community": [
+      "Multi-agent reliability, RAG limits, LLM cost are top dev discussion topics.",
+      "Lobste.rs users debated AI's role in driving digital carbon bloat.",
+      "CMU's breakthrough cross-robot model transfer framework gained coverage.",
+      "AI agents can produce misleading technically accurate citations, per analysis.",
+      "Ollama on Jetson Nano benchmark released for low-power edge LLM deployments.",
+      "AI CI security alert false positive triage guide published on Dev.to."
+    ]
+  }
+}
