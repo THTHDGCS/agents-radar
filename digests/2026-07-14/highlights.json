@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "具身AI CLI工具生态进入落地攻坚阶段",
+      "覆盖ROS2、NVIDIA Isaac Lab等5款核心工具",
+      "迭代重心转向生产级稳定性与跨工具兼容",
+      "NVIDIA Isaac Lab今日更新50条PR，活跃度高",
+      "Genesis今日新增11条Issues，聚焦仿真确定性",
+      "三大工具共推跨生态兼容降低迁移成本"
+    ],
+    "ai-agents": [
+      "具身智能体开源生态核心引擎迭代加速",
+      "MuJoCo今日19条PR，社区健康度获评优秀",
+      "Drake集成新一代GJK++碰撞检测算法",
+      "OpenClaw打通仿真到实机部署最后一公里",
+      "两大引擎共推碰撞检测精度工业级升级",
+      "OpenClaw社区以宇树内部维护团队为主"
+    ],
+    "ai-trending": [
+      "GitHub具身智能热度集中于工具链与普惠资源",
+      "commaai/openpilot获63.1k星，落地300+车型",
+      "全中文VLA学习手册获382星，成入门首选",
+      "无ROS轻量化部署框架大幅降低具身门槛",
+      "机器人底层runtime项目horus获389星",
+      "VLA极简demo支持Mac无GPU运行，适配LeRobot"
+    ],
+    "ai-web": [
+      "Anthropic今日集中上线7篇官方核心内容",
+      "首次定义「智能体错位」风险，曝高权限隐患",
+      "推出大模型「全局工作空间」可解释性研究",
+      "正式上线Claude Design视觉设计产品",
+      "测试Claude机器人任务表现，提供基准依据",
+      "启动澳新区域企业级市场拓展"
+    ],
+    "ai-hn": [
+      "Claude趣味语音插件获114分，热度断层第一",
+      "MemStitch实现vLLM首Token生成提速25倍",
+      "MorphoHDL探索AI生成电路的新路径",
+      "团队AI技能共享工具依托Dropbox即可部署",
+      "地平线游戏AI避障论文公开，适配多形态机器人",
+      "AI编码工具隐性成本引发开发者集体反思"
+    ],
+    "ai-arxiv": [
+      "今日18篇AI论文聚焦机器人技术落地",
+      "世界模型自博弈范式提升运动规划鲁棒性",
+      "覆盖路径规划领域系统性综述正式发布",
+      "动作映射策略破解机器人高维动作空间难题",
+      "轻量空中机器人搜索框架SLIDER高效探索",
+      "双过程技能学习解耦语义推理与实时控制"
+    ],
+    "ai-hf": [
+      "通义千问衍生模型占HF周榜近三分之一",
+      "智谱GLM-5.2开源版获3.9k赞，下载破46万",
+      "腾讯混元Hy3国产基础LLM获754赞",
+      "Agents-A1为Agent专用大模型，主打场景落地",
+      "GGUF量化格式成消费级部署首选载体",
+      "英伟达75B推理LLM采用自研NVFP4量化"
+    ],
+    "ai-community": [
+      "AI编码工具隐性成本引发开发者集体反思",
+      "Dev.to创始人论证高质量文档仍为协作核心",
+      "首个浏览器AI Agent隐身执行能力评测发布",
+      "提出AI工作流分层选型思路平衡效果成本",
+      "Gemma-4系列模型AWS Inferentia2落地经验分享",
+      "硬核社区热议AI环境成本与隐私监控议题"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Digest covers 6 key embodied AI/robotics CLI dev tools.",
+      "No new production releases across tracked tools in 24h.",
+      "ROS 2 and OpenVLA have no daily activity per LTS roadmaps.",
+      "LeRobot leads activity with 8 issues, 20 PRs updated in 24h.",
+      "NVIDIA Isaac Lab posts 5 updated issues, 20 PRs in 24h.",
+      "Active projects prioritize interoperability for production use."
+    ],
+    "ai-agents": [
+      "Digest covers 3 core embodied AI agent infrastructure projects.",
+      "No 24h activity for OpenClaw, MuJoCo, or Drake tracked.",
+      "No critical outages or top-severity regressions reported.",
+      "Projects prioritize stability for production agent deployments.",
+      "Industry aligns on interchange formats to cut toolchain friction.",
+      "Health score tracks bug resolution, CI stability, and roadmap fit."
+    ],
+    "ai-trending": [
+      "VLA tech democratizes, lowers barriers for non-specialist devs.",
+      "OpenArm gains full production-ready control stack for manipulation.",
+      "VLA policy evaluation and safety emerge as fast-growing priorities.",
+      "Lightweight ROS-free deployment frameworks gain developer traction.",
+      "MuJoCo hits 14.1k stars, is de facto open-source robotics simulator.",
+      "NVIDIA Isaac Lab reaches 7.67k stars, leads VLA training use."
+    ],
+    "ai-web": [
+      "Anthropic publishes 7 new posts, OpenAI has no new content.",
+      "Landmark study finds all leading LLMs can act as malicious insiders.",
+      "Claude Design visual prototyping tool launches in research preview.",
+      "New native connectors released for leading creative software.",
+      "3 new papers cover alignment, robotics, and interpretability research.",
+      "Anthropic opens Sydney office to lead ANZ region go-to-market."
+    ],
+    "ai-hn": [
+      "Viral Claude Meeseeks plugin is HN’s top AI story of the day.",
+      "Zig creator slams Bun’s Claude-aided Rust rewrite as \"unreviewed slop\".",
+      "New AI team collaboration tools launch via Show HN.",
+      "Unregulated AI surveillance sparks widespread HN community alarm.",
+      "MemStitch delivers 25x TTFT speedup for vLLM deployments.",
+      "Horizon Zero Dawn obstacle avoidance paper cited for robotics dev."
+    ],
+    "ai-arxiv": [
+      "18 new ArXiv papers focus on real-world robotic AI deployment.",
+      "Diffusion models integrated into core robotic manipulation pipelines.",
+      "Training-free controllability for driving world models introduced.",
+      "Cross-modal distillation cuts robotic perception annotation costs.",
+      "New method mitigates shortcut learning in robotic foundation models.",
+      "Self-play fine-tuning improves safety-critical driving motion planning."
+    ],
+    "ai-hf": [
+      "Qwen 3.5/3.6 variants take 12 of top 30 trending HF model spots.",
+      "Baidu’s Unlimited-OCR and Tencent’s Hy3 see strong weekly adoption.",
+      "4 quantized community models top 1.3M weekly downloads each.",
+      "zai-org’s GLM-5.2 leads with 3,900 likes, 464.9k weekly downloads.",
+      "Tencent’s Hy3 is top-performing Q3 2026 open-weight Chinese LLM.",
+      "NVIDIA launches 30B Audex LLM optimized for audio understanding."
+    ],
+    "ai-community": [
+      "Devs warn of coding skill atrophy from overusing AI assistants.",
+      "Posts counter myth that LLMs eliminate need for formal documentation.",
+      "Guide details porting Google’s Gemma-4 to AWS Inferentia2.",
+      "New benchmarks reveal gaps in AI agent memory system performance.",
+      "Google’s AI-driven digital bloat linked to rising carbon emissions.",
+      "Browser agent comparison highlights key performance tradeoffs."
+    ]
+  }
+}
