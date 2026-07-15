@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI机器人CLI工具链形成四层清晰分层生态",
+      "当日3核心工具更14Issue、90PR，聚焦三大方向",
+      "Isaac Lab50PR，40%Issue聚焦Newton后端对齐",
+      "Genesis闭环P1物理Bug，新增二阶椭圆摩擦锥",
+      "LeRobot修复v2/v3数据集格式，推进兼容",
+      "跨工具生态联动显现，底层对接需求增长"
+    ],
+    "ai-agents": [
+      "具身AI底层生态分层，生产级需求成核心",
+      "MuJoCo6PR/1合并，解决Filament依赖冲突",
+      "Drake17PR/8合并，推进nanobind绑定API一致",
+      "OpenClaw（宇树SDK2）当日无活动，功能固化",
+      "两大通用框架聚焦体验、API稳定、求解器优化",
+      "OpenClaw sim2real适配成本远低于通用框架"
+    ],
+    "ai-trending": [
+      "今日GitHub Trending无符合条件具身项目",
+      "7天活跃项目中Isaac Lab（7676星）居首",
+      "dora-rs/dora（3842星）AI原生中间件成热点",
+      "国内首份中文VLA实战手册（384星）获关注",
+      "ROS-free轻量框架降低VLA落地门槛",
+      "VLA配套生态批量涌现，转向工程落地"
+    ],
+    "ai-web": [
+      "Anthropic新增3内容，OpenAI当日无更新",
+      "推免费K12教师专属Claude，对齐全美标准",
+      "投1000万加元资助加拿大三大AI研究院",
+      "发布首份加拿大国别AI使用经济报告",
+      "加拿大Claude人均使用量达预期4倍",
+      "教育AI切教师端，避开学生端合规争议"
+    ],
+    "ai-hn": [
+      "HN AI讨论聚焦伦理、产业风险、工程标准",
+      "英伟达发布ARDY人体运动生成新研究",
+      "MIT水空两栖扑翼机器人获社区关注",
+      "大模型Q4_K_M量化差达0.25bit，标准不一",
+      "开发者开源AI代理专用运行平台Vehir",
+      "Meta被诉裁员决策由AI而非人类做出"
+    ],
+    "ai-arxiv": [
+      "今日ArXiv AI投稿50篇，聚焦三大核心方向",
+      "实证1B内MLLM可超超大模型，降部署成本",
+      "提出VisCo压缩视觉Token，降VLM推理延迟",
+      "推出自进化多模态知识超图EvoGraph-R1",
+      "发布高效具身VLM基座Hy-Embodied-VLM-1.0",
+      "反思推理VLN智能体提升长航时导航成功率"
+    ],
+    "ai-hf": [
+      "Hugging Face周榜Qwen3.X生态霸榜",
+      "GLM-5.2（3948赞）成本周点赞最高LLM",
+      "Qwen3.6无审查多模态版周下载破244万",
+      "unsloth Qwen3.6优化版周下载近290万",
+      "百度Unlimited-OCR周下载破171万",
+      "2bit量化27B模型发布，内存占用极低"
+    ],
+    "ai-community": [
+      "Dev.to/Lobste.rs聚焦AI落地实战与安全",
+      "公开聊AI需求24小时遭AI销售电话骚扰",
+      "RAG评估不稳核心为检索非确定性",
+      "AI框架Demo惊艳，落地90%环节易崩溃",
+      "分享AI Agent Token成本降60%的配置",
+      "警示勿盲目信任AI生成的性能优化代码"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "6 robotics/embodied AI CLI tools featured in the July 15, 2026 digest.",
+      "ROS 2 and OpenVLA recorded no 24-hour activity in the reporting window.",
+      "Active projects prioritized core stability and cross-tool compatibility.",
+      "No active CLI tools published official tagged releases on July 15.",
+      "Maintainers landed high-severity bug fixes across active projects.",
+      "Ecosystem aligns on robotics standards for production use cases."
+    ],
+    "ai-agents": [
+      "3 embodied agent infrastructure projects covered in the digest.",
+      "OpenClaw recorded no 24-hour activity as of July 15, 2026.",
+      "MuJoCo merged a critical crash fix in the 24-hour reporting window.",
+      "MuJoCo earned a 9/10 ecosystem health score, highest in the set.",
+      "Drake closed 8 pull requests, leading tracked project activity.",
+      "No critical security or stability risks found across the ecosystem."
+    ],
+    "ai-trending": [
+      "No embodied AI/robotics projects made GitHub daily trending on July 15.",
+      "OpenArm humanoid manipulator repo hit 2.7k total stars.",
+      "NVIDIA Isaac Lab leads robot frameworks with 7,676 total stars.",
+      "dora-rs/dora gains traction as a lightweight alternative to ROS.",
+      "Community investment in democratizing VLA development is surging.",
+      "VLA evaluation and safety tooling is a fast-growing subcategory."
+    ],
+    "ai-web": [
+      "Anthropic published 3 new articles July 14, 2026; OpenAI published 0.",
+      "Anthropic launched Claude for Teachers for US K-12 educators.",
+      "Verified US K-12 educators get free premium Claude access.",
+      "Claude for Teachers is educator-only, not offered to students.",
+      "Anthropic committed $10M CAD to Canadian AI research.",
+      "Anthropic prioritizes public sector verticals and regional expansion."
+    ],
+    "ai-hn": [
+      "Vancouver PD’s AI surveillance escape tool drew broad HN praise.",
+      "Microsoft patched 570 flaws, including critical Azure AI/Copilot bugs.",
+      "Community decried rapid AI rollouts outpacing security QA capacity.",
+      "Meta faces lawsuit over using AI to make layoff decisions.",
+      "LLM quantization labeling shows 0.25 bit-per-weight spread across tools.",
+      "Users push for formalized LLM quantization benchmarking standards."
+    ],
+    "ai-arxiv": [
+      "July 15 ArXiv AI submissions are led by embodied/agentic AI advances.",
+      "Sub-1B emotion models match larger counterparts on recognition tasks.",
+      "New self-evolving hypergraph framework boosts agentic RAG performance.",
+      "Medical AI sees cross-modal progress across clinical use cases.",
+      "Researchers unveiled new backdoor defenses for VLA models.",
+      "New low-power edge VLA deployment frameworks released for robots."
+    ],
+    "ai-hf": [
+      "Qwen 3.5/3.6 derivatives take 11 of 30 top HF trending spots.",
+      "Top GGUF models surpassed 1.5M weekly downloads on the Hub.",
+      "zai-org’s GLM-5.2 MoE LLM earned 3,948 likes, leading new releases.",
+      "Tencent launched enterprise-focused Hy3 LLM for conversational use.",
+      "Uncensored open LLM variants see strong community engagement.",
+      "Users show growing demand for customizable open-weight models."
+    ],
+    "ai-community": [
+      "Dev.to and Lobste.rs discourse centers on production AI pain points.",
+      "Public AI forum posts are scraped for targeted sales outreach.",
+      "Developers shared actionable hacks to cut AI workload token costs.",
+      "Users flag fake work product outputs from Claude Code coding models.",
+      "Security risks of AI-generated code are a top community concern.",
+      "Community debates ethical implications of widespread AI surveillance."
+    ]
+  }
+}
