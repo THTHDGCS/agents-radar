@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "覆盖ROS2、Isaac Lab等6款具身智能AI CLI工具",
+      "NVIDIA Isaac Lab今日PR更新量达50条活跃度最高",
+      "Isaac Lab升级USD-core至26.05修复加载崩溃",
+      "Genesis优化光线投射显存带宽节省75%",
+      "Genesis新增适配RTX 5090新一代显卡",
+      "LeRobot升级FSDP2分布式训练后端"
+    ],
+    "ai-agents": [
+      "覆盖OpenClaw、MuJoCo、Drake3个具身核心项目",
+      "Drake发布v1.55.0正式版整体健康度良好",
+      "MuJoCo闭环Simulate全量快捷键文档需求",
+      "MuJoCo重构CG约束求解器隐式柔性实现",
+      "OpenClaw提供微秒级实机实时控制能力",
+      "Drake新增URDF距离约束解析能力"
+    ],
+    "ai-trending": [
+      "今日具身智能开源领域呈平民化落地导向",
+      "Isaac Lab星数7683为VLA研究主流仿真底座",
+      "国内首份中文VLA实战手册上线获高关注",
+      "Rust编写的dora成ROS外新兴机器人中间件",
+      "MuJoCo星数14219支持多GPU并行仿真",
+      "极简VLA Demo可在Mac无GPU运行"
+    ],
+    "ai-web": [
+      "Anthropic推出Claude Tag团队协作工具启Beta测",
+      "Claude Tag支撑Anthropic65%产品团队代码产出",
+      "Anthropic发布10个金融开箱即用Agent模板",
+      "美国K12认证教师可获免费Claude Premium权益",
+      "Anthropic投1000万加元支持加国AI研究",
+      "OpenAI未公开GPT Red项目指向自改进方向"
+    ],
+    "ai-hn": [
+      "实证显示主流AI检测工具存在系统性缺陷",
+      "开源Fuse优化Claude Code处理C#代码库速度",
+      "C++26写的Claude Code平替仅11MB无依赖",
+      "室内软漂浮机器人研究引陪护场景讨论",
+      "专为Agent设计的原生编程语言Baml发布",
+      "Go语言编写的AI机器人框架Gorai亮相"
+    ],
+    "ai-arxiv": [
+      "今日ArXiv更新50篇AI领域相关学术论文",
+      "突破LLM验证级联条件独立假设理论局限",
+      "经验记忆图实现Agent错误一次修正终身规避",
+      "开源AgentCompass统一智能体能力评估设施",
+      "提出Groc-PO多模态大模型真实性对齐方法",
+      "推出CAVA智能体运行时安全管控框架"
+    ],
+    "ai-hf": [
+      "GLM-5.2获3998赞为周度点赞最高大模型",
+      "腾讯开源Hy3大模型优化中文理解生成能力",
+      "1B小模型对齐Claude Opus推理能力受青睐",
+      "英伟达开源30B参数Nemotron通用大模型",
+      "GGUF量化为社区模型分发绝对主流格式",
+      "Agent专用大模型Agents-A1获社区关注"
+    ],
+    "ai-community": [
+      "AI时代软件质量度量框架获107赞登Dev.to首",
+      "基于Qwen+MCP构建不胡乱猜测的AI Agent",
+      "对比LangSmith与Traccia两大Agent可观测工具",
+      "发布Zod实现LLM输出类型安全实操教程",
+      "开源轻量LLM熔断工具管控云API调用成本",
+      "本地代码库记忆MCP服务搭建复盘发布"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "6 core robotics/embodied AI CLI tools include ROS 2 and OpenVLA.",
+      "ROS 2 and OpenVLA report no 24-hour development activity.",
+      "No official releases published across the ecosystem in the window.",
+      "Active simulation tools prioritize scalability and interoperability.",
+      "LeRobot focuses on deployment readiness and open annotation pipelines.",
+      "All active work reduces friction for end-to-end embodied AI workflows."
+    ],
+    "ai-agents": [
+      "Ecosystem covers 3 core robotics agent stack projects including MuJoCo.",
+      "OpenClaw (Unitree SDK2) reports no 24-hour development activity.",
+      "Drake leads with 8 open issues and 13 updated PRs in 24 hours.",
+      "MuJoCo has 7 updated PRs, 3 merged/closed in the 24-hour window.",
+      "No new releases published across the ecosystem in the reporting window.",
+      "Active work prioritizes end-user friction reduction and simulation stability."
+    ],
+    "ai-trending": [
+      "No embodied/robotics projects hit general GitHub top 13 trending list.",
+      "VLA democratization lowers entry barriers for non-specialist developers.",
+      "First open-source VLA safety red-teaming tools released this cycle.",
+      "NVIDIA Isaac Lab hits 7,683 stars as de facto VLA training standard.",
+      "MuJoCo reaches 14,219 stars, adds better GPU acceleration for VLA training.",
+      "dora-rs/dora gains traction as lightweight ROS alternative for edge robots."
+    ],
+    "ai-web": [
+      "Anthropic releases 4 new announcements, OpenAI adds 2 metadata entries.",
+      "Claude Tag Slack-native team AI tool launched for enterprise customers.",
+      "Internal Claude Tag generates 65% of Anthropic’s product team code.",
+      "Pre-built financial AI agents cut enterprise deployment timelines to days.",
+      "Anthropic offers free premium Claude access to US K-12 educators.",
+      "OpenAI teases self-improvement work for new \"GPT Red\" model line."
+    ],
+    "ai-hn": [
+      "AI word game *One More Letter* leads HN AI stories with 21 points.",
+      "AI detectors flag 95% of pre-ChatGPT writing, spurring skepticism.",
+      "Industry shifts from foundation model R&D to enterprise implementation.",
+      "Soft floating robot research sparks debate over power/payload limits.",
+      "Baml, a purpose-built agent programming language, gains developer interest.",
+      "Humanoid robots in auto manufacturing spark labor tension discussions."
+    ],
+    "ai-arxiv": [
+      "Latest ArXiv AI batch leads with agentic AI safety and evaluation advances.",
+      "New verifier cascade theory proves LLM failure risk decays polynomially.",
+      "Groc-PO alignment method cuts visual hallucinations in multimodal LLMs.",
+      "New benchmarks released for industrial dexterous robot manipulation.",
+      "Research covers self-evolving personal health management AI agents.",
+      "Domain AI work targets renewable forecasting and cancer assessment."
+    ],
+    "ai-hf": [
+      "Qwen 3.5/3.6 derivatives make up 1/3 of Hugging Face top 30 models.",
+      "GLM-5.2 open MoE LLM leads weekly likes at nearly 4,000.",
+      "Baidu’s Unlimited-OCR hits 1.7M weekly downloads as top open OCR tool.",
+      "Ultra-low-bit 1/2-bit quantization emerges as fast-growing model trend.",
+      "Bonsai 27B drives interest in edge-deployable high-parameter LLMs.",
+      "Agent/reasoning-focused model fine-tunes make up large share of trends."
+    ],
+    "ai-community": [
+      "Talks split between production AI practices and AI societal risks.",
+      "New guide outlines quality metrics for AI-integrated software systems.",
+      "Tutorial shows building hallucination-resistant AI agents with Qwen + MCP.",
+      "Developers highlight hidden engineering challenges of production chatbots.",
+      "Local offline inference gains traction to cut cloud costs and privacy risks.",
+      "Discussions cover AI surveillance and wealth concentration from data centers."
+    ]
+  }
+}
