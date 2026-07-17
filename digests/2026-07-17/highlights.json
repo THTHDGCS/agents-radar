@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "具身AI开发工具已形成清晰分层架构",
+      "生态核心矛盾转向生产级可靠性要求",
+      "Isaac Lab当日更新3个v3.0核心缺陷",
+      "Genesis当日更新18个PR迭代速度领先",
+      "LeRobot当日20个PR为全仓库最高",
+      "活跃工具共推跨平台兼容与稳定性优化"
+    ],
+    "ai-agents": [
+      "具身智能体拉动仿真硬件生态密集迭代",
+      "Drake当日闭环存在2年的历史Bug",
+      "MuJoCo迭代稳定，社区需求响应及时",
+      "OpenClaw是唯一实体机器人硬件适配项目",
+      "OpenClaw适配宇树全系列机器人硬件",
+      "两大仿真引擎共推跨生态格式兼容优化"
+    ],
+    "ai-trending": [
+      "openpilot星超6.3万，支持300+车型辅助驾驶",
+      "every-embodied星2.7k，国内具身入门标杆",
+      "人形机器人全栈开源生态加速成型",
+      "VLA普惠化，入门教程与配套工具批量登榜",
+      "dora中间件星3.8k，成ROS外新兴选择",
+      "具身研发重心从模型原型转向落地验证"
+    ],
+    "ai-web": [
+      "OpenAI新增青少年安全AI访问相关内容",
+      "青少年AI合规成OpenAI下一阶段重点",
+      "OpenAI抢占未成年AI合规先发优势",
+      "Anthropic当日无新增官方公开内容",
+      "Anthropic核心聚焦B端企业级业务",
+      "教育类开发者需提前适配未成年合规要求"
+    ],
+    "ai-hn": [
+      "HN AI板块当日热度温和，无爆款讨论",
+      "Forall推出带形式化验证的AI编码工具",
+      "AegisDB为单文件轻量化Agent内存库",
+      "探讨Phi-Zero架构在安全机器人的可行性",
+      "四足机器人野外多技能运动算法公开",
+      "社区抵触低质AI内容侵入专业社区"
+    ],
+    "ai-arxiv": [
+      "多智能体单目3D重建首次逼近10FPS实时",
+      "首次揭示世界行动模型鲁棒性核心缺陷",
+      "掩码感知策略梯度优化扩散LLM对齐",
+      "开源全功能通用视频MLLM VideoChat3",
+      "漂移快速世界模型提升具身控制实时性",
+      "先验协调机制优化MLLM空间理解精度"
+    ],
+    "ai-hf": [
+      "GLM-5.2 MoE获4k点赞，下载超51万次",
+      "腾讯开源混元第三代Hy3大语言模型",
+      "Agents-A1成Agent开发热门MoE基座",
+      "国产Qwen、GLM系列占榜单近半数席位",
+      "超低位1/2bit量化27B模型成社区新热点",
+      "Wan-Dancer-14B成舞蹈生成领域新热门"
+    ],
+    "ai-community": [
+      "谷歌AI解读Agent黑话「agentic harness」",
+      "AI生成代码技术「债务论」引发社区热议",
+      "轻量Agent可观测性开源工具正式发布",
+      "Claude客户端闲置占满系统资源问题曝光",
+      "拆解Agent长会话Token漂移核心原因",
+      "市场传Anthropic筹备9650亿美元IPO"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "6 embodied AI/robotics CLI tools featured in 2026-07-17 digest.",
+      "ROS 2 and OpenVLA logged no 24-hour code or issue changes.",
+      "LeRobot led active projects with 20 updated PRs in 24 hours.",
+      "NVIDIA Isaac Lab and Genesis each had 10 updated PRs in 24h.",
+      "Active projects prioritize CI stability and regression mitigation.",
+      "No new official releases for any covered CLI tools in 24h."
+    ],
+    "ai-agents": [
+      "3 core embodied AI agent infrastructure projects covered in digest.",
+      "OpenClaw logged 0 24h activity, earning a 5/10 health score.",
+      "No critical stability regressions reported across all projects.",
+      "Active work targets better tooling interoperability and cross-platform support.",
+      "Development focuses on iterative user-centric updates, not breaking changes.",
+      "MuJoCo logged 1 updated issue in the 24-hour tracking window."
+    ],
+    "ai-trending": [
+      "No embodied/robotics projects appeared on July 17 GitHub Trending.",
+      "7-day robotics trends focus on humanoid enablement and VLA democratization.",
+      "Mac-compatible minimal VLA implementation launched for broader access.",
+      "Chinese-language end-to-end VLA learning path released for developers.",
+      "New standardized VLA evaluation frameworks address validation gaps.",
+      "MuJoCo holds 14,236 total GitHub stars as core robotics simulation tool."
+    ],
+    "ai-web": [
+      "Only 1 new official AI content piece found in 24h OpenAI/Anthropic crawl.",
+      "OpenAI published metadata-only piece on teen safe AI access on July 16.",
+      "Anthropic logged 0 new public content across all categories in 24h.",
+      "No new research, product updates, or blogs released by Anthropic.",
+      "OpenAI’s teen AI safety piece aligns with global regulatory priorities.",
+      "OpenAI’s sitemap totals 869 assets, Anthropic’s totals 418 assets."
+    ],
+    "ai-hn": [
+      "HN AI discussions centered on reliable tooling and agent infrastructure.",
+      "Cerebras ending free wafer-scale compute sparked dev accessibility concerns.",
+      "Community flagged low-quality unlabeled AI-generated comments on HN/Reddit.",
+      "Non-conscious AI architecture for safe robotics drew research interest.",
+      "Open-source Lingbot-map 3D reconstruction model launched for edge use.",
+      "Formal verification for AI coding workflows emerged as top dev priority."
+    ],
+    "ai-arxiv": [
+      "50 new AI papers across 4 core CS categories published on 2026-07-17.",
+      "New hardened world modeling advances boost embodied AI control.",
+      "LongStraw enables 2M+ token long-context RL on fixed GPU budgets.",
+      "Near-10 FPS multi-agent 3D monocular reconstruction breakthrough reported.",
+      "New frameworks eliminate critical failure modes in world-action models.",
+      "Novel policy gradient method enables RL alignment of diffusion LLMs."
+    ],
+    "ai-hf": [
+      "GLM-5.2 leads Hugging Face trending models with 4,029 weekly likes.",
+      "Qwen3.6-35B-A3B-Uncensored tops downloads with 2.3M+ weekly pulls.",
+      "Ultra-low-bit 1/2-bit quantized Bonsai 27B LLM launched for edge use.",
+      "Baidu’s Unlimited-OCR crossed 1.8M weekly enterprise downloads.",
+      "Qwen/MiniCPM5 fine-tunes make up 40% of this week’s trending list.",
+      "Tencent’s Hy3 LLM launched with improved enterprise conversational fluency."
+    ],
+    "ai-community": [
+      "Dev.to/Lobste.rs discussions centered on agentic AI tooling and risks.",
+      "Post warns AI-generated code carries hidden accumulating technical debt.",
+      "Community effort launched to define vague 'agentic harness' term.",
+      "Dev built tiny open-source observability tool to track AI agent activity.",
+      "Lobste.rs discusses AI data centers driving wealth concentration.",
+      "Rumors of Anthropic’s near-trillion-dollar IPO drew cross-platform interest."
+    ]
+  }
+}
