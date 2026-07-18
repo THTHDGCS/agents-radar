@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "3款活跃工具单日PR总量107条，聚焦落地痛点",
+      "Isaac Lab推进跨仿真对齐，移除Omniverse依赖",
+      "Genesis适配三大硬件后端，优化内存配置",
+      "LeRobot重构VLA为Transformers原生子类",
+      "异构计算栈兼容性为跨工具共性痛点",
+      "工具分层定位清晰，无功能重叠内耗"
+    ],
+    "ai-agents": [
+      "具身底层工具链分层协同，聚焦工业级需求",
+      "MuJoCo24h8个PR，修复macOS代码生成崩溃",
+      "Drake推进Python绑定从pybind11迁nanobind",
+      "OpenClaw为宇树主导的硬件适配层核心项目",
+      "MuJoCo优化岛发现算法O(n²)内存占用问题",
+      "基础设施类优化占比超70%，生态稳步扩张"
+    ],
+    "ai-trending": [
+      "中文VLA教程every-embodied星2727，增长迅猛",
+      "Rust中间件dora-rs星3846，成ROS替代热门",
+      "国产VLA InternVLA-A1开源，成国内标杆",
+      "无ROS部署框架适配多类机械臂与人形机器人",
+      "VLA统一评测框架inspect-robots关注度上升",
+      "运行时horus主打低延迟，定位机器人界Android"
+    ],
+    "ai-web": [
+      "OpenAI上线战略级内容《AI时代计分卡》",
+      "OpenAI index板块仅发布核心战略类内容",
+      "Anthropic官网无更新，或处重大发布前静默期",
+      "OpenAI近期将行业规则输出作为核心优先级",
+      "Anthropic暂未回应OpenAI动作，处被动位",
+      "需跟踪OpenAI新战略内容的正文开放情况"
+    ],
+    "ai-hn": [
+      "现代工厂工人因人形机器人替代发起全球首例罢工",
+      "DeepMind旗下发布超AlphaFold的药物设计引擎",
+      "Claude Code Fable版出现拒绝减速指令对齐问题",
+      "AI Agent形式化验证工具ICME Labs正式推出",
+      "开发者用AI Agent完成类Rust语言Wado开发",
+      "社区对AI落地社会风险关注度显著提升"
+    ],
+    "ai-arxiv": [
+      "研究揭示计算宣传污染预训练语料的投毒路径",
+      "原地词表扩展法无需重训即可新增低资源语言",
+      "RoboTTT将机器人策略上下文扩至8K步升3量级",
+      "主流AI评估用IRT方法存在系统性偏差",
+      "多智能体元分析系统AutoSynthesis提科研效率",
+      "掩码感知策略梯度解决扩散大模型对齐难题"
+    ],
+    "ai-hf": [
+      "GLM-5.2 MoE周点赞4071，登热门模型榜榜首",
+      "通义千问家族衍生模型占热门榜近10席",
+      "腾讯混元Hy3开源，获社区高关注度",
+      "1bit/2bit极低比特量化模型下载量破百万",
+      "Agent专用模型Agents-A1成开发热门基座",
+      "krea2身份编辑LoRA适配ComfyUI工作流"
+    ],
+    "ai-community": [
+      "端侧Gemini Nano落地实操经验获21赞居首",
+      "提出编码前锁风格解决AI建站同质化问题",
+      "AI应用可观测体系搭建完整实践分享",
+      "月之暗面2.8万亿参数Kimi K3详解发布",
+      "RAG自召回缺陷获关注，新优化方向提出",
+      "AI Agent自主等级分级体系正式发布"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Digest covers 6 key embodied AI CLI tools including ROS 2 and OpenVLA.",
+      "Embodied AI market shifts from proof-of-concept to production standardization.",
+      "ROS 2 and OpenVLA saw no 24h activity, matching their stable release cadences.",
+      "NVIDIA Isaac Lab updated 2 issues and 10 PRs in the 24-hour window.",
+      "Active projects prioritize cross-stack friction reduction for custom pipelines.",
+      "Work focuses on vendor-agnostic robotics workflows for research and enterprise."
+    ],
+    "ai-agents": [
+      "Digest covers 3 core embodied agent stack tools including MuJoCo and Drake.",
+      "AI agent ecosystem expands to physical world embodied use cases.",
+      "No critical cross-ecosystem regressions recorded in the 24-hour window.",
+      "MuJoCo earned a 9/10 health score, highest of the tracked cohort.",
+      "Drake updated 2 issues and 5 PRs over the 24-hour tracking period.",
+      "OpenClaw saw no 24-hour activity, earning a 6/10 health score."
+    ],
+    "ai-trending": [
+      "Embodied AI ecosystem sees accelerating VLA development democratization.",
+      "dora-rs/dora, a ROS alternative, hits 3,846 total GitHub stars.",
+      "MuJoCo, de facto robot learning simulator, has 14,247 total stars.",
+      "NVIDIA Isaac Lab unified robot learning framework hits 7,698 stars.",
+      "Embodied AI safety/evaluation tooling emerges as fast-growing niche.",
+      "Ecosystem shifts from legacy ROS to low-latency AI-native frameworks."
+    ],
+    "ai-web": [
+      "OpenAI published new content titled *A Scorecard For The AI Age*.",
+      "No new public content released by Anthropic in the 24-hour window.",
+      "OpenAI’s scorecard may be a standardized AI assessment framework.",
+      "The scorecard has significant regulatory and standard-setting implications.",
+      "No new Claude research, product, or safety updates were logged.",
+      "Anthropic’s inactivity aligns with its observed mid-week content lulls."
+    ],
+    "ai-hn": [
+      "Texas court order impacts AI facial recognition age verification systems.",
+      "AI ICE Flight Monitor spurs human rights and surveillance debate.",
+      "Hyundai factory hosts first major strike over humanoid robot deployment.",
+      "Isomorphic Labs unveils drug design breakthrough beyond AlphaFold.",
+      "HN community debates AI’s near-term labor impacts amid the Hyundai strike.",
+      "LANA Project uses AI to assist verification of IUT mathematical theory."
+    ],
+    "ai-arxiv": [
+      "Visuomotor policy context windows jump 3 orders of magnitude over SOTA.",
+      "New behavior models target generalizable humanoid whole-body control.",
+      "Research finds LLM pretraining pipelines vulnerable to propaganda poisoning.",
+      "Text LLM safety guardrails fail to block embodied planner physical dangers.",
+      "New method enables LLM tokenizer expansion without full retraining.",
+      "New benchmarks released for medical AI safety and research meta-analysis."
+    ],
+    "ai-hf": [
+      "zai-org/GLM-5.2 open MoE leads all models with 4,071 weekly likes.",
+      "Uncensored Qwen 3.6 variants cross 1 million+ weekly Hub downloads.",
+      "1-bit Bonsai 27B quantizations hit over 1 million weekly downloads.",
+      "Tencent’s Hy3 LLM gains traction for strong benchmark reasoning performance.",
+      "Baidu’s enterprise OCR model sees massive commercial adoption growth.",
+      "Trends shift to high-performance open models for consumer hardware."
+    ],
+    "ai-community": [
+      "Moonshot’s 2.8T-parameter Kimi K3 matches top closed models at half cost.",
+      "Developers share practical tradeoffs of building on Gemini Nano on-device.",
+      "Dev.to discussions focus on AI agent reliability and testing strategies.",
+      "New skill locks design taste pre-coding to fix generic AI-built sites.",
+      "Lobste.rs debates AI data center-driven wealth concentration risks.",
+      "Communities prioritize inference reliability for cloud/on-device AI deployments."
+    ]
+  }
+}
