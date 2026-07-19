@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Genesis发布v1.2.3正式版，8项PR全合并落地",
+      "NVIDIA Isaac Lab 33项PR提交，含10项核心迭代",
+      "LeRobot提交17项PR，新增跨社区协作需求",
+      "三大活跃工具共推跨生态迁移成本优化",
+      "聚焦端到端训练链路稳定性与效率提升",
+      "发力USD、MJCF 3D资产生态兼容性适配"
+    ],
+    "ai-agents": [
+      "MuJoCo修复macOS introspect代码生成崩溃问题",
+      "Drake推进Python绑定从pybind11升级至nanobind",
+      "MuJoCo收批量模型编辑API请求，适配大场景",
+      "Drake修复逆运动学距离约束语义Bug",
+      "OpenClaw（宇树SDK2）进入稳定维护期无风险",
+      "具身底层工具链加速向工业级生产可用演进"
+    ],
+    "ai-trending": [
+      "lingbot-map单日涨831星，登顶具身智能热榜",
+      "dora-rs/dora获3843星，成新一代ROS候选方案",
+      "轻量VLA模型VIRENA可在无GPU Mac设备运行",
+      "中文VLA实战手册VLA-Handbook填补资源空白",
+      "robot-control-stack无ROS依赖，降Sim2Real门槛",
+      "Isaac Lab成VLA人形机器人训练主流底座"
+    ],
+    "ai-hn": [
+      "斯坦福提出新统计检验，优化AI个性化效果评估",
+      "AI辅助嵌入式漏洞挖掘研究填补垂直场景空白",
+      "SigLIP 2文本嵌入实现CPU端高效部署",
+      "SSH工具为AI Agent提供稳定运行环境",
+      "图上下文引擎破解大模型幻觉核心痛点",
+      "AGI时代个人规划话题成社区互动热点"
+    ],
+    "ai-hf": [
+      "谷歌gemma-4-31B-it下载破1200万稳居全榜第一",
+      "智谱GLM-5.2周度点赞4126，登顶全榜榜首",
+      "1/2比特Bonsai 27B累计下载量突破150万",
+      "腾讯开源混元第三代Hy3大语言模型",
+      "Qwen系列衍生模型占热门榜超30%份额",
+      "9B级多模态Qwythos下载量突破200万"
+    ],
+    "ai-community": [
+      "开源模型占全球AI Token流量达63%引热议",
+      "AI代码诱饵实战助力代码资产权限管控",
+      "PDF解析Token浪费拆解提供LLM降本方案",
+      "120B参数大模型实现移动端推理技术突破",
+      "2000万行级LLM缓存轻量化架构方案分享",
+      "厘清AI Agent上下文与长期记忆本质差异"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "6 robotics/AI CLI tools (including ROS 2, LeRobot) featured in today’s digest.",
+      "NVIDIA Isaac Lab recorded 10 total PR updates in the 24-hour reporting window.",
+      "Genesis shipped stable v1.2.3 release with 8 bundled closed PRs.",
+      "Mature tools ROS 2 and OpenVLA reported no daily changes in this snapshot.",
+      "Active tool updates prioritize reducing onboarding friction for robotics devs.",
+      "Community contributions like localization are key open-source differentiators."
+    ],
+    "ai-agents": [
+      "3 core embodied AI projects (OpenClaw, MuJoCo, Drake) featured today.",
+      "All projects are backed by leading industry/academic robotics stakeholders.",
+      "OpenClaw reported zero issues or PR updates in the 24-hour window.",
+      "Recent development focused on stability and performance optimizations.",
+      "No critical outages or breaking changes recorded across the ecosystem.",
+      "Health scores track bug velocity, roadmap alignment, and critical issues."
+    ],
+    "ai-trending": [
+      "lingbot-map 3D scene reconstruction model gained 831 new GitHub stars in 24h.",
+      "Open-source VLA accessibility is a top priority for robotics developers.",
+      "dora-rs/dora (3.8k stars) emerges as a lightweight ROS alternative for VLA work.",
+      "NVIDIA Isaac Lab totals 7.7k GitHub stars, leads simulation VLA training.",
+      "Rerun robotics visualization tool hits 11.1k total GitHub stars.",
+      "New benchmarks launch to standardize VLA and manipulation performance testing."
+    ],
+    "ai-hn": [
+      "NYC’s ban on unlabeled AI real estate listing images leads HN AI discussions.",
+      "Ask HN thread on post-AGI preparations draws high comment engagement.",
+      "Databricks hits a major valuation milestone as a top AI infrastructure player.",
+      "Stanford releases k-fold framework to measure AI personalization lift.",
+      "New PoC shows LLMs can streamline embedded device vulnerability detection.",
+      "AI reliability and agent workflow tools gain niche builder attention."
+    ],
+    "ai-hf": [
+      "Google’s gemma-4-31B-it tops HF downloads with 12.6M+ weekly downloads.",
+      "Baidu’s Unlimited-OCR earns over 2 million weekly downloads on the Hub.",
+      "Prism-ML’s 1/2-bit Bonsai low-bit models hit 1.5M+ combined downloads.",
+      "zai-org’s GLM-5.2 MoE LLM gains 541k+ downloads and 4.1k likes.",
+      "Tencent’s Hy3 Hunyuan base LLM enters Hugging Face’s trending ranks.",
+      "Qwen 3.5/3.6 and MiniCPM5 fine-tunes dominate mid-tier trending spots."
+    ],
+    "ai-community": [
+      "Top Dev.to post uses AI bait to expose unauthorized workplace surveillance.",
+      "Unoptimized PDF parsing wastes significant LLM token volume for dev teams.",
+      "Kimi K3 brings 120B open-weight model inference to mobile devices.",
+      "Lobste.rs discussions highlight ELIZA’s legacy as the first ever chatbot.",
+      "Verifiable AI inference standards gain traction in technical communities.",
+      "Novel human-like LLM training approaches are top Lobste.rs AI topics."
+    ]
+  }
+}
