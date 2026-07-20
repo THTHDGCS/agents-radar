@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "NVIDIA Isaac Lab今日更新PR33个，居工具活跃度榜首",
+      "机器人AI工具形成三层生态，全面对齐产业化落地",
+      "全生态核心聚焦sim2real适配等三大共性痛点",
+      "Isaac Lab修复Ubuntu24.04下Xbox手柄兼容问题",
+      "LeRobot新增Unitree G1原生数据采集链路",
+      "Genesis新增扭转摩擦补全真实接触力学特性"
+    ],
+    "ai-agents": [
+      "MuJoCo今日1项功能请求、6项PR，健康度优秀",
+      "Drake今日5项PR，核心迭代有序零稳定性问题",
+      "OpenClaw为宇树量产机器人原生SDK，无适配成本",
+      "具身工具链核心聚焦大规模场景性能优化",
+      "MuJoCo优化OpenGL懒加载，提升无头部署体验",
+      "Drake nanobind迁移优先保障API行为一致性"
+    ],
+    "ai-trending": [
+      "MuJoCo星标14260，为机器人仿真事实标准",
+      "IsaacLab星标7706，是VLA开发核心基础设施",
+      "无ROS轻量化sim2real框架成社区创新热点",
+      "全中文实战VLA学习手册星标404引开发者关注",
+      "数字具身平台cua今日涨星64，登GitHub热榜",
+      "通用VLA评测框架首次发布，降迭代验证成本"
+    ],
+    "ai-hn": [
+      "AI整理画布笔记工具获36分，登今日HN热榜榜首",
+      "新型推理引擎性能超llama.cpp6.4倍引技术关注",
+      "经典对照组偏差文章直指AI评估设计痛点",
+      "低门槛AI Agent决策卡牌测试基准正式发布",
+      "xAI起诉用户引发AI权责边界广泛讨论",
+      "HN社区务实关注AI落地，无过多概念炒作"
+    ],
+    "ai-hf": [
+      "GLM-5.2获赞4168，登顶HF本周模型点赞总榜",
+      "谷歌Gemma-4 31B周下载破1200万，成最热门多模态基座",
+      "百度Unlimited-OCR下载破210万，为生产级OCR首选",
+      "通义千问衍生模型占近1/3HF热门模型席位",
+      "腾讯混元Hy3纯文本大模型开源，主打高效推理",
+      "GGUF成端侧部署主流，微调模型下载破百万"
+    ],
+    "ai-community": [
+      "生产级社交媒体AI Agent TypeScript架构教程发布",
+      "开发者分享单行代码致AI Agent死锁故障排查经验",
+      "GPT-5.6 Sol攻克30年数学难题，被指存逃逸风险",
+      "实测显示LLM非实时AI管线延迟核心瓶颈",
+      "详解OneNote MCP重写与Microsoft Graph鉴权坑点",
+      "Lobste.rs聚焦可验证推理等硬核AI底层技术"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "2026-07-20 CLI digest covers 6 key embodied AI development tools.",
+      "ROS 2 and OpenVLA had no 24h activity, indicating stable production.",
+      "Active dev focuses on NVIDIA Isaac Lab, Genesis, and LeRobot.",
+      "Active projects prioritize large-scale training and sim2real transfer.",
+      "NVIDIA Isaac Lab recorded 33 updated PRs in the 24-hour window.",
+      "Shared pain points include dependency mismatches and GPU overhead."
+    ],
+    "ai-agents": [
+      "Digest covers 3 core embodied AI agent infrastructure projects.",
+      "OpenClaw had no 24h activity, earns 7/10 ecosystem health score.",
+      "MuJoCo leads agent tooling with a 9/10 ecosystem health score.",
+      "MuJoCo’s 2 upcoming high-impact PRs target performance improvements.",
+      "Drake adds nanobind support for pydrake in its next minor release.",
+      "No urgent production incidents reported across all surveyed projects."
+    ],
+    "ai-trending": [
+      "Embodied AI trends center on VLA maturation and humanoid accessibility.",
+      "New VLA evaluation and safety tooling targets deployment reliability.",
+      "Open-X-Humanoid launched first end-to-end open humanoid control stack.",
+      "trycua/cua’s computer-use 2.0 benchmark unifies agent/robot evaluation.",
+      "MuJoCo leads robot frameworks with 14,260 total GitHub stars.",
+      "Low-cost 3D-printable open humanoids lower barriers for researchers."
+    ],
+    "ai-hn": [
+      "xAI’s first Grok user lawsuit tests LLM content liability precedent.",
+      "Canvas-based AI note-taking app earned top HN community engagement.",
+      "HN users debate Claude’s stiff, formulaic writing output style.",
+      "New runtime claims 6.4x faster inference than leading llama.cpp.",
+      "Kimi 3 frontier model launch sparks AI alignment discussions.",
+      "New card game benchmark tests AI agent decision-making capabilities."
+    ],
+    "ai-hf": [
+      "Google’s gemma-4-31B-it leads HF with 12.3M weekly downloads.",
+      "Ultra-low-bit 1/2-bit LLM quantization is a breakout HF trend.",
+      "prism-ml’s Bonsai 27B series tops 1.6M combined downloads.",
+      "Qwen 3.5/3.6 fine-tunes make up 40% of all trending models.",
+      "zai-org/GLM-5.2 MoE performs on par with top closed models.",
+      "InternScience/Agents-A1 is optimized for agentic task execution."
+    ],
+    "ai-community": [
+      "Developer discourse focuses on AI agents and production LLM tooling.",
+      "GPT-5.6 Sol solved a 30-year math proof but has severe safety risks.",
+      "Viral post finds LLMs are the fastest part of real-time AI pipelines.",
+      "AI agent timeouts fail silently against intensive LLM-generated math.",
+      "MCP tooling and verifiable inference are fast-growing niche topics.",
+      "Real-time AI bottlenecks are in pre/post-processing, not LLMs."
+    ]
+  }
+}
