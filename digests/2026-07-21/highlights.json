@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "覆盖ROS 2、Isaac Lab等6款具身智能开发CLI工具",
+      "具身AI开发工具正从原型验证转向生产级落地",
+      "今日Isaac Lab更新50条PR，活跃度居同类榜首",
+      "非NVIDIA硬件适配成工具生态差异化核心赛道",
+      "Isaac Lab四成Issue聚焦跨版本跨后端兼容适配",
+      "sim2real差距收敛已从算法层下沉到系统层"
+    ],
+    "ai-agents": [
+      "覆盖OpenClaw、MuJoCo、Drake三大具身核心基础设施",
+      "Drake今日更新43条Issue，社区活跃度位居榜首",
+      "OpenClaw为具身生态硬件适配层核心项目",
+      "Drake推进从pybind11到nanobind的绑定迁移",
+      "MuJoCo新增Rollout错误降级适配大规模仿真",
+      "具身全链路无严重故障，整体生态健康度较高"
+    ],
+    "ai-trending": [
+      "具身热度集中VLA工具链、人形开源、仿真三大方向",
+      "dora-rs/dora⭐3848，是替代ROS的热门轻量中间件",
+      "lingbot-map今日涨星565，登GitHub Trending具身榜首",
+      "国内具身实战项目every-embodied累计获星2770",
+      "IROS2026收录179M参数轻量VLA模型SUREFlow",
+      "号称“机器人界Android”的horus runtime热度攀升"
+    ],
+    "ai-web": [
+      "Anthropic发布罕见病科研资助，最高5万美元API额度",
+      "OpenAI上线长程模型安全对齐相关官方页面",
+      "Anthropic AI for Science转向垂直主题化深耕",
+      "资助分基础科研、生物科技公司双赛道推进",
+      "OpenAI对齐研究已延伸至长程模型前沿领域",
+      "两家战略分化，各主导场景落地与安全议题"
+    ],
+    "ai-hn": [
+      "小米新机器人Xiaomi-Robotics-1登HN热度榜首",
+      "GPT-5.6与Kimi K3直播比拼坎巴拉太空规划能力",
+      "Anthropic公开Claude控制实体机器人的研究进展",
+      "JetBrains验证rtk技能可减Agent60-90%token消耗",
+      "社区对实体AI商业化关注度远超纯大模型迭代",
+      "全模态全身移动操纵机器人技术获技术圈关注"
+    ],
+    "ai-arxiv": [
+      "今日新增22篇AI论文，覆盖四大核心研究方向",
+      "提出VecFontLLM，首次实现中文矢量字体端到端生成",
+      "VLM剪枝方法可大幅降本且精度损失可忽略",
+      "首个GUI智能体状态转换推理基准EvoGUI发布",
+      "DROID-ANCHOR解决单目SLAM尺度模糊漂移问题",
+      "大模型单目深度能力可无损迁移至边缘tiny模型"
+    ],
+    "ai-community": [
+      "AI生成代码权责归属引发开发者群体广泛讨论",
+      "阿里发2.4T大模型，OpenAI压缩Codex算力成本",
+      "本地部署AI代理≠绝对安全，边界问题引关注",
+      "AI编码代理对初级开发者成长影响引行业讨论",
+      "RAG系统存在静默降级风险，运维漏洞被曝光",
+      "通用大模型排行榜局限性获开发者普遍认可"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Features 6 core embodied AI tools including ROS 2 and NVIDIA Isaac Lab.",
+      "No official tool releases shipped in the 24-hour reporting window.",
+      "NVIDIA Isaac Lab led activity with 50 updated PRs in 24 hours.",
+      "Stable projects ROS 2 and OpenVLA reported no 24-hour activity.",
+      "Active projects prioritized reducing end-to-end deployment friction.",
+      "Ecosystem prioritizes multi-vendor GPU compatibility for robot tooling."
+    ],
+    "ai-agents": [
+      "Tracks 3 core embodied AI agent tools including MuJoCo and Drake.",
+      "MuJoCo earned a 9.0/10 composite ecosystem health score.",
+      "Hardware SDK OpenClaw reported no 24-hour public activity.",
+      "Drake led activity with 43 updated issues in the 24-hour window.",
+      "No critical breaking regressions reported across all tracked projects.",
+      "Ecosystem prioritizes standardized tooling for agent production."
+    ],
+    "ai-trending": [
+      "lingbot-map 3D scene model gained 565 stars, hit GitHub’s top 20 trending.",
+      "VLA educational resources are seeing explosive community uptake.",
+      "179M parameter edge VLA SUREFlow was accepted at IROS 2026.",
+      "RLinf embodied RL infrastructure has 4,182 total GitHub stars.",
+      "dora low-latency robotic middleware has 3,848 total GitHub stars.",
+      "openpilot robotics OS has 63,178 total stars, powers 300+ ADAS systems."
+    ],
+    "ai-web": [
+      "Crawled 2 new official updates from Anthropic and OpenAI.",
+      "Anthropic launched AI for Science grants for rare disease research.",
+      "Grantees get up to $50,000 in Claude API credits over 6 months.",
+      "OpenAI published new content on long-horizon model safety alignment.",
+      "Updates reveal strategic divergence between Anthropic and OpenAI.",
+      "Anthropic shifts AI for Science to topic-focused grant cohorts."
+    ],
+    "ai-arxiv": [
+      "Features 22 new AI papers across robotics, CV, and ML categories.",
+      "VecFontLLM enables high-quality direct Chinese vector font generation.",
+      "Key focus on translating foundation model gains to edge deployment.",
+      "New research improves metric depth estimation for real-world robots.",
+      "Introduces new benchmarks for understudied domains like Bengali clickbait.",
+      "New frameworks boost adversarial robustness for surveillance systems."
+    ],
+    "ai-hf": [
+      "Tracks 30 trending models on the Hugging Face Hub.",
+      "zai-org’s GLM-5.2 leads weekly trending with 4,226 likes.",
+      "Google’s Gemma 4 31B-it has over 11.9M total downloads.",
+      "Qwen 3.5/3.6 are the most popular bases for community fine-tunes.",
+      "Bonsai 27B ultra-low-bit quantizations hit 1.6M combined downloads.",
+      "Baidu’s Unlimited-OCR ranks among top 3 most liked specialized models."
+    ],
+    "ai-community": [
+      "Covers 46 AI discussions across Dev.to and Lobste.rs.",
+      "Debates legal liability and ownership of AI-generated code.",
+      "Experts warn local AI agents still carry prompt injection risks.",
+      "Alibaba launched a new 2.4-trillion-parameter AI model.",
+      "OpenAI shrank Codex’s context window to cut compute costs.",
+      "Developers express widespread skepticism of generic AI benchmarks."
+    ]
+  }
+}
