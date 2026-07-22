@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "当日具身AI CLI工具更新12核心Issue、87条PR",
+      "NVIDIA Isaac Lab更50PR，推进VSCode配置冲突修复",
+      "LeRobot新增简繁中文文档，优化Windows PyTorch依赖",
+      "Genesis支持AMD GPU全链路，完善触觉传感器适配",
+      "三大工具齐降入门门槛，减少新用户调试损耗",
+      "仿真与实机部署边界打通，硬件适配范围快速扩围"
+    ],
+    "ai-agents": [
+      "Drake当日更20PR，推进nanobind绑定层迁移",
+      "MuJoCo修复Python绑定段错误，升级Pillow补漏洞",
+      "OpenClaw定位硬件交互层，补仿真工具硬件操作空白",
+      "MuJoCo当日更2Issue，1条高严重Bug已关闭",
+      "两大仿真工具齐优化Python绑定层性能稳定性",
+      "Drake健康度高，核心功能与基建并行迭代"
+    ],
+    "ai-trending": [
+      "IsaacLab登机器人框架热榜，7722星成主流仿真基座",
+      "商汤开源InternVLA-A1，国内首个全栈通用VLA",
+      "179M轻量VLA SUREFlow开源，适配边缘端机器人",
+      "无ROS轻量sim2real框架robot-control-stack开源",
+      "horus成热门机器人运行时，定位机器人领域Android",
+      "VLA评测框架inspect-robots填补标准化评测空白"
+    ],
+    "ai-web": [
+      "Anthropic全量上线Claude Sonnet 5，成默认模型",
+      "Claude Haiku 4.5上线，1/3成本达Sonnet 4编码能力",
+      "Anthropic推Agent Skills开放标准，造智能体协议层",
+      "Claude Opus 4.5定价降至$5/$25每百万tokens",
+      "OpenAI仅更董事会任命，无技术产品类发布",
+      "Anthropic建三层模型矩阵，对标GPT-5.2商业化"
+    ],
+    "ai-hn": [
+      "按周GPU交易平台Computable获HN AI类最高分18",
+      "机器人数据基建参考YouTube架构，解决多模态存储",
+      "Firecracker微VM沙箱Superserve适配长时AI Agent",
+      "研究实证技能模块对编码Agent精度的量化影响",
+      "Simon访谈Claude代码团队，披露训练优化路径",
+      "分时GPU平台引社区讨论资源标准化落地难度"
+    ],
+    "ai-arxiv": [
+      "提出多方会议多模态LLM心智理论评估基准MeetingToM",
+      "AdaFlash自适应推测解码提升LLM推理效率",
+      "提出\"先推理后翻译\"范式，提升法律翻译精度",
+      "单GPU可支持无限长交互世界推演，智能体效率突破",
+      "RLVR训练成本-质量量化框架，助大模型成本控制",
+      "自动驾驶双认知规划框架，实现推理动作可验证"
+    ],
+    "ai-hf": [
+      "智谱GLM-5.2登HF热门榜，获4278赞、54万下载",
+      "谷歌Gemma4-31B-it下载破1200万，工业需求旺",
+      "百度无限制OCR获2605赞、223万下载，成商用首选",
+      "Qwen3.5/3.6成HF社区微调、量化最热门基座",
+      "1bit/2bit低比特推理模型HF关注度持续攀升",
+      "Kimi K2.7-Code获1199赞，适配长上下文代码生成"
+    ],
+    "ai-community": [
+      "实测MCP模式AI K8s排障工具调用量降76%、耗时减半",
+      "披露50MB语音克隆模型可复刻用户身份的安全风险",
+      "推出AI生成代码安全检测工具hallint，可集成CI/CD",
+      "Google发布Gemini 3.6 Flash、3.5 Flash Lite新模型",
+      "Kimi K3网络审计表现优于美国主流大模型",
+      "披露自治代理攻破HF事件，RAG投毒过滤器可防御"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "6 core embodied AI CLI tools featured in latest community digest.",
+      "NVIDIA Isaac Lab landed 50 updated PRs in 24 hours.",
+      "LeRobot led all tools with 6 updated issues in the 24h window.",
+      "Mature projects ROS 2 and OpenVLA saw no 24h development activity.",
+      "Genesis pushed 14 PRs aligned with end-to-end robotic learning.",
+      "Tool devs prioritize cutting sim-to-real deployment overhead."
+    ],
+    "ai-agents": [
+      "3 core robotics infrastructure projects covered in latest digest.",
+      "OpenClaw saw no 24h activity, earning a 4/10 ecosystem health score.",
+      "Drake led tracked projects with 20 updated PRs in 24 hours.",
+      "MuJoCo merged 5 of 9 total updated PRs in the 24-hour window.",
+      "No critical outages disrupted downstream embodied AI agent development.",
+      "Devs prioritize high-throughput batch simulation for agent training."
+    ],
+    "ai-trending": [
+      "179M-parameter SUREFlow Mamba VLA accepted to IROS 2026.",
+      "2.7k-star openarm emerges as low-cost open humanoid hardware option.",
+      "Rust-based horus runtime billed as 'Android for robots' gains traction.",
+      "every-embodied lowers entry barriers for beginner VLA developers.",
+      "NVIDIA Isaac Lab hits 7.7k stars as leading robot learning framework.",
+      "dora-rs/dora reaches 3.85k stars as low-latency robotic middleware."
+    ],
+    "ai-web": [
+      "Anthropic launches Claude Sonnet 5, new default for Free/Pro plans.",
+      "Sonnet 5 matches near-Opus 4.8 performance at a lower price point.",
+      "10 historical Anthropic product announcements newly indexed.",
+      "Anthropic’s 9-month strategy democratizes high-performance agentic AI.",
+      "OpenAI announces two new board appointments in latest crawl.",
+      "Anthropic expands vertical products for design, small business, education."
+    ],
+    "ai-hn": [
+      "Two new Show HNs launch for GPU reservations and AI agent sandboxing.",
+      "Moonshot AI plans $50B Hong Kong IPO following Kimi K3 breakthrough.",
+      "HN prioritizes evidence-backed AI content over marketing announcements.",
+      "New study tests if skills boost coding agent performance accuracy.",
+      "Analysis exposes 'reranker tax' waste in common RAG stack workarounds.",
+      "Practical, low-cost AI infrastructure leads HN AI discussion rankings."
+    ],
+    "ai-arxiv": [
+      "AdaFlash framework delivers 20-35% faster LLM inference than SOTA.",
+      "New benchmarks expose LLM gaps in multimodal theory of mind.",
+      "SOTA models fail to detect deceptive hateful optical illusions, study finds.",
+      "New methods cut memory overhead for mixture-of-experts LLM training.",
+      "Specialized AI frameworks launch for surgical automation and agriculture.",
+      "New research accelerates AI integration into high-stakes industrial workflows."
+    ],
+    "ai-hf": [
+      "Google’s Gemma-4-31B-it tops HF trends with 12.1M weekly downloads.",
+      "1-2 bit Bonsai 27B variants optimized for consumer GPUs and Apple Silicon.",
+      "Qwen 3.5/3.6 families power most top trending community fine-tunes.",
+      "zai-org/GLM-5.2 is highest-liked base LLM with 4,278 total likes.",
+      "Baidu’s industry-leading Unlimited OCR model gains strong momentum.",
+      "openbmb launches open vision-language-action models for robotic control."
+    ],
+    "ai-community": [
+      "AI coding agent package hallucinations are actively exploited by threat actors.",
+      "MCP servers cut AI agent Kubernetes troubleshooting time in half.",
+      "MCP integration reduces AI agent tool call volume by 76%, per benchmarks.",
+      "AI agent security risks dominate Dev.to and Lobste.rs AI conversations.",
+      "Lobste.rs discussions cover ELIZA legacy and novel LLM training approaches.",
+      "Undocumented AI agent decisions pose operational and compliance risks."
+    ]
+  }
+}
