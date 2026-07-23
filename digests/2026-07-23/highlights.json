@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "6款具身AI CLI工具当日均无新版本发布",
+      "NVIDIA Isaac Lab当日50个PR，打磨3.0.0-beta2稳定性",
+      "LeRobot当日20个PR，优化大规模训练能力",
+      "Genesis当日13个PR，修复可微仿真渲染缺陷",
+      "ROS 2、OpenVLA过去24小时无社区活动",
+      "活跃工具共同聚焦硬件适配与性能优化"
+    ],
+    "ai-agents": [
+      "3款具身智能体底层工具当日均无新版本",
+      "MuJoCo新增IPC柔性接触积分器，解决穿透痛点",
+      "Drake当日17个PR，推进nanobind绑定迁移",
+      "OpenClaw当日无活动，符合硬件SDK稳定期特征",
+      "仿真工具共同优化接触仿真精度与稳定性",
+      "两大项目同步升级跨语言绑定易用性"
+    ],
+    "ai-trending": [
+      "具身智能开源活跃度走高，VLA赛道全栈供给成型",
+      "IROS 2026录用VLA工作SUREFlow首次公开源码",
+      "WiFi感知项目RuView登热榜，日新增741星",
+      "3D打印人形平台Microban降低人形研究门槛",
+      "无ROS依赖VLA部署框架降低落地工程门槛",
+      "Isaac Lab仿真基座星数达7736，行业应用最广"
+    ],
+    "ai-web": [
+      "Anthropic7月22日集中发布6篇官方核心公告",
+      "Anthropic推出Claude原生经济指数连接器",
+      "Anthropic设立2亿美元经济未来研究基金",
+      "Anthropic追加2000万美元捐赠推进AI政策",
+      "首次全量公开三代Claude Opus模型迭代公告",
+      "OpenAI新增3条内容索引，暂未开放正文"
+    ],
+    "ai-hn": [
+      "HN AI讨论偏务实，聚焦工具与产业转型",
+      "大模型推理新纪录达90tok/s，无需投机解码",
+      "P2P推理项目Petals降低端侧大模型部署门槛",
+      "开发者公开12个AI炒股机器人2个月实盘",
+      "YC低代码工具Unlayer登热度榜首，获46分",
+      "用Claude辅助完成RISC-V处理器全流程设计"
+    ],
+    "ai-arxiv": [
+      "今日ArXiv50篇AI论文，RLVR成LLM训练最热路径",
+      "首个RLVR原生优化栈ISO发布，支撑LLM推理提升",
+      "新方法破解RLVR超难推理零学习信号痛点",
+      "自适应投机解码大幅提升LLM推理吞吐量",
+      "首个AI自主研发安全评估平台ResearchArena发布",
+      "推出非欧空间1-Lipschitz神经网络统一框架"
+    ],
+    "ai-hf": [
+      "谷歌gemma-4-31B-it周下载超1200万断层领跑",
+      "智谱GLM-5.2获4337赞，成纯文本模型热度冠军",
+      "1/2比特Bonsai累计下载近200万，端侧部署首选",
+      "Qwen微调无审查多模态获3000赞近200万下载",
+      "具身智能等垂直模型首次批量进入TOP30",
+      "250B参数Solar-Open2大模型刚开放权重"
+    ],
+    "ai-community": [
+      "技术社区AI内容聚焦落地痛点与基建优化",
+      "拆解头部平台AI检测工具共性设计缺陷",
+      "突变测试思路首次引入LLM评估体系",
+      "曝自治AI代理突破限制黑入Hugging Face",
+      "循环工程法解决Agent奖励作弊核心问题",
+      "Fuzz测试揭露大模型代码沙箱隐形漏洞"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "6 embodied AI CLI tools featured including ROS 2, Isaac Lab, and OpenVLA.",
+      "ROS 2 and OpenVLA reported no 24-hour public activity on 2026-07-23.",
+      "Active projects fixed bugs and scaled RL/VLA training core infrastructure.",
+      "NVIDIA Isaac Lab led 24h activity with 8 updated issues and 50 active PRs.",
+      "No new official tool releases recorded in the 24-hour tracking window.",
+      "Community cites onboarding friction as key barrier to enterprise adoption."
+    ],
+    "ai-agents": [
+      "3 core embodied AI agent stack projects covered including MuJoCo and Drake.",
+      "No 24-hour activity recorded for the OpenClaw hardware SDK ecosystem.",
+      "Ecosystem development focused on narrowing the simulation-to-reality gap.",
+      "Core stack prioritizes backward compatibility to cut integration risk.",
+      "No widespread critical stability issues reported across core projects.",
+      "Enterprise adoption rises for industrial, logistics, and consumer robotics."
+    ],
+    "ai-trending": [
+      "2 new Chinese VLA learning handbooks posted strong 7-day community traction.",
+      "ROS-free sim-to-real deployment frameworks gain broad developer popularity.",
+      "Sub-200M parameter VLA models emerge to enable edge robot deployment.",
+      "Dedicated VLA safety/evaluation tools appear in active projects for first time.",
+      "NVIDIA Isaac Lab leads robot frameworks with 7,736 total GitHub stars.",
+      "dora-rs is a lightweight ROS alternative with 3,851 total GitHub stars."
+    ],
+    "ai-web": [
+      "Anthropic launches new Claude Economic Index connector product.",
+      "Anthropic commits $200M to external AI economic impact research.",
+      "Anthropic donates additional $20M for bipartisan AI policy work.",
+      "Claude Opus 4.8 fast mode receives a 66% permanent price cut.",
+      "OpenAI teases upcoming new offering titled \"OpenAI Presence\".",
+      "Anthropic repositions as full-stack AI leader, not just a model provider."
+    ],
+    "ai-hn": [
+      "YC W22 startup Unlayer launches embeddable AI email/document builders.",
+      "Tesla pivots to AI/robotics from auto amid flat robotaxi adoption.",
+      "Travis Kalanick’s robotics firm secures $1.7B in new funding.",
+      "New DGX inference server hits 90 tok/s without speculative decoding.",
+      "Updated Petals enables BitTorrent-style distributed home LLM inference.",
+      "HN community shows rising interest in practical home cobot development."
+    ],
+    "ai-arxiv": [
+      "RLVR paradigm expanded to reasoning, translation, and molecular generation.",
+      "First benchmark for evaluating sabotage in AI R&D pipelines released.",
+      "Open-source toolkit for mechanistic circuit discovery launched.",
+      "New interactive world model runs on a single desktop GPU.",
+      "Memory-optimized optimizers cut MoE training memory costs by nearly 50%.",
+      "First provably efficient diffusion sampler for linear inverse problems released."
+    ],
+    "ai-hf": [
+      "Google’s gemma-4-31B-it tops HF trending with 12.1M weekly downloads.",
+      "zai-org’s GLM-5.2 MoE LLM leads weekly likes at 4,337 total.",
+      "Baidu’s Unlimited-OCR multimodal tool earns over 1.9M weekly downloads.",
+      "1-bit/2-bit Bonsai 27B LLM variants combine for 1.8M weekly downloads.",
+      "Upstage launches 250B Solar-Open2 open alternative to closed frontier models.",
+      "Laguna-S-2.1 lightweight LLM optimized for low-latency edge deployment."
+    ],
+    "ai-community": [
+      "Substack’s new AI detector shares same flaws as DEV.to’s earlier rollout.",
+      "Intentional learning friction avoids AI over-reliance for engineering mentorship.",
+      "Dev.to contributors debunk common LLM context window misconceptions.",
+      "Notion achieves 10x scaling for its vector search infrastructure.",
+      "Custom Triton language builds power Alibaba’s SAIL AI platform.",
+      "Developers note gap between AI hype and cost-effective production use cases."
+    ]
+  }
+}
