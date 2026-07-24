@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "5款具身AI CLI工具形成全链路基建矩阵",
+      "ROS 2当日3条高价值Issue已全部闭环",
+      "Isaac Lab当日50条PR含10条核心更新",
+      "Genesis当日8条PR已合并修复一致性Bug",
+      "LeRobot适配Jetson与transformers 5.x",
+      "OpenVLA当日无任何社区更新活动"
+    ],
+    "ai-agents": [
+      "OpenClaw当日无维护活动健康度待跟踪",
+      "MuJoCo当日高优Bug最快2小时响应",
+      "Drake当日18条PR更新健康度优秀",
+      "OpenClaw为宇树专属硬件原生适配SDK",
+      "MuJoCo投60%资源优化flexcomp柔性组件",
+      "具身底层基础设施成产能核心瓶颈"
+    ],
+    "ai-trending": [
+      "NVIDIA开源Alpamayo自动驾驶VLA及工具链",
+      "Isaac Lab star达7747成VLA仿真主流基建",
+      "无ROS轻量sim2real框架降VLA落地门槛",
+      "首个通用VLA评测框架inspect-robots发布",
+      "179M参数SUREFlow轻量VLA架构出炉",
+      "国产InternVLA-A操作基准达SOTA"
+    ],
+    "ai-web": [
+      "Anthropic补全Opus 4.5/4.7两代旗舰公告",
+      "Opus 4.7内置网络风险自动检测阻断机制",
+      "Claude发布四大类创意工具连接器矩阵",
+      "Opus 4.5定价5/25美元每百万I/O token",
+      "OpenAI布局ChatGPT健康垂直场景功能",
+      "Anthropic明确安全优先于能力释放原则"
+    ],
+    "ai-hn": [
+      "MIT发布可游泳飞行的仿生扑翼机器人",
+      "扎克伯格AI乐观主义宣传遭社区质疑",
+      "端侧AI听写工具支持自定义词汇学习",
+      "超宽表SQL服务适配AI海量数据处理",
+      "人文视角探讨LLM道德品格构建问题",
+      "AMD发布EPYC 9006 Venice处理器受关注"
+    ],
+    "ai-arxiv": [
+      "HalluScope可细粒度诊断MLLM三类幻觉",
+      "Geo3R缓解MLLM空间推理幻觉问题",
+      "C-PTQ实现MLLM4-8bit高精度量化",
+      "首个MLLM不平衡遗忘公平性基准发布",
+      "GS-Agent可生成符合物理规则的4D世界",
+      "两层框架实现工业装配故障自动恢复"
+    ],
+    "ai-hf": [
+      "智谱GLM-5.2社区版登HF点赞总榜首位",
+      "谷歌Gemma4多模态版下载破1266万",
+      "Laguna-S-2.1量化版下载量远超原版",
+      "Upstage开源250B参数长上下文大模型",
+      "3B参数Nanbeige4.2适配端侧部署",
+      "Qwen系列微调版占热门榜近三分之一"
+    ],
+    "ai-community": [
+      "开发者戳破AI Agent落地常见认知误区",
+      "实测拆解RAG全流程各环节成本构成",
+      "提出规则优先LLM靠后的落地原则",
+      "MCP协议落地Firefox DevTools工具链",
+      "对比传统API与AI端点的架构差异",
+      "AMD拟50亿美元投资Anthropic引关注"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "CLI digest covers 6 key robotics/AI tools including ROS 2 and OpenVLA.",
+      "No stable tool releases shipped during the 24-hour reporting window.",
+      "Activity resolves high-impact end-user blockers and pre-roadmap features.",
+      "Community prioritizes production-grade reliability and new dev onboarding.",
+      "Work reduces cross-platform compatibility friction for cloud/edge workloads.",
+      "Mature VLA tool OpenVLA reported no 24h development activity."
+    ],
+    "ai-agents": [
+      "Digest covers 3 embodied AI projects: OpenClaw, MuJoCo, and Drake.",
+      "No OpenClaw ecosystem activity recorded over the 24-hour window.",
+      "Ecosystem spans simulation, hardware SDKs, and optimization layers.",
+      "OpenClaw is Unitree’s official SDK for consumer/industrial robots.",
+      "MuJoCo is the de facto GPU-accelerated embodied AI simulation engine.",
+      "No new production releases shipped across all tracked core projects."
+    ],
+    "ai-trending": [
+      "WiFi-based camera-free sensing tool RuView tops GitHub robotics trends.",
+      "Text-to-CAD agent skill set streamlines robotics hardware design workflows.",
+      "NVIDIA’s Alpamayo 1.5 self-driving VLA draws strong research interest.",
+      "New cross-robot VLA policy evaluation frameworks launched publicly.",
+      "NVIDIA Isaac Lab hits 7,747 total GitHub stars as top robot framework.",
+      "MuJoCo physics simulator reaches 14,301 total GitHub stars."
+    ],
+    "ai-web": [
+      "Anthropic releases Claude Opus 4.7 GA under Project Glasswing safety framework.",
+      "Opus 4.7 delivers improved coding, high-res vision, and output quality.",
+      "Claude adds native integrations with Adobe, Ableton, Canva, and Autodesk.",
+      "Anthropic positions Opus 4.5 as lower-cost general-purpose enterprise model.",
+      "OpenAI launches metadata page for upcoming 'Health in ChatGPT' feature.",
+      "No further details shared on OpenAI’s planned healthcare vertical expansion."
+    ],
+    "ai-hn": [
+      "Namecheap account transfer lapse sparks alarm among AI tool builders.",
+      "Mark Zuckerberg’s new AI optimism campaign drives active HN discussion.",
+      "Users debate OpenAI’s competitive position vs open platform HuggingFace.",
+      "Developers warn AI coding tools may harm junior engineers’ skill growth.",
+      "MIT’s multimodal flapping robot that swims and flies draws interest.",
+      "Peer-reviewed analysis explores LLMs’ ability to develop moral character."
+    ],
+    "ai-arxiv": [
+      "New frameworks target MLLM hallucinations, especially for spatial reasoning.",
+      "Novel post-training quantization runs large models on edge hardware.",
+      "Embodied AI papers prioritize real-world adverse condition performance.",
+      "HalluScope tool delivers granular MLLM hallucination diagnosis capabilities.",
+      "Geo3R method aligns MLLM outputs with true 3D visual scene structure.",
+      "C-PTQ quantization optimizes MLLM deployment on resource-constrained hardware."
+    ],
+    "ai-hf": [
+      "zai-org/GLM-5.2 MoE LLM tops HF weekly likes with 4,370 total.",
+      "Google’s gemma-4-31B-it hits 12.6M+ cumulative downloads on HF Hub.",
+      "Ultra-low-bit 27B-class model quantizations surge in community popularity.",
+      "Uncensored Qwen3.6 community fine-tunes see massive user adoption.",
+      "Qwen’s custom voice TTS model crosses 2M total HF downloads.",
+      "250B parameter Solar-Open2-250B is one of the largest open base models."
+    ],
+    "ai-community": [
+      "Dev.to deep dive demystifies AI agents’ unglamorous practical limitations.",
+      "Backend devs urged to rethink API flows for AI’s non-deterministic requests.",
+      "Communities highlight unmeasured guardrail overhead costs for AI systems.",
+      "Practical dev wins include 95% reduction in AI coding context size.",
+      "Notion achieves 10x vector search scale at 1/10th the original cost.",
+      "Communities push for mandatory review gates for AI test automation."
+    ]
+  }
+}
