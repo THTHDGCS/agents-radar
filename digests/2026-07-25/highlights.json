@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "当日覆盖6款机器人CLI工具，含ROS2、OpenVLA等",
+      "NVIDIA Isaac Lab日更PR50个，活跃度居工具榜首",
+      "Genesis修复相机缓存缺陷，保障RL训练数据正确",
+      "LeRobot新增剧集长度校验，解决数据集边界错误",
+      "Isaac Lab重构测试套件，243项本地测试仅需8秒",
+      "LeRobot支持100TB+无盘流式数据集，降训练成本"
+    ],
+    "ai-agents": [
+      "具身智能体工具链稳定迭代，无重大版本或安全风险",
+      "Drake日更3Issue7PR，健康度为覆盖项目最优",
+      "MuJoCo适配JAX分布式原语，提升多GPU训练性能",
+      "Drake优化多体求解器性能，支撑大规模智能体训练",
+      "MuJoCo修复Windows CMake缓存问题，优化跨平台体验",
+      "OpenClaw补仿真-实机部署缺口，为宇树专属SDK"
+    ],
+    "ai-trending": [
+      "三款具身代理工具登GitHub Trending，最高涨星近2000",
+      "NVIDIA Isaac Lab⭐7759，为VLA训练主流仿真框架",
+      "NVIDIA开源10B参数VLA alpamayo，面向自动驾驶",
+      "179M轻量Mamba架构VLA入选IROS2026，支持端侧部署",
+      "无ROS轻量sim2real框架发布，适配多款主流机器人",
+      "首份中文VLA实战手册上线，填补国内入门资源空白"
+    ],
+    "ai-web": [
+      "Anthropic发布Claude Opus5，性能近旗舰成本减半",
+      "Anthropic设2亿美元AI经济影响专项研究基金",
+      "Claude Opus5编码性能较前代提升超100%",
+      "Anthropic推Drone-Bench基准，补无人机评测空白",
+      "Opus5支持自定义努力档位，平衡性能与成本",
+      "Claude Opus5全面上线，为Max订阅默认模型"
+    ],
+    "ai-hn": [
+      "SpaceX星舰AI飞控登HN最热话题，获全社区认可",
+      "Claude辅助找到雅可比猜想反例，赋能基础科学",
+      "Claude Code使用熟练度测评工具上线，引开发者参与",
+      "开源树状编码智能体框架解决多智能体版本冲突",
+      "Claude插件Wrap上线，自动检测防会话进度丢失",
+      "符号学AI伦理体系提出，补对齐研究理论空白"
+    ],
+    "ai-arxiv": [
+      "新研究提出LLM道德评估体系，革新对齐范式",
+      "窗口化MTP大幅降低百万token长上下文推理成本",
+      "提出可证明KV驱逐机制，保障长上下文推理可靠",
+      "递归自改进研究智能体框架发布，辅助科研工作",
+      "OpenForgeRL支持任意环境harness原生智能体训练",
+      "新架构方案系统性解决智能体内存与成本痛点"
+    ],
+    "ai-hf": [
+      "谷歌Gemma4周下载破1260万，居全榜下载量榜首",
+      "智谱GLM-5.2 MoE获本周纯文本LLM最高点赞",
+      "通义千问3.6周下载破646万，为国内最热多模态基座",
+      "250B参数开源LLM Solar-Open2发布，主打长上下文",
+      "GGUF格式微调模型占周榜超40%，无审查款最受欢迎",
+      "轻量LLM Laguna-S-2.1发布，主打低延迟边缘部署"
+    ],
+    "ai-community": [
+      "AI时代开发者职业价值话题获42赞42条评论",
+      "开发者分享5-Agent流水线性能瓶颈排查优化方案",
+      "社区提醒AI生成测试存隐性维护成本，谨防技术债",
+      "Hetzner LLM推理服务首测曝光，提供降本新选择",
+      "世界模型赛道获10亿美元融资，成行业新风口",
+      "RAG效果验证痛点引讨论，社区分享评估思路"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Covers 6 embodied AI CLI tools including ROS 2, LeRobot, and OpenVLA.",
+      "No tracked tools shipped official production releases in the 24-hour window.",
+      "ROS 2 and OpenVLA recorded no community activity in the tracked period.",
+      "NVIDIA Isaac Lab updates align with simulation backend expansion plans.",
+      "Genesis prioritizes in-progress work on core runtime stability improvements.",
+      "LeRobot advances work on scaling generalist robot policy frameworks."
+    ],
+    "ai-agents": [
+      "Covers 3 core robotics infrastructure projects: OpenClaw, MuJoCo, Drake.",
+      "No critical outages reported across all tracked projects in 24 hours.",
+      "OpenClaw recorded 0 issues and PRs, earning a health score of 5/10.",
+      "MuJoCo posted 2 active issues and 5 updated PRs in the 24-hour window.",
+      "MuJoCo is preparing for its upcoming v3.11.0 official public release.",
+      "MuJoCo earned a top health score of 9/10 for strong maintenance."
+    ],
+    "ai-trending": [
+      "NVIDIA's Alpamayo VLA series for autonomous driving leads active VLA development.",
+      "179M parameter Mamba VLA SUREFlow released ahead of IROS 2026.",
+      "WiFi sensing tool RuView gained 1,022 new GitHub stars in a single day.",
+      "OpenArm open humanoid arm lowers barriers for independent robotics research.",
+      "NVIDIA Isaac Lab hits 7,759 total stars as leading robot learning framework.",
+      "Rust-based dora-rs emerges as lightweight ROS alternative for edge robotics."
+    ],
+    "ai-web": [
+      "Anthropic launches Claude Opus 5, 50% cheaper with near Fable 5 performance.",
+      "Anthropic commits $200M to AI economic transition research fund.",
+      "Anthropic launches Project Pilot to red team frontier model drone control.",
+      "The $200M fund is the largest private AI economic equity research commitment.",
+      "Claude Opus 5 sets new SOTA on core enterprise and developer benchmarks.",
+      "OpenAI released no new public official content in the 24-hour window."
+    ],
+    "ai-hn": [
+      "Claude helps find counterexample to decades-old Jacobian conjecture.",
+      "Amazon mandates sellers label AI-generated product images per NY law.",
+      "Trump proposes higher federal AI funding, cuts university research allocations.",
+      "Japanese AI robots replicate precise skills of master confectioners.",
+      "Claude Code developer ecosystem tools see surging community discussion.",
+      "LLM pure math breakthrough draws enthusiastic Hacker News reactions."
+    ],
+    "ai-arxiv": [
+      "First unified 3D-aware VLM unifies implicit and explicit geometric reasoning.",
+      "14B-parameter video diffusion model generates 720p on a single GPU.",
+      "New work delivers formal error guarantees for KV-cache serving optimizations.",
+      "Open pipeline enables end-to-end harness-native AI agent training.",
+      "Framework introduced for continuous assurance of low-code agent tools.",
+      "Research reframes LLM alignment beyond simple sycophancy reduction."
+    ],
+    "ai-hf": [
+      "zai-org/GLM-5.2 tops weekly Hugging Face likes at 4,415 total.",
+      "google/gemma-4-31B-it hits 12.6M downloads, leading trending models.",
+      "8 of top 30 trending models are Qwen3.5/3.6 base or fine-tuned variants.",
+      "Multimodal models make up over 40% of Hugging Face's trending list.",
+      "upstage releases 250B parameter Solar-Open2, one of the largest open LLMs.",
+      "Specialized robotics VLA and streaming ASR models enter top trending."
+    ],
+    "ai-community": [
+      "Multi-agent system observability leads Dev.to AI developer discussions.",
+      "Sentry surfaces hidden 17.6s latency in a 5-agent production pipeline.",
+      "Developers debate accountability gaps when key AI team members depart.",
+      "Lobste.rs hosts debates on open weights policy and vector search scaling.",
+      "AI-generated test maintenance costs emerge as a key production pain point.",
+      "Developers prioritize tangible AI improvements over unproven flashy hype."
+    ]
+  }
+}
