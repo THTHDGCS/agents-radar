@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "NVIDIA Isaac Lab今日28项PR更新，4项核心已合并",
+      "LeRobot修复评估逻辑，公开SmolVLA训练配置",
+      "Genesis修复相机重复帧问题，统一示例工程结构",
+      "具身AI CLI工具分层生态形成，无全栈垄断产品",
+      "Isaac Lab解决2.1.0与Isaac Sim 4.5依赖冲突",
+      "LeRobot支持12GB消费级显卡训练VLA模型"
+    ],
+    "ai-agents": [
+      "MuJoCo闭环1Issue3PR，推进3.11.0版本发版",
+      "OpenClaw为宇树硬件接入核心SDK，低延迟适配",
+      "Drake新增3项PR，推进C++代码规范落地",
+      "具身智能底层基础设施进入平稳迭代窗口",
+      "MuJoCo、Drake共同推进第三方依赖治理",
+      "OpenClaw定位硬件接入层，与仿真工具栈互补"
+    ],
+    "ai-trending": [
+      "NVIDIA开源两代Alpamayo VLA，配套工具同步上线",
+      "IsaacLab获7764星，为sim2real核心开发工具",
+      "人形runtime系统horus实现微秒级控制延迟",
+      "中文VLA学习手册周涨星超300，获开发者追捧",
+      "dora机器人中间件近7天活跃度大幅增长",
+      "商汤开源InternVLA-A1，为国内VLA代表成果"
+    ],
+    "ai-web": [
+      "Anthropic发布Claude Opus 5，成本仅旗舰的50%",
+      "Claude Opus 5编码、知识工作基准达行业SOTA",
+      "Opus 5成Claude Max默认模型，支持算力调节",
+      "Opus 5性能达前代两倍，单位成本优于竞品",
+      "Anthropic完成三大产品线矩阵，覆盖多层用户",
+      "Anthropic主打高端能力普惠，抢占付费场景"
+    ],
+    "ai-hn": [
+      "Claude 5上下文工程规则获159分，领跑AI类帖子",
+      "50行代码实现120B MoE模型24GB内存无损推理",
+      "无依赖Markdown编辑组件适配AI内容编辑场景",
+      "4.5MB Rust文档转换工具获工程侧关注",
+      "社区热议人形机器人教育场景落地争议",
+      "Claude Opus 5第三方系统卡补充模型边界细节"
+    ],
+    "ai-hf": [
+      "智谱GLM-5.2获4446周点赞，登顶HF热度榜",
+      "阿里云Qwen3.6周下载破640万，成最热门基座",
+      "百度Unlimited-OCR周下载超256万，产业需求爆发",
+      "Upstage发布250B开源大模型，本周参数最大",
+      "GGUF格式模型占下载榜前列，端侧部署成热点",
+      "国产大模型表现强势，占据HF热门榜前列"
+    ],
+    "ai-community": [
+      "首个Agent群体可观测性落地实践公开，可复用",
+      "多MCP对接Agent存权限溢出风险，需权限收敛",
+      "Claude降价、开源权重保卫成行业焦点",
+      "新Agent成本核算指标提出，修正统计偏差",
+      "Git refs方案解决多编码Agent合并冲突痛点",
+      "社区热议RAG系统生产故障及预防方案"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "6 core embodied AI/robotics CLI tools featured in 2026-07-26 digest.",
+      "ROS 2 and OpenVLA saw no 24-hour public development activity.",
+      "Active work targets reduced onboarding friction for new developers.",
+      "Teams fix cross-platform compatibility gaps in simulation tooling.",
+      "No new production releases launched across all tracked CLI tools.",
+      "Development prioritizes commodity hardware and edge deployment support."
+    ],
+    "ai-agents": [
+      "3 core embodied AI agent infrastructure projects tracked in digest.",
+      "All 3 projects saw low public activity in the 24-hour window.",
+      "MuJoCo is prepping for its upcoming 3.11.0 public release.",
+      "Drake has 1 updated open issue and 4 updated PRs in 24 hours.",
+      "OpenClaw earns a 6/10 health score in latest ecosystem tracking.",
+      "Quiet activity period aligns with pre-quarterly release hardening cycles."
+    ],
+    "ai-trending": [
+      "NVIDIA's Alpamayo VLA series leads open autonomous mobility stacks.",
+      "Alpamayo 1.5 10B model has RL-enhanced chain-of-causation reasoning.",
+      "IsaacLab hits 7,764 total stars as top sim2real VLA training framework.",
+      "Rust-based dora middleware emerges as lightweight ROS alternative.",
+      "Open humanoid tooling lowers barriers for hobbyists and researchers.",
+      "New VLA evaluation frameworks address critical policy failure modes."
+    ],
+    "ai-web": [
+      "Anthropic launches Claude Opus 5 mid-tier flagship LLM on July 25, 2026.",
+      "Opus 5 sets new SOTA on coding and general knowledge benchmarks.",
+      "Opus 5 performs within 0.5% of top-tier Claude Fable 5 on key tests.",
+      "Opus 5 is priced at 50% of Claude Fable 5's per-task cost.",
+      "Opus 5 becomes the default offering for Claude Max subscriptions.",
+      "OpenAI published no new official content in the crawl window."
+    ],
+    "ai-hn": [
+      "Claude 5 context engineering guidance leads HN AI discussions.",
+      "Users debate removed chain-of-thought visibility in Claude 5 models.",
+      "Teachers push back against humanoid robots in NY high schools.",
+      "Community discusses AI upending time-based billing in consulting.",
+      "Claude Opus 5 system card deep dive draws AI researcher interest.",
+      "HN explores lossless 120B MoE inference on 24GB RAM hardware."
+    ],
+    "ai-hf": [
+      "zai-org/GLM-5.2 MoE tops HF trends with 4,446 weekly likes.",
+      "GLM-5.2 hits over 700,000 total downloads on the Hugging Face Hub.",
+      "Qwen 3.6 family is most widely adopted base model ecosystem.",
+      "Qwen/Qwen3.6-35B-A3B surpasses 6.4 million total HF downloads.",
+      "Baidu's industry-leading Unlimited-OCR model sees strong momentum.",
+      "Quantized model variants make up 60% of total HF download volume."
+    ],
+    "ai-community": [
+      "AI agent observability and reliability dominate developer discussions.",
+      "Devs warn of security risks linking multiple MCP servers to one agent.",
+      "Claude Opus 5 launch sparks debate over LLM pricing competition.",
+      "Open weights emerge as cross-community technical and policy priority.",
+      "Developers share fixes for RAG failures and semantic cache errors.",
+      "Tiny Node.js LLMs and low-overhead ML tools draw strong interest."
+    ]
+  }
+}
