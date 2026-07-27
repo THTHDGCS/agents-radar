@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "具身AI CLI工具生态全面转向生产级落地",
+      "NVIDIA Isaac Lab当日17条PR（3条已合并）",
+      "Genesis提P1级智能化CI增量测试需求",
+      "LeRobot修复VLA-JEPA世界模型信息泄露",
+      "Isaac Lab推进无Kit轻量后端等适配",
+      "活跃项目新增合规、国际化配套能力"
+    ],
+    "ai-agents": [
+      "具身AI底层工具链进入质量深耕成熟阶段",
+      "MuJoCo 24h响应崩溃级问题维护机制成熟",
+      "Drake推进跨项目依赖上游化治理降成本",
+      "OpenClaw是唯一对接实体机器人的控制工具",
+      "MuJoCo覆盖全球数十万科研工业用户",
+      "Drake依托MIT背景前沿科研渗透率极高"
+    ],
+    "ai-trending": [
+      "今日GitHub Trending无具身机器人相关项目",
+      "英伟达开源10B级垂直场景推理VLA获高星",
+      "IROS2026推179M端侧轻量Mamba架构VLA",
+      "IsaacLab（7.7k星）成具身核心仿真工具",
+      "中文具身入门项目获2.8k星降低准入门槛",
+      "Dora（3.8k星）Rust低延迟机器人中间件"
+    ],
+    "ai-hn": [
+      "盖特威克机场机器人泊车登HN AI最高赞",
+      "开源模型蒸馏工具成本砍半引端侧关注",
+      "Cursor Bridge解决Claude Code调用限额痛点",
+      "60行钩子阻止Claude Code误改.env配置",
+      "业内直指机器人适配核心瓶颈是数据收集",
+      "社区探讨通义千问27B对齐Claude可能性"
+    ],
+    "ai-hf": [
+      "GLM-5.2以4477周点赞断层登顶热门模型",
+      "百度Unlimited-OCR下载量近260万成爆款",
+      "Upstage开源250B级超大参数通用LLM",
+      "智谱GLM-5.2采用MoE架构兼顾性能效果",
+      "英伟达推边缘端生成式AI模型Cosmos3-Edge",
+      "通义千问系列成社区微调核心基座"
+    ],
+    "ai-community": [
+      "Dev.to聚焦AI Agent工程化落地实操内容",
+      "披露DeepSeek融资等AI产业宏观变局",
+      "开源多Agent可观测性OpenTelemetry方案",
+      "指出AI Agent授权存「困惑代理」漏洞",
+      "分享Graph RAG实体消歧查询阶段方案",
+      "展现开源社区对AI辅助项目态度分歧"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "6 robotics AI CLI tools featured, including ROS 2 and Isaac Lab.",
+      "No official tool production releases recorded in the 24-hour window.",
+      "NVIDIA Isaac Lab updated 17 PRs for ARM Linux stabilization.",
+      "Hugging Face LeRobot advanced documentation localization work.",
+      "ROS 2 and OpenVLA saw no 24-hour development activity.",
+      "Active dev focuses on simulation reliability and cross-environment support."
+    ],
+    "ai-agents": [
+      "3 robotics infrastructure projects covered: OpenClaw, MuJoCo, Drake.",
+      "No 24-hour activity recorded for the OpenClaw ecosystem.",
+      "MuJoCo earned a 9/10 health score for fast high-severity bug triage.",
+      "All monitored projects saw low-volume, stability-focused activity.",
+      "No end-user feature releases or critical outages reported in 24h.",
+      "Maintainers prioritized fixing edge cases and high-severity crash bugs."
+    ],
+    "ai-trending": [
+      "No embodied AI projects appeared on GitHub's global trending list.",
+      "NVIDIA Alpamayo VLA 1.5 adds RL-enhanced reasoning and deploy recipes.",
+      "179M parameter Mamba-based VLA accepted to IROS 2026.",
+      "NVIDIA Isaac Lab leads robot frameworks with 7,777 total GitHub stars.",
+      "MuJoCo holds 14,335 total stars as a top physics simulator.",
+      "Rust-based dora is a fast ROS alternative with 3,852 total GitHub stars."
+    ],
+    "ai-hn": [
+      "Top HN discussion features Gatwick Airport's new robotic parking service.",
+      "Debates cover untested humanoid rollouts in NY public K-12 schools.",
+      "Open-source tool claims to cut frontier model serving costs by 50%.",
+      "Community debates 27B open model parity vs closed Claude models.",
+      "Claude Code ecosystem extension tools dominated developer shares.",
+      "Roboticists cite data collection as top embodied AI progress barrier."
+    ],
+    "ai-hf": [
+      "zai-org/GLM-5.2 leads HF trending models with 4,477 weekly likes.",
+      "Baidu's Unlimited-OCR tops weekly downloads at 2.59 million.",
+      "Poolside's Laguna-S-2.1 has 4 trending deployment-optimized variants.",
+      "Uncensored Qwen fine-tunes clear 1.9M and 1.4M downloads respectively.",
+      "Upstage's 250B Solar-Open2 is one of the largest open-weight LLMs.",
+      "LLMs, OCR, and robotics models dominate Hugging Face trending lists."
+    ],
+    "ai-community": [
+      "Discussions prioritize production AI agent dev over flashy model releases.",
+      "Leak: DeepSeek paused fundraising amid Huawei supply chain gaps.",
+      "Hugging Face's $100M licensing demand circulates as key industry marker.",
+      "Open-source otel-swarm traces complex multi-agent LLM workflows.",
+      "Communities debate pushback against AI-generated open source projects.",
+      "Dev.to maps classical Chinese strategy to AI product development."
+    ]
+  }
+}
