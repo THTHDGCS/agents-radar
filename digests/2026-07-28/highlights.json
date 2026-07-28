@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "覆盖ROS2、Isaac Lab等6款核心AI CLI工具",
+      "NVIDIA Isaac Lab当日更新PR达50条，活跃度最高",
+      "LeRobot当日更新10个Issue，其中6个仍开放",
+      "三款工具同步优化大规模训练部署性能",
+      "全社区共识推进仿真与真机链路打通",
+      "ROS2、OpenVLA当日无Issue/PR更新动态"
+    ],
+    "ai-agents": [
+      "MuJoCo发布3.11.0正式版，无破坏性变更",
+      "Drake当日11条Issue/PR动态，健康度评优",
+      "OpenClaw连续24小时无公开社区活动",
+      "OpenClaw为唯一实体机器人硬件控制中间件",
+      "生态形成仿真-工具-硬件SDK清晰分层架构",
+      "MuJoCo当日产生12条Issue/PR社区动态"
+    ],
+    "ai-trending": [
+      "MuJoCo⭐14350居机器人框架热度榜首",
+      "Isaac Lab新增对开源人形G1的原生支持",
+      "零基础具身实训教程⭐2894国内社区最火",
+      "NVIDIA Alpamayo VLA登VLA主题星量榜首",
+      "Claude视频预处理工具今日新增星434",
+      "IROS 2026推出179M参数轻量Mamba架构VLA"
+    ],
+    "ai-web": [
+      "Anthropic CEO发声明澄清从未主张开源禁令",
+      "Anthropic升高知特为全球顶级合作伙伴",
+      "高知特超3万员工完成Claude使用培训",
+      "双方推出Claude使用人员Frontier认证体系",
+      "Anthropic核心关切为大国AI能力竞争",
+      "OpenAI发布工作场景AI相关内容暂未获正文"
+    ],
+    "ai-hn": [
+      "Netflix员工隐私纠纷帖登热度断层榜首",
+      "全栈语言Dowe获20分22评，为技术类最热",
+      "本地开源AI Agent Ami主打跨应用处理事务",
+      "新基准SlopCodeBench评估AI生成垃圾代码",
+      "研究首次定义大模型“上下文焦虑”问题",
+      "机器人可模仿儿童逻辑学习语言获新进展"
+    ],
+    "ai-arxiv": [
+      "首次从谱理论解释LoRA微调灾难性遗忘",
+      "研究揭示LLM生成代码存在安全幻觉",
+      "提出因果对齐长序列推荐框架CALMRec",
+      "AI可辅助验证修复量子场论对偶性断言",
+      "推出可通行性感知越野长航全局规划器",
+      "发布无人机集群轨迹规划强化学习框架"
+    ],
+    "ai-hf": [
+      "Kimi-K3周点赞6210登顶HF周度热门榜",
+      "Qwen3.6-35B-A3B下载量突破618万",
+      "GLM-5.2总下载破100万，为热门原生LLM",
+      "250B参数开源LLM Solar-Open2正式上线",
+      "3B参数端侧LLM Nanbeige4.2主打轻量化",
+      "GGUF量化模型高下载反映本地部署需求"
+    ],
+    "ai-community": [
+      "初级开发者pipeline被AI打破文获84赞62评",
+      "文章称“无限上下文”是营销式技术债务",
+      "首个MCP生态安全扫描工具MCPRadar发布",
+      "实测7款AI OSINT Agent4分钟挖出个人隐私",
+      "本地AI求职Agent可零成本评分200个岗位",
+      "提出AI包管理器Agent技能审计威胁模型"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "ROS 2 and OpenVLA show no 24h activity as stable production tools",
+      "NVIDIA Isaac Lab updated 50 PRs in the 24-hour reporting window",
+      "LeRobot updated 10 issues in the 24-hour tracking period",
+      "Genesis updated 5 issues and 7 PRs in 24 hours",
+      "Robotics CLI ecosystem shifts to production readiness from prototyping",
+      "Active projects prioritized user pain point fixes over new flagship releases"
+    ],
+    "ai-agents": [
+      "OpenClaw shows no 24h issue or PR activity in the reporting window",
+      "MuJoCo logged 2 new open issues and 10 active in-progress PRs",
+      "Drake closed 2 issues and 2 PRs in the 24-hour tracking period",
+      "Embodied AI agent segment is fastest-growing personal AI vertical",
+      "No unaddressed critical crash risks across all tracked agent projects",
+      "Top user pain points: batched training, reproducible cloud deployment"
+    ],
+    "ai-trending": [
+      "Zero-to-VLA course and open humanoid manipulator each hit 2.7k+ stars",
+      "NVIDIA Alpamayo 1.5 VLA gains traction for RL causal reasoning",
+      "Lightweight edge VLA architectures emerge ahead of IROS 2026",
+      "commaai/openpilot leads robotics projects with 63.2k total stars",
+      "Rust-based dora middleware gains traction as lightweight ROS alternative",
+      "No core robotics/VLA projects appeared on general GitHub trending"
+    ],
+    "ai-web": [
+      "Anthropic CEO Dario Amodei disavows support for open-weights model bans",
+      "Anthropic elevates Cognizant to top-tier Global Premier Partner status",
+      "Claude integration scales across Cognizant’s 30,000+ trained associates",
+      "OpenAI releases metadata-only page on AI’s workplace activity impact",
+      "Post corrects narrative that Anthropic favored open-weights restrictions",
+      "Debates unfold amid U.S. policy talks on Chinese open-weights access"
+    ],
+    "ai-hn": [
+      "Four HN threads scrutinize Claude’s privacy gaps and unannounced changes",
+      "Anti-AI-data-center activists arrested for non-disruptive public protests",
+      "Moonshot’s Kimi K3 LLM now available via Telnyx Inference API",
+      "Cisco launches low-cost security LLM Antares for cybersecurity use cases",
+      "New SlopCodeBench benchmark targets LLM code generation evaluation",
+      "Community debates unconfirmed Kimi is white-labeled Claude model"
+    ],
+    "ai-arxiv": [
+      "First formal LoRA spectral law predicts layer-by-layer catastrophic forgetting",
+      "Verifier-gated LLM pipeline validates quantum field theory duality claims",
+      "New runtime assurance frameworks for LLM-coordinated drone swarms released",
+      "CALMRec causally aligned LLM recommendation framework introduced",
+      "Study finds security gaps in AI coding assistant-generated auth code",
+      "New AI use cases include neonatal diagnosis and battery health estimation"
+    ],
+    "ai-hf": [
+      "Moonshot AI’s Kimi-K3 tops weekly Hugging Face model likes chart",
+      "Alibaba’s Qwen3.6-35B-A3B surpasses 6M weekly downloads",
+      "Baidu’s Unlimited-OCR hits 2.6M+ downloads for multilingual OCR",
+      "Open-weight models make up 100% of top 30 trending list",
+      "Poolside’s Laguna-S 2.1 has 3 variants in top 30 within 2 weeks",
+      "GGUF quantizations, uncensored fine-tunes make 40% of top 30"
+    ],
+    "ai-community": [
+      "Dev.to debate: AI eliminated entry-level dev work, breaking talent pipeline",
+      "Lobste.rs frames open weights as core to national AI competitiveness",
+      "Model Context Protocol (MCP) dominates AI agent tooling discussions",
+      "Guide shows beginners can run GPT-2XL locally for hands-on AI learning",
+      "New threat model for AI package manager agent skills auditing released",
+      "AI agent security and governance draws wide community engagement"
+    ]
+  }
+}
