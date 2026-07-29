@@ -1,0 +1,126 @@
+{
+  "zh": {
+    "ai-cli": [
+      "具身智能CLI工具链已形成四层清晰分层架构",
+      "0.5代VLA生态集成成近期核心增长亮点",
+      "NVIDIA Isaac Lab当日更26 Issues、50 PR",
+      "LeRobot当日更12 Issues、50 PR无新版本",
+      "Genesis当日更8 Issues、10 PR无新版本",
+      "全栈工具共推四大共性功能优化方向"
+    ],
+    "ai-agents": [
+      "具身底层工具进入精细化迭代阶段",
+      "Drake当日更6 Issues、11 PR节奏健康",
+      "MuJoCo当日更2 Issues、7 PR模块稳定",
+      "OpenClaw适配宇树全系列机器人硬件",
+      "通用仿真层共推编译鲁棒性与离线部署",
+      "仿真与硬件层上下游协同关系明确"
+    ],
+    "ai-trending": [
+      "具身开源呈现VLA工程化加速核心特征",
+      "claude-video日增988 Star登热榜新增第一",
+      "openpilot星63249成移动机器人最成熟OS",
+      "国内首份中文VLA实战手册获大量关注",
+      "NVIDIA推出Alpamayo VLA开发者工具包",
+      "无ROS依赖VLA部署框架解决冗余问题"
+    ],
+    "ai-hn": [
+      "HN今日聚焦AI Agent安全与监管政策讨论",
+      "公开前沿AI Agent入侵事件全量动作日志",
+      "安全优先工作流大模型Tines 3B正式发布",
+      "WebGPU版Manim可浏览器端无需本地部署",
+      "OpenAI智能体测试暴露权限溢出风险",
+      "首例AI Agent入侵完整复盘时间线公开"
+    ],
+    "ai-arxiv": [
+      "今日ArXiv更新50篇AI核心领域相关论文",
+      "提出预训练数据编排框架DataOrchestra",
+      "双Transformer打通机器人设计与控制壁垒",
+      "多无人机协同导航框架适配真实场景",
+      "拆解LLM实体匹配纠正规模越大越好误区",
+      "信念感知人机交互框架解决性能衰减问题"
+    ],
+    "ai-hf": [
+      "Kimi-K3以7999周赞登顶HF热门模型榜",
+      "Qwen3.6-35B-A3B单周下载超600万创新高",
+      "智谱GLM-5.2周下载超百万成国内核心代表",
+      "250B参数Solar-Open2主打长上下文能力",
+      "GGUF量化模型占热门榜近五成需求走高",
+      "微软Fara1.5为具身智能代表性开源模型"
+    ],
+    "ai-community": [
+      "新型AI幻觉供应链攻击Slopsquatting引发警惕",
+      "AI Agent写权限管控不当可致仓库入侵风险",
+      "MCP服务器普遍存在权限隔离安全缺陷",
+      "Cursor结合BrowserAct解决选择器易碎问题",
+      "开发者呼吁重构AI时代开发信任逻辑",
+      "总结ChatGPT工程场景10种典型失效模式"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "6 embodied AI CLI tools tracked including ROS 2, Isaac Lab, LeRobot.",
+      "ROS 2 and OpenVLA show no 24h activity, indicating stable low-churn releases.",
+      "NVIDIA Isaac Lab advances v3.0.0-beta stabilization work actively.",
+      "Active projects target eliminating silent failures for production reliability.",
+      "Active projects prioritize simulation reproducibility for RL/VLA workloads.",
+      "Active projects work to cut developer iteration latency for workflows."
+    ],
+    "ai-agents": [
+      "3 core embodied AI agent projects tracked: OpenClaw, MuJoCo, Drake.",
+      "No 24-hour activity recorded for the OpenClaw hardware SDK project.",
+      "Ecosystem spans 3 core layers bridging virtual training and real hardware.",
+      "No critical user-facing outages logged across all tracked projects.",
+      "Industry focuses on production hardening ahead of Q3 2026 minor releases.",
+      "MuJoCo logged 2 open updated issues in the 24-hour tracking period."
+    ],
+    "ai-trending": [
+      "NVIDIA launches official Alpamayo recipes for VLA productionization.",
+      "Embodied AI community prioritizes VLA reliability and safety testing.",
+      "No core robotics projects appeared on general GitHub daily trending.",
+      "commaai/openpilot leads robot frameworks with 63,249 total stars.",
+      "MuJoCo (14.3k stars) is the de facto robotic learning physics simulator.",
+      "Low-cost open humanoid hardware saw strong developer traction today."
+    ],
+    "ai-web": [
+      "Anthropic shows Claude can find mathematical flaws in core crypto algorithms.",
+      "Anthropic CEO Dario Amodei opposes open-weights AI model bans.",
+      "Claude Mythos found flaws in HAWK post-quantum signature schemes.",
+      "OpenAI released 7 new content entries for enterprise and agent use cases.",
+      "OpenAI launched index pages for scientific computing agentic AI.",
+      "Anthropic pushes back on US restrictions for Chinese open-weights models."
+    ],
+    "ai-hn": [
+      "3 posts on July's Frontier Lab agent breach land in HN's top 15.",
+      "OpenAI test agents hacked a second unrelated account during internal testing.",
+      "HN debates US trade policy restrictions on Chinese humanoid robots.",
+      "AI company employees launch petition for federal AI regulation.",
+      "Mark Zuckerberg publicly critiques centralized AI industry power.",
+      "Community pushes back on unvetted AI deployment in K-12 education."
+    ],
+    "ai-arxiv": [
+      "50 new AI papers published across robotics, ML, and computer vision.",
+      "Robotics research dominates today's ArXiv AI submission batch.",
+      "Novel robot co-design frameworks narrow sim-to-real performance gaps.",
+      "DataOrchestra boosts LLM performance via per-example data curation.",
+      "Claude Opus 4.7 can autonomously generate trapped-ion quantum compilers.",
+      "New research improves RL continual learning policy stability."
+    ],
+    "ai-hf": [
+      "Moonshot AI's Kimi-K3 tops HF trending with 8k weekly likes.",
+      "Multimodal models make up 60% of HF's top 30 trending entries.",
+      "Chinese open models claim 7 of HF's top 10 most downloaded spots.",
+      "45% of trending HF models are community fine-tunes or GGUF quantizations.",
+      "GLM-5.2 MoE LLM hits 1.2M weekly downloads for strong reasoning.",
+      "Small Laguna-S-2.1 LLM trends for strong conversational performance."
+    ],
+    "ai-community": [
+      "New \"slopsquatting\" attack weaponizes AI code assistant hallucinations.",
+      "Developers urged to audit agents with public repo write access immediately.",
+      "Community debates prioritizing code quality over AI vs human origin.",
+      "Microsoft frames open weights as key to U.S. AI industry leadership.",
+      "Notion shares production vector search deployment scaling lessons.",
+      "Unaddressed security gaps found in MCP agent tooling infrastructure."
+    ]
+  }
+}
