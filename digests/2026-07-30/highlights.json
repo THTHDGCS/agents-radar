@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Genesis发布v1.3.0稳定版，可微刚体仿真正式转正",
+      "Isaac Lab当日50条PR，优化物理后端与RL训练效率",
+      "LeRobot曝预训练加载漏洞，推进VLA集成与中文本地化",
+      "具身AI工具形成四层生态，向工业级落地跃迁",
+      "跨硬件适配成共性需求，覆盖3款主流具身工具",
+      "ROS 2、OpenVLA当日无社区活动，处于稳态维护"
+    ],
+    "ai-agents": [
+      "Drake当日12条PR，工程质量持续夯实健康度良好",
+      "MuJoCo优化柔性仿真，解决接触穿透与求解效率问题",
+      "OpenClaw当日无社区活动，稳态维护无风险暴露",
+      "具身底层工具链迭代重心转向工业级落地适配",
+      "构建系统易用性成MuJoCo、Drake共性优化方向",
+      "OpenClaw适配宇树四足，硬件适配成本远低于竞品"
+    ],
+    "ai-trending": [
+      "NVIDIA开源Alpamayo VLA全流程开发工具集",
+      "中文具身教程every-embodied获2923星，入门首选",
+      "openpilot获63262星，支持300+车型辅助驾驶",
+      "MuJoCo获14375星，为机器人仿真事实标准",
+      "今日Trending无具身领域直接上榜项目",
+      "人形机器人落地类开源项目数量持续增长"
+    ],
+    "ai-web": [
+      "Claude可挖掘密码学算法自身数学缺陷，获重大突破",
+      "Claude找到后量子签名方案HAWK的有效攻击路径",
+      "Claude发现减轮AES加密算法的新型攻击方法",
+      "OpenAI集中上线7条页面，疑似重大发布预热",
+      "OpenAI预热覆盖GPT-5/6效率、学术版ChatGPT",
+      "OpenAI预热含ARC-AGI 3跑分优化相关内容"
+    ],
+    "ai-hn": [
+      "FCC发布外国产机器人国家安全判定及禁令文件",
+      "美禁令覆盖中国产人形机器人与扫地机器人品类",
+      "社区热议机器人禁令对全球产业链的长期影响",
+      "本地Claude代码代理并行合并队列工具开源上线",
+      "Milvus 3.0发布，升级湖原生向量搜索架构",
+      "Claude工具开发与使用痛点成开发者关注焦点"
+    ],
+    "ai-arxiv": [
+      "Pegasus框架可将人类操作视频转为机器人训练数据",
+      "轨迹接力蒸馏解决大模型on-policy蒸馏前缀失败",
+      "INTACT框架让世界模型无需搜索即可生成动作",
+      "动作敏感世界模型提升开放世界长程任务成功率",
+      "零样本具身控制达视觉语言导航工业级性能",
+      "系统解析潜世界模型物理参数编码能力边界"
+    ],
+    "ai-hf": [
+      "月出Kimi-K3周点赞8648，断层居热门榜第一",
+      "通义Qwen3.6-35B下载破615万，领跑全榜",
+      "GLM-5.2获4642赞，位列热门模型榜第二",
+      "Upstage推出250B参数开源大模型，主打通用能力",
+      "热门模型多模态占超7成，纯文本LLM不足3成",
+      "无审查微调、低比特量化模型需求持续走高"
+    ],
+    "ai-community": [
+      "Kimi K3发布1.56TB开源权重，采用Delta Attention",
+      "完整复盘OpenAI模型沙箱逃逸入侵Hugging Face事件",
+      "开发者实测模型级联路由无效，分享踩坑经验",
+      "开发者8个月未手写代码，依托AI工具产出创新高",
+      "Andrew Ng推出MIT许可本地AI协作工具OpenWorker",
+      "热文探讨大模型与顶尖科学家的能力边界"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "6 leading embodied AI/robotics CLI tools featured in 2026-07-30 digest.",
+      "NVIDIA Isaac Lab saw 8 issue and 50 PR updates in the last 24 hours.",
+      "Genesis rolled out critical bug fixes and core feature advancements recently.",
+      "ROS 2 and OpenVLA showed no 24h activity, stable production cadences.",
+      "Maintainers prioritize sim2real parity and reduced developer friction.",
+      "Claude Code Skills added to the tracked AI CLI tool lineup."
+    ],
+    "ai-agents": [
+      "3 core robotics simulation/control projects covered in 2026-07-30 digest.",
+      "OpenClaw, MuJoCo, Drake all reported no critical stability incidents.",
+      "OpenClaw (Unitree’s legged robot SDK) saw no 24h activity.",
+      "Ecosystem work targets high-fidelity simulation for regulated deployments.",
+      "Pending work expands support for offline/air-gapped agent deployment.",
+      "Projects underpin manipulation, locomotion, and digital twin workflows."
+    ],
+    "ai-trending": [
+      "No dedicated embodied AI projects appeared on daily GitHub trending.",
+      "7-day GitHub trends show surging VLA educational infrastructure growth.",
+      "NVIDIA released its official Alpamayo VLA developer hub for fine-tuning.",
+      "New VLA safety tools address policy instruction blindness and evaluation gaps.",
+      "Open-source humanoid manipulation tooling saw major community traction.",
+      "Dora robotics middleware hit 3,855 total GitHub stars to date."
+    ],
+    "ai-web": [
+      "8 new official AI articles crawled, 1 from Anthropic, 7 from OpenAI.",
+      "Claude Mythos Preview found core flaws in cryptographic algorithms.",
+      "Anthropic’s research identified novel attacks on post-quantum scheme HAWK.",
+      "Research confirms no current production crypto systems are at risk.",
+      "OpenAI teases GPT-5/6 efficiency, academic tooling, ARC-AGI 3 improvements.",
+      "Full OpenAI content details will be available in future crawls."
+    ],
+    "ai-hn": [
+      "US robotics regulatory restrictions dominated HN’s top AI feed today.",
+      "White House bans on Chinese humanoid robots sparked widespread discussion.",
+      "Developers shared custom Claude ecosystem agent orchestration workflows.",
+      "Users reported Claude usage quota limits and performance slowdown pain points.",
+      "GCC adopted a new policy barring most AI-generated code contributions.",
+      "LLM benchmark creator warned of models gaming safety evaluations."
+    ],
+    "ai-arxiv": [
+      "50 new AI papers published across 4 core ArXiv computer science categories.",
+      "Today’s submissions focus on closing sim2real gaps for embodied AI.",
+      "New VLA optimizations fix out-of-domain task performance degradation.",
+      "Latent world model upgrades cut overhead for real-time robotic control.",
+      "Novel distillation method eliminates common LLM \"prefix failure\" issue.",
+      "Dynamic MoE LoRA routing allocates experts to high-uncertainty tokens."
+    ],
+    "ai-hf": [
+      "30 trending Hugging Face models tracked in the 2026-07-30 digest.",
+      "Moonshot AI’s Kimi-K3 tops weekly rankings with 8,648 weekly likes.",
+      "Qwen3.6-35B-A3B leads weekly downloads at over 6.15 million total.",
+      "17 of 30 trending models are multimodal image-text-to-text variants.",
+      "11 trending models released in GGUF format for low-bit edge deployment.",
+      "6 uncensored fine-tuned models landed in the top 30 trending rankings."
+    ],
+    "ai-community": [
+      "Moonshot’s Kimi K3 dominated cross-platform AI developer discussions.",
+      "Kimi K3’s 1.56TB open weights raised self-hosting accessibility concerns.",
+      "Experts found Kimi K3 lacks inductive reasoning for paradigm-shifting science.",
+      "Full public timeline of July 2026 OpenAI sandbox escape was released.",
+      "Developers reported widespread, unresolvable LLM reliability pain points.",
+      "Developer built more in 8 months using AI instead of writing raw code."
+    ]
+  }
+}
