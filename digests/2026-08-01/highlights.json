@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "今日覆盖6款具身AI CLI工具，含ROS2、Isaac Lab",
+      "Isaac Lab单日50条PR，聚焦物理参数一致性修复",
+      "Genesis重构IMU逻辑，仿真运行速度提升50%",
+      "LeRobot单日50Issues+50PR，优化pi0fast推理延迟",
+      "多工具同步推进中文本地化、官方文档完善",
+      "全链工具分层清晰，Sim2Real为核心迭代目标"
+    ],
+    "ai-agents": [
+      "覆盖OpenClaw、MuJoCo、Drake3个具身仿真核心项目",
+      "Drake单日17条PR，健康度评级为优秀",
+      "MuJoCo闭环兼容Issue，迭代flex变形体仿真",
+      "OpenClaw为宇树原生SDK，实机零适配损耗",
+      "通用仿真层聚焦H200并行部署性能优化",
+      "生态无内耗，硬件/仿真/框架分层协同"
+    ],
+    "ai-trending": [
+      "今日无Trending爆品，7天活跃聚焦VLA等3方向",
+      "NVIDIA开源Alpamayo VLA全流程部署配方",
+      "dora-rs/dora（3.8k星）成AI原生机器人架构首选",
+      "openpilot（63.2k星）支持300+车型辅助驾驶",
+      "国内首份中文VLA实战手册（459星）上线",
+      "具身AI安全首次成集中上榜细分方向"
+    ],
+    "ai-web": [
+      "OpenAI上线核心战略内容《Building Abundant Intelligence》",
+      "该内容定位顶层战略，非细分产品迭代通知",
+      "Anthropic当日无任何公开新增内容释放",
+      "OpenAI或于Q3配套战略发布技术/产品更新",
+      "该内容仅元数据可查，正文暂未对外公开",
+      "需后续观测Anthropic对应战略动作"
+    ],
+    "ai-hn": [
+      "今日AI内容活跃度低，最高帖仅获15分",
+      "网络安全专属大模型Dfs-Large1成最热技术",
+      "Penca数据系统降AI训练多版本管理成本",
+      "Go语言Agent运行时GAI解决Python性能痛点",
+      "教育AI明确个性化辅导等落地实操边界",
+      "社区聚焦AI商业化规则与风险防控"
+    ],
+    "ai-arxiv": [
+      "实验证1.5B-7B模型重复采样优于自反思",
+      "推出用户端LLM系统提示审计框架AISPA",
+      "首个国家信息战级LLM安全基准发布",
+      "统一策略优化与自蒸馏的训练框架出炉",
+      "本地计算机代理推理缩放失效模式被分析",
+      "多智能体拓扑自适应机制MANTA上线"
+    ],
+    "ai-hf": [
+      "月之暗面Kimi-K3（9.2k赞）断层登顶热门榜",
+      "智谱GLM-5.2（4.7k赞）下载破165万",
+      "深度求索V4 Flash下载近300万，推理提速300%",
+      "通义千问3.6无审查微调模型下载破百万",
+      "GGUF量化成主流，新模24h出优化版",
+      "端侧TTS Inflect-Micro-v2自然度逼近商用"
+    ],
+    "ai-community": [
+      "Dev.to热议全能Agent架构本质为单点故障",
+      "AI编码提开发效率但拉高后期维护成本",
+      "拆解ChatGPT核心PPO算法附JAX实现教程",
+      "披露RAG数值计算缺陷并给出务实解决方案",
+      "SaaS对接用户AI密钥4种方案从差到优选型",
+      "Claude渗透测试突破企业网络引发关注"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Digest tracks 6 leading AI robotics and embodied AI CLI tools.",
+      "NVIDIA Isaac Lab, Genesis, LeRobot are highest-velocity active projects.",
+      "ROS 2 and OpenVLA recorded no 24h development activity.",
+      "Active tools target core production robotic policy deployment pain points.",
+      "No tracked tools published production releases in the 24h window.",
+      "NVIDIA Isaac Lab updated 5 issues and 50 PRs in 24 hours."
+    ],
+    "ai-agents": [
+      "Digest tracks 3 core embodied AI agent infrastructure projects.",
+      "Projects span control SDKs, physics sim, and full-stack dev frameworks.",
+      "OpenClaw recorded no 24h issues, PRs, or new releases.",
+      "Drake merged 10 PRs in 24h, leading all tracked projects.",
+      "MuJoCo earned the highest health score at 8.5/10.",
+      "No critical ecosystem-wide outages or breaking releases reported."
+    ],
+    "ai-trending": [
+      "NVIDIA released official developer recipes for its Alpamayo VLA model.",
+      "New open source tools launch for VLA policy evaluation and red-teaming.",
+      "New open source control stacks target affordable Unitree G1 humanoids.",
+      "A full Chinese-language VLA engineer handbook was released.",
+      "Dora robotics middleware earned 3,857 total GitHub stars.",
+      "MuJoCo physics simulator hits 14,400 total GitHub stars."
+    ],
+    "ai-web": [
+      "Anthropic published no new content, breaking 6-week weekly update streak.",
+      "OpenAI added 1 new metadata-only entry to its public content index.",
+      "OpenAI's new entry is titled 'Building Abundant Intelligence', dated July 31.",
+      "No full text was captured for OpenAI's new article in this crawl.",
+      "No new Anthropic content found across news, research, or product categories.",
+      "Elevated monitoring of both domains is planned for the next crawl."
+    ],
+    "ai-hn": [
+      "Cybersecurity-focused Dfs-Large1 model is top AI HN post of the day.",
+      "Germany issued first major copyright ruling against AI music platform Suno.",
+      "Record labels propose new AI music eligibility rules for official charts.",
+      "Federal lawsuit stems from a high-profile Yale AI cheating dispute.",
+      "Study tracks user pressure driving Claude's rate and context limit increases.",
+      "HN discussions focus on real-world AI IP, regulation, and use cases."
+    ],
+    "ai-arxiv": [
+      "New study finds repeated sampling outperforms self-refine for LLM reasoning.",
+      "Research shifts from unconstrained model scaling to production optimization.",
+      "New benchmarks launched for evaluating oncall SRE AI agents.",
+      "Frameworks released for privacy-preserving local edge agent deployment.",
+      "Improved multimodal RAG architectures introduced in new research.",
+      "New domain-specific AI tools launched for science and clinical use cases."
+    ],
+    "ai-hf": [
+      "Moonshot's Kimi-K3 tops Hugging Face trending with 9k+ weekly likes.",
+      "Baidu's Unlimited OCR model surpasses 2.5M total downloads.",
+      "DeepSeek-V4 Flash LLM nears 3M total downloads for low-latency use.",
+      "Qwen 3.5/3.6 fine-tunes and quantizations dominate trending lists.",
+      "Uncensored Qwen GGUF variants hit seven-figure download counts.",
+      "Edge-optimized speech AI models see rising community traction."
+    ],
+    "ai-community": [
+      "Discourse centers on production AI limitations, not flashy model launches.",
+      "Op-ed calls all-purpose AI agents a single point of failure in production.",
+      "RAG implementation pain points dominate practical engineering discussion.",
+      "Claude breached live corporate networks during recent safety testing.",
+      "Kimi Delta Attention deep dives gain traction with ML engineers.",
+      "BrowserAct fixes common stale-selector errors in web automation workflows."
+    ]
+  }
+}
