@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "具身AI CLI工具进入落地导向精细化迭代阶段",
+      "NVIDIA Isaac Lab当日更新40条PR无社区Issue",
+      "LeRobot当日30条Issue含29项历史闭环项",
+      "Genesis当日更新6条核心库PR无社区Issue",
+      "ROS 2、OpenVLA进入稳定维护无当日动态",
+      "底层仿真工具攻坚大规模并行仿真性能瓶颈"
+    ],
+    "ai-agents": [
+      "具身智能体基础设施进入生产可用迭代期",
+      "MuJoCo当日2Issue4PR社区健康度评级为优",
+      "Drake当日2Issue5PR核心功能迭代平稳",
+      "OpenClaw为宇树硬件接入层垂直基础设施",
+      "OpenClaw无当日动态用户群体高度垂直",
+      "通用仿真引擎聚焦核心计算可靠性优化"
+    ],
+    "ai-trending": [
+      "具身智能开源呈现VLA工具链全链路补全特征",
+      "openpilot以63287星登顶开源机器人OS榜单",
+      "国内首份中文VLA实战手册获459星热度高",
+      "NVIDIA官方Alpamayo VLA工具集正式开源",
+      "具身AI安全综述收录500+论文成新赛道",
+      "无ROS依赖sim2real框架适配多款主流机器人"
+    ],
+    "ai-web": [
+      "OpenAI新增最高优先级index分类数学内容",
+      "推断OpenAI新增内容为《Ten Advances In Mathematics》",
+      "Anthropic当日无任何公开内容更新",
+      "数学推理成头部大模型核心能力竞争赛道",
+      "OpenAI或引领大模型基础能力迭代议题",
+      "数学能力进展或将落地GPT系列API服务"
+    ],
+    "ai-hn": [
+      "硅谷AI创始人压榨机制文获200分登热度榜首",
+      "开发者质疑AI Agent“技能”概念引路线讨论",
+      "AMD发布端侧嵌入式AI芯片Ryzen AI X100",
+      "Sam Altman万物摩尔定律文被重新翻出讨论",
+      "AI训练数据合规问题引发社区强烈质疑",
+      "The Zvi最新AI安全周报获开发者核心关注"
+    ],
+    "ai-hf": [
+      "国产大模型全面主导HF周度热门模型榜单",
+      "Kimi-K3以9488点赞断层领跑周度热门榜",
+      "DeepSeek-V4-Flash下载量突破280万次",
+      "GLM-5.2开源MoE模型获4737点赞",
+      "Nanbeige4.2-3B领跑3B参数端侧LLM赛道",
+      "端侧轻量化模型适配需求持续爆发"
+    ],
+    "ai-community": [
+      "AI讨论转向落地全链路工程与管理问题",
+      "Agent评估复杂度远高于模型评估成共识",
+      "AI辅助编码或削弱开发者代码判断力",
+      "开发者分享AI Agent构建Java服务经验",
+      "MCP新规范AWS环境实测结果正式公布",
+      "安全MCP服务器教程解决权限隐患问题"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "ROS 2 and OpenVLA paused daily development on 2026-08-02.",
+      "NVIDIA Isaac Lab logged 40 active PRs in the 24-hour window.",
+      "Genesis recorded 6 active PRs in the 24-hour reporting period.",
+      "No AI robotics CLI tools shipped new releases in 24 hours.",
+      "Active projects prioritized production readiness over new features.",
+      "Digest covers 6 tools including LeRobot and Claude Code Skills."
+    ],
+    "ai-agents": [
+      "OpenClaw ecosystem logged 0 issues/PRs in 24h on 2026-08-02.",
+      "MuJoCo scored 8.0/10 composite health, highest in its cohort.",
+      "OpenClaw earned a 5.0/10 composite health score for 24h activity.",
+      "MuJoCo had 2 updated issues and 4 updated PRs in 24 hours.",
+      "No embodied AI agent projects shipped new releases in 24h.",
+      "Ecosystem aligned on build standardization to cut integration friction."
+    ],
+    "ai-trending": [
+      "No robotics/embodied AI repos hit general GitHub trending 2026-08-02.",
+      "NVIDIA released Alpamayo recipes to simplify production VLA fine-tuning.",
+      "New inspect-robots framework standardizes cross-hardware VLA benchmarking.",
+      "Open-source humanoid arm openarm gained significant community traction.",
+      "Embodied safety R&D bakes collision avoidance directly into VLA weights.",
+      "Beginner Chinese-language VLA learning handbook surged in popularity."
+    ],
+    "ai-web": [
+      "OpenAI published 1 new math-focused content entry on 2026-08-01.",
+      "Anthropic released 0 new public content assets across all categories.",
+      "OpenAI’s new entry is a rare roundup of multiple math developments.",
+      "No full text was available for OpenAI’s new math entry at crawl time.",
+      "Formal math proficiency is emerging as a frontier AI differentiator.",
+      "OpenAI’s sitemap totals 893 public content entries as of 2026-08-02."
+    ],
+    "ai-hn": [
+      "Guardian report exposes rare book destruction for AI training data.",
+      "Lanier and Tyson’s \"There Is No AI\" thesis went viral on Hacker News.",
+      "Community debated AI agents’ discrete skill module design practices.",
+      "Open-source Claude tool copies any website pixel-perfect from screenshots.",
+      "The Zvi’s latest AI safety analysis post landed on HN’s AI section.",
+      "Users debated AI’s role in discovering the Coldcard security flaw."
+    ],
+    "ai-hf": [
+      "Moonshot AI’s Kimi-K3 multimodal model topped weekly HF trending.",
+      "Kimi-K3 earned 9,400+ likes, 5x more engagement than other models.",
+      "Qwen 3.5/3.6 and DeepSeek V4 are top base model families this week.",
+      "Baidu’s Unlimited-OCR hit 1.8M+ weekly downloads on HF Hub.",
+      "DeepSeek-V4-Flash logged 2.8M+ weekly downloads for production use.",
+      "Microsoft released 3 new open-weight multimodal and audio models."
+    ],
+    "ai-community": [
+      "Production agent evaluation is a top pain point for AI devs.",
+      "Debates erupted over AI-assisted PRs eroding developer judgment.",
+      "Secure Model Context Protocol implementation is a core AI dev challenge.",
+      "AI-generated WordPress plugin vulnerabilities sparked security concerns.",
+      "Lobste.rs prioritized LLM explainers and AI-accelerated systems dev.",
+      "Multi-agent loop reliability plagues production AI tooling developers."
+    ]
+  }
+}
