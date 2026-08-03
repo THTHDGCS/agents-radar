@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "当日覆盖6款机器人AI CLI工具含Isaac Lab等",
+      "仿真层聚焦物理保真缩Sim2Real迁移差距",
+      "Isaac Lab当日33条PR，60%涉Newton物理后端",
+      "LeRobot当日33条PR，新增LoRA+提收敛效率",
+      "应用层实机部署优化，中文需求成扩张核心",
+      "全栈共性痛点为版本兼容等三类问题"
+    ],
+    "ai-agents": [
+      "覆盖OpenClaw、MuJoCo等3款具身AI基建项目",
+      "当日仅MuJoCo有1条核心维护者提交的PR",
+      "MuJoCo闭环耗时2年的盒体穿透高优Bug",
+      "OpenClaw为宇树腿式机器人低时延控制SDK",
+      "生态分层：仿真/硬件控制/运动规划各司其职",
+      "共性方向为工业级功能正确性与可靠性"
+    ],
+    "ai-trending": [
+      "今日GitHub Trending无具身/机器人垂直项目登榜",
+      "NVIDIA Isaac Lab（7.8k星）统一框架获高关注",
+      "Datawhale every-embodied（2.9k星）成VLA入门热门",
+      "Newton物理引擎基于Warp，速度超传统数倍",
+      "中文VLA学习、面试手册密集更新降门槛",
+      "人形机器人开源转向落地，适配产业政策"
+    ],
+    "ai-hn": [
+      "经典《计算心灵理论》登AI类帖榜首（30分）",
+      "开发者用Claude Code重写Claude App暴露痛点",
+      "社区开源236M可逆算子架构超小参数LLM",
+      "编码Agent玩俄罗斯方块暴露长序列能力短板",
+      "OpenAI新模型Astra“过度营销”争议发酵",
+      "社区回归AI底层逻辑，对炒作持理性态度"
+    ],
+    "ai-hf": [
+      "月之暗面Kimi-K3以9640周点赞断层登顶",
+      "智谱GLM-5.2获4755赞、205万下载成热门LLM",
+      "DeepSeek V4 Flash成下载量最高官方基础模型",
+      "百度Unlimited-OCR、GLM-5.2均破200万下载",
+      "DeepSeek V4官方与unsloth量化版同步入榜",
+      "AMD推出适配自有硬件的16B MoE模型"
+    ],
+    "ai-community": [
+      "当日AI讨论聚焦一线实战，脱离概念炒作",
+      "AI时代开发者职业生存策略成热帖（31赞）",
+      "实测语音API成本效率，戳破定价宣传套路",
+      "AI软件测试从缺陷检测转向自动修复",
+      "大模型升级反破坏旧Agent工作流成痛点",
+      "上下文窗口膨胀成Agent流水线隐性故障"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "6 key AI robotics CLI tools (ROS 2, Isaac Lab, etc.) tracked",
+      "No formal new releases across tracked CLI tools in 24-hour window",
+      "NVIDIA Isaac Lab leads activity with 10 issues, 33 PRs updated",
+      "Stable tools ROS 2 and OpenVLA report no 24-hour activity",
+      "Updates focus on stability, user friction, cross-ecosystem compatibility",
+      "Claude Code Skills included in latest robotics CLI tooling roundup"
+    ],
+    "ai-agents": [
+      "3 tier-1 embodied agent projects tracked: OpenClaw, MuJoCo, Drake",
+      "OpenClaw earns 9/10 health score with zero 24-hour activity",
+      "Only MuJoCo saw activity: 1 historical bug closed in 24h window",
+      "No critical breakage or high-severity issues reported across projects",
+      "Ecosystem in stabilization phase following recent major releases",
+      "Core stack underpins most production/research embodied agent workflows"
+    ],
+    "ai-trending": [
+      "No robotics/embodied AI projects in GitHub’s top 15 daily trending repos",
+      "NVIDIA launches official dev resources for new Alpamayo VLA model",
+      "Open-source humanoid software stacks see growing community investment",
+      "First dedicated VLA robustness red-teaming frameworks launch this week",
+      "commaai/openpilot leads robot frameworks with 63,297 total GitHub stars",
+      "Broad developer attention stays on general LLM and coding assistant tooling"
+    ],
+    "ai-hn": [
+      "Gary Marcus’s OpenAI Astra model critique dominates HN AI discussion",
+      "Claude Code fails real-world test rewriting Anthropic’s native Swift app",
+      "Stanford 2015 Computational Theory of Mind post sparks AI cognition debate",
+      "Cl33-opLM: 236M tiny LLM with reversible operator bottleneck architecture",
+      "Walkthrough shows building local LLM agent in D programming language",
+      "Community debates ethics of open source maintainers using AI for upkeep"
+    ],
+    "ai-hf": [
+      "Moonshot AI’s Kimi-K3 tops weekly trending Hugging Face models by likes",
+      "Over 40% of trending HF models are multimodal image-text-to-text variants",
+      "Uncensored Qwen 3.5/3.6 GGUF fine-tunes see massive weekly download volumes",
+      "Baidu’s Unlimited-OCR exceeds 1.8M weekly downloads on Hugging Face",
+      "DeepSeek-V4-Flash hits 2.78M+ weekly downloads for fast inference",
+      "zai-org’s GLM-5.2 open MoE LLM trends for low-cost, strong performance"
+    ],
+    "ai-community": [
+      "Developers share unreported production failure modes for agentic AI systems",
+      "125M model beats 14B LLM on medical text de-identification tasks",
+      "Software roles shift to agent orchestration, not hands-on feature coding",
+      "Custom agent eval harness uncovers edge cases standard benchmarks miss",
+      "Kimi K3 open weights and GPT-5.6 cost updates highlighted in roundups",
+      "36 Stratagems piece explores AI perceived vs real-world state misalignment"
+    ]
+  }
+}
