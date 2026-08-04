@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "LeRobot发布v0.6.1正式版，含破坏性变更",
+      "NVIDIA Isaac Lab当日50个PR，30%投入多GPU调试",
+      "Genesis修复多环境负索引bug，优化BVH重建性能",
+      "LeRobot优化数据集查询性能，最高提升数倍",
+      "三大具身工具聚焦大规模并行场景稳定性优化",
+      "具身开发生态中文社区需求权重持续提升"
+    ],
+    "ai-agents": [
+      "Drake当日处理10个PR，高活跃迭代健康度优秀",
+      "MuJoCo修复凸碰撞网格O(n²)性能瓶颈",
+      "OpenClaw背靠宇树，是实机部署关键桥梁",
+      "Drake升级工具链，简化构建降低开发成本",
+      "MuJoCo适配Unity URP，完善跨平台文档",
+      "Drake推进nanobind迁移，优化macOS支持"
+    ],
+    "ai-trending": [
+      "AirLLM单4GB卡跑70B模型，日增星1085登热榜",
+      "DeepSeek本地推理引擎ds4日增384星，全平台支持",
+      "Openpilot总星63.3k，支持300+车型ADAS升级",
+      "中文具身教程every-embodied总星2.97k，零基础入门",
+      "horus为人形专用运行时，号称\"机器人界Android\"",
+      "NVIDIA开源10B参数自动驾驶VLA模型alpamayo"
+    ],
+    "ai-web": [
+      "Anthropic推出非营利Claude服务包，最高享75%折扣",
+      "Anthropic自查发现3起大模型越权访问安全事件",
+      "Claude公益计划含垂直工具集成与AI素养培训",
+      "Claude公益已有癫痫基金会等多个标杆落地案例",
+      "OpenAI上线GPT Live连续语音交互相关内容页",
+      "Anthropic呼吁全行业自查大模型安全评估漏洞"
+    ],
+    "ai-hn": [
+      "FCC将外国产先进机器人设备加入限制进口清单",
+      "SK海力士与闪迪推出AI专用高带宽闪存标准",
+      "脑科学研究证实人形机器人流畅度影响用户信任度",
+      "MIT曝LLM底层通用漏洞，可绕过安全对齐机制",
+      "可验证AI预测工具FutureSearch登今日Show HN榜首",
+      "开源工具可破解扫地机器人锁区实现本地摄像头访问"
+    ],
+    "ai-arxiv": [
+      "提出边际贡献分配机制，提升多模态视觉任务精度",
+      "人类手写样本建幻觉基准，解决泛化性差核心痛点",
+      "无需微调即可提升CLIP类模型对抗样本鲁棒性",
+      "VLAGuard框架填补VLA机器人物理安全防护空白",
+      "新规划法将可见性要求纳入工业机器人作业流程",
+      "新退火算法高效优化千台机器人级仓库布局"
+    ],
+    "ai-hf": [
+      "Kimi-K3多模态模型周赞9850，拿下周赞榜第一",
+      "GLM-5.2下载量超218万，中文能力突出",
+      "DeepSeek-V4-Flash下载破274万，工业落地广泛",
+      "MiniMax-H3文生视频模型上线即冲周赞榜前三",
+      "国产开源模型完全主导HF中文生态热门榜单",
+      "AMD推出MoE开源LLM，深度适配AMD硬件"
+    ],
+    "ai-community": [
+      "Dev.to热议AI Agent权限扩容后的安全风险场景",
+      "首次提出长周期Agent\"上下文债务\"核心概念",
+      "谷歌官方披露Agent技能全流程工程实践",
+      "系统梳理LLM Token成本全链路优化方案",
+      "解读欧盟AI Act透明度规则对出海团队影响",
+      "Lobste.rs热议Kimi Delta注意力机制技术原理"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Digest covers 6 key embodied AI dev tools including ROS 2 and LeRobot.",
+      "3 of 5 tracked tools saw significant repo activity in the 24-hour window.",
+      "NVIDIA Isaac Lab recorded 50 updated PRs and 7 updated issues in 24h.",
+      "LeRobot shipped a minor patch release for development branch users.",
+      "ROS 2 and OpenVLA had no 24h updates, matching their stable cadences.",
+      "No major official tool releases shipped in the 24-hour tracking window."
+    ],
+    "ai-agents": [
+      "Digest covers 3 core embodied AI infrastructure projects including MuJoCo.",
+      "No critical unpatched vulnerabilities reported across all tracked projects.",
+      "MuJoCo and Drake resolved high-priority core bugs within 24 hours.",
+      "OpenClaw (Unitree SDK2) had no 24h issue or PR activity.",
+      "Tracked tools power both research and commercial AI agent development.",
+      "Ecosystem prioritizes performance, robustness and deployment compatibility."
+    ],
+    "ai-trending": [
+      "No direct robotics repos hit GitHub's top 16 daily trending list.",
+      "NVIDIA's Alpamayo 1 Nano VLA amassed nearly 2,000 community stars.",
+      "New open-source VLA evaluation frameworks address safety benchmark gaps.",
+      "A zero-to-VLA beginner course has accumulated thousands of GitHub stars.",
+      "Open-source humanoid development tooling is rapidly proliferating.",
+      "commaai/openpilot totals 63,309 stars as a leading autonomy stack reference."
+    ],
+    "ai-web": [
+      "3 new official posts from Anthropic and OpenAI published August 3, 2026.",
+      "Anthropic launched Claude for Nonprofits after 8 months of pilot testing.",
+      "Anthropic disclosed 3 unauthorized model access cybersecurity incidents.",
+      "Cross-lab confirmation of frontier model test environment cybersecurity risks.",
+      "OpenAI shared metadata for its new GPT Live voice interaction product.",
+      "Claude for Nonprofits offers steep discounts and vertical tool integrations."
+    ],
+    "ai-hn": [
+      "FCC's foreign robot import rules are the top HN AI-adjacent post.",
+      "Nvidia launched Cosmos 3 Edge on-device AI models for commercial robotics.",
+      "New research found a fundamental unpatched vulnerability in transformer LLMs.",
+      "The LLM flaw enables trivial, undetectable jailbreaks across mainstream models.",
+      "HN debates AI's appropriate use in open source software maintenance.",
+      "Low-quality AI-generated marketing content is flooding HN's front page."
+    ],
+    "ai-arxiv": [
+      "29 new AI papers posted across cs.RO, cs.AI, cs.LG and cs.CV categories.",
+      "VLA advances cut latency, viewpoint overfitting and cross-embodiment gaps.",
+      "New test-time adaptation supports single-sample tabular data tuning.",
+      "Optimized Gaussian Splatting enables real-time robotics SLAM use cases.",
+      "First all-human-written vision-and-language hallucination benchmark launched.",
+      "Training-free VLM robustness works across unknown attack budgets."
+    ],
+    "ai-hf": [
+      "moonshotai's Kimi-K3 leads weekly HF trending with ~10k likes.",
+      "DeepSeek V4 Flash stable and preview releases rank in top 5 most liked.",
+      "Qwen 3.5/3.6 family fine-tunes hit over 4 million cumulative downloads.",
+      "MiniMax-H3 text-to-video model got 1.4k likes in its first week.",
+      "zai-org's GLM-5.2 MoE LLM totals 4.8k likes and 2.18M downloads.",
+      "Stable DeepSeek V4 Flash has over 2.74M total Hub downloads."
+    ],
+    "ai-community": [
+      "AI agent reliability, safety and governance are top cross-community topics.",
+      "Dev.to explores untested security risks of expanding AI agent tool access.",
+      "New 23-minute guide breaks down end-to-end LLM token cost optimization.",
+      "EU AI Act 2026 transparency rules are now enforceable for LLM apps.",
+      "Lobste.rs discusses custom inference engines and edge LLM deployment.",
+      "Cross-community concerns rise over weak AI safety guardrails for agents."
+    ]
+  }
+}
