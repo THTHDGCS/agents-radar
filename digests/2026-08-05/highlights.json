@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "机器人AI开发工具形成四层清晰分层栈",
+      "Isaac Lab、LeRobot今日各50条PR更新",
+      "三大工具聚焦结果可复现性问题修复",
+      "Genesis、LeRobot适配AMD/Apple非N卡",
+      "全栈工具强化API标准化与开发者体验",
+      "ROS2、OpenVLA进入稳定维护迭代缓慢"
+    ],
+    "ai-agents": [
+      "Unitree SDK2主分支稳定无核心代码变更",
+      "PR#32更新G1机器人低阶控制工具头文件",
+      "PR#32滞留超2.5个月未获维护者评审",
+      "实体智能体底层技术栈形成三层成熟体系",
+      "中上游MuJoCo、Drake保持高活跃迭代",
+      "OpenClaw生态今日仅1条存量PR更新"
+    ],
+    "ai-trending": [
+      "AirLLM日增1711星，4GB显存跑70B模型",
+      "具身运行时Horus获社区重点关注",
+      "Embodied-AI-Guide星量破1.5万成热门指南",
+      "robot-control-stack无ROS依赖支持VLA部署",
+      "Dora-RS Rust中间件主打低延迟分布式特性",
+      "全中文VLA实战学习手册发布获关注"
+    ],
+    "ai-web": [
+      "Anthropic首次设首席全球事务官高管岗",
+      "前卡内基主席Tino任Anthropic全球事务官",
+      "OpenAI同步更新3个分类页面元数据",
+      "OpenAI新增经济研究交换平台相关页面",
+      "OpenAI更新ChatGPT/Codex教学相关页面",
+      "OpenAI新增《Apple Is Getting This Wrong》页面"
+    ],
+    "ai-hn": [
+      "斯坦福公开CS329A自改进AI Agent系统课程",
+      "10项生产级AI Agent延迟优化方案发布",
+      "首个MCP+视频编辑器工具可调用Claude剪辑",
+      "开源智能眼镜实时手语翻译项目上线",
+      "AI工具批量分析应用评论提取用户需求",
+      "AI创业方案生成工具覆盖全流程规划"
+    ],
+    "ai-arxiv": [
+      "实证LLM注意力存在大小写敏感性",
+      "无需训练的MLLM推理切换机制提效",
+      "量化多模态大模型截图转代码模式偏差",
+      "3D跟踪器蒸馏提升VLA策略泛化性",
+      "伯努利策略让VLA自适应重规划长程任务",
+      "轻量级世界动作模型支持边缘部署"
+    ],
+    "ai-hf": [
+      "Kimi-K3周点赞破万登顶热门模型榜",
+      "百度Unlimited-OCR下载量破270万",
+      "DeepSeek V4系列下载量破270万商用热门",
+      "MiniMax-H3视频衍生模型社区热度爆发",
+      "Qwen系列成社区微调首选基座模型",
+      "智谱GLM-5.2周点赞4820下载破220万"
+    ],
+    "ai-community": [
+      "倡导场景匹配模型而非盲目追前沿大模型",
+      "头部出版商集体封禁GPTBot引治理关注",
+      "Claude沙箱突破拆解AI Agent安全风险",
+      "分享7B小模型MCP工具设计实战经验",
+      "提出AI Agent合规审计日志架构方案",
+      "聚焦本地LLM裸金属运行等硬核基础设施"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Digest covers 6 core AI CLI tools including ROS 2 and LeRobot.",
+      "NVIDIA Isaac Lab posted 17 updated issues and 50 active PRs in 24h.",
+      "Active projects fixed silent failures breaking sim-to-real alignment.",
+      "Tools expanded support for non-NVIDIA compute backend compatibility.",
+      "All active tools resolved critical user-facing bugs within 24 hours.",
+      "ROS 2 and OpenVLA recorded no daily development activity."
+    ],
+    "ai-agents": [
+      "Digest covers 3 core robotics projects: OpenClaw, MuJoCo, Drake.",
+      "Unitree SDK2 saw no new issues, merged PRs, or releases in 24h.",
+      "Only updated item is a pending PR for G1 humanoid low-level tooling.",
+      "No bug triage or user support activity occurred for Unitree SDK2.",
+      "Unitree SDK2 project health remains stable with no critical disruptions.",
+      "Unitree SDK2 has no published public stable or pre-release versions."
+    ],
+    "ai-trending": [
+      "NVIDIA launched a 34B Alpamayo VLA model for autonomous vehicles.",
+      "Humanoid robotics saw a burst of open source development activity.",
+      "Standardized open VLA evaluation frameworks are gaining traction.",
+      "A YC W26 startup is building ML-optimized dexterous robotic hands.",
+      "Low-latency middleware dora-rs/dora has 3,865 total GitHub stars.",
+      "Unified RL infrastructure RLinf/RLinf holds 4,424 total GitHub stars."
+    ],
+    "ai-web": [
+      "Anthropic appointed Tino Cuéllar as its first Chief Global Affairs Officer.",
+      "Cuéllar brings government, judiciary, and foreign policy experience.",
+      "OpenAI published 3 new index pages on its public website.",
+      "New OpenAI pages cover economic research and ChatGPT learning resources.",
+      "OpenAI’s page launches signal near-term major announcements are coming.",
+      "One new OpenAI page includes an unconfirmed reference to Apple."
+    ],
+    "ai-hn": [
+      "DuckDB’s new Clojure binding for AI pipelines earned HN’s top score.",
+      "Stanford posted a free CS329A Self-Improving AI Agents course playlist.",
+      "The Trump administration expanded AI protectionism to cover robotics.",
+      "AI hedge fund Whale Rock posted a 21.7% loss in July 2026.",
+      "New Show HN projects include Claude-integrated video editing tools.",
+      "On-device sign language translator for smart glasses launched on Show HN."
+    ],
+    "ai-arxiv": [
+      "New research confirms LLM attention is inherently case-sensitive.",
+      "A wave of training-free edge robotics models hit ArXiv submissions.",
+      "New VLA policies integrate 3D tracking to close sim-to-real control gaps.",
+      "Multiple clinical AI models launched to reduce healthcare workloads.",
+      "A training-free MLLM switching mechanism cuts redundant compute use.",
+      "The case sensitivity finding has immediate prompt engineering implications."
+    ],
+    "ai-hf": [
+      "Moonshot AI’s Kimi-K3 multimodal LLM tops HF trends with 1.1M downloads.",
+      "Kimi-K3 earned over 10,000 weekly likes on the Hugging Face Hub.",
+      "The Qwen 3.5/3.6 family has 8 top-ranking trending fine-tunes.",
+      "MiniMaxAI’s H3 generative video model got 3 community ComfyUI ports.",
+      "DeepSeek V4 Flash stable LLM has 2.7+ million total downloads.",
+      "Zhipu’s GLM-5.2 MOE LLM reached 2.2+ million total downloads."
+    ],
+    "ai-community": [
+      "Developers widely push back against overreliance on large frontier AI models.",
+      "Dev.to content focuses on MCP ecosystem and AI agent security gaps.",
+      "Lobste.rs covers bare-metal local LLM deployment on Raspberry Pi.",
+      "Major publishers blocked GPTBot over unauthorized training data scraping.",
+      "New disclosures detail recent Anthropic Claude sandbox security breaches.",
+      "Critical flaws were found in standard AI agent audit logging systems."
+    ]
+  }
+}
