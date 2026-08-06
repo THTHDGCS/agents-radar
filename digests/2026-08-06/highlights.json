@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "覆盖ROS2等6款具身AI机器人开发CLI工具",
+      "全栈生态转向工程化落地适配真实场景需求",
+      "LeRobot当日更新21个Issues、36个PR",
+      "Isaac Lab当日更新10个Issues、50个PR",
+      "多社区聚焦仿真可复现性等五大共性需求",
+      "XR遥操作技术成熟大幅降低具身研发门槛"
+    ],
+    "ai-agents": [
+      "覆盖OpenClaw、MuJoCo、Drake3款核心基建",
+      "Drake当日更新7个Issues、22个PR活跃度最高",
+      "OpenClaw为唯一硬件接入层SDK互补性极强",
+      "MuJoCo与Drake升级复杂异构场景仿真能力",
+      "两大基建优化大规模场景性能与稳定性",
+      "生态强化与OpenUSD等通用工具链兼容性"
+    ],
+    "ai-trending": [
+      "3款Agent基建项目单日新增星数均超300",
+      "英伟达Alpamayo工业VLA模型持续迭代热度高",
+      "人形机器人开源全链路更新降低落地门槛",
+      "MuJoCo物理仿真引擎累计获星14459颗",
+      "入门VLA教程累计获星超3000普及度极高",
+      "轻量无ROS sim2real框架降低VLA落地门槛"
+    ],
+    "ai-hn": [
+      "十年HN S级优质AI链接汇总获全场最高51分",
+      "首款前沿大模型幽默能力公开基准测试发布",
+      "新方案实现LLM token最高79%压缩率",
+      "开源项目打通AI智能体与嵌入式硬件链路",
+      "AI保护主义延伸至机器人领域引行业关注",
+      "具身机器人AI评估框架设计成行业痛点"
+    ],
+    "ai-arxiv": [
+      "多模态预训练研究转向机制解析填补空白",
+      "新方法减少Video-LLM视觉token冗余提效",
+      "无训练框架提升MLLM空间推理准确率",
+      "VLA新增显式语言记忆解决长程规划痛点",
+      "世界动作模型扩展适配移动操作动态场景",
+      "LLM嵌入烹饪机器人实现自适应自动烹饪"
+    ],
+    "ai-hf": [
+      "Kimi-K3多模态周点赞破万下载超112万次",
+      "GLM-5.2 MoE周下载破223万热度居前",
+      "DeepSeek-V4-Flash周下载破270万领跑LLM",
+      "国产模型占据热门榜核心商业化成熟度高",
+      "基座衍生微调量化模型占榜比例超40%",
+      "端侧GGUF格式适配模型用户需求旺盛"
+    ],
+    "ai-community": [
+      "81%开发者承受AI生成代码额外审查负担",
+      "AWS开源Kiro Crew AI代理编排器支持跨仓库",
+      "提出AGENTS.md规范提升AI编码代理准确率",
+      "实测给出不同仓库规模检索工具选型建议",
+      "拆解vLLM PagedAttention核心设计逻辑",
+      "梳理EU AI Act 2026年合规关键时间节点"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "6 key robotics and embodied AI CLI tools featured in latest digest.",
+      "4 of 5 tracked robotics tools have active maintainer/community engagement.",
+      "OpenVLA is an outlier with 24 hours of zero ecosystem activity.",
+      "Active tools aim to cut reliance on costly enterprise-grade compute.",
+      "ROS 2 community now uses AI-generated issue filing workflows.",
+      "LLM-supported documentation spans multiple robotics CLI projects."
+    ],
+    "ai-agents": [
+      "3 core embodied AI backend frameworks covered: OpenClaw, MuJoCo, Drake.",
+      "No new public releases across all 3 projects in the 24-hour window.",
+      "OpenClaw reported zero updated issues or PRs in the monitoring period.",
+      "Drake led activity with 7 updated issues, 22 updated PRs in 24 hours.",
+      "Ecosystem shifts from experimental embodied agents to production tooling.",
+      "No critical ecosystem-wide outages reported across all tracked projects."
+    ],
+    "ai-trending": [
+      "4 agent tools gained 3,400+ combined new GitHub stars in a single day.",
+      "NVIDIA's Alpamayo VLA suite leads open VLA stacks for commercial use.",
+      "OpenArm open humanoid arm hit 2,800 total GitHub stars to date.",
+      "AirLLM runs 70B parameter models on a single 4GB GPU for edge deploy.",
+      "dora-rs low-latency robotic middleware has 3,867 total GitHub stars.",
+      "inspect-robots enables standardized sim/real VLA performance testing."
+    ],
+    "ai-hn": [
+      "HN debates expanded U.S. AI trade restrictions extending to robotics.",
+      "OpenAI debriefs Hugging Face supply chain breach at Black Hat 2026.",
+      "New AI agent tools control embedded hardware, auto-generate code guides.",
+      "Humor Arena launches crowdsourced benchmark for LLM humor testing.",
+      "Semantic Thermodynamics claims 79% LLM token reduction via narrative rules.",
+      "Community discusses AI content labeling and evaluation best practices."
+    ],
+    "ai-arxiv": [
+      "New ArXiv papers unlock mechanistic understanding of multimodal models.",
+      "First systematic analysis of multimodal pretraining knowledge flow released.",
+      "Training-free pipelines boost MLLM spatial reasoning and face inpainting.",
+      "Papers address gaps like label-efficient medical imaging assessment.",
+      "New anti-adversarial protections for vision transformers introduced.",
+      "Novel techniques cut compute overhead for robotics and 3D scene models."
+    ],
+    "ai-hf": [
+      "Moonshot's Kimi-K3 tops HF trends with 10.1k likes, 1.1M+ downloads.",
+      "MiniMax's H3 video model gets official ComfyUI ports and quantized variants.",
+      "Qwen 3.5/3.6 families dominate community fine-tuning activity on HF.",
+      "Baidu's Unlimited-OCR hits 2.7M+ total downloads for enterprise use.",
+      "DeepSeek V4 Flash LLM has 2.7M+ downloads, ultra-low inference cost.",
+      "DeepSeek V4 Flash update cuts hallucinations, boosts long-context reasoning."
+    ],
+    "ai-community": [
+      "81% of developers face unsustainable AI-generated code review workloads.",
+      "AWS launches open-source Kiro Crew AI agent orchestrator for coding teams.",
+      "Lobste.rs explores running local LLMs on Raspberry Pi hardware.",
+      "Community shares best practices for agent docs and token cost optimization.",
+      "Kiro Crew coordinates coding agents across sessions, repos, and schedules.",
+      "Hidden \"review tax\" is top pain point of AI coding tool adoption for devs."
+    ]
+  }
+}
