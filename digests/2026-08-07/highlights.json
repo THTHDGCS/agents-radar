@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "具身AI CLI工具链正从科研向工业化快速演进",
+      "NVIDIA Isaac Lab今日更50条PR含10条核心功能",
+      "Genesis3条高优先级Issue今日已全部闭环",
+      "LeRobot修复LIBERO基准种子绑定保障可复现",
+      "全生态形成可靠性兼容性易用性迭代共识",
+      "上层框架竞争转向预训练模型与基准生态建设"
+    ],
+    "ai-agents": [
+      "具身AI底层基础设施进入精细化迭代阶段",
+      "Drake修复积压6年的渲染图像倒置历史Bug",
+      "MuJoCo存量高优先级Bug今日已全部清零",
+      "OpenClaw定位为仿真与实体机器人适配层",
+      "MuJoCo、Drake共研碰撞接触算法精度优化",
+      "Drake新增可视化拖拽交互降低调试成本"
+    ],
+    "ai-trending": [
+      "今日GitHub Trending无具身机器人相关项目",
+      "NVIDIA 34B Alpamayo 2 Super聚焦自动驾驶场景",
+      "中文VLA手册VLA-Handbook获479星受追捧",
+      "开源人形机械臂openarm获2817星补市场空白",
+      "无ROS轻量sim2real框架成落地新热点",
+      "厨房场景VLA专用基准降低落地验证成本"
+    ],
+    "ai-web": [
+      "OpenAI单日更3条内容覆盖三大核心业务线",
+      "OpenAI将发布ChatGPT商用落地案例内容",
+      "OpenAI推GPT-5.6 Sol性能优化技术更新",
+      "OpenAI与APA合作推进负责任AI合规建设",
+      "Anthropic今日无任何官网公开内容更新",
+      "厂家长期无公开更新大概率筹备重大发布"
+    ],
+    "ai-hn": [
+      "vLLM架构拆解获62分登HN AI热度榜第一",
+      "OpenAI数学突破被指研究不端引发伦理争议",
+      "Gemini推机器人从脚到指尖统一控制策略",
+      "实证证实AI机器人可提升学生成绩与动机",
+      "2021年语言泛化经典研究重获社区关注",
+      "AI辅助量子化学基准系统误差得到修正"
+    ],
+    "ai-arxiv": [
+      "研究发现VLM控制器性能或来自模拟器而非感知",
+      "保守校准框架解决VLM测试适配校准退化问题",
+      "检索导向CoT提升多模态检索细粒度判别力",
+      "共享状态架构解决多智能体世界模型不一致",
+      "门控后验蒸馏提升移动GUI智能体任务成功率",
+      "VLM标注数据集降低游戏智能体训练门槛"
+    ],
+    "ai-hf": [
+      "国产原生模型主导HF周榜，多模态生成爆火",
+      "月之暗面Kimi-K3成周度热门点赞量破万",
+      "MiniMax-H3视频模型衍生近10款社区版本",
+      "DeepSeek-V4-Flash下载量突破263万次",
+      "智谱GLM-5.2 MoE周点赞近5000下载破239万",
+      "大模型GGUF量化分发成社区最活跃方向"
+    ],
+    "ai-community": [
+      "AI Agent熔断模式可有效解决Agent失控问题",
+      "运维AI Agent单P1故障处理成本仅0.04美元",
+      "研究指出纯文本LLM评测存在固有盲区缺陷",
+      "134条固定规则替代提示词保障AI管理安全",
+      "超大规模开源模型Kimi K3部署门槛极高",
+      "开发者分享企业级RAG系统前期规划方法论"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "6 leading AI robotics CLI tools covered in 2026-08-07 community digest.",
+      "Ecosystem shifts from research prototyping to production deployment readiness.",
+      "ROS 2 enters activity lull ahead of scheduled distribution sync.",
+      "NVIDIA Isaac Lab updated 5 issues and ≥10 PRs in 24 hours.",
+      "Genesis initiates formal vulnerability disclosure for unreported flaws.",
+      "OpenVLA logs no community or maintainer activity in the period."
+    ],
+    "ai-agents": [
+      "3 core embodied AI agent projects profiled in 2026-08-07 digest.",
+      "No standardized cross-project interface layer creates integration overhead.",
+      "OpenClaw logs 0 activity, earns 4.0/10 ecosystem health score.",
+      "MuJoCo resolved 100% of its 3 updated issues in 24 hours.",
+      "Drake earns top 9.0/10 health score, merged 9 of 16 updated PRs.",
+      "No new releases across all 3 profiled projects in the period."
+    ],
+    "ai-trending": [
+      "NVIDIA open-sources 4 Alpamayo VLA repos for autonomous vehicles.",
+      "Standardized cross-platform VLA evaluation tools become community priority.",
+      "IsaacLab hits 7,848 total stars, leads robot framework category.",
+      "dora low-latency robotic middleware earns 3,869 total GitHub stars.",
+      "Chinese VLA handbook and zero-to-VLA course see rapid adoption.",
+      "Humanoid tooling matures with open runtimes and teleoperation stacks."
+    ],
+    "ai-web": [
+      "OpenAI adds 3 new public website entries in August 7, 2026 crawl.",
+      "2 new OpenAI posts cover ChatGPT use cases and GPT-5.6 Sol updates.",
+      "Third OpenAI entry details responsible AI partnership with the APA.",
+      "No full text available for new OpenAI content, only URL metadata.",
+      "Anthropic logs 0 new public content across all official domains.",
+      "No unannounced product leaks detected for OpenAI or Anthropic."
+    ],
+    "ai-hn": [
+      "vLLM architecture deep dive is top-ranked AI post on Hacker News.",
+      "Report alleges OpenAI committed misconduct in math breakthrough research.",
+      "Misconduct claims spark calls for independent frontier AI audits.",
+      "Audit finds critical errors in widely used quantum chemistry AI benchmarks.",
+      "AI fake brand test and agent debugging tool draw builder interest.",
+      "Community debates ethics of closed-door frontier AI research practices."
+    ],
+    "ai-arxiv": [
+      "50 new AI papers posted to ArXiv across 4 core CS categories.",
+      "New calibration framework preserves VLM reliability under distribution shift.",
+      "Study finds many zero-shot VLA robot controllers lack true visual grounding.",
+      "Smartphone dental screening and Bangla Sign Language tools launch.",
+      "World model research hits multiplayer state consistency milestone.",
+      "New work addresses AI trust gaps from copyright to medical privacy."
+    ],
+    "ai-hf": [
+      "MiniMax-H3 becomes first open video model to hit mainstream local deployment.",
+      "MiniMax-H3 spawns 7+ community ports, quantizations, and LoRA adapters.",
+      "FLUX.1-dev remains highest-liked model on Hugging Face trending list.",
+      "Baidu's Unlimited-OCR crosses 2.7M total downloads on the Hub.",
+      "DeepSeek V4-Flash gains traction as high-throughput open LLM alternative.",
+      "Qwen 3.5/3.6 fine-tunes drive over 2.4M combined trending downloads."
+    ],
+    "ai-community": [
+      "AI management tool uses 134 explicit rules to eliminate safety gaps.",
+      "Kiro Crew AI agent resolves P1 DevOps incidents for just $0.04 per event.",
+      "Lobste.rs contributors work to run LLMs on low-cost embedded hardware.",
+      "Study finds LLM judges have critical blind spots in multi-channel evaluation.",
+      "Dev.to community prioritizes fixing reliability gaps in deployed AI systems.",
+      "Community debates AI coding tools' career impact on junior developers."
+    ]
+  }
+}
