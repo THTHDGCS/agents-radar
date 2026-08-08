@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "ROS 2发布Lyrical Luth Patch 2，推进构建规范统一",
+      "NVIDIA Isaac Lab单日50个PR，新增三级仿真确定性模式",
+      "Genesis发布v1.3.2，实现同设备仿真100%可复现",
+      "LeRobot单日10Issue10PR，发起ROS 2集成RFC",
+      "具身AI CLI形成三层全栈生态，聚焦生产级落地",
+      "四大共性需求明确，生态碎片化治理成核心方向"
+    ],
+    "ai-agents": [
+      "MuJoCo单日2Issue5PR，修复并行训练内存泄漏问题",
+      "Drake单日2Issue11PR，推进Rust构建规则降本",
+      "OpenClaw原生对接宇树全系列机器人硬件",
+      "具身智能体基础设施工程化需求优先级提升",
+      "两大仿真项目攻坚多体动力学稳定性",
+      "MuJoCo、Drake同步优化Python开发体验"
+    ],
+    "ai-trending": [
+      "NVIDIA Alpamayo系列VLA持续占据领域热门榜首",
+      "openpilot居机器人开源榜第一，星标63.3k",
+      "国产具身开源活跃度提升，实战教程星标破3k",
+      "Isaac Lab星标7857，为VLA训练首选工具链",
+      "34B参数Alpamayo2发布即获社区高度关注",
+      "具身多智能体开发需求释放，相关工具登榜"
+    ],
+    "ai-web": [
+      "Anthropic优化Fable 5生物防护，误降级率降85%",
+      "健康咨询等场景可调用Fable 5全量能力",
+      "高风险生物查询仍降级至Opus 5处理",
+      "Anthropic明确生物医疗为核心价值赛道",
+      "正搭建可信通道向合规用户开放生物能力",
+      "Anthropic引领高风险场景安全落地赛道"
+    ],
+    "ai-hn": [
+      "美能源部Genesis开源模型倡议登HN热度榜首",
+      "Cloudflare推出AI Agent专用浏览器Kitesurf",
+      "跨企业编码Agent协作工具Agent Tunnels发布",
+      "本地多Agent对话工具Cowchat支持多模型交互",
+      "Google推出Gemini Robotics 2升级机器人AI能力",
+      "社区热议AI监管、就业替代等产业议题"
+    ],
+    "ai-arxiv": [
+      "SCPO范式解决大模型上下文鲁棒性对齐痛点",
+      "排序式奖励构造释放生成式RM在RLHF的潜力",
+      "首次实现完全无外部监督的在策略自蒸馏",
+      "可解释智能体操作替代Top-K检索适配长文档",
+      "TRAJDEBUG可定位长周期智能体轨迹关键错误",
+      "具身智能人形机器人、跨具身VLA密集出成果"
+    ],
+    "ai-hf": [
+      "FLUX.1-dev文生图周点赞破1.4万居全榜第一",
+      "GLM-5.2 MoE大模型下载量突破240万",
+      "Kimi-K3多模态下载破130万，点赞超1万",
+      "MiniMax-H3视频模型生态爆发，10版本上榜",
+      "DeepSeek-V4-Flash成周度LLM下载量第一",
+      "GGUF量化成为全类别模型落地标配方案"
+    ],
+    "ai-community": [
+      "开发者热议AI编码“10x效率”伪命题",
+      "实践证实Agent可观测性难点不在检测环节",
+      "K8s基Agent沙箱方案解决权限隔离风险",
+      "AI生成测试用例边界覆盖率达98%",
+      "多Agent协作可实现无人值守自动修bug",
+      "社区聚焦AI Agent工程化全链路落地痛点"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "2026-08-08 digest covers 5 core robotics/embodied AI dev tools.",
+      "ROS 2 shipped ROS Lyrical Luth Patch Release 2 distribution sync.",
+      "NVIDIA Isaac Lab recorded 50 PR updates in the past 24 hours.",
+      "Genesis released v1.3.2 production minor cross-backend update.",
+      "OpenVLA saw 24-hour inactivity amid open VLA space consolidation.",
+      "Community prioritizes cross-tool interoperability over siloed solutions."
+    ],
+    "ai-agents": [
+      "Digest covers 3 core robotics simulation and control layer projects.",
+      "No critical outages, breaks or vulnerabilities recorded in 24 hours.",
+      "OpenClaw (Unitree SDK 2) saw 0 issues and PRs in the past 24h.",
+      "Cohort activity prioritizes performance and simulation fidelity gains.",
+      "All projects support production physical AI agent deployments.",
+      "OpenClaw earned a 7/10 health score in the 24-hour snapshot."
+    ],
+    "ai-trending": [
+      "NVIDIA’s Alpamayo VLA repos lead 7-day embodied AI project activity.",
+      "LimX Dynamics released open-source humanoid/robot arm dev tool stack.",
+      "ROS-free frameworks gain traction amid legacy middleware frustration.",
+      "General agent skill frameworks expand to embodied AI use cases.",
+      "openpilot is top starred robotics framework with 63,358 total stars.",
+      "dora-rs/dora gains popularity for simplifying distributed robot pipelines."
+    ],
+    "ai-web": [
+      "Anthropic published Claude Fable 5 biology safety upgrade announcement.",
+      "Fable 5 saw 85% reduction in biology-related false positive refusals.",
+      "Fable 5 expands access for health education and clinical support workflows.",
+      "High-risk biology use cases still route to older Claude Opus 5 model.",
+      "OpenAI published 0 new public content in the 24-hour crawl window.",
+      "Update balances expanded Fable 5 access with biosecurity mitigation."
+    ],
+    "ai-hn": [
+      "US DOE’s Genesis Open Models Initiative dominated HN AI discourse.",
+      "Proposed framework would regulate high-risk AI labs like exotic animal owners.",
+      "Ex-US Cyber Director endorsed Asimov’s Three Laws for AI ethics.",
+      "AI agent infrastructure tools launched to positive early feedback.",
+      "Analysis flags HR teams as white-collar group most at automation risk.",
+      "Genesis Open Models Initiative post earned 45 points, 15 comments."
+    ],
+    "ai-arxiv": [
+      "ArXiv AI papers center on deployability, robustness and generalization.",
+      "New preference optimization framework fixes LLM context trust failures.",
+      "New embodied AI frameworks unlock cross-embodiment humanoid manipulation.",
+      "Agent research adds self-enforcing governance for live deployed agents.",
+      "New clinical AI tools reduce EHR feature engineering burdens.",
+      "RRC method unlocks generative reward models for LLM reinforcement learning."
+    ],
+    "ai-hf": [
+      "FLUX.1-dev remains most-liked model with 14,028 weekly likes.",
+      "MiniMax-H3 image-text-to-video model spawned 8+ community variants.",
+      "DeepSeek-V4-Flash-0731 leads LLM downloads with 702,709 total.",
+      "Kimi-K3 multimodal LLM earned 10,282 likes on Hugging Face Hub.",
+      "Baidu’s Unlimited-OCR surpassed 2.8M total downloads for OCR use cases.",
+      "LiquidAI’s 2.6B LFM2.5 trends for lightweight edge LLM deployments."
+    ],
+    "ai-community": [
+      "Dev.to and Lobste.rs AI discourse focuses on practical production tooling.",
+      "Engineers highlight agent observability’s trace structuring core challenge.",
+      "Lightweight \"breadcrumb\" tracking replaces notes for AI workflows.",
+      "Lobste.rs features cognitive science critiques of LLM capabilities.",
+      "Developers prioritize mitigating hidden AI output and agent risks.",
+      "Dev.to covers agent sandboxing, fault testing and cost accounting guides."
+    ]
+  }
+}
