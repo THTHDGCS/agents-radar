@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "具身智能工具分层，Isaac Lab、LeRobot迭代最活跃",
+      "NVIDIA Isaac Lab24h更31PR，推仿真结果可复现性",
+      "LeRobot24h更5Issue16PR，补全API推多语言",
+      "两大工具跨场景适配，Isaac修Docker卡顿",
+      "Isaac设Newton+rsl_rl为默认，降配置成本",
+      "LeRobot定位LIBERO评估缺陷，解结果不一致"
+    ],
+    "ai-agents": [
+      "具身智能体底层工具链平稳，无重大版本发布",
+      "MuJoCo、Drake拆大需求为小PR，严控代码质量",
+      "Drake1低优Issue4待更PR，生态健康度优秀",
+      "OpenClaw适配宇树四足，成实体具身硬件中间件",
+      "MuJoCo、Drake推进依赖治理，提长期稳定性",
+      "三者分层互补，覆盖具身全开发流程"
+    ],
+    "ai-trending": [
+      "Prime-Agent单日涨2483星，登GitHub Trending总榜",
+      "NVIDIA开源Alpamayo三代自动驾驶VLA模型",
+      "dora-rs/dora获3869星，成热门机器人中间件",
+      "agent-skills单日涨779星，模块化技能可迁移具身",
+      "horus主打机器人Android runtime，解部署碎片化",
+      "中文具身生态升温，资源项目获稳定关注"
+    ],
+    "ai-hn": [
+      "亚马逊德州数据中心电厂帖成HN全品类最热",
+      "扩散LLM研究颠覆：先承诺答案后补推理过程",
+      "开发者交网站全权限给Claude，引权限讨论",
+      "1800人AI使用调研补全产业端用户认知缺口",
+      "AMD R9700落地场景引讨论，覆盖本地大模型",
+      "托管式LLM Wiki发布，自动整理降维护成本"
+    ],
+    "ai-hf": [
+      "FLUX.1-dev以14037周赞居HF热门榜榜首",
+      "Kimi-K3获10342周赞，支持百万级上下文",
+      "MiniMax-H3系列11款入Top30，文生视频爆发",
+      "GLM-5.2获4902赞，下载破248万对标闭源",
+      "DeepSeek-V4-Flash推理提速3倍，下载近78.6万",
+      "社区二次创作活跃，GGUF量化占比超五成"
+    ],
+    "ai-community": [
+      "模型路由降本实践，点明输出稳定性隐患",
+      "工具调用型Agent评估体系搭建方法公开",
+      "Claude Code助排生产内存泄漏，流程可复制",
+      "Claude Code持久化记忆解跨会话遗忘痛点",
+      "AI生成SSRF修复仍存漏洞，需二次校验",
+      "多RAG+知识图谱搭AI第二大脑方案公布"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "6 embodied AI CLI tools featured including ROS 2 and NVIDIA Isaac Lab.",
+      "NVIDIA Isaac Lab logged 31 updated PRs in the 24-hour tracking window.",
+      "No tracked AI CLI tools shipped formal production releases yesterday.",
+      "Active development prioritizes lowering barriers for robotics developers.",
+      "Hugging Face LeRobot saw 24h production hardening and usability updates.",
+      "ROS 2, Genesis, OpenVLA had no 24h code or community changes."
+    ],
+    "ai-agents": [
+      "3 core AI agent infra projects tracked including OpenClaw and MuJoCo.",
+      "No tracked projects recorded any 24-hour public GitHub activity.",
+      "Activity lull aligns with typical pre-release cycles for mature backend tools.",
+      "No urgent stability alerts signal high baseline reliability for core tools.",
+      "Active internal work focuses on reducing end-user setup friction.",
+      "No critical bug reports or new production releases shipped yesterday."
+    ],
+    "ai-trending": [
+      "No robotics/embodied AI projects made today’s global GitHub trending list.",
+      "NVIDIA’s open Alpamayo VLA family leads 7-day active robotics projects.",
+      "2.8k-star enactic/openarm adds deployable contact-rich hardware support.",
+      "3k-star every-embodied zero-to-VLA course sees explosive community growth.",
+      "New VLA benchmark tools launch to fix cross-hardware performance gaps.",
+      "4.4k-star RLinf RL infrastructure tops trending robot frameworks list."
+    ],
+    "ai-hn": [
+      "Top HN thread slams Amazon AI data center powered by the most polluting U.S. plant.",
+      "Anthropic launches Claude Code cross-session messaging and default agentic auto mode.",
+      "Controversy erupts over OpenAI training models on public exploit discussion boards.",
+      "New research finds diffusion LLMs commit outputs before generating reasoning.",
+      "Open-source Vampire Theorem Prover (for AI alignment) resurfaces for review.",
+      "User-built project grants Claude full admin control of a public website."
+    ],
+    "ai-hf": [
+      "MiniMax-H3 video model spawns 8 top 30 community variants on Hugging Face.",
+      "Kimi-K3 multimodal LLM earns 10.3k weekly likes, 1M+ cumulative downloads.",
+      "GLM-5.2 MoE chat model hits 4.9k weekly likes, 2.48M total downloads.",
+      "Uncensored Qwen 3/3.6 fine-tunes and GGUF quants are top community priority.",
+      "Baidu’s Unlimited-OCR hits 3.9k likes, 2.8M downloads for document processing.",
+      "DeepSeek-V4-Flash LLM trends for high-throughput, low-latency inference."
+    ],
+    "ai-community": [
+      "Agentic AI dev and LLM workflow tradeoffs lead cross-platform tech discussions.",
+      "Model routing cuts AI agent costs but fails to boost deployment trust, devs say.",
+      "Low-quality unmaintainable AI-generated code is a top developer concern.",
+      "Guide outlines building AI second brains with multi-RAG and knowledge graphs.",
+      "Humorous ReAct agent explainer goes viral among new agentic AI developers.",
+      "New revision prompting research gains traction for industrial LLM use cases."
+    ]
+  }
+}
