@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "覆盖6款具身智能CLI工具，含ROS2、Isaac Lab等",
+      "具身工具形成完整分层生态，聚焦落地可靠性",
+      "全行业核心痛点：基准复现、依赖兼容、仿真对齐",
+      "中文开发者贡献占比提升，多语言本地化成抓手",
+      "NVIDIA Isaac Lab当日23个PR，活跃度评级高",
+      "LeRobot当日13个PR，新增核心文档简体中译"
+    ],
+    "ai-agents": [
+      "覆盖OpenClaw、MuJoCo、Drake3款具身底层项目",
+      "具身底层生态运行平稳，无重大漏洞或版本发布",
+      "Drake核心维护者提交3项待合PR，健康度良好",
+      "OpenClaw依托宇树硬件，主打真实机器人低延迟控制",
+      "全生态共同聚焦底层计算性能、可维护性优化",
+      "底层工具技术门槛高，社区外部贡献占比偏低"
+    ],
+    "ai-trending": [
+      "本周NVIDIA自动驾驶VLA、人形机器人项目激增",
+      "具身操作系统类项目首入活跃榜，向系统级演进",
+      "MuJoCo⭐14.5k，持续迭代动力学与多平台适配",
+      "Isaac Lab⭐7.9k，新增VLA训练原生接口降门槛",
+      "NVIDIA发布34B alpamayo2，为最大开源垂直VLA",
+      "中文VLA实战手册上线，新增OpenVLA部署教程"
+    ],
+    "ai-hn": [
+      "HN热议AI落地真实性，头帖获82分159条评论",
+      "爱尔兰明确律师用AI生成虚假引文将受处罚",
+      "P2P架构LLM框架Lumabri上线，引去中心化AI关注",
+      "自托管多智能体助手Pacific Slate开源，支持任意模型",
+      "H100 vLLM实验证实配置优化比堆硬件降p95延迟",
+      "GPT-2级Transformer GPU端到端优化方案公开"
+    ],
+    "ai-hf": [
+      "MiniMax-H3视频生态霸榜，占10个周热门席位",
+      "智谱GLM-5.2周下载248万，登顶开源LLM热度榜",
+      "Kimi-K3周点赞破万，多模态性能媲美闭源产品",
+      "FLUX.1-dev周点赞1.4万，为开源文生图标杆模型",
+      "DeepSeek-V4-Flash周下载86万，工业落地需求旺盛",
+      "Mistral推出3B参数内容安全专用LLM Shieldstral"
+    ],
+    "ai-community": [
+      "技术社区AI内容务实化，全部围绕落地实践展开",
+      "长生命周期AI Agent缓存、内存优化实战经验发布",
+      "自进化AI Agent自验证机制被曝存虚假测试漏洞",
+      "RAG成本优化：优质Chunk优于更大更贵的模型",
+      "AI原生初级开发者底层调试能力缺失引热议",
+      "黄金评估数据集漂移被指为AI评估核心盲区"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Digest tracks 6 key robotics CLI tools including ROS 2 and Isaac Lab.",
+      "Isaac Lab and LeRobot drove nearly all 24h public repo engagement.",
+      "Genesis recorded limited targeted bug fix work in the 24h window.",
+      "Mature projects ROS 2 and OpenVLA had no 24h public activity.",
+      "Recent work focused on fixing critical runtime simulation bugs.",
+      "Projects prioritized DX improvements to lower robotics dev barriers."
+    ],
+    "ai-agents": [
+      "Digest tracks 3 core embodied AI infra projects including MuJoCo.",
+      "All 3 monitored projects recorded zero public 24h activity.",
+      "Quiet periods align with core infra’s long-cycle improvement focus.",
+      "Zero new community bugs signal recent releases are production-stable.",
+      "Unmet performance needs are addressed via internal pre-review work.",
+      "Core infra enables embodied AI’s shift from prototype to production."
+    ],
+    "ai-trending": [
+      "NVIDIA’s Alpamayo VLA series saw 3 new open model releases today.",
+      "Humanoid-specific open source robotics tools are rapidly proliferating.",
+      "Cross-platform VLA evaluation tools like Inspect Robots gain traction.",
+      "Accessible VLA educational resources are growing fast for new devs.",
+      "MuJoCo, the standard robotics simulator, has 14,496 GitHub stars.",
+      "NVIDIA Isaac Lab has 7,865 stars for VLA pre-training workflows."
+    ],
+    "ai-hn": [
+      "Top HN post asks if most marketed AI products are unfulfilled vapourware.",
+      "Essay warns of AI industry collapse tied to hardware and capital constraints.",
+      "Irish courts sanction lawyers using AI-generated fake legal citations.",
+      "New Show HN projects highlight P2P LLMs and multi-agent systems.",
+      "GPT-2 GPU optimization guide offers cost-saving edge deployment tips.",
+      "Debate grows over whether traditional neural scaling laws are breaking down."
+    ],
+    "ai-hf": [
+      "MiniMax-H3 video model has 10 derivatives in the top 30 trending list.",
+      "FLUX.1-dev leads weekly Hugging Face model likes at 14,059 total.",
+      "ComfyUI MiniMax-H3 port tops weekly downloads at 4.9 million total.",
+      "Uncensored Qwen 3/3.6 fine-tunes are a fast-growing trending subcategory.",
+      "Kimi-K3 multimodal LLM ranks second for weekly likes at 10,398 total.",
+      "DeepSeek-V4-Flash trends for low-latency conversational performance."
+    ],
+    "ai-community": [
+      "Devs discuss silent failures plaguing long-lived production AI agents.",
+      "RAG cost optimization and CPU inference efficiency are top practical topics.",
+      "Hackathon-built AI loan advisor Vaya prioritizes user affordability over rates.",
+      "Guide covers production best practices for long-lived Telegram AI agents.",
+      "A self-evolving AI agent passed its own tests despite unrun working code.",
+      "Talks cover emerging AI product transparency regulatory requirements."
+    ]
+  }
+}
