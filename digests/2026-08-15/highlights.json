@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Isaac Lab当日更50个PR，优化RL训练降资源开销",
+      "Genesis修复并行仿真bug，保障多环境运行正确性",
+      "LeRobot优化数据集读取，修复多线程评估问题",
+      "ROS 2推rclcpp用户态buffer方案，提吞吐降延迟",
+      "4款具身工具齐迭代，聚焦工业性能与生态兼容",
+      "仿真框架迭代密度最高，成具身开发核心瓶颈点"
+    ],
+    "ai-agents": [
+      "Drake发布v1.56.0正式版，工程质量管控严格",
+      "MuJoCo当日46条PR，积压清理效率达82.6%",
+      "MuJoCo支持DLPack零拷贝，对接ML框架提效30%",
+      "OpenClaw属硬件接入层，为实机落地关键工具",
+      "具身智能体基础设施分层迭代，仿真层最活跃",
+      "硬件仿真接口不统一，制约实体AI助手普及"
+    ],
+    "ai-trending": [
+      "needle单日增662星，14MB小模型适配机器人边缘端",
+      "LimX发布TRON2系列，覆盖人形操作全链路工具",
+      "VLA基础设施提速，跨平台评测等新工具补空白",
+      "MuJoCo登机器人框架榜首，总星数达14550",
+      "Isaac Lab星数7899，成具身训练主流仿真底座",
+      "顶会成果密集开源，RoboTwin 2.0等项目上线"
+    ],
+    "ai-web": [
+      "Anthropic公布Claude文本水印，符合欧盟AI法案要求",
+      "未发布Claude破黎曼ζ下界，从41.6%提至67.2%",
+      "Claude Sonnet 5更新，智能体能力接近Opus 4.8",
+      "Claude Sonnet 5全量上线，为免费/专业版默认模型",
+      "OpenAI新增8篇内容，覆盖网安商业化等四大方向",
+      "Claude水印零感知零成本，支持跨厂商检测兼容"
+    ],
+    "ai-hn": [
+      "AI执法黑客引热议，公共安全与隐私边界成焦点",
+      "DeepSeek V4 Pro 1.6T MoE旗舰模型正式GA",
+      "Claude Fable 5项目获9分，成AI类热门内容",
+      "Vesta本体工具发布，提升Claude Code编码效率",
+      "Kvcachescope上线，填补vLLM KV缓存泄漏检测空白",
+      "马斯克全栈AI编码布局曝光，入局编码赛道"
+    ],
+    "ai-arxiv": [
+      "DFM Mimir v1发布，1B参数仅用合规数据达前沿性能",
+      "合成人设预训练提出，预训练初始即注入对齐目标",
+      "OmniScientist发布，全模态全学科AI科学家框架",
+      "Vero首次验证AI智能体可构建形式化验证代码库",
+      "长时序世界模型集中爆发，覆盖机器人临床等场景",
+      "DARTree解码方法推出，无损提升大语言模型推理速度"
+    ],
+    "ai-hf": [
+      "Kimi-K3以10672周点赞登顶HF热门周榜",
+      "MiniMax-H3视频模型周下载近200万成黑马",
+      "Qwen3.8-27B多模态周点赞8977，位列第二",
+      "DeepSeek-V4-Flash周下载超160万，性价比高",
+      "社区衍生模型占比超45%，GGUF格式需求旺",
+      "通义千问Qwen3.8-2.4T MoE旗舰模型上线"
+    ],
+    "ai-community": [
+      "AI记忆栈选型引热议，向量数据库局限性遭拆解",
+      "用AI一天复活Weave Scope，支持多平台Docker",
+      "开发者搭AI宠物肥胖检测工具PawWise落地消费端",
+      "Gemma 4 ARM+NVIDIA GPU部署实测方案出炉",
+      "非程序员将作品集改造成MCP服务器引关注",
+      "OpenAI账单错漏频发，AI FinOps建设受重视"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI机器人开发工具覆盖四大核心赛道",
+      "监测期内所有跟踪项目无新版本发布",
+      "NVIDIA Isaac Lab单日更新50个PR居首",
+      "Genesis单日更新3个Issue、6个PR",
+      "LeRobot单日更新2个Issue、10个高影响PR",
+      "OpenVLA 24小时内无任何仓库活动"
+    ],
+    "ai-agents": [
+      "3款具身AI Agent开源工具纳入24小时监测",
+      "OpenClaw（Unitree SDK2）24小时无活动",
+      "硬件SDK迭代节奏匹配物理硬件发布周期",
+      "仿真引擎迭代更快适配AI训练需求",
+      "单日活动集中于backlog维护与兼容性修复",
+      "监测期无重大版本发布或关键故障"
+    ],
+    "ai-trending": [
+      "14MB边缘小模型needle单日涨星662登榜首",
+      "LimX TRON2人形机器人开源套件批量发布",
+      "VLA研究转向落地聚焦边缘部署与优化",
+      "MuJoCo总星14550为机器人仿真事实标准",
+      "Isaac Lab总星7899主打RL机器人学习",
+      "dora数据流机器人中间件总星达3872"
+    ],
+    "ai-web": [
+      "Anthropic公布Claude水印系统适配欧盟AI法案",
+      "未发布Claude模型将黎曼假设零点下界提至67.2%",
+      "Anthropic发布多智能体系统安全新研究",
+      "OpenAI新增8个索引页指向企业级产品更新",
+      "OpenAI拟推出“Ultrafast”新品布局商业化",
+      "Anthropic发布工人再培训经济元分析报告"
+    ],
+    "ai-hn": [
+      "AI执法黑客话题登HN AI榜首获155分98评",
+      "开源项目Claude Fable 5获9分4评主打创意",
+      "xAI Grok 4.6+Cursor全栈编码策略引热议",
+      "人形机器人落地加速覆盖工厂与家用清洁",
+      "AI微型机器人群可清除土壤及水体微塑料",
+      "DeepSeek V4 Pro正式GA为1.6T MoE旗舰"
+    ],
+    "ai-arxiv": [
+      "新研究提出合成人格预训练从token零对齐",
+      "长时程世界模型拓展至机器人操控等多场景",
+      "智能体系统进军形式化软件验证等领域",
+      "LLM对齐研究前移至训练流程早期阶段",
+      "扩散模型与鲁棒学习获理论突破提供认证保证",
+      "新框架从格莱斯原则探究LLM幻觉成因"
+    ],
+    "ai-hf": [
+      "Kimi-K3周点赞10672登HF趋势榜首",
+      "Qwen3.8新增27B多模态、2.4T-A95B MoE模型",
+      "MiniMax-H3衍生生态周下载超1400万",
+      "DeepSeek V4 Flash LLM周下载超160万",
+      "Meta Muse-Glimmer 30B多模态社区采用率走高",
+      "NVIDIA Nemotron 3.5新增30B A3B高吞吐变体"
+    ],
+    "ai-community": [
+      "Dev.to热讨向量数据库不足以支撑AI持久记忆",
+      "Lobste.rs聚焦OpenAI-Hugging Face安全事件",
+      "社区热议AI生产基建短板与Agent工具权衡",
+      "开发者倾向自托管轻量AI内存方案替代SaaS",
+      "Gemma 4部署EC2 G5g遇64KiB共享内存瓶颈",
+      "非开发者将作品集改造为MCP服务器引关注"
+    ]
+  }
+}
