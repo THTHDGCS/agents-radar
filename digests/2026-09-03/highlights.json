@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "机器人AI CLI工具形成四层清晰生态格局",
+      "NVIDIA Isaac Lab 24小时更新PR达50条",
+      "Genesis当日Issue中bug占比高达80%",
+      "LeRobot聚焦LIBERO基准评估公平性问题",
+      "OpenVLA修复夹具重置随机种子管理漏洞",
+      "ROS 2进入稳定维护期当日无更新"
+    ],
+    "ai-agents": [
+      "具身AI基础设施进入功能深耕优化阶段",
+      "Drake当日更新PR达20条处于中高活跃",
+      "MuJoCo修复平面-三角网格接触滑动Bug",
+      "Drake新增MultibodyPlant约束失效高优Bug",
+      "OpenClaw处于稳定维护期当日无社区活动",
+      "仿真层聚焦动力学正确性与跨生态兼容"
+    ],
+    "ai-trending": [
+      "NVIDIA开源Alpamayo系列10B参数VLA模型",
+      "Rust机器人中间件dora-rs/dora星数3913",
+      "MuJoCo星数14883居机器人框架类榜首",
+      "无ROS轻量sim2real框架项目密集涌现",
+      "中文VLA学习资源仓库增长显著",
+      "具身落地向实验室自动化等细分场景渗透"
+    ],
+    "ai-web": [
+      "Anthropic推出企业级前沿安全方案EFS",
+      "Anthropic主动披露两起模型越权事件",
+      "Claude全量搭载文本水印适配欧盟AI Act",
+      "OpenAI当日新增22篇官网内容",
+      "双方同频布局安全教育医疗三大赛道",
+      "EFS方案联合三大云厂商共同开发"
+    ],
+    "ai-hn": [
+      "人形机器人落地瓶颈成HN AI讨论Top1",
+      "通义千问3.8-Max登代码竞技场WebDev第二",
+      "谷歌发布Gemini 3.8 Flash主打性能效率平衡",
+      "新研究用本体论识别LLM不可信声明",
+      "首次提出机器狗动力学prompt注入攻击",
+      "Redactle LLM榜补全开放式推理评估维度"
+    ],
+    "ai-arxiv": [
+      "首次证实稀疏MoE路由存在共享几何规律",
+      "研究系统分析LLM竞争市场行为特性",
+      "提出BLUEPRINT多轮越狱安全评估框架",
+      "CivBench长时序智能体基准基于文明6构建",
+      "开展跨具身VLA零样本迁移受控研究",
+      "多教师蒸馏法提升多域LLM整合效果"
+    ],
+    "ai-hf": [
+      "Qwen3.8系列占据热门榜近半数席位",
+      "Qwen3.8-27B点赞13694居原生模型榜首",
+      "MiniMax-H3视频模型下载量超553万",
+      "GLM-5.3 MoE架构大模型新品上榜",
+      "LTX-2.5视频生成模型下载量破123万",
+      "GGUF量化模型下载量普遍高于原生权重"
+    ],
+    "ai-community": [
+      "AI Agent工程化落地成社区讨论核心焦点",
+      "提出执行树替代日志的Agent调试模型",
+      "开发者实测三款AI结对编程工具表现",
+      "拆解AI网关400ms延迟升高核心根因",
+      "谷歌AI提出“线束工程”软件工程新范式",
+      "实测四款主流Agent内存方案生产表现"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Cross-tool comparison covers 5 embodied AI CLI tools",
+      "Mature middleware ROS 2 saw zero 24h development activity",
+      "4 active tools focus on reliability and workflow efficiency",
+      "Industry shifts from POCs to production embodied AI tools",
+      "Ecosystem aligns on LIBERO, MuJoCo MJCF shared standards",
+      "Anthropic's Claude Code Skills added to tracked tools"
+    ],
+    "ai-agents": [
+      "Tracks 3 embodied AI infra projects: OpenClaw, MuJoCo, Drake",
+      "No critical ecosystem-wide incidents in 24-hour window",
+      "Dev focus: simulation correctness and interoperability",
+      "Steady iteration narrows embodied AI sim-to-real gap",
+      "Projects span low-level control to full-stack system design",
+      "1-10 health score calculated from activity & bug metrics"
+    ],
+    "ai-trending": [
+      "NVIDIA open-sources Alpamayo reasoning VLA for self-driving",
+      "Embodied AI shifts from model scaling to real-world use",
+      "Open-source humanoid robotics stack rapidly democratizing",
+      "dora-rs/dora middleware hits 3,913 total GitHub stars",
+      "NVIDIA Isaac Lab reaches 8,027 total stars for robot learning",
+      "No core robotics projects on overall GitHub daily trending"
+    ],
+    "ai-web": [
+      "Anthropic launches Enterprise Frontier Safeguards (EFS)",
+      "EFS offers zero data retention, customer-controlled cloud",
+      "Anthropic discloses 2 2026 unauthorized model access events",
+      "Anthropic releases AI job retraining meta-analysis",
+      "OpenAI rolls out zero data retention for frontier models",
+      "OpenAI expands ChatGPT ads, healthcare, education tools"
+    ],
+    "ai-hn": [
+      "Humanoid robot skepticism dominates HN AI discussions",
+      "Two robotics posts tie for top 24h score of 36",
+      "Qwen3.8-Max beats Claude Opus on Code Arena leaderboard",
+      "Google Gemini 3.8 Flash mid-tier model launches quietly",
+      "Claude Code plaintext OAuth storage sparks security fears",
+      "Top Ask HN: keeping credibility while using AI tools"
+    ],
+    "ai-arxiv": [
+      "Kronecker-Fisher method enables 1B+ LLM Hessian analysis",
+      "First open Civilization VI long-horizon agent benchmark released",
+      "Worldview simulation jailbreak triples LLM attack success rate",
+      "World models boost humanoid locomotion on constrained terrain",
+      "50 new papers cover LLM efficiency, robotics, agent safety",
+      "Answer-verified distillation improves multi-domain LLM performance"
+    ],
+    "ai-hf": [
+      "Qwen3.8 family tops HF trends; 27B has 13,694 weekly likes",
+      "MiniMax-H3, LTX-2.5 video gen models hit millions of downloads",
+      "GLM-5.3 debuts strong: Flash gets 1,968 weekly likes",
+      "Uncensored/quantized models make up 40%+ of top 30 trending",
+      "GPT-2 stays trending as lightweight LLM research baseline",
+      "GLM-5.3 base MoE model earns 1,518 weekly likes"
+    ],
+    "ai-community": [
+      "Dev.to focuses on AI agent safety, governance, observability",
+      "Developers share agent guardrails: spend controls, undo, gates",
+      "Lobste.rs hot: GLM-5.3 Flash runs on domestic Chinese hardware",
+      "US government backs OpenAI in NYT copyright lawsuit",
+      "Community shifts to agent reliability and cost control",
+      "Viral post: 1-month AI pair programming with 3 tools"
+    ]
+  }
+}
