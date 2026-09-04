@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "具身智能开发工具形成全链路分层协同生态",
+      "当日5款核心机器人开发工具无新版本发布",
+      "LeRobot单日更新19条PR，迭代活跃度最高",
+      "NVIDIA Isaac Lab高关注度Issue/PR各10条",
+      "ROS 2跟进Ubuntu 26.04提前移除Qt5支持",
+      "LeRobot新增MakerMods 7自由度机械臂支持"
+    ],
+    "ai-agents": [
+      "具身智能体底层工具形成分层协同供给格局",
+      "Drake单日11条Issue20条PR，健康度获评优秀",
+      "Drake当日修复连续多体植物约束核心Bug",
+      "MuJoCo高严重SAP碰撞Bug获2个社区修复PR",
+      "OpenClaw为宇树专属SDK，当日无社区活动",
+      "工业级仿真可信度成头部项目共同优先级"
+    ],
+    "ai-trending": [
+      "NVIDIA开源10B参数Alpamayo1.5自动驾驶VLA",
+      "mujoco仿真器14.9k星居机器人框架榜榜首",
+      "IsaacLab 8.0k星为VLA研究核心仿真平台",
+      "inspect-robots填补VLA统一评估工具空白",
+      "人形机器人开源生态快速扩容、全链路更新",
+      "具身技术向实验室自动化等垂直场景渗透"
+    ],
+    "ai-web": [
+      "OpenAI官网出现GPT-6 Astra相关页面元数据",
+      "GPT-6 Astra含主产品与安全概览两类页面",
+      "Anthropic发布印度国别AI经济指数专项报告",
+      "印度贡献Claude使用量5.8%位列全球第二",
+      "印度用户AI使用呈专业导向高复杂度特征",
+      "头部AI厂商战略分化：拼技术vs重落地"
+    ],
+    "ai-hn": [
+      "1.7万次编程Agent工具测试99分登HN热榜榜首",
+      "系首个系统性实证编程Agent工具使用行为研究",
+      "GPT-6 Astra AI工程师定价低至6美元/小时",
+      "GoPro被收购后切入国防与机器人赛道",
+      "YC S26推出物理世界AI Agent基础设施项目",
+      "HN社区核心热度聚焦编程Agent与具身AI"
+    ],
+    "ai-arxiv": [
+      "今日ArXiv更新50篇AI论文，覆盖三大核心方向",
+      "GRPO回放控制新范式大幅降低RL训练成本",
+      "无状态伯努利水印达推理级生成与检测速度",
+      "免费暂停token不加序列长度即可提升预测性能",
+      "会议代理感知方案大幅降低参会沉默率",
+      "首次披露智能体生命周期钩子新型攻击面"
+    ],
+    "ai-hf": [
+      "国产大模型占HF周榜近半，Qwen、GLM系列领跑",
+      "Qwen3.8-27B 1.38万赞525万下载领跑多模态",
+      "MiniMax-H3视频模型周下载量突破500万次",
+      "GLM-5.3成周度热度最高新发布纯文本LLM",
+      "腾讯混元Hy4-preview纯文本大模型新登榜",
+      "视频生成模型热度高，社区微调版本涌现"
+    ],
+    "ai-community": [
+      "Dev.to与Lobste.rs AI内容呈现明显差异化",
+      "Agent核心术语科普文75赞登Dev.to榜首",
+      "实测自改进Agent瓶颈为搜索策略而非模型",
+      "Agent内存静默失败问题引发社区广泛讨论",
+      "开源工具Obyflow破解AI应用调试痛点",
+      "40k星Humanizer技能可去除文本AI生成痕迹"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "覆盖ROS 2、Isaac Lab等5款机器人AI CLI工具",
+      "24小时内所有受监控工具无新版本发布",
+      "Isaac Lab 3.0.0迭代中，聚焦Newton后端优化",
+      "ROS 2关闭Qt5弃用请求，适配Ubuntu 26.04 LTS",
+      "生态重点提升仿真保真度、降低上手门槛",
+      "OpenVLA等专业模型库日活跃度较低"
+    ],
+    "ai-agents": [
+      "覆盖OpenClaw、MuJoCo、Drake三类具身Agent基建",
+      "24小时内无项目发版，无关键生产事故",
+      "MuJoCo 24h更1个issue、7个PR，健康分8.2",
+      "Drake 24h更11个issue、20个PR，活跃度最高",
+      "工作流聚焦大规模Agent集群测试可扩展性",
+      "产业+学术贡献者推进高影响力bug修复"
+    ],
+    "ai-trending": [
+      "今日GitHub总榜无具身/机器人项目进前19",
+      "NVIDIA Alpamayo VLA 1.5 Nano新增RL推理能力",
+      "LimX Dynamics开源HU人形机器人全套工具链",
+      "PINE Lab发布FACET接触式操作基础模型",
+      "LIBERO-Para VLA鲁棒性基准正式推出",
+      "MuJoCo总星14912，居机器人框架类榜首"
+    ],
+    "ai-web": [
+      "OpenAI首次出现GPT-6 Astra相关可爬取页面",
+      "GPT-6 Astra含安全概述页，完整内容暂未公开",
+      "Anthropic发布印度市场Claude应用经济简报",
+      "印度为Claude.ai全球第二大使用市场",
+      "Anthropic加码APAC高增长市场政策参与",
+      "头部AI厂商模型与市场竞争同步加剧"
+    ],
+    "ai-hn": [
+      "编码Agent工具选择研究登HN AI讨论榜首",
+      "1.7万次运行测Claude/Codex/Cursor工具偏好",
+      "YC S26初创推出物理AI Agent基础设施",
+      "商用家用清洁人形机器人收费30美元/小时",
+      "GoPro通过收购转向机器人与航空航天领域",
+      "社区更关注Agent落地，而非基础模型发布"
+    ],
+    "ai-arxiv": [
+      "零开销SBW水印实现全推理速度LLM水印",
+      "GRPO重放控制原语降低推理模型生成成本",
+      "统一机器人学习框架桥接VLA与世界模型",
+      "研究披露Agent框架生命周期钩子攻击风险",
+      "新增工业CAD、手语识别专用基础模型研究",
+      "提出可编辑共享状态的人机协同推理接口"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B多模态基座登顶HF周榜，13.8k赞",
+      "Qwen3.8衍生模型占HF趋势榜30席的1/3",
+      "GLM-5.3 MoE模型首发进入HF趋势前十",
+      "MiniMax-H3、LTX-2.5视频生成模型热度飙升",
+      "腾讯混元4预览版Hy4-preview上线HF",
+      "GPT-2周下载量超1407万，仍居趋势榜"
+    ],
+    "ai-community": [
+      "Agentic AI成Dev.to与Lobste.rs头号讨论主题",
+      "自改进Agent失效源于搜索策略而非模型能力",
+      "AI应用可观测性碎片化引发开发者普遍吐槽",
+      "GLM-5.3跑国产硬件成Lobste.rs热门话题",
+      "边缘/本地AI指南受隐私导向开发者欢迎",
+      "20个Agent术语科普文获Dev.to 75个点赞"
+    ]
+  }
+}
