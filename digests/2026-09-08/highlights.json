@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Genesis当日新增11条Issue，MJCF相关占比36%",
+      "LeRobot当日更新30条PR，推进Jetson全链路适配",
+      "Isaac Lab当日45条PR，修复MJCF摩擦参数问题",
+      "OpenVLA六成以上Issue聚焦低资源部署适配",
+      "具身AI CLI工具已形成完整四层技术生态",
+      "文档易用性成工具采纳率核心非技术指标"
+    ],
+    "ai-agents": [
+      "MuJoCo当日16条PR迭代，社区健康度获评优秀",
+      "Drake当日4条PR，聚焦基础设施优化节奏稳定",
+      "具身智能基础设施向工业级高可信方向升级",
+      "OpenClaw（宇树SDK2）当日无社区活动",
+      "两大通用仿真框架共推碰撞检测性能优化",
+      "硬件SDK与上层通用工具呈现分层迭代特征"
+    ],
+    "ai-trending": [
+      "PythonRobotics星标30.4k，居机器人框架热度榜首",
+      "MuJoCo星标14.9k，为VLA训练核心仿真基础设施",
+      "WAM成VLA新热点，Awesome-WAM星标1386",
+      "人形机器人开源生态形成全链路技术栈",
+      "dora-rs成AI原生轻量化机器人中间件新秀",
+      "VLA领域从数据缩放转向表示优化与场景适配"
+    ],
+    "ai-web": [
+      "Claude11天自主完成费马大定理形式化证明",
+      "系全球首个计算机可全校验的费马大定理证明",
+      "Anthropic联合第三方开展AI越权事件独立审查",
+      "印度占Claude全球使用量5.8%，位列全球第二",
+      "研究称职业再培训可提升就业概率2-3个百分点",
+      "OpenAI新增两篇无正文内容，发布意图不明"
+    ],
+    "ai-hn": [
+      "Anthropic费马大定理证明成HN最受关注AI新闻",
+      "开发者推出Claude浏览器增强工具Brw引讨论",
+      "中国人形机器人军事应用引社区伦理争议",
+      "HF发布超大规模大模型训练实战手册",
+      "世界模型从零实现系列教程受初学者关注",
+      "AI+基础科学交叉方向社区关注度显著上升"
+    ],
+    "ai-hf": [
+      "Qwen3.8系列霸榜，占热门榜近三分之一席位",
+      "Qwen3.8-27B星标14.2k，居多模态热度第一",
+      "MiniMax-H3视频模型累计下载量突破500万",
+      "GLM-5.3通用MoE模型成开源LLM热门新品",
+      "MiniCPM5-2B轻量模型刚发布即获社区关注",
+      "经典基础模型仍为开源生态核心底层支撑"
+    ],
+    "ai-community": [
+      "Dev.to高度聚焦AI Agent与MCP生态落地实践",
+      "开发者复盘MCP集成被ChatGPT审核拒经历",
+      "70行Python复现AI Agent.env泄露安全漏洞",
+      "社区指出AI Agent护栏普遍缺失可用性校验",
+      "Lobste.rs关注ARC-AGI基准低成本突破进展",
+      "AI讨论从概念尝鲜转向务实落地与风险防控"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "5 AI robotics dev tools analyzed across 4 stack layers.",
+      "No new production releases across tracked tools in 24h.",
+      "Activity focuses on closing cross-stack compatibility gaps.",
+      "Prioritizes batch training and edge deployment reliability.",
+      "Works to reduce onboarding friction for new developers.",
+      "Mature ROS 2 contrasts with fast-iterating embodied AI tools."
+    ],
+    "ai-agents": [
+      "Covers 3 embodied AI agent infrastructure projects.",
+      "No 24-hour activity recorded for the OpenClaw SDK.",
+      "General-purpose simulators lead community feature work.",
+      "Hardware control SDKs follow slower product-aligned cycles.",
+      "Silent sim pipeline bugs pose AI agent deployment risks.",
+      "Ecosystem pushes for lower sim-to-real transfer friction."
+    ],
+    "ai-trending": [
+      "No core robotics/VLA repos in GitHub daily top 14 trending.",
+      "30+ new/updated VLA/humanoid repos emerged in 7 days.",
+      "Task-specific VLA models target clutter resistance and manipulation.",
+      "World Action Models emerge as a new VLA subfield.",
+      "PythonRobotics leads robot frameworks with 30,463 stars.",
+      "Physical AI evaluation infrastructure matures rapidly."
+    ],
+    "ai-web": [
+      "Anthropic announces Claude-assisted Fermat’s Last Theorem proof.",
+      "Claude completed the 11-day proof in the Lean language.",
+      "Frontier 'Claude Mythos 5' variant gets first public mention.",
+      "Anthropic taps METR for independent security review.",
+      "India ranks as Claude’s second-largest global usage market.",
+      "OpenAI adds 2 new metadata-only pages with no article text."
+    ],
+    "ai-hn": [
+      "Anthropic’s Fermat’s Last Theorem AI proof leads HN discussions.",
+      "Claude-integrated browser 'Brw' earns high community scores.",
+      "Claude Code Fable 5.1 critique sparks tool reliability debate.",
+      "China’s combat humanoid AI robots draw geopolitical talk.",
+      "Fermat’s AI proof breakthrough published in *Nature*.",
+      "'World Models from Scratch' explores tokenizing Mario Land."
+    ],
+    "ai-hf": [
+      "Qwen3.8 family takes 10 of top 30 trending HF model spots.",
+      "Qwen3.8-27B multimodal leads with 14,271 weekly likes.",
+      "Open-weight video models see explosive download growth.",
+      "MiniMax-H3 and LTX-2.5 hit 6.5M combined weekly downloads.",
+      "Spark-X2.5-4B 4B LLM trends for edge device workloads.",
+      "Domain models like TimesFM 3.0 gain developer traction."
+    ],
+    "ai-community": [
+      "AI agent security and costs dominate Dev.to discussions.",
+      "Local MCP deployments cut token costs by up to 85%.",
+      "Community MCP servers reduce redundant developer work.",
+      "$0.67 benchmark run hits 44% ARC-AGI-1 score.",
+      "U.S. government backs OpenAI in NYT copyright lawsuit.",
+      "Devs prioritize production-ready AI over hype cycles."
+    ]
+  }
+}
