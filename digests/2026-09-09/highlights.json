@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "NVIDIA Isaac Lab 24h更新50个PR，仿真类活跃度第一",
+      "ROS2为Pixi环境补充clang-tidy静态检查工具",
+      "Genesis新增刚体求解器错误查询接口，优化交互性能",
+      "LeRobot扩展数据集工具集，兼容多RL框架加载模式",
+      "4款活跃工具均推进跨格式跨场景兼容性提升",
+      "三款工具集中治理静默失败类隐性可靠性问题"
+    ],
+    "ai-agents": [
+      "具身智能体生态形成硬件-仿真-规划三层供给体系",
+      "MuJoCo当日关闭7个Bug，含3个严重级，闭环率高",
+      "MuJoCo落地URDF mimic转换，解决2年ROS适配痛点",
+      "Drake当日更新27个PR，紧急依赖实现当日闭环",
+      "OpenClaw属硬件接入层工具，背靠宇树硬件生态",
+      "Drake同步优化核心架构与发布链路，迭代稳定"
+    ],
+    "ai-trending": [
+      "具身指南Embodied-AI-Guide获15873星，国内最高",
+      "MuJoCo累计15000星，本周仍保持高频更新",
+      "世界动作模型（WAM）成VLA领域新聚焦方向",
+      "IsaacLab获8080星，为具身仿真训练主流底座",
+      "Awesome-WAM为全球首个WAM资源列表，增势迅猛",
+      "人形机器人开源生态全栈链路持续扩容"
+    ],
+    "ai-web": [
+      "Anthropic集中发布5篇AI安全威胁监测成果报告",
+      "点名DeepSeek等三家实验室工业级非法蒸馏Claude",
+      "披露全球首起AI自主编排的国家级网络间谍活动",
+      "首次将AI网攻行为映射至MITRE ATT&CK框架",
+      "相关研究入选Verizon 2026年数据泄露调查报告",
+      "OpenAI新增6条元数据，暂未披露具体内容"
+    ],
+    "ai-hn": [
+      "LG电视离线扫局域网追踪用户，热度断层第一",
+      "“9月8日是否为AGI日”成当日最热讨论话题",
+      "Genotype跨语言编译工具成开发者关注焦点",
+      "零拷贝KV缓存迁移方案延迟低至81.6ms",
+      "端侧3D人形骨骼绑定工具Auto-Rig Web上线",
+      "联合国呼吁防范AI生存风险，监管议题升温"
+    ],
+    "ai-hf": [
+      "Qwen3.8系列占周榜10席，成最大赢家",
+      "Qwen3.8-27B获14394赞，点赞下载双第一",
+      "MiniMax-H3视频生成模型获5048赞，逼近闭源",
+      "all-MiniLM-L6-v2下载破2.5亿，居下载榜首位",
+      "GPT-2累计下载超1474万，仍是核心参考模型",
+      "谷歌timesfm-3.0、微软VibeVoice垂直新模上榜"
+    ],
+    "ai-community": [
+      "热文戳破多数AI Agent仅是if语句套壳",
+      "社区热议AI是否会让开发者变得更懒惰",
+      "文章称AI未替代系统设计，反凸显架构价值",
+      "AI编码成本上涨，开发者分享token优化方案",
+      "教程教你10分钟完成AI Agent安全测试",
+      "Lobste.rs聚焦AI版权与LLM理论边界议题"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Covers 5 AI robotics CLI tools including ROS 2 and Isaac Lab",
+      "No stable new releases across all tracked tools in 24 hours",
+      "NVIDIA Isaac Lab leads activity with 50 updated PRs in 24h",
+      "LeRobot updates 26 PRs, ranking second in 24h activity",
+      "OpenVLA sees zero 24h activity as a mature foundational VLA",
+      "Projects focus on fixing silent simulation pipeline failures"
+    ],
+    "ai-agents": [
+      "Covers 3 embodied AI infra projects: MuJoCo, Drake, OpenClaw",
+      "OpenClaw (Unitree SDK2) reports zero 24h development activity",
+      "Simulator projects prioritize interoperability and performance scaling",
+      "Maintainer responsiveness drives AI agent team tool adoption",
+      "Health score uses 4 weighted metrics including 24h throughput",
+      "Hardware SDKs follow longer vendor-led release cycles"
+    ],
+    "ai-trending": [
+      "No embodied AI/robotics projects on GitHub's daily trending list",
+      "World Action Models see explosive community interest this week",
+      "Humanoid robotics remains a high-engagement vertical niche",
+      "Isaac Lab has 8,080 total stars, a de facto sim learning standard",
+      "MuJoCo hits 15,000 total stars as industry-standard physics sim",
+      "Manipulation research shifts to skill graph policy execution"
+    ],
+    "ai-web": [
+      "Anthropic accuses 3 Chinese labs of illicit Claude distillation",
+      "Accused labs include DeepSeek, Moonshot, and MiniMax",
+      "Anthropic updates 5 cybersecurity and policy reports in sync",
+      "OpenAI adds 6 index pages teasing multimodal updates and more",
+      "First public model theft allegation by a frontier AI lab",
+      "Anthropic’s content push aims to shape global AI safety norms"
+    ],
+    "ai-hn": [
+      "Top post: LG smart TVs scan LANs to track devices even offline",
+      "Viral Ask HN debates if Sept 8, 2026 should be \"AGI Day\"",
+      "Growing legislative pushes to ban superintelligent AI development",
+      "Builders focus on AI agent fleet management frameworks",
+      "Zero-copy KV-cache migration cuts transfer latency to 81.6ms",
+      "Debates over Cerebras's latency-focused AI chip strategy"
+    ],
+    "ai-hf": [
+      "Qwen3.8 family dominates HF trending with 10 top-30 variants",
+      "Open video generation models see surging community demand",
+      "MiniMax-H3 and LTX-2.5 rack up millions of downloads",
+      "Google debuts TimesFM 3.0 time series forecasting model",
+      "GLM-5.3 MoE LLM trends with strong reasoning performance",
+      "4B Spark-X2.5 LLM optimized for edge deployments trends"
+    ],
+    "ai-community": [
+      "Devs dismiss most \"AI agents\" as wrapped conditional logic",
+      "Debate rages over if AI coding makes developers lazier",
+      "AI agents face flak for token waste and security flaws",
+      "US government backs OpenAI in NYT copyright lawsuit",
+      "Lobste.rs debates long-term LLM self-reference risks",
+      "Zero-budget AI agent tutorials trend in tech communities"
+    ]
+  }
+}
