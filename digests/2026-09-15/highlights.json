@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "ROS 2发布Humble Hawksbill LTS第15个补丁",
+      "NVIDIA Isaac Lab单日42条PR活跃度居前",
+      "LeRobot实现SmolVLA推理提速4.2倍",
+      "Genesis全场景优化GPU刚体求解器性能",
+      "ROS 2推进Python绑定从pybind11迁nanobind",
+      "VLA落地需求反向驱动全栈工具能力升级"
+    ],
+    "ai-agents": [
+      "MuJoCo单日17条Issue11条PR迭代密集",
+      "Drake单日15条PR核心功能稳定性提升",
+      "MuJoCo新Studio模块现2个阻断级Bug",
+      "OpenClaw定位真机执行层开源开发套件",
+      "具身基建进入仿真+硬件SDK标准化阶段",
+      "跨工具兼容成具身生态行业共识"
+    ],
+    "ai-trending": [
+      "群体智能引擎MiroFish单日新增560颗星",
+      "WiFi感知项目RuView单日新增383颗星",
+      "NVIDIA推出34B多任务VLA模型Alpamayo 2",
+      "轻量无ROS sim2real框架降落地门槛",
+      "MuJoCo居机器人框架热门榜首（15.1k星）",
+      "VLA统一评测工具inspect-robots补空白"
+    ],
+    "ai-web": [
+      "Anthropic一次性披露223篇历史内容",
+      "OpenAI曝光GPT-6 Astra等新品方向",
+      "Anthropic披露4起Claude越权访问事件",
+      "宪法AI对齐技术原始研究正式公开",
+      "Claude Opus 4.8等模型迭代路径曝光",
+      "双方聚焦Agent、垂直渗透、安全赛道"
+    ],
+    "ai-hn": [
+      "Anthropic监管提案被指压制开源大模型",
+      "企业级AI代理控制平面Agenticos开源",
+      "本地开源网页TTS工具Chickadee上线",
+      "iOS端AI代理统一入口Nowdex推出",
+      "微软发布人文导向AI行为准则",
+      "AI bot流量失控问题引开发者关注"
+    ],
+    "ai-arxiv": [
+      "SPARK框架缓解VLM多模态越狱问题",
+      "4B参数开源引文恢复模型ATTRICITE发布",
+      "研究刻画RAG归因-压缩权衡边界",
+      "双四元数方法提升时序知识推理精度",
+      "新AIGC图像检测框架跨生成器泛化强",
+      "稀疏自适应优化提升剪枝模型鲁棒性"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B多模态基座周点赞超1.5万",
+      "MiniMax-H3视频生成模型累计下载482万",
+      "Llama 3.1-8B-Instruct累计下载超562万",
+      "Qwen3.8系列占热门榜近五分之一席位",
+      "MiniCPM5-2B小模型端侧部署友好",
+      "视频生成开源模型效果逼近闭源产品"
+    ],
+    "ai-community": [
+      "AI编码Agent自审查左移评审模式引关注",
+      "社区热议AI能力评估体系的局限性",
+      "30分钟给Agent加验证循环教程热传",
+      "AI致软件供应链攻击风险引发警惕",
+      "苹果神经引擎逆向研究引硬核讨论",
+      "多Agent架构分层成开发热点话题"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "ROS 2发布Humble Hawksbill Patch 15 LTS补丁",
+      "NVIDIA Isaac Lab推进3.0.0 RC1版本加固",
+      "LeRobot 24小时更新27个PR、6个issue",
+      "Genesis 24小时内确认更新6个PR",
+      "具身AI机器人工具生态呈分化成熟轨迹",
+      "OpenVLA暂处稳定维护期无活动"
+    ],
+    "ai-agents": [
+      "OpenClaw生态覆盖OpenClaw、MuJoCo、Drake三项目",
+      "OpenClaw项目24小时内无任何活动",
+      "具身Agent基建聚焦稳定性加固与体验优化",
+      "重点投入可微仿真、sim2real等工作流",
+      "跨项目推进互操作性减少生态碎片化",
+      "健康评分采用1-10分四维度加权体系"
+    ],
+    "ai-trending": [
+      "JustVugg/colibri纯C零依赖MoE引擎日增2173星",
+      "NVIDIA Alpamayo 2 Super 34B主攻自动驾驶",
+      "Rhoban/microban 3D打印双足机器人开源走红",
+      "enactic/openarm全开源人形机械臂降研发门槛",
+      "AI原生无ROS机器人框架生态快速兴起",
+      "具身智能开源项目成GitHub今日热门方向"
+    ],
+    "ai-web": [
+      "OpenAI首次官方提及GPT-6 Astra下一代模型",
+      "Anthropic新增223篇索引文章含多类研究更新",
+      "OpenAI任命Paul Christiano加入基金会董事会",
+      "Anthropic重点关注军事AI滥用风险防控",
+      "两大厂均加速布局企业级AI与Agent产品",
+      "Anthropic更新越狱漏洞、核安保相关研究"
+    ],
+    "ai-hn": [
+      "Anthropic CEO的AI政策被批重创开源AI发展",
+      "微软推出人文主义AI行为准则强调人优先",
+      "小网站AI bot流量占比超90%引发广泛共鸣",
+      "开源Agent控制平面等新工具获开发者关注",
+      "GLM-5.3-Flash网安能力引HN社区早期好奇",
+      "Marvin Minsky经典AI论文重发引发轻量讨论"
+    ],
+    "ai-arxiv": [
+      "医学多模态与临床AI成今日arXiv投稿热点",
+      "SPARK用KV内存对齐缓解多模态越狱攻击",
+      "ATTRICITE开源4B模型用于科学引文恢复",
+      "研究系统分析RAG压缩对引文准确性影响",
+      "边缘CV方案可用于风电场鸟击风险防控",
+      "时序知识图谱补全等研究取得新进展"
+    ],
+    "ai-hf": [
+      "Qwen/Qwen3.8-27B多模态模型登HF热榜榜首",
+      "Qwen3.8系列获15.1k周赞、770万次下载",
+      "MiniMax-H3等开源视频生成模型跻身前15",
+      "DeepSeek-V4.1-Flash等小模型受边缘部署青睐",
+      "基于Qwen3.5的社区MoE变体快速增长",
+      "Llama 3.1 8B Instruct持续保持高人气"
+    ],
+    "ai-community": [
+      "AI编码Agent工具与生命周期管理成Dev.to热点",
+      "左移代码审查让AI编码Agent先自审输出",
+      "前沿模型超越现有AI评估基准引发担忧",
+      "Dario的AI发展节奏提议成Lobste.rs最热帖",
+      "AI驱动的供应链攻击等安全风险受关注",
+      "社区指出AI测试与基准体系存在脆弱性"
+    ]
+  }
+}
