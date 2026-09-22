@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "6款具身AI CLI工具覆盖OS到VLA全栈分层",
+      "NVIDIA Isaac Lab单日49条PR，活跃度居首",
+      "ROS 2修复Windows静态检查工具兼容性",
+      "Isaac Lab适配Vision Pro、Flexiv及ROS生态",
+      "LeRobot新增插件化机制兼容多仿真环境",
+      "Genesis优化接触求解提升批量仿真稳定性"
+    ],
+    "ai-agents": [
+      "具身智能体基建处性能攻坚落地双驱动阶段",
+      "MuJoCo单日12Issue12PR，Bug闭环率88.9%",
+      "Drake存1项中高严重性能回归待修复",
+      "OpenClaw定位硬件接入层填补sim2real缺口",
+      "MuJoCo优化mjSpec名称检查效率至O(1)",
+      "Drake推进核心依赖向Bazel中央仓迁移"
+    ],
+    "ai-trending": [
+      "数字具身项目cua单日涨星609登GitHub热榜",
+      "dora-rs中间件星数3976，生态快速扩张",
+      "哈佛CS249r具身教材星数28404成权威资源",
+      "人形机器人VLA落地加速，多厂开源适配工具",
+      "VLA策略红队测试工具涌现，安全受关注",
+      "quackd统一机器人CLI支持多机器人与VLA"
+    ],
+    "ai-web": [
+      "Anthropic发布Claude生物分子研究，提速4倍",
+      "Anthropic开源代码，设百万美元蛋白设计竞赛",
+      "Claude支持单GPU跑万token级生物分子预测",
+      "OpenAI新增数学与AI治理顾问组相关页面",
+      "OpenAI Academy上线新学习路径覆盖开发者教育",
+      "两大厂差异化布局，AI竞争转向细分场景"
+    ],
+    "ai-hn": [
+      "Google位置数据违规被罚4.03亿欧元成最热话题",
+      "Claude多模型故障，引发服务可靠性讨论",
+      "OpenAI公开6起模型危险行为，推对齐追踪计划",
+      "Ruby on Rails推出集成DeepSeek的AI代理框架",
+      "社区情绪审慎，质疑头部公司AI治理责任",
+      "Jev快思考模型引发生产级AI选型讨论"
+    ],
+    "ai-arxiv": [
+      "ArXiv今日更新50篇AI论文，聚焦模型合并与具身",
+      "首项模型合并对涌现能力影响研究填补空白",
+      "ARM稀疏注意力架构优化长上下文推理效率",
+      "实证仅需1%token即可完成高效策略蒸馏",
+      "理想推出具身认知统一VLM模型ME-VLM",
+      "AgentSTAR单目3D重建提升建模鲁棒性"
+    ],
+    "ai-hf": [
+      "Qwen3.8多模态家族占热门榜超40%席位领跑",
+      "Qwen3.8-27B双料冠军，点赞15971下载超715万",
+      "MiniMax-H3视频生成模型下载量破400万",
+      "低比特量化技术迭代加速，端侧需求高涨",
+      "MiniCPM5-2B轻量LLM点赞1641成小模型热门",
+      "多模态生成赛道现千万级下载量爆款产品"
+    ],
+    "ai-community": [
+      "开发者关注AI生产落地，务实讨论多于噱头",
+      "纯浏览器端MCP AI Agent方案登Dev.to热帖",
+      "业界推出防AI生成故障代码的工程校验模式",
+      "monday.com分享真实依赖下Agent评测实践",
+      "独立幻觉校验层成AI可靠性治理高性价比方案",
+      "LLM应用层记忆模块设计引开发者广泛讨论"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Covers 6 embodied AI dev tools: ROS 2, Isaac Lab, LeRobot etc.",
+      "LeRobot & Isaac Lab lead 24h PR/issue update volume",
+      "Ecosystem prioritizes workflow reliability and reproducibility",
+      "Shared pain points: onboarding friction, cross-stack consistency",
+      "ROS 2 core sees 1 issue + 1 PR update in 24 hours",
+      "No new tool releases recorded in the 24h window"
+    ],
+    "ai-agents": [
+      "Tracks 3 embodied agent stack projects: OpenClaw, MuJoCo, Drake",
+      "OpenClaw (unitree_sdk2) reports zero 24h issues/PRs",
+      "MuJoCo logs 12 updated issues + 12 PRs in 24 hours",
+      "Drake records 8 updated issues + 8 PRs in 24 hours",
+      "Ecosystem prioritizes simulation reliability & build compatibility",
+      "Open-source tools cut barriers for personal AI assistant dev"
+    ],
+    "ai-trending": [
+      "No robotics/embodied AI repos in GitHub daily top 12 trending",
+      "VLA adaptation to commercial robotic hardware gains strong momentum",
+      "New whole-body VLA frameworks target humanoid loco-manipulation",
+      "Dedicated VLA policy safety red-teaming tools emerge",
+      "Rust-based dora-rs/dora middleware hits 3,976 total stars",
+      "Isaac Lab robot learning framework reaches 8,189 total stars"
+    ],
+    "ai-web": [
+      "Anthropic releases Claude biomolecular modeling optimization research",
+      "Claude-optimized biomolecular models run 4x faster on average",
+      "Anthropic open-sources all optimized biomolecular model code",
+      "Anthropic launches $1M protein design contest with Adaptyv Bio",
+      "OpenAI publishes 3 new pieces on governance, education, enterprise",
+      "Anthropic targets life sciences, OpenAI expands enterprise/education"
+    ],
+    "ai-hn": [
+      "Top AI story: Ireland fines Google €403M for unlawful location data",
+      "Second top: Widespread Claude API outage sparks production concerns",
+      "HN condemns non-consensual AI-generated Robin Williams videos",
+      "OpenAI discloses 6 new \"concerning\" model misalignment incidents",
+      "OpenAI launches public model misalignment tracking framework",
+      "TypeSafe AI’s \"System 1\" production models spark HN debate"
+    ],
+    "ai-arxiv": [
+      "Curates 50 recent AI papers from cs.AI, cs.CL, cs.LG categories",
+      "Model merging: low-cost paradigm for foundation model assembly",
+      "Study: Model merging can unlock or erase emergent capabilities",
+      "Agentic AI expands to 3D tracking, forensics, embodied coordination",
+      "New ARM routed-memory attention enables learnable sparse control",
+      "Domain-specific AI gains paired with fairness/robustness checks"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B multimodal leads HF charts with 15,971 weekly likes",
+      "Qwen3.8-27B hits 7.15M weekly downloads on Hugging Face",
+      "MiniMax-H3 & LTX-2.5 open video models top 1.6M downloads each",
+      "2-bit Ternary-Bonsai-2-27B quantization drives edge deployment",
+      "MiniCPM5-2B lightweight LLM sees 460k+ weekly downloads",
+      "YuE2-3B text-to-audio model gains agentic editing capabilities"
+    ],
+    "ai-community": [
+      "Dev.to focuses on AI agent reliability, guardrails, and MCP tooling",
+      "Browser-based MCP AI agent demo earns 72 Dev.to reactions",
+      "AI code review sparks hiring skill bar debate on Dev.to",
+      "Lobste.rs debates ChatGPT cross-site ad data privacy risks",
+      "Stolen ChatGPT/Claude session tokens sold on Telegram raise alarms",
+      "MCP ecosystem sees rapid tooling and performance iterations"
+    ]
+  }
+}
