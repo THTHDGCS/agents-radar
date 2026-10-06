@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "ROS 2引入ninja+sccache，提升编译效率缩减体积",
+      "NVIDIA Isaac Lab 24h更48PR，适配Newton1.6.1",
+      "Genesis优化异质实体内存，加速仿真与编译",
+      "LeRobot推无盘视频流训练，加速VLA生态布局",
+      "4款活跃工具协同，共推Sim2Real全链路打通",
+      "本期监测6款工具24h均无新版本发布"
+    ],
+    "ai-agents": [
+      "MuJoCo发布3.15.0版本，24h更新19条PR",
+      "MuJoCo修复EPA碰撞检测溢出等核心高危Bug",
+      "Drake 24h更14条PR，聚焦数值求解器稳定性",
+      "OpenClaw（宇树SDK2）当日无活动，稳定维护",
+      "两大仿真引擎共推物理正确性与跨链兼容",
+      "具身底层生态呈“上层活跃、底层夯实”态势"
+    ],
+    "ai-trending": [
+      "text-to-cad登GitHub总Trending，单日增437星",
+      "IsaacLab居机器人框架榜首，星数达8285",
+      "MuJoCo星数破1.5万，为人形仿真事实标准",
+      "CoRL 2026 Oral人形足球项目RoboNaldo开源",
+      "NeurIPS 2026 VLA预训练工作VLAct正式开源",
+      "世界动作模型全栈开源项目集中涌现"
+    ],
+    "ai-web": [
+      "Anthropic发布全球首个机器人工作暴露指数",
+      "Anthropic投1亿美元建Claude Frontier Academy",
+      "研究称当前机器人可完成3/4体力类工作任务",
+      "机器人替代10%工作任务或需40年周期",
+      "OpenAI上线24条内容，涉及GPT-6系列迭代",
+      "Anthropic提出“Claude形问题”科研新范式"
+    ],
+    "ai-hn": [
+      "德国RobCo估值破10亿，成欧洲机器人独角兽",
+      "RobCo帖获327分341评论，登HN热度榜首",
+      "Anthropic第三次上报警方引隐私边界争议",
+      "New Flash Attention研究发布，优化注意力机制",
+      "XCOR AI可观测性工具上线，保留人工告警",
+      "Reright.it推Agent生成文本人类审批工作流"
+    ],
+    "ai-arxiv": [
+      "基础模型仅靠起始token即可达RL级推理性能",
+      "定点循环LM框架推出，大幅降训练推理成本",
+      "MemPilot按需编排多模态记忆，提Agent效率",
+      "CLIFT自验证框架破解Web智能体信号稀疏难题",
+      "生成式AI优化转向逻辑与物理一致性",
+      "递归视频上下文学习赋能Agentic机器人"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B登顶双榜，点赞1.7万下载675万",
+      "Qwen3.8-Flash-Next下载破150万，位列第二",
+      "DeepSeek-V4.1-Flash成Qwen核心竞品",
+      "Lightricks LTX-2.5居多模态点赞榜第二",
+      "低比特量化无审查模型下载量超官方基模型",
+      "Cloudflare推clef模型，主打边缘部署适配"
+    ],
+    "ai-community": [
+      "文章指出AI代理审计日志存在自证信任悖论",
+      "MCP文档爬虫49秒抓取60页干净Markdown",
+      "AI代理运行时checkpoint分叉技术获关注",
+      "Playwright MCP+Claude Code快速生成测试用例",
+      "开源AI代理平台K8s一键部署教程发布",
+      "MCP成AI工具集成热门方向，案例密集"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "涵盖ROS 2、LeRobot等6款AI与机器人开发工具",
+      "24小时监测期内无项目发布新稳定版本",
+      "LeRobot 24小时更新31个PR，活跃度位列第一",
+      "Genesis 24小时更新6个Issue、18个PR",
+      "OpenVLA 24小时无活动，处于稳定维护阶段",
+      "生态聚焦降低开发门槛、提升仿真训练可靠性"
+    ],
+    "ai-agents": [
+      "覆盖OpenClaw、MuJoCo、Drake三款具身Agent基建",
+      "OpenClaw（Unitree SDK2）24小时内无任何活动",
+      "生态活动聚焦核心可靠性与管线互操作性",
+      "逐步对齐Bazel、USD等企业学术工作流标准",
+      "含低阶控制SDK、物理引擎、全栈工具箱三层架构",
+      "市场趋于成熟，开发者偏好稳定可集成的模块"
+    ],
+    "ai-trending": [
+      "text-to-cad单日涨437星，补全AI生成CAD能力缺口",
+      "CoRL 2026 Oral项目RoboNaldo开源，主打人形足球射门",
+      "NeurIPS 2026论文项目VLAct上线，聚焦VLA预训练",
+      "NVIDIA推出Alpamayo微调部署工具链alpamayo-recipes",
+      "Black Forest Labs开源7B权重世界动作模型flux-action",
+      "机器人评估基建成热点，inspect-robots等项目受关注"
+    ],
+    "ai-web": [
+      "Anthropic发布首份美国劳动力物理自动化渗透指数",
+      "Anthropic投1亿美元建学院，2027年前培训万名工程师",
+      "OpenAI新增Dots、GPT 6 1 Sol等4个产品相关索引页",
+      "OpenAI疑似同步推出产品、商业与安全系列更新",
+      "Anthropic公布三项经同行验证的AI辅助科研突破",
+      "新研究涉黎曼ζ函数界改进、新型CRISPR酶发现"
+    ],
+    "ai-hn": [
+      "德工业AI厂商RobCo估值达10亿，成欧洲机器人独角兽",
+      "RobCo估值事件引发超300评，热议欧盟AI硬件竞争力",
+      "Anthropic三个月内第三次举报Claude有害用户输入",
+      "新Flash Attention优化论文上线，业界待实测验证",
+      "开发者热议LLM对重复性损伤用户的无障碍价值",
+      "机器人话题贯穿全场，涉AI采矿、公众信任等议题"
+    ],
+    "ai-arxiv": [
+      "新方法用预训练token提示让基座模型推理追平RLHF版",
+      "循环Looped LM新方案实现截断训练，大幅降低RL成本",
+      "网页Agent获conformal自验证新方法，训练成本更低",
+      "机器人控制领域新增递归视频上下文学习技术进展",
+      "串并混扩散模型提升生成视频的物理一致性表现",
+      "基础模型拓展至肿瘤临床、量子科学、芯片验证领域"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B周榜登顶，获1.7万赞、676万次下载",
+      "LTX-2.5视频模型排周榜第三，获6512赞、165万下载",
+      "Qwen系模型微调/量化版占趋势榜总量超三分之一",
+      "欧洲开源MoE模型Kolibri-1上线，主打推理任务优化",
+      "Xing4.0-29B-A4B GGUF受边缘部署开发者青睐",
+      "Ternary-Bonsai-2-27B-gguf下载量突破412万次"
+    ],
+    "ai-community": [
+      "热文指出AI代理可篡改自身审计日志，安全性存疑",
+      "建议采用独立隔离的日志系统满足合规与溯源需求",
+      "MCP成扩展Agent能力的热门标准，新教程持续涌现",
+      "实测MCP文档爬虫49秒抓取60页干净Markdown内容",
+      "前沿LLM仍存现实数据误差，如阿尔伯塔时区错误",
+      "OpenAI Whisper被指持续修正尼日利亚语音模式引争议"
+    ]
+  }
+}
