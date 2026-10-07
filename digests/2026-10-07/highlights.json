@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "具身AI CLI工具已形成完整分层技术栈",
+      "仿真与策略层为当前核心迭代瓶颈",
+      "NVIDIA Isaac Lab当日更新50条PR",
+      "LeRobot当日41条PR均为开放状态",
+      "ROS 2升级全平台构建校验规则",
+      "跨平台兼容成工具共性发展需求"
+    ],
+    "ai-agents": [
+      "MuJoCo当日闭环13项PR健康度优秀",
+      "Drake v1.58.0发布说明已提交评审",
+      "OpenClaw当日无更新活跃度待观测",
+      "具身智能体基建沿双线方向演进",
+      "MuJoCo新增多架构官方构建矩阵",
+      "Drake推进Xcode 27编译适配工作"
+    ],
+    "ai-trending": [
+      "text-to-cad单日增619星登GitHub Trending",
+      "人形机器人开源生态持续细分化发展",
+      "世界动作模型首现系统性开源框架",
+      "MuJoCo以15493星居仿真器热度榜首",
+      "PythonRobotics总星数突破30636",
+      "轻量sim2real框架robot-control-stack上榜"
+    ],
+    "ai-web": [
+      "Anthropic升级网安验证计划为三级架构",
+      "开放Claude Opus 5.5等顶级模型权限",
+      "OpenAI单日新增8篇官方索引内容",
+      "GPT-5.6开发者指南首次公开露面",
+      "Claude Fable 5.1通用模型首次被提及",
+      "头部AI厂商战略路径分化愈发明显"
+    ],
+    "ai-hn": [
+      "AGI灭绝人类思辨文登HN热度榜首",
+      "TerrainSR地形超分模型亮相Show HN",
+      "纯CPU可运行预训练分类器工具发布",
+      "浏览器端本地跑LLM方案演示发布",
+      "OpenAI Decisions API实现PR自动分诊",
+      "Allen AI发布第三代MoE训练基建"
+    ],
+    "ai-arxiv": [
+      "IdeaAnchor让LLM从文献生成科研创意",
+      "Sherpa框架实现LLM自适应教学",
+      "揭示大模型微调虚假遗忘机制",
+      "首次提出LLM智能体能力封装概念",
+      "AdvSim2Real提升web智能体抗攻击性",
+      "WorldSolver让LLM生成物理求解器"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B登顶HF点赞下载双榜",
+      "Qwen3.8-Flash-Next点赞数近6000",
+      "LTX-2.5视频模型点赞破6600",
+      "DeepSeek-V4.1-Flash成Qwen核心竞品",
+      "GSQ+RCO量化衍生模型下载量破百万",
+      "Cloudflare推出端侧多模态模型clef"
+    ],
+    "ai-community": [
+      "AI Agent业务接入风险框架引发热议",
+      "AI辅助测试假绿问题获广泛共鸣",
+      "12岁开发者用百元手机搭建AI生态",
+      "Claude日记内容引发隐私法律争议",
+      "AI编码工具存在依赖混淆安全风险",
+      "Rust深度学习框架Burn发布0.22.0"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Tracks 5 core embodied AI full-stack robotics CLI tools",
+      "No new stable releases across all tools in 24h window",
+      "ROS 2 updated 1 issue and 3 PRs in the past day",
+      "OpenVLA shows zero activity, in temporary update lull",
+      "4 active tools target recently reported user pain points",
+      "Ecosystem focuses on reducing embodied AI dev friction"
+    ],
+    "ai-agents": [
+      "Tracks 3 embodied AI agent infrastructure projects",
+      "No new stable releases across all projects in 24h",
+      "OpenClaw (Unitree SDK2) had zero activity all day",
+      "Ecosystem focuses on bug fixes and cross-platform expansion",
+      "Most teams in pre-release or maintenance cadence",
+      "24h Health Score (1-10) rates project maintenance health"
+    ],
+    "ai-trending": [
+      "text-to-cad tops trends with +619 daily new stars",
+      "Humanoid robotics open source sees strong momentum",
+      "7B–34B open-weight VLA models lower dev barriers",
+      "Standardized physical AI benchmarks gain community traction",
+      "IsaacLab hits 8,289 stars, de facto VLA sim standard",
+      "MuJoCo reaches 15,493 stars, top industry physics engine"
+    ],
+    "ai-web": [
+      "Anthropic expands its Cyber Verification Program (CVP)",
+      "CVP moves to 3-tier access for vetted security teams",
+      "Top Claude models accessible for defensive cybersecurity use",
+      "OpenAI published 8 new index pages in 24 hours",
+      "Unconfirmed slugs hint at GPT-5.6 builder's guide",
+      "OpenAI may launch joint product/research milestone soon"
+    ],
+    "ai-hn": [
+      "Viral AGI satire leads HN AI talks (161 pts, 105 comments)",
+      "Essay sparks fierce debate over AI existential risk",
+      "Steady niche interest in local/private AI deployment tools",
+      "AI governance in legal filings emerges as new HN topic",
+      "TerrainSR heightmap upscaling model targets game dev/sim",
+      "Allen AI releases Olmo-core 3 for open MoE training"
+    ],
+    "ai-arxiv": [
+      "Embodied AI world model advances lead today’s arXiv batch",
+      "IdeaAnchor trains LLMs to turn papers into research ideas",
+      "Study characterizes 'spurious forgetting' in fine-tuned LLMs",
+      "New work boosts 3D geometry fidelity in AI world models",
+      "Low-cost open humanoid hardware paper featured",
+      "Formal verification for embodied reasoning systems released"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops HF trends with 17.1k likes, 6.7M downloads",
+      "LTX-2.5 img-to-video model gains 6.7k likes, 1.7M downloads",
+      "Cloudflare debuts in top 30 with clef-series VLMs",
+      "GGUF quantizations make up over 1/3 of trending models",
+      "Aleph-Alpha launches Kolibri-1 MoE reasoning LLM",
+      "Video generation models see surging user engagement"
+    ],
+    "ai-community": [
+      "AI agent safety/reliability dominates Dev.to discussions",
+      "Developers flag unforeseen AI agent tool-calling hazards",
+      "AI-integrated testing is a major cross-cutting pain point",
+      "Fake AI packages raise supply chain security concerns",
+      "Burn 0.22.0 Rust ML framework released on Lobste.rs",
+      "Lobste.rs focuses on AI workload infrastructure & hardware"
+    ]
+  }
+}
